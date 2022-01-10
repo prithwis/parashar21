@@ -138,7 +138,7 @@ def drawChart_Bengal():
 
 
 def Long2Rashi(x):
-    print('L2R',p21.ChartType)
+    
     if p21.ChartType == 'Rashi':
         RashiNumber = math.floor(x[1]/30)+1
         return x[0],RashiNumber
@@ -157,15 +157,15 @@ def Long2Rashi(x):
 def LocateGrahaInRashi():
     
     
-    print('Loc',p21.ChartType)
+    #print('Loc',p21.ChartType)
     p21.GRashiN = l2d(list(map(lambda x : Long2Rashi(x), d2l(p21.GLon))))
-    print(p21.GRashiN)
+    #print(p21.GRashiN)
 
     p21.GRashiA = {}
     for k,v in p21.GRashiN.items():
         p21.GRashiA[k] = RashiN2A(v)
         
-    print(p21.GRashiA)
+    #print(p21.GRashiA)
     
 # --------------------------------------------------
 def tracer():
