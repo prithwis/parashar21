@@ -159,4 +159,5 @@ def tracer():
     print('tracer')
     print(p21.ChartType)
     
+print('p21utils')
 # ------------------------------------------------
