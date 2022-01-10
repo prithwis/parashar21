@@ -17,16 +17,9 @@ from docx.shared import Inches
 from datetime import datetime
 from datetime import timedelta
 
-from os.path import exists
-# --------------------------------------------------
-def getSWEdatafiles():
-    !wget -q http://www.astro.com/ftp/swisseph/ephe/seas_18.se1
-    !wget -q http://www.astro.com/ftp/swisseph/ephe/semo_18.se1
-    !wget -q http://www.astro.com/ftp/swisseph/ephe/sepl_18.se1
-    !mkdir ephe
-    !mv *.se1 ephe
 
 # --------------------------------------------------
+
 #converting dict{ionary} to list and back
 
 d2l = lambda dic: [(k, v) for (k, v) in dic.items()]
