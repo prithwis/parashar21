@@ -180,21 +180,21 @@ def CreateDocument():
     p21.ReportFile = 'p21Report.docx'
 
 
-    p21.document = Document()
-    section = p21.document.sections[0]
+    document = Document()
+    section = document.sections[0]
     header = section.header
     footer = section.footer
 
 
     #heading_1 = p21.pName +" >>> "+p21.ChartType
     heading_1 = p21.ReportFile
-    p21.document.add_heading(heading_1, 0)
+    document.add_heading(heading_1, 0)
 
     #heading_1 = ChartType+" Chart of "+pName
     heading_2 = "heading2"
 
     #document.add_heading(heading_1, level=2)
-    p21.document.add_heading(heading_2, level=3)
+    document.add_heading(heading_2, level=3)
 
     header01 = header.paragraphs[0]
     header01.text = "Parashar21 >> http://parashar21.blogspot.com"
@@ -205,7 +205,8 @@ def CreateDocument():
     footer01 = footer.paragraphs[0]
     footer01.text = "Printed on : "+now.strftime("%d %b %Y")
 
-    p21.document.add_page_break()
+    document.add_page_break()
+    return document
     
 # --------------------------------------------------
 

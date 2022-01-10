@@ -5,4 +5,4 @@
 global GRashiN, GRashiA
 global GLon, GRet, pName
 global ChartType
-global document, ReportFile
+global ReportFile
