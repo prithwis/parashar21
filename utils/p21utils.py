@@ -17,10 +17,12 @@ from docx.shared import Inches
 from datetime import datetime
 from datetime import timedelta
 
+import swisseph as swe
+
 # --------------------------------------------------
 #Configure Swiss Ephemeris
 def configSWE():
-    import swisseph as swe
+    
     swe.version
     #Constants and Flags necessary for this application are set here
     #
