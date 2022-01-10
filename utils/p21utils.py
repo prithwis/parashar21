@@ -150,8 +150,8 @@ def LocateGrahaInRashi():
     print(p21.GRashiN)
 
     p21.GRashiA = {}
-    for k,v in GRashiN.items():
-        GRashiA[k] = RashiN2A(v)
+    for k,v in p21.GRashiN.items():
+        p21.GRashiA[k] = RashiN2A(v)
         
     print(p21.GRashiA)
     
