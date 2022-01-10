@@ -155,4 +155,8 @@ def LocateGrahaInRashi():
         
     print(p21.GRashiA)
     
+def tracer():
+    print('tracer')
+    print(p21.ChartType)
+    
 # ------------------------------------------------
