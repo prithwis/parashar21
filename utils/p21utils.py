@@ -62,7 +62,7 @@ def drawChart_Bengal():
     generateChartTxt()
 
     #id = ChartType+'\n'+pName+'\n'+pDate+'\n'+pTime+'\n'+pPlace
-    id = p21.ChartType+'\n'+pName
+    id = p21.ChartType+'\n'+p21.pName
     if p21.ChartType == 'Rashi':
         ChartColour = 'orange'
     else:
