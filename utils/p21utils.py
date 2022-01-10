@@ -86,7 +86,7 @@ def convertDates():
     print('Lahiri Ayanamsha :', ayanamsha)
 # --------------------------------------------------
 def calculateGrahaPositions():
-    global bLon,bRet
+    global bLon,bRet,P
     #Position of Planets
     #
     # body 0 = Sun, 1 = Moon, 2 = Merc, 3 = Ven, 4 = Mars, 5 = Jup, 6 = Sat, 11 = True Node (Rahu)
