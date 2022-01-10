@@ -24,29 +24,29 @@ def generateChartTxt():
     txt = ['']*13
     for g,r in p21.GRashiN.items():
         if r == 1:
-            txt[1]= txt[1]+' '+g+('/R' if GRet[g] else '')
+            txt[1]= txt[1]+' '+g+('/R' if p21.GRet[g] else '')
         if r == 2:
-            txt[2]= txt[2]+' '+g+('/R' if GRet[g] else '')
+            txt[2]= txt[2]+' '+g+('/R' if p21.GRet[g] else '')
         if r == 3:
-            txt[3]= txt[3]+' '+g+('/R' if GRet[g] else '')
+            txt[3]= txt[3]+' '+g+('/R' if p21.GRet[g] else '')
         if r == 4:
-            txt[4]= txt[4]+' '+g+('/R' if GRet[g] else '')
+            txt[4]= txt[4]+' '+g+('/R' if p21.GRet[g] else '')
         if r == 5:
-            txt[5]= txt[5]+' '+g+('/R' if GRet[g] else '')
+            txt[5]= txt[5]+' '+g+('/R' if p21.GRet[g] else '')
         if r == 6:
-            txt[6]= txt[6]+' '+g+('/R' if GRet[g] else '')
+            txt[6]= txt[6]+' '+g+('/R' if p21.GRet[g] else '')
         if r == 7:
-            txt[7]= txt[7]+' '+g+('/R' if GRet[g] else '')
+            txt[7]= txt[7]+' '+g+('/R' if p21.GRet[g] else '')
         if r == 8:
-            txt[8]= txt[8]+' '+g+('/R' if GRet[g] else '')
+            txt[8]= txt[8]+' '+g+('/R' if p21.GRet[g] else '')
         if r == 9:
-            txt[9]= txt[9]+' '+g+('/R' if GRet[g] else '')
+            txt[9]= txt[9]+' '+g+('/R' if p21.GRet[g] else '')
         if r == 10:
-            txt[10]= txt[10]+' '+g+('/R' if GRet[g] else '')
+            txt[10]= txt[10]+' '+g+('/R' if p21.GRet[g] else '')
         if r == 11:
-            txt[11]= txt[11]+' '+g+('/R' if GRet[g] else '')
+            txt[11]= txt[11]+' '+g+('/R' if p21.GRet[g] else '')
         if r == 12:
-            txt[12]= txt[12]+' '+g+('/R' if GRet[g] else '')
+            txt[12]= txt[12]+' '+g+('/R' if p21.GRet[g] else '')
             
     for i in range(1,13):
         if len(txt[i]) == 0:
