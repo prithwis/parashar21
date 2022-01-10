@@ -169,6 +169,42 @@ def LocateGrahaInRashi():
     #print(p21.GRashiA)
     
 # --------------------------------------------------
+
+def CreateDocument():
+    
+    p21.ReportFile = 'p21Report.docx'
+
+
+    p21.document = Document()
+    section = p21.document.sections[0]
+    header = section.header
+    footer = section.footer
+
+
+    #heading_1 = p21.pName +" >>> "+p21.ChartType
+    heading_1 = p21.ReportFile
+    p21.document.add_heading(heading_1, 0)
+
+    #heading_1 = ChartType+" Chart of "+pName
+    heading_2 = "heading2"
+
+    #document.add_heading(heading_1, level=2)
+    p21.document.add_heading(heading_2, level=3)
+
+    header01 = header.paragraphs[0]
+    header01.text = "Parashar21 >> http://parashar21.blogspot.com"
+
+    now = datetime.now()
+    print(now.strftime("%d %b %Y"))
+
+    footer01 = footer.paragraphs[0]
+    footer01.text = "Printed on : "+now.strftime("%d %b %Y")
+
+    p21.document.add_page_break()
+    
+# --------------------------------------------------
+
+
 def tracer():
     print('tracer')
     print(p21.ChartType)
