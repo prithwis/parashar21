@@ -1,3 +1,9 @@
+# 𝓟𝓪𝓻𝓪𝓼𝓱𝓪𝓻21
+# 𝓟𝓻𝓲𝓽𝓱𝔀𝓲𝓼 𝓜𝓾𝓴𝓮𝓻𝓳𝓮𝓮
+# --------------------------------------------------
+# Global Variables
+import p21
+# --------------------------------------------------
 #Utility functions 
 
 import pandas as pd
@@ -5,12 +11,14 @@ import dateutil
 import matplotlib.pyplot as plt
 import math
 #import string_utils
-import p21
-# ---------------------------------------------
+
+# --------------------------------------------------
 #converting dict{ionary} to list and back
 
 d2l = lambda dic: [(k, v) for (k, v) in dic.items()]
 l2d = lambda lis: dict(lis)
+
+# --------------------------------------------------
 
 #converts a Rashi number to the Rashi name
 #
@@ -18,7 +26,10 @@ RashiName = ["RashiName","Ari","Tau","Gem","Can","Leo","Vir","Lib","Sco","Sag","
 def RashiN2A(n):
     return RashiName[n]
 
-# ----------------------------------------------
+# --------------------------------------------------
+#
+# Generates the text that appears in a chart image
+#
 def generateChartTxt():
     global txt
     txt = ['']*13
@@ -53,9 +64,9 @@ def generateChartTxt():
             txt[i] = '*'
 #print(txt[1],txt[2],txt[3],txt[4],txt[5],txt[6],txt[7],txt[8],txt[9],txt[10],txt[11],txt[12],)
 
+# --------------------------------------------------
 # Plots the chart in the Bengal Format
-
-
+#
 def drawChart_Bengal():
 
     ChartFile = p21.pName+p21.ChartType+'.png'
@@ -109,9 +120,8 @@ def drawChart_Bengal():
     plt.savefig(ChartFile, bbox_inches='tight')
     plt.show()
 
-    
-print ("drawChart_Bengal defined")
-# ----------------------------------------------------------
+
+# --------------------------------------------------
 
 # Convert the longitude of a Graha into its Rashi of residence
 #
@@ -141,10 +151,12 @@ def Long2Rashi(x):
             RashiNumber = N2
         return x[0],RashiNumber
 
+# --------------------------------------------------
+#Defines the Horoscope in terms of locating planets in their Rashis
+
 def LocateGrahaInRashi():
     
-    #Defines the Horoscope in terms of locating planets in their Rashis
-    #
+    
     print('Loc',p21.ChartType)
     p21.GRashiN = l2d(list(map(lambda x : Long2Rashi(x), d2l(p21.GLon))))
     print(p21.GRashiN)
@@ -155,9 +167,10 @@ def LocateGrahaInRashi():
         
     print(p21.GRashiA)
     
+# --------------------------------------------------
 def tracer():
     print('tracer')
     print(p21.ChartType)
     
-print('p21utils')
+print('p21utils imported')
 # ------------------------------------------------
