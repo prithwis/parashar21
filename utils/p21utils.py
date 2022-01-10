@@ -176,9 +176,7 @@ def LocateGrahaInRashi():
 # --------------------------------------------------
 
 def CreateDocument():
-    
-    p21.ReportFile = 'p21Report.docx'
-
+      
 
     p21.document = Document()
     section = p21.document.sections[0]
