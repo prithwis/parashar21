@@ -6,6 +6,11 @@ import matplotlib.pyplot as plt
 import math
 #import string_utils
 # ---------------------------------------------
+# Global Variables
+global GRashiN, GRashiA
+global GLon, GRet, pName
+global ChartType
+# ---------------------------------------------
 #converting dict{ionary} to list and back
 
 d2l = lambda dic: [(k, v) for (k, v) in dic.items()]
@@ -140,7 +145,7 @@ def Long2Rashi(x):
         return x[0],RashiNumber
 
 def LocateGrahaInRashi():
-    global GRashiN, GRashiA
+    
     #Defines the Horoscope in terms of locating planets in their Rashis
     #
     GRashiN = l2d(list(map(lambda x : Long2Rashi(x), d2l(GLon))))
