@@ -12,6 +12,11 @@ import matplotlib.pyplot as plt
 import math
 #import string_utils
 
+from docx import Document
+from docx.shared import Inches
+from datetime import datetime
+from datetime import timedelta
+
 # --------------------------------------------------
 #converting dict{ionary} to list and back
 
