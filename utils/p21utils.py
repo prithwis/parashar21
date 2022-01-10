@@ -128,10 +128,10 @@ print ("drawChart_Bengal defined")
 
 
 def Long2Rashi(x):
-    if ChartType == 'Rashi':
+    if p21.ChartType == 'Rashi':
         RashiNumber = math.floor(x[1]/30)+1
         return x[0],RashiNumber
-    if ChartType == 'Navamsa':
+    if p21.ChartType == 'Navamsa':
         N1 = math.floor(x[1]/3.333333)+1
         N2 = N1%12
         if N2 == 0:
