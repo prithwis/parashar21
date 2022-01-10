@@ -75,7 +75,7 @@ def convertDates():
     #print(UTCdt)
     # Date & Time of Birth
     # Convert UTC date to Julian Date
-    JD = swe.utc_to_jd(UTCdt[0],UTCdt[1],UTCdt[2],UTCdt[3],UTCdt[4],0,p21,gregflag) # Second Value = 0
+    JD = swe.utc_to_jd(UTCdt[0],UTCdt[1],UTCdt[2],UTCdt[3],UTCdt[4],0,p21.gregflag) # Second Value = 0
     #print (JD[0], JD[1])
     # JD[0] is Ephemeris Time
     # JD[1] is Universal Time 
