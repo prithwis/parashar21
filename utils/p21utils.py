@@ -69,7 +69,8 @@ def generateChartTxt():
 #
 def drawChart_Bengal():
 
-    ChartFile = p21.pName+p21.ChartType+'.png'
+    #ChartFile = p21.pName+p21.ChartType+'.png'
+    ChartFile = 'CurrentChart.png'
     generateChartTxt()
 
     #id = ChartType+'\n'+pName+'\n'+pDate+'\n'+pTime+'\n'+pPlace
