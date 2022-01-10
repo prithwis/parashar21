@@ -10,7 +10,7 @@ import pandas as pd
 import dateutil
 import matplotlib.pyplot as plt
 import math
-#import string_utils
+import string_utils
 
 from docx import Document
 from docx.shared import Inches
