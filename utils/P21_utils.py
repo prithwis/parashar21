@@ -140,7 +140,7 @@ def Long2Rashi(x):
         return x[0],RashiNumber
 
 def LocateGrahaInRashi():
-    global GRashiN, GRashiA
+    global GRashiN, GRashiA,GLon
     #Defines the Horoscope in terms of locating planets in their Rashis
     #
     GRashiN = l2d(list(map(lambda x : Long2Rashi(x), d2l(GLon))))
