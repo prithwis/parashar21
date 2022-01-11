@@ -22,7 +22,7 @@ import swisseph as swe
 # --------------------------------------------------
 #Configure Swiss Ephemeris
 
-def configSWE():
+def C01_configSWE():
     
     swe.version
     #Constants and Flags necessary for this application are set here
@@ -43,7 +43,8 @@ def configSWE():
     p21.hsysP =  bytes('P', 'utf-8')
     
 # --------------------------------------------------
-def parsePersonData(P):
+#
+def C02_parsePersonData(P):
     #global chart
     global LBDY, LBDM,LBDD,LBTh,LBTm,LBTs,tZone,natalLAT,natalLON
     
@@ -71,7 +72,7 @@ def parsePersonData(P):
     
 # --------------------------------------------------
 
-def convertDates():
+def C03_convertDates():
     global natalUT, ayanamsha
     # Date & Time of Birth
     #Time Zone Conversion
@@ -90,7 +91,8 @@ def convertDates():
     print('Lahiri Ayanamsha :', ayanamsha)
     
 # --------------------------------------------------
-def calculateGrahaPositions():
+#
+def C04_calculateGrahaPositions():
     global bLon,bRet,P
     #Position of Planets
     #
@@ -116,7 +118,7 @@ def calculateGrahaPositions():
 
 # --------------------------------------------------
 
-def buildGLonGRet():
+def C05_buildGLonGRet():
     #global GLon, GRet
     p21.GLon = {
         'GLon':{
