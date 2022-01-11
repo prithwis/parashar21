@@ -340,11 +340,11 @@ def R01_CreateReportDoc():
 
 
     #heading_1 = p21.pName +" >>> "+p21.ChartType
-    heading_1 = p21.ReportFile
+    heading_1 = "Retrieved Charts"  #p21.ReportFile
     p21.document.add_heading(heading_1, 0)
 
     #heading_1 = ChartType+" Chart of "+pName
-    heading_2 = "heading2"
+    heading_2 = "Khawnaa42 Database"
 
     #document.add_heading(heading_1, level=2)
     p21.document.add_heading(heading_2, level=3)
@@ -358,7 +358,7 @@ def R01_CreateReportDoc():
     footer01 = footer.paragraphs[0]
     footer01.text = "Printed on : "+now.strftime("%d %b %Y")
 
-    p21.document.add_page_break()
+    #p21.document.add_page_break()
     #return document
     
 # --------------------------------------------------
