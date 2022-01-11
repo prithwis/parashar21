@@ -238,7 +238,7 @@ def R12B_drawChart_Bengal():
         ChartFile = 'RashiChart.png'
     else:
         ChartColour = 'olive'
-        ChartFile = 'NavamshaChart.png'
+        ChartFile = 'NavamsaChart.png'
     
         
     #plt.figure(figsize=(7,7))
