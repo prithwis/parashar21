@@ -12,6 +12,8 @@ import matplotlib.pyplot as plt
 import math
 import string_utils
 
+import json
+
 from docx import Document
 from docx.shared import Inches
 from datetime import datetime
@@ -330,7 +332,7 @@ def R11_LocateGrahaInRashi():
     
 # --------------------------------------------------
 
-def R01_CreateReportDoc():
+def R01_CreateReportDoc(cqs):
       
 
     p21.document = Document()
@@ -344,13 +346,13 @@ def R01_CreateReportDoc():
     p21.document.add_heading(heading_1, 0)
 
     #heading_1 = ChartType+" Chart of "+pName
-    heading_2 = "Khawnaa42 Database"
+    heading_2 = cqs                         # current query string
 
     #document.add_heading(heading_1, level=2)
     p21.document.add_heading(heading_2, level=3)
 
     header01 = header.paragraphs[0]
-    header01.text = "Parashar21 >> http://parashar21.blogspot.com"
+    header01.text = "Parashar21 | Khawnaa42 database | http://parashar21.blogspot.com"
 
     now = datetime.now()
     print(now.strftime("%d %b %Y"))
@@ -358,7 +360,7 @@ def R01_CreateReportDoc():
     footer01 = footer.paragraphs[0]
     footer01.text = "Printed on : "+now.strftime("%d %b %Y")
 
-    #p21.document.add_page_break()
+    p21.document.add_page_break()
     #return document
     
 # --------------------------------------------------
