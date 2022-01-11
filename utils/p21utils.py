@@ -85,10 +85,10 @@ def C03_convertDates():
     # JD[0] is Ephemeris Time
     # JD[1] is Universal Time 
     natalUT = JD[1]
-    print(natalUT, 'Julian Date of DTofB in Universal Time')
+    #print(natalUT, 'Julian Date of DTofB in Universal Time')
     #Ayanamsha
     ayanamsha = swe.get_ayanamsa(natalUT)
-    print('Lahiri Ayanamsha :', ayanamsha)
+    #print('Lahiri Ayanamsha :', ayanamsha)
     
 # --------------------------------------------------
 #
@@ -153,6 +153,7 @@ def C05_buildGLonGRet():
 # --------------------------------------------------
 # Subtracts angles (eg Ayanamsha) from Longitudes 
 # Required for conversion from Tropical (Western) to Sidereal (Indian) zodiac
+#
 def p21Sub (x,y):
     retVal = round(x - y,3)
     if retVal < 0:
