@@ -21,6 +21,7 @@ import swisseph as swe
 
 # --------------------------------------------------
 #Configure Swiss Ephemeris
+
 def configSWE():
     
     swe.version
@@ -40,6 +41,7 @@ def configSWE():
     #hsys = P, Placidus
     #ascii P = 080
     p21.hsysP =  bytes('P', 'utf-8')
+    
 # --------------------------------------------------
 def parsePersonData(P):
     #global chart
@@ -66,7 +68,9 @@ def parsePersonData(P):
             "name": string_utils.shuffle(P['Name'])
         }
     }
+    
 # --------------------------------------------------
+
 def convertDates():
     global natalUT, ayanamsha
     # Date & Time of Birth
@@ -84,6 +88,7 @@ def convertDates():
     #Ayanamsha
     ayanamsha = swe.get_ayanamsa(natalUT)
     print('Lahiri Ayanamsha :', ayanamsha)
+    
 # --------------------------------------------------
 def calculateGrahaPositions():
     global bLon,bRet,P
@@ -103,12 +108,14 @@ def calculateGrahaPositions():
     #-------------------------------------------------------------------
     #House Position and Ascendants
     P = swe.houses(natalUT,natalLAT,natalLON,p21.hsysP)
+    
     #P = swe.houses_ex(natalUT,natalLAT,natalLON,hsysP)
     #for ix in range(len(P[0])) : print(ix, P[0][ix])
     #print('--')
     #for ix in range(len(P[1])) : print(ix, P[1][ix])
 
 # --------------------------------------------------
+
 def buildGLonGRet():
     #global GLon, GRet
     p21.GLon = {
@@ -140,6 +147,7 @@ def buildGLonGRet():
         'Ke':False
         }
     }
+
 # --------------------------------------------------
 # Subtracts angles (eg Ayanamsha) from Longitudes 
 # Required for conversion from Tropical (Western) to Sidereal (Indian) zodiac
