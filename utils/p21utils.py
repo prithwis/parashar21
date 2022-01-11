@@ -279,7 +279,7 @@ def R12B_drawChart_Bengal():
     
     #plt.savefig("CurrentChart.png", bbox_inches='tight')
     plt.savefig(ChartFile, bbox_inches='tight')
-    plt.show()
+    #plt.show()
 
 
 # --------------------------------------------------
