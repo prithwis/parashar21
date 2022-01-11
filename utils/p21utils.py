@@ -228,15 +228,17 @@ def generateChartTxt():
 def R12B_drawChart_Bengal():
 
     #ChartFile = p21.pName+p21.ChartType+'.png'
-    ChartFile = 'CurrentChart.png'
+    #ChartFile = 'CurrentChart.png'
     generateChartTxt()
 
     #id = ChartType+'\n'+pName+'\n'+pDate+'\n'+pTime+'\n'+pPlace
     id = p21.ChartType+'\n'+p21.pName
     if p21.ChartType == 'Rashi':
         ChartColour = 'orange'
+        ChartFile = 'RashiChart.png'
     else:
         ChartColour = 'olive'
+        ChartFile = 'NavamshaChart.png'
     
         
     #plt.figure(figsize=(7,7))
