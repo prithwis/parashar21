@@ -158,6 +158,16 @@ def p21Sub (x,y):
     else:
         return retVal
 # --------------------------------------------------
+# append one ditionary after another
+
+def appendDict(d1,d2):
+    for i in range(len(d2)):
+        k = list(d2.keys())[i]
+        v = list(d2.values())[i]
+        d1[k] = v
+
+
+# --------------------------------------------------
 #converting dict{ionary} to list and back
 
 d2l = lambda dic: [(k, v) for (k, v) in dic.items()]
