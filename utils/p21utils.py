@@ -225,7 +225,7 @@ def generateChartTxt():
 # --------------------------------------------------
 # Plots the chart in the Bengal Format
 #
-def drawChart_Bengal():
+def R12B_drawChart_Bengal():
 
     #ChartFile = p21.pName+p21.ChartType+'.png'
     ChartFile = 'CurrentChart.png'
@@ -313,7 +313,7 @@ def Long2Rashi(x):
 # --------------------------------------------------
 #Defines the Horoscope in terms of locating planets in their Rashis
 
-def LocateGrahaInRashi():
+def R11_LocateGrahaInRashi():
     
     
     #print('Loc',p21.ChartType)
@@ -328,7 +328,7 @@ def LocateGrahaInRashi():
     
 # --------------------------------------------------
 
-def CreateDocument():
+def R01_CreateReportDoc():
       
 
     p21.document = Document()
