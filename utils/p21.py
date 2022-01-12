@@ -4,7 +4,7 @@
 # Global Variables
 global BhavN, BhavA
 global GRashiN, GRashiA
-global GLon, GRet, pName
+global GLon, GRet, pName, GLonRet
 global ChartType
 global ReportFile, document
 # ------------------------------------------

@@ -123,34 +123,36 @@ def C04_calculateGrahaPositions():
 def C05_buildGLonGRet():
     #global GLon, GRet
     p21.GLon = {
-        'GLon':{
-        'La':p21Sub(P[1][0],ayanamsha),
-        'Su':p21Sub(bLon[0],ayanamsha),
-        'Mo':p21Sub(bLon[1],ayanamsha),
-        'Ma':p21Sub(bLon[4],ayanamsha),
-        'Me':p21Sub(bLon[2],ayanamsha),
-        'Ju':p21Sub(bLon[5],ayanamsha),
-        'Ve':p21Sub(bLon[3],ayanamsha),
-        'Sa':p21Sub(bLon[6],ayanamsha),
-        'Ra':p21Sub(bLon[7],ayanamsha),
-        'Ke':p21Sub(p21Sub(bLon[7],ayanamsha),180)
-        }
+    'La':p21Sub(P[1][0],ayanamsha),
+    'Su':p21Sub(bLon[0],ayanamsha),
+    'Mo':p21Sub(bLon[1],ayanamsha),
+    'Ma':p21Sub(bLon[4],ayanamsha),
+    'Me':p21Sub(bLon[2],ayanamsha),
+    'Ju':p21Sub(bLon[5],ayanamsha),
+    'Ve':p21Sub(bLon[3],ayanamsha),
+    'Sa':p21Sub(bLon[6],ayanamsha),
+    'Ra':p21Sub(bLon[7],ayanamsha),
+    'Ke':p21Sub(p21Sub(bLon[7],ayanamsha),180)
+    }
+    
+    p21.GRet = {
+    'La':False,
+    'Su':False,
+    'Mo':False,
+    'Ma':bRet[4],
+    'Me':bRet[2],
+    'Ju':bRet[5],
+    'Ve':bRet[3],
+    'Sa':bRet[6],
+    'Ra':False,
+    'Ke':False
+    }
+    p21.GLonRet = {
+        'GLon': p21.GLon,
+        'GRet': p21.GRet
     }
 
-    p21.GRet = {
-        'GRet':{
-        'La':False,
-        'Su':False,
-        'Mo':False,
-        'Ma':bRet[4],
-        'Me':bRet[2],
-        'Ju':bRet[5],
-        'Ve':bRet[3],
-        'Sa':bRet[6],
-        'Ra':False,
-        'Ke':False
-        }
-    }
+    
 
 # --------------------------------------------------
 # Subtracts angles (eg Ayanamsha) from Longitudes 
