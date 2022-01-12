@@ -10,4 +10,5 @@ global ReportFile, document
 # ------------------------------------------
 global gregflag,iflag,hsysP
 global chart
-global BoL = ' '
+global BoL
+BoL = ' '
