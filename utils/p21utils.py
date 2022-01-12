@@ -207,7 +207,7 @@ def C10_DetermineBhavs():
             p21.BhavN.append(N)
         
     print(p21.BhavN)
-    BhavA = list(map(lambda x : RashiN2A(x) if isinstance(x, numbers.Integral) else BoL, BhavN))
+    p21.BhavA = list(map(lambda x : RashiN2A(x) if isinstance(x, numbers.Integral) else BoL, p21.BhavN))
     #print(list(map(lambda x : x, BhavN)))
     print(p21.BhavA)
 
