@@ -217,6 +217,46 @@ def C10_DetermineBhavs():
     }
 
 # --------------------------------------------------
+
+#Determines the Lord of each Bhava
+#Determines the Rashi number where each Lord resides
+#Determines the Rashi name where each Lord resides
+#
+def C11_DetermineLord():
+
+    p21.LordOf = {"Ari":"Ma","Tau":"Ve","Gem":"Me","Can":"Mo","Leo":"Su","Vir":"Me","Lib":"Ve","Sco":"Ma","Sag":"Ju","Cap":"Sa","Acq":"Sa","Pis":"Ju"}
+    #print(LordOf)
+    p21.Lord = list(map(lambda x : p21.LordOf[RashiN2A(x)] if isinstance(x, numbers.Integral) else p21.BoL, p21.BhavN))
+    print("Lord : ", p21.Lord)
+    p21.LordRashiN = list(map(lambda x : p21.GRashiN[x] if x != p21.BoL else p21.BoL, p21.Lord))
+    print("Rashi # of Lord : ",p21.LordRashiN)
+    p21.LordRashiA = list(map(lambda x : p21.GRashiA[x] if x != p21.BoL else p21.BoL, p21.Lord))
+    print("Rashi Name of Lord :",p21.LordRashiA)
+
+# --------------------------------------------------
+
+#Determines the Bhava where each Graha is Lord
+#Grahas other than Sun and Moon are Lords of Two Bhava
+#Since index returns only the first position where an instance is found
+#A simple index() does not return the second position
+# https://stackoverflow.com/questions/22267241/how-to-find-the-index-of-the-nth-time-an-item-appears-in-a-list
+
+#def C12_DetermineGrahaBhavLord():
+
+    p21.GrahaLordBhav = {}
+    for G in ('Su','Mo','Ma','Me','Ju','Ve','Sa'):
+            L = [i for i, n in enumerate(p21.Lord) if n == G]
+            p21.GrahaLordBhav[G] = L
+    print('Bhav where Graha is Lord : ',p21.GrahaLordBhav)
+    
+    p21.LordInfo = {
+     'Lord' : p21.Lord,
+     'LordRashiN' : p21.LordRashiN,
+     'LordRashiA' : p21.LordRashiA,
+     'GrahaLordBhav' : p21.GrahaLordBhav
+    }
+
+# --------------------------------------------------
 #
 # Generates the text that appears in a chart image
 #

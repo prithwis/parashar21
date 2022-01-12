@@ -2,6 +2,7 @@
 # 𝓟𝓻𝓲𝓽𝓱𝔀𝓲𝓼 𝓜𝓾𝓴𝓮𝓻𝓳𝓮𝓮
 # --------------------------------------------------
 # Global Variables
+global LordOf, Lord, GrahaLordBhav, LordRashiN,LordRashiA,LordInfo
 global BhavN, BhavA, BhavNBhavA
 global GRashiN, GRashiA
 global GLon, GRet, pName, GLonRet
