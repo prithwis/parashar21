@@ -187,6 +187,29 @@ def RashiN2A(n):
     return RashiName[n]
 
 # --------------------------------------------------
+
+#Determines and stores the Bhava in list BhavN
+#BhavN[1] has Rashi Number corresponding to First Bhav
+#BhavA[2] has the Rashi name corresponding to Second Bhava
+#
+def C10_DetermineBhavs():
+
+    p21.BhavN = [p21.BoL]
+    for ix in range(1,13):
+        if ix == 1:
+            p21.BhavN.append(p21.GRashiN['La'])
+        else:
+            N = p21.BhavN[ix-1]+1
+            if N > 12:
+                N = N - 12
+            p21.BhavN.append(N)
+        
+    print(p21.BhavN)
+    BhavA = list(map(lambda x : RashiN2A(x) if isinstance(x, numbers.Integral) else BoL, BhavN))
+    #print(list(map(lambda x : x, BhavN)))
+    print(p21.BhavA)
+
+# --------------------------------------------------
 #
 # Generates the text that appears in a chart image
 #
