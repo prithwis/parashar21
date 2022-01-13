@@ -441,15 +441,19 @@ def R01_CreateReportDoc(cqs):
     #print(now.strftime("%d %b %Y"))
 
     footer01 = footer.paragraphs[0]
-    footer01.text = "Printed on : "+now.strftime("%d %b %Y")+" | http://parashar21.blogspot.com | https://github.com/prithwis/parashar21"
+    footer01.text = "Printed on : "+now.strftime("%d %b %Y")+"\nhttp://parashar21.blogspot.com | https://github.com/prithwis/parashar21"
 
     #heading_1 = p21.pName +" >>> "+p21.ChartType
     #heading_1 = ChartType+" Chart of "+pName
+    
     heading_1 = "Selected Charts"  #p21.ReportFile
     p21.document.add_heading(heading_1, 0)
-    #p21.document.add_picture('./Saraswati.png', width=Inches(4.25))
     heading_2 = cqs                         # current query string
     p21.document.add_heading(heading_2, level=3)
+    p21.document.add_picture('./Saraswati.png', width=Inches(4.25))
+    
+    gyan = "Astrology is the science of correlation, not causation. \nRead 'Astrology - An Application of Data Science' by Prithwis Mukerjee \nhttps://bit.ly/pmastro"
+    p21.document.add_paragraph(gyan)
 
     
     #p21.document.add_page_break()
@@ -462,7 +466,7 @@ def R13B_ListPositions(text,L):
     L1 = L[1:]
     D = text+' : '
     for c,e in enumerate(L1,1):
-        D = D+' '+str(c)+':'+e+' '
+        D = D+' '+str(c)+':'+str(e)+' '
     return(D)
         
 
