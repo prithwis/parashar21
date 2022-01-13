@@ -415,7 +415,7 @@ def R01_CreateReportDoc(cqs):
     header01.text = "Parashar21 | Khona21 MongoDB database"
 
     now = datetime.now(pytz.timezone('Asia/Kolkata'))
-    print(now.strftime("%d %b %Y"))
+    #print(now.strftime("%d %b %Y"))
 
     footer01 = footer.paragraphs[0]
     footer01.text = "Printed on : "+now.strftime("%d %b %Y")+" | http://parashar21.blogspot.com | https://github.com/prithwis/parashar21"
@@ -438,7 +438,7 @@ def R13B_ListPositions(text,L):
     # 
     L1 = L[1:]
     D = text+' : '
-    for c,e in enumerate(L1):
+    for c,e in enumerate(L1,1):
         D = D+' '+str(c)+':'+e+' '
     return(D)
         
