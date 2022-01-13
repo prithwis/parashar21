@@ -424,7 +424,7 @@ def R01_CreateReportDoc(cqs):
     #heading_1 = ChartType+" Chart of "+pName
     heading_1 = "Selected Charts"  #p21.ReportFile
     p21.document.add_heading(heading_1, 0)
-    p21.document.add_picture('./Saraswati.jpg', width=Inches(4.25))
+    #p21.document.add_picture('./Saraswati.jpg', width=Inches(4.25))
     heading_2 = cqs                         # current query string
     p21.document.add_heading(heading_2, level=3)
 
@@ -433,6 +433,24 @@ def R01_CreateReportDoc(cqs):
     #return document
     
 # --------------------------------------------------
+
+def R13B_ListPositions(text,L):
+    # 
+    L1 = L[1:]
+    D = text+' : '
+    for c,e in enumerate(L1):
+        D = D+' '+str(c)+':'+e+' '
+    return(D)
+        
+
+def R13A_ShowTrueDict(desc,tDict):
+    # creates a string with Keys that have Value True
+    
+    D = desc+' : '
+    for (k,v) in tDict.items():
+        if v :
+            D = D+' '+k
+    return(D)
 
 
 def tracer():
