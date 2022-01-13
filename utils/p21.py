@@ -3,6 +3,7 @@
 # --------------------------------------------------
 # Global Variables
 global LordOf, Lord, GrahaLordBhav, LordRashiN,LordRashiA,LordInfo
+global GrahaBhava, LordBhav, BhavOfGraha_LordInfo
 global BhavN, BhavA, BhavNBhavA
 global GRashiN, GRashiA
 global GLon, GRet, pName, GLonRet

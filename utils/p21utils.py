@@ -228,11 +228,11 @@ def C11_DetermineLord():
     p21.LordOf = {"Ari":"Ma","Tau":"Ve","Gem":"Me","Can":"Mo","Leo":"Su","Vir":"Me","Lib":"Ve","Sco":"Ma","Sag":"Ju","Cap":"Sa","Acq":"Sa","Pis":"Ju"}
     #print(LordOf)
     p21.Lord = list(map(lambda x : p21.LordOf[RashiN2A(x)] if isinstance(x, numbers.Integral) else p21.BoL, p21.BhavN))
-    print("Lord : ", p21.Lord)
+    #print("Lord : ", p21.Lord)
     p21.LordRashiN = list(map(lambda x : p21.GRashiN[x] if x != p21.BoL else p21.BoL, p21.Lord))
-    print("Rashi # of Lord : ",p21.LordRashiN)
+    #print("Rashi # of Lord : ",p21.LordRashiN)
     p21.LordRashiA = list(map(lambda x : p21.GRashiA[x] if x != p21.BoL else p21.BoL, p21.Lord))
-    print("Rashi Name of Lord :",p21.LordRashiA)
+    #print("Rashi Name of Lord :",p21.LordRashiA)
 
 # --------------------------------------------------
 
@@ -242,19 +242,42 @@ def C11_DetermineLord():
 #A simple index() does not return the second position
 # https://stackoverflow.com/questions/22267241/how-to-find-the-index-of-the-nth-time-an-item-appears-in-a-list
 
-#def C12_DetermineGrahaBhavLord():
 
     p21.GrahaLordBhav = {}
     for G in ('Su','Mo','Ma','Me','Ju','Ve','Sa'):
             L = [i for i, n in enumerate(p21.Lord) if n == G]
             p21.GrahaLordBhav[G] = L
-    print('Bhav where Graha is Lord : ',p21.GrahaLordBhav)
+    #print('Bhav where Graha is Lord : ',p21.GrahaLordBhav)
     
     p21.LordInfo = {
      'Lord' : p21.Lord,
      'LordRashiN' : p21.LordRashiN,
      'LordRashiA' : p21.LordRashiA,
      'GrahaLordBhav' : p21.GrahaLordBhav
+    }
+
+
+def C12_BhavOfGraha_Lord():
+
+#Determines the Bhava where Each planet resides
+#Lagna always resides in First Bhava
+#
+    p21.GrahaBhava ={"La":1}
+    for G in ('Su','Mo','Ma','Me','Ju','Ve','Sa','Ra','Ke'):
+        p21.GrahaBhava[G] = p21.BhavN.index(p21.GRashiN[G])
+    print (p21.GrahaBhava)
+
+#Determines the Bhav where each Lord resides
+#
+
+    p21.LordBhav =[p21.BoL]
+    for L in range (1,13):
+        p21.LordBhav.append(p21.BhavN.index(p21.GRashiN[p21.Lord[L]]))
+    print(p21.LordBhav)
+
+    p21.BhavOfGraha_LordInfo = {
+     'GrahaBhava' : p21.GrahaBhava,
+     'LordBhav' : p21.LordBhav
     }
 
 # --------------------------------------------------
