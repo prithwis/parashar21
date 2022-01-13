@@ -410,18 +410,7 @@ def R01_CreateReportDoc(cqs):
     section = p21.document.sections[0]
     header = section.header
     footer = section.footer
-
-
-    #heading_1 = p21.pName +" >>> "+p21.ChartType
-    heading_1 = "Selected Charts"  #p21.ReportFile
-    p21.document.add_heading(heading_1, 0)
-
-    #heading_1 = ChartType+" Chart of "+pName
-    heading_2 = cqs                         # current query string
-
-    #document.add_heading(heading_1, level=2)
-    p21.document.add_heading(heading_2, level=3)
-
+    
     header01 = header.paragraphs[0]
     header01.text = "Parashar21 | Khona21 MongoDB database"
 
@@ -431,7 +420,16 @@ def R01_CreateReportDoc(cqs):
     footer01 = footer.paragraphs[0]
     footer01.text = "Printed on : "+now.strftime("%d %b %Y")+" | http://parashar21.blogspot.com | https://github.com/prithwis/parashar21"
 
-    p21.document.add_page_break()
+    #heading_1 = p21.pName +" >>> "+p21.ChartType
+    #heading_1 = ChartType+" Chart of "+pName
+    heading_1 = "Selected Charts"  #p21.ReportFile
+    p21.document.add_heading(heading_1, 0)
+    p21.document.add_picture('./Saraswati.jpg', width=Inches(4.25))
+    heading_2 = cqs                         # current query string
+    p21.document.add_heading(heading_2, level=3)
+
+    
+    #p21.document.add_page_break()
     #return document
     
 # --------------------------------------------------
