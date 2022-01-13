@@ -18,6 +18,7 @@ import json
 
 from docx import Document
 from docx.shared import Inches
+from docx.enum.text import WD_ALIGN_PARAGRAPH
 from datetime import datetime
 from datetime import timedelta
 
@@ -450,10 +451,25 @@ def R01_CreateReportDoc(cqs):
     p21.document.add_heading(heading_1, 0)
     heading_2 = cqs                         # current query string
     p21.document.add_heading(heading_2, level=3)
-    p21.document.add_picture('./Saraswati.png', width=Inches(4.25))
     
-    gyan = "Astrology is the science of correlation, not causation. \nRead 'Astrology - An Application of Data Science' by Prithwis Mukerjee \nhttps://bit.ly/pmastro"
-    p21.document.add_paragraph(gyan)
+    p21.document.add_picture('./Saraswati.png', width=Inches(4.25))
+    last_paragraph = p21.document.paragraphs[-1] 
+    last_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    
+    threeLineGap = '\n\n\n'
+    
+    p21.document.add_paragraph(threeLineGap)
+    
+    gyan = "Astrology is the science of correlation, not causation."
+    para = p21.document.add_paragraph(gyan)
+    para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    
+    p21.document.add_paragraph(threeLineGap)
+    
+    
+    refer = "Read 'Astrology - An Application of Data Science' by Prithwis Mukerjee \nhttps://bit.ly/pmastro"
+    para = p21.document.add_paragraph(refer)
+    para.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
     
     #p21.document.add_page_break()
