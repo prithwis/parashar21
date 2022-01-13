@@ -22,6 +22,7 @@ from datetime import datetime
 from datetime import timedelta
 
 import swisseph as swe
+import pytz
 
 # --------------------------------------------------
 #Configure Swiss Ephemeris
@@ -412,7 +413,7 @@ def R01_CreateReportDoc(cqs):
 
 
     #heading_1 = p21.pName +" >>> "+p21.ChartType
-    heading_1 = "Retrieved Charts"  #p21.ReportFile
+    heading_1 = "Selected Charts"  #p21.ReportFile
     p21.document.add_heading(heading_1, 0)
 
     #heading_1 = ChartType+" Chart of "+pName
@@ -422,13 +423,13 @@ def R01_CreateReportDoc(cqs):
     p21.document.add_heading(heading_2, level=3)
 
     header01 = header.paragraphs[0]
-    header01.text = "Parashar21 | Khawnaa42 database | http://parashar21.blogspot.com"
+    header01.text = "Parashar21 | Khona21 MongoDB database"
 
-    now = datetime.now()
+    now = datetime.now(pytz.timezone('Asia/Kolkata'))
     print(now.strftime("%d %b %Y"))
 
     footer01 = footer.paragraphs[0]
-    footer01.text = "Printed on : "+now.strftime("%d %b %Y")
+    footer01.text = "Printed on : "+now.strftime("%d %b %Y")+" | http://parashar21.blogspot.com | https://github.com/prithwis/parashar21"
 
     p21.document.add_page_break()
     #return document
