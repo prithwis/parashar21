@@ -618,7 +618,7 @@ def R01_CreateReportDoc(cqs):
     p21.document.add_paragraph(threeLineGap)
     
     
-    refer = "Read 'Astrology - An Application of Data Science' by Prithwis Mukerjee \nhttps://bit.ly/pmastro"
+    refer = "Astrology - An Application of Data Science \nhttps://bit.ly/pmastro"
     para = p21.document.add_paragraph(refer)
     para.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
@@ -631,12 +631,15 @@ def R01_CreateReportDoc(cqs):
 def R13C_ListPositions(text,L):
     # 
     L1 = L[1:]
-    D = text+' : '
+    D = ''
     for c,e in enumerate(L1,1):
         if e :
             D = D+' '+str(c)+' ' 
-        
-    return(D)
+    if len(D)>0:
+        return(text+D)
+    else:
+        return(text+'<none>')    
+    #return(D)
 
 def R13B_ListPositions(text,L):
     # 
@@ -650,11 +653,15 @@ def R13B_ListPositions(text,L):
 def R13A_ShowTrueDict(desc,tDict):
     # creates a string with Keys that have Value True
     
-    D = desc+' : '
+    D = ''
     for (k,v) in tDict.items():
         if v :
             D = D+' '+k
-    return(D)
+    if len(D)>0:
+        return(desc+D)
+    else:
+        return(desc+'<none>')
+    #return(D)
 
 
 def tracer():
