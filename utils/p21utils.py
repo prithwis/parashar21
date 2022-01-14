@@ -226,7 +226,7 @@ def C10_DetermineBhavs():
 #
 def C11_DetermineLord():
 
-    p21.LordOf = {"Ari":"Ma","Tau":"Ve","Gem":"Me","Can":"Mo","Leo":"Su","Vir":"Me","Lib":"Ve","Sco":"Ma","Sag":"Ju","Cap":"Sa","Acq":"Sa","Pis":"Ju"}
+    #p21.LordOf = {"Ari":"Ma","Tau":"Ve","Gem":"Me","Can":"Mo","Leo":"Su","Vir":"Me","Lib":"Ve","Sco":"Ma","Sag":"Ju","Cap":"Sa","Acq":"Sa","Pis":"Ju"}
     #print(LordOf)
     p21.Lord = list(map(lambda x : p21.LordOf[RashiN2A(x)] if isinstance(x, numbers.Integral) else p21.BoL, p21.BhavN))
     #print("Lord : ", p21.Lord)
@@ -266,7 +266,7 @@ def C12_BhavOfGraha_Lord():
     p21.GrahaBhava ={"La":1}
     for G in ('Su','Mo','Ma','Me','Ju','Ve','Sa','Ra','Ke'):
         p21.GrahaBhava[G] = p21.BhavN.index(p21.GRashiN[G])
-    print (p21.GrahaBhava)
+    #print (p21.GrahaBhava)
 
 #Determines the Bhav where each Lord resides
 #
@@ -274,13 +274,164 @@ def C12_BhavOfGraha_Lord():
     p21.LordBhav =[p21.BoL]
     for L in range (1,13):
         p21.LordBhav.append(p21.BhavN.index(p21.GRashiN[p21.Lord[L]]))
-    print(p21.LordBhav)
+    #print(p21.LordBhav)
 
     p21.BhavOfGraha_LordInfo = {
      'GrahaBhava' : p21.GrahaBhava,
      'LordBhav' : p21.LordBhav
     }
 
+#
+# MULTI STATUS
+#
+
+# the low parameter is used to indicate that the entire Rashi is used for exaltation
+# the high parameter is used to indicate that only the specific part of the Rashi is used
+
+def C21A_checkGexa(x,level = 'low'):
+    if level == 'low':
+        if p21.GRashiN[x] == p21.exaR[x]:
+            return x,True
+        else:
+            return x,False
+        
+    if level == 'high':
+        lon = p21.GLon[x]
+        if lon > p21.exaL[x] and lon <= p21.exaU[x]:
+            return x,True
+        else:
+            return x,False
+    
+def C21B_checkLexa(x):
+    if x == p21.BoL:
+        return False
+    else:
+        return p21.exaltG[x]
+
+def C21C_checkGdeb(x, level = 'low'):
+    
+    if level == 'low':
+        if p21.GRashiN[x] == p21.debR[x]:
+            return x,True
+        else:
+            return x,False
+    
+    if level == 'high':
+        lon = p21.GLon[x]
+        if lon > p21.debL[x] and lon <= p21.debU[x]:
+            return x,True
+        else:
+            return x,False
+    
+    
+def C21D_checkLdeb(x):
+    if x == p21.BoL:
+        return False
+    else:
+        return p21.debilG[x]
+        
+def C21E_checkm3G(x):
+    
+    if p21.GRashiN[x] == p21.mool3R[x]:
+        return x,True
+    else:
+        return x,False
+        
+def C21F_checkOwnHG(x):
+    if x == p21.LordOf[p21.GRashiA[x]]:
+        return x, True
+    else:
+        return x, False
+        
+        
+#check f(riends)e(nemy)n(eutral)
+#
+def C21G_checkfen(x,Z):
+    if p21.LordOf[p21.GRashiA[x]] in Z[x]:
+        return x,True
+    else:
+        return x,False
+
+
+def C21_DeterminePositions():
+    p21.exaltG = l2d(list(map(lambda x: C21A_checkGexa(x), p21.Graha)))               # determines if Graha is Exalted
+    print('Exalted Graha',p21.exaltG)
+    p21.exaltL = list(map(lambda x: C21B_checkLexa(x),p21.Lord))                       # determines if Lord is exalted
+    print('Exalted Lord',p21.exaltL)
+    
+    p21.debilG = l2d(list(map(lambda x: C21C_checkGdeb(x),p21.Graha)))               # determines if Graha is debilitated
+    print('Debilited Graha',p21.debilG)
+    p21.debilL = list(map(lambda x: C21D_checkLdeb(x),p21.Lord))
+    print('Debilited Lord',p21.debilL)
+    
+    p21.mool3G = l2d(list(map(lambda x: C21E_checkm3G(x),p21.Graha))) 
+    print('Mool3G',p21.mool3G)
+    p21.mool3L = [False]*13
+
+    for ix in range(1,13):
+        #print(ix)
+        p21.mool3L[ix] = p21.mool3G[p21.Lord[ix]]
+    print('Mool3L',p21.mool3L)
+
+    p21.ownHouseG = l2d(list(map(lambda x: C21F_checkOwnHG(x),p21.Graha)))
+    print('ownHouseG',p21.ownHouseG)
+    
+    p21.ownHouseL = [False]*13
+
+    for ix in range(1,13):
+        #print(ix)
+        p21.ownHouseL[ix] = p21.ownHouseG[p21.Lord[ix]]
+    print('ownHouseL',p21.ownHouseL)
+    
+    
+    p21.inFriendG =  l2d(list(map(lambda x: C21G_checkfen(x,p21.friends),p21.Graha)))
+    p21.inEnemyG =  l2d(list(map(lambda x: C21G_checkfen(x,p21.enemies),p21.Graha)))
+    p21.inNeutralG =  l2d(list(map(lambda x: C21G_checkfen(x,p21.neutrals),p21.Graha)))
+    
+    print('inFriendG',p21.inFriendG)
+    print('inEnemyG',p21.inEnemyG)
+    print('inNeutralG',p21.inNeutralG)
+
+    p21.inFriendL = [False]*13
+    p21.inEnemyL = [False]*13
+    p21.inNeutralL = [False]*13
+
+    for ix in range(1,13):
+        p21.inFriendL[ix] = p21.inFriendG[p21.Lord[ix]]
+        p21.inEnemyL[ix] = p21.inEnemyG[p21.Lord[ix]]
+        p21.inNeutralL[ix] = p21.inNeutralG[p21.Lord[ix]]
+        
+    print('inFriendL',p21.inFriendL)
+    print('inEnemyL',p21.inEnemyL)
+    print('inNeutralL',p21.inNeutralL)
+    
+    p21.Positions = {
+        'exaltG' : p21.exaltG,
+        'debilG' : p21.debilG,
+        #'mool3G' : p21.mool3G,
+        'ownHouseG' : p21.ownHouseG,
+        'inFriendG' : p21.inFriendG,
+        'inEnemyG' : p21.inEnemyG,
+        #'inNeutralG' : p21.inNeutralG,
+        'exaltL' : p21.exaltL,
+        'debilL' : p21.debilL,
+        #'mool3L' : p21.mool3L,
+        'ownHouseL' : p21.ownHouseL,
+        'inFriendL' : p21.inFriendL,
+        'inEnemyL' : p21.inEnemyL
+        #'inNeutralL' : p21.inNeutralL,
+    }
+
+'''
+Functions for Retrieval and Reporting
+
+
+
+'''
+
+
+
+#
 # --------------------------------------------------
 #
 # Generates the text that appears in a chart image
