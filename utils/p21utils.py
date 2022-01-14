@@ -628,6 +628,16 @@ def R01_CreateReportDoc(cqs):
     
 # --------------------------------------------------
 
+def R13C_ListPositions(text,L):
+    # 
+    L1 = L[1:]
+    D = text+' : '
+    for c,e in enumerate(L1,1):
+        if e :
+            D = D+' '+str(c)+' ' 
+        
+    return(D)
+
 def R13B_ListPositions(text,L):
     # 
     L1 = L[1:]
