@@ -429,9 +429,9 @@ def C31_DetermineAspects():
     p21.GAspectedBy2 = csidtil(p21.GAspectedBy)
     p21.BAspectedBy2 = csidtil(p21.BAspectedBy)
 
-    print("GAspects2",p21.GAspects2)
-    print("GAspectedBy2",p21.GAspectedBy2)
-    print("BAspectedBy2",p21.BAspectedBy2)
+    #print("GAspects2",p21.GAspects2)
+    #print("GAspectedBy2",p21.GAspectedBy2)
+    #print("BAspectedBy2",p21.BAspectedBy2)
     
     p21.Aspects = {
     'GAspects2'   :p21.GAspects2,
