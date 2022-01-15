@@ -238,7 +238,7 @@ def R511_parseChartData(c):
     p21.inEnemyG = c['inEnemyG']
     p21.inEnemyL = c['inEnemyL']
     
-    p21.GAspectedBy2 = c['GAspects2']
+    p21.GAspects2 = c['GAspects2']
     p21.GAspectedBy2 = c['GAspectedBy2']
     p21.BAspectedBy2 = c['BAspectedBy2']
     
@@ -262,24 +262,32 @@ def R512_FormatPage():
     p21.document.add_paragraph(cPara)
 
     p21.document.add_paragraph(R13B_ListPositions('Lord in Bhava',p21.LordBhav))   # Which Lord in which Bhav
-
-    cPara = 'Graha Status\n'
-    cPara = cPara+R13A_ShowTrueDict('Exalted     : ',p21.exaltG)+'\n'
-    cPara = cPara+R13A_ShowTrueDict('Debilitated : ',p21.debilG)+'\n'
-    cPara = cPara+R13A_ShowTrueDict('in Friend   : ',p21.inFriendG)+'\n'
-    cPara = cPara+R13A_ShowTrueDict('in Enemy    : ',p21.inEnemyG)
-    p21.document.add_paragraph(cPara)
-
-    cPara = 'Lord Status\n'
-    cPara = cPara+R13C_ListPositions('Exalted     : ',p21.exaltL)+'\n'
-    cPara = cPara+R13C_ListPositions('Debilitated : ',p21.debilL)+'\n'
-    cPara = cPara+R13C_ListPositions('In Friend   : ',p21.inFriendL)+'\n'
-    cPara = cPara+R13C_ListPositions('In Enemy    : ',p21.inEnemyL)
-    p21.document.add_paragraph(cPara)
+            
+    table = p21.document.add_table(rows=1, cols=2)
+    cell1 = table.cell(0, 0)
+    cell2 = table.cell(0, 1)
+    
+    
+    cPara1 = 'Graha Status\n'
+    cPara1 = cPara1+R13A_ShowTrueDict('Exalted     : ',p21.exaltG)+'\n'
+    cPara1 = cPara1+R13A_ShowTrueDict('Debilitated : ',p21.debilG)+'\n'
+    cPara1 = cPara1+R13A_ShowTrueDict('in Friend   : ',p21.inFriendG)+'\n'
+    cPara1 = cPara1+R13A_ShowTrueDict('in Enemy    : ',p21.inEnemyG)
+    cell1.add_paragraph(cPara1)
+    
+    
+    cPara2 = 'Lord Status\n'
+    cPara2 = cPara2+R13C_ListPositions('Exalted     : ',p21.exaltL)+'\n'
+    cPara2 = cPara2+R13C_ListPositions('Debilitated : ',p21.debilL)+'\n'
+    cPara2 = cPara2+R13C_ListPositions('In Friend   : ',p21.inFriendL)+'\n'
+    cPara2 = cPara2+R13C_ListPositions('In Enemy    : ',p21.inEnemyL)
+    cell2.add_paragraph(cPara2)
+    #p21.document.add_paragraph(cPara2)
+    
     
     cPara = 'Graha Aspects'
-    cPara = cPara+'\nAspects :'+json.dumps(p21.GAspects2)  
-    cPara = cPara+'\nAspected by :'+json.dumps(p21.GAspectedBy2)  
+    cPara = cPara+'\nAspects🤓 '+json.dumps(p21.GAspects2)  
+    cPara = cPara+'\nAspected BY 👀'+json.dumps(p21.GAspectedBy2)  
     p21.document.add_paragraph(cPara)
     
     #print(p21.GAspects2)
@@ -293,7 +301,7 @@ def R512_FormatPage():
     #print(T2)
     
     cPara = 'Bhav Aspect'
-    cPara = cPara+'\nAspects :'+json.dumps(T2)  
+    cPara = cPara+'\nAspected BY 👀'+json.dumps(T2)  
     p21.document.add_paragraph(cPara)
 
 
