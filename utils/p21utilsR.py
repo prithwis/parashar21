@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 import math
 import math
 import numbers
+#import collections
 #import string_utils
 
 import json
@@ -237,6 +238,10 @@ def R511_parseChartData(c):
     p21.inEnemyG = c['inEnemyG']
     p21.inEnemyL = c['inEnemyL']
     
+    p21.GAspectedBy2 = c['GAspects2']
+    p21.GAspectedBy2 = c['GAspectedBy2']
+    p21.BAspectedBy2 = c['BAspectedBy2']
+    
 
 def R512_FormatPage():
        
@@ -270,6 +275,25 @@ def R512_FormatPage():
     cPara = cPara+R13C_ListPositions('Debilitated : ',p21.debilL)+'\n'
     cPara = cPara+R13C_ListPositions('In Friend   : ',p21.inFriendL)+'\n'
     cPara = cPara+R13C_ListPositions('In Enemy    : ',p21.inEnemyL)
+    p21.document.add_paragraph(cPara)
+    
+    cPara = 'Graha Aspects'
+    cPara = cPara+'\nAspects :'+json.dumps(p21.GAspects2)  
+    cPara = cPara+'\nAspected by :'+json.dumps(p21.GAspectedBy2)  
+    p21.document.add_paragraph(cPara)
+    
+    #print(p21.GAspects2)
+    #print(p21.GAspectedBy2)
+    sorted_BAspectedBy2={}
+    print(p21.BAspectedBy2)
+    T1 = {}
+    for k,v in p21.BAspectedBy2.items():
+        T1[int(k)] =v
+    T2 = dict(sorted(T1.items()))
+    #print(T2)
+    
+    cPara = 'Bhav Aspect'
+    cPara = cPara+'\nAspects :'+json.dumps(T2)  
     p21.document.add_paragraph(cPara)
 
 

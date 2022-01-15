@@ -395,6 +395,7 @@ def C31_DetermineAspects():
 
 
     # Bhav number as dict keys have to be converted to str()
+    # Otherwise could not store in MongoDB
     for O1 in p21.Gx:
         for BN in range(1,13):
             #Normal 7th Aspect
