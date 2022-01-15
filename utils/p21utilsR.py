@@ -218,8 +218,66 @@ def R13A_ShowTrueDict(desc,tDict):
     #return(D)
 
 
+def R511_parseChartData(c):
+
+    p21.GLon = c['GLon']
+    p21.GRet = c['GRet']
+    pid = c['pid']
+    p21.pName = pid['name']
+    p21.GrahaLordBhav = c['GrahaLordBhav']
+    p21.Lord = c['Lord']
+    p21.GrahaBhava = c['GrahaBhava']
+    p21.LordBhav = c['LordBhav']
+    p21.exaltG = c['exaltG']
+    p21.exaltL = c['exaltL']
+    p21.debilG = c['debilG']
+    p21.debilL = c['debilL']
+    p21.inFriendG = c['inFriendG']
+    p21.inFriendL = c['inFriendL']
+    p21.inEnemyG = c['inEnemyG']
+    p21.inEnemyL = c['inEnemyL']
+    
+
+def R512_FormatPage():
+       
+    p21.document.add_page_break()
+    
+    p2 = p21.document.add_paragraph()
+    run_1 = p2.add_run()
+    run_1.add_picture('./RashiChart.png', width=Inches(3.0))
+    run_2 = p2.add_run()
+    run_2.add_picture('./NavamsaChart.png', width=Inches(3.0))
+    #p1 = p21.document.add_paragraph(p21.pName)                                             # skip printing name
+    
+    p21.document.add_paragraph(R13A_ShowTrueDict('Retrograde Graha',p21.GRet))     # Show Grahas that are retrograde
+
+    cPara = R13B_ListPositions('Lord of ',p21.Lord)                                # Show Lords
+    cPara = cPara+"\n"
+    cPara = cPara+'Graha Lord of \n'+json.dumps(p21.GrahaLordBhav)                          # Show the Bhavs of whicha Graha is Lord
+    p21.document.add_paragraph(cPara)
+
+    p21.document.add_paragraph(R13B_ListPositions('Lord in Bhava',p21.LordBhav))   # Which Lord in which Bhav
+
+    cPara = 'Graha Status\n'
+    cPara = cPara+R13A_ShowTrueDict('Exalted     : ',p21.exaltG)+'\n'
+    cPara = cPara+R13A_ShowTrueDict('Debilitated : ',p21.debilG)+'\n'
+    cPara = cPara+R13A_ShowTrueDict('in Friend   : ',p21.inFriendG)+'\n'
+    cPara = cPara+R13A_ShowTrueDict('in Enemy    : ',p21.inEnemyG)
+    p21.document.add_paragraph(cPara)
+
+    cPara = 'Lord Status\n'
+    cPara = cPara+R13C_ListPositions('Exalted     : ',p21.exaltL)+'\n'
+    cPara = cPara+R13C_ListPositions('Debilitated : ',p21.debilL)+'\n'
+    cPara = cPara+R13C_ListPositions('In Friend   : ',p21.inFriendL)+'\n'
+    cPara = cPara+R13C_ListPositions('In Enemy    : ',p21.inEnemyL)
+    p21.document.add_paragraph(cPara)
+
+
+    
+    #p21.document.add_page_break()
+
 def tracer():
     print('tracer')
     print(p21.ChartType)
     
-print('p21utils imported')
+print('p21utilsR imported')
