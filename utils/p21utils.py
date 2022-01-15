@@ -10,15 +10,15 @@ import pandas as pd
 import dateutil
 import matplotlib.pyplot as plt
 import math
-import math
+#import math
 import numbers
 #import string_utils
 
 import json
 
-from docx import Document
-from docx.shared import Inches
-from docx.enum.text import WD_ALIGN_PARAGRAPH
+#from docx import Document
+#from docx.shared import Inches
+#from docx.enum.text import WD_ALIGN_PARAGRAPH
 from datetime import datetime
 from datetime import timedelta
 
@@ -214,42 +214,42 @@ def C21G_checkfen(x,Z):
 
 def C21_DeterminePositions():
     p21.exaltG = l2d(list(map(lambda x: C21A_checkGexa(x), p21.Graha)))               # determines if Graha is Exalted
-    print('Exalted Graha',p21.exaltG)
+    #print('Exalted Graha',p21.exaltG)
     p21.exaltL = list(map(lambda x: C21B_checkLexa(x),p21.Lord))                       # determines if Lord is exalted
-    print('Exalted Lord',p21.exaltL)
+    #print('Exalted Lord',p21.exaltL)
     
     p21.debilG = l2d(list(map(lambda x: C21C_checkGdeb(x),p21.Graha)))               # determines if Graha is debilitated
-    print('Debilited Graha',p21.debilG)
+    #print('Debilited Graha',p21.debilG)
     p21.debilL = list(map(lambda x: C21D_checkLdeb(x),p21.Lord))
-    print('Debilited Lord',p21.debilL)
+    #print('Debilited Lord',p21.debilL)
     
     p21.mool3G = l2d(list(map(lambda x: C21E_checkm3G(x),p21.Graha))) 
-    print('Mool3G',p21.mool3G)
+    #print('Mool3G',p21.mool3G)
     p21.mool3L = [False]*13
 
     for ix in range(1,13):
         #print(ix)
         p21.mool3L[ix] = p21.mool3G[p21.Lord[ix]]
-    print('Mool3L',p21.mool3L)
+    #print('Mool3L',p21.mool3L)
 
     p21.ownHouseG = l2d(list(map(lambda x: C21F_checkOwnHG(x),p21.Graha)))
-    print('ownHouseG',p21.ownHouseG)
+    #print('ownHouseG',p21.ownHouseG)
     
     p21.ownHouseL = [False]*13
 
     for ix in range(1,13):
         #print(ix)
         p21.ownHouseL[ix] = p21.ownHouseG[p21.Lord[ix]]
-    print('ownHouseL',p21.ownHouseL)
+    #print('ownHouseL',p21.ownHouseL)
     
     
     p21.inFriendG =  l2d(list(map(lambda x: C21G_checkfen(x,p21.friends),p21.Graha)))
     p21.inEnemyG =  l2d(list(map(lambda x: C21G_checkfen(x,p21.enemies),p21.Graha)))
     p21.inNeutralG =  l2d(list(map(lambda x: C21G_checkfen(x,p21.neutrals),p21.Graha)))
     
-    print('inFriendG',p21.inFriendG)
-    print('inEnemyG',p21.inEnemyG)
-    print('inNeutralG',p21.inNeutralG)
+    #print('inFriendG',p21.inFriendG)
+    #print('inEnemyG',p21.inEnemyG)
+    #print('inNeutralG',p21.inNeutralG)
 
     p21.inFriendL = [False]*13
     p21.inEnemyL = [False]*13
@@ -260,9 +260,9 @@ def C21_DeterminePositions():
         p21.inEnemyL[ix] = p21.inEnemyG[p21.Lord[ix]]
         p21.inNeutralL[ix] = p21.inNeutralG[p21.Lord[ix]]
         
-    print('inFriendL',p21.inFriendL)
-    print('inEnemyL',p21.inEnemyL)
-    print('inNeutralL',p21.inNeutralL)
+    #print('inFriendL',p21.inFriendL)
+    #print('inEnemyL',p21.inEnemyL)
+    #print('inNeutralL',p21.inNeutralL)
     
     p21.Positions = {
         'exaltG' : p21.exaltG,
@@ -329,4 +329,117 @@ def R11_LocateGrahaInRashi():
     #print(p21.GRashiA)
     
 # --------------------------------------------------
+
+#Aspects
+
+# ---------------------------------------------------
+
+def RashiGapA(R2,R1):
+    if (R2>R1):
+        return R2-R1
+    else:
+        return R2-R1+12
+    
+def addToD(x,D,y):
+    if x in D:
+        D[x].add(y)
+    else:
+        D[x] = set()
+        D[x].add(y)
+        
+# convert set in dictionary value to list
+# this is required for JSON formatting 
+
+def csidtil(D):
+    nD = dict()
+    for k in D:
+        nD[k] = list(D[k])
+        
+    #print(nD)
+    return(nD)
+
+def C31_DetermineAspects():
+
+    p21.GAspects = dict()         # Which Graha aspects which other Graha
+    p21.GAspectedBy = dict()      # Which Graha is aspected by which other Graha
+    p21.BAspectedBy = dict()      # Which Bhav is aspected by which other Graha
+
+
+
+    for O1 in p21.Gx:
+        for O2 in p21.Gx:
+            #Normal 7th Aspect
+            if (RashiGapA(p21.GRashiN[O2],p21.GRashiN[O1]) == 6):
+                #print(O1,GRashiN[O1],O2,GRashiN[O2],RashiGapA(GRashiN[O2],GRashiN[O1]))
+                if not (O1 in ['Ra','Ke'] and O2 in ['Ra','Ke']):
+                    addToD(O1,p21.GAspects,O2)
+                    addToD(O2,p21.GAspectedBy,O1)
+            #Mars 4,8th Aspect
+            if (O1 == 'Ma') and (
+                (RashiGapA(p21.GRashiN[O2],p21.GRashiN[O1]) == 3) or
+                (RashiGapA(p21.GRashiN[O2],p21.GRashiN[O1]) == 7)):
+                addToD(O1,p21.GAspects,O2)
+                addToD(O2,p21.GAspectedBy,O1)
+            #Jupiter 5,9th Aspect
+            if (O1 == 'Ju') and (
+                (RashiGapA(p21.GRashiN[O2],p21.GRashiN[O1]) == 4) or
+                (RashiGapA(p21.GRashiN[O2],p21.GRashiN[O1]) == 8)):
+                addToD(O1,p21.GAspects,O2)
+                addToD(O2,p21.GAspectedBy,O1)
+            #Saturn 5,9th Aspect
+            if (O1 == 'Sa') and (
+                (RashiGapA(p21.GRashiN[O2],p21.GRashiN[O1]) == 2) or
+                (RashiGapA(p21.GRashiN[O2],p21.GRashiN[O1]) == 9)):
+                addToD(O1,p21.GAspects,O2)
+                addToD(O2,p21.GAspectedBy,O1)
+
+
+    # Bhav number as dict keys have to be converted to str()
+    for O1 in p21.Gx:
+        for BN in range(1,13):
+            #Normal 7th Aspect
+            if (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 6):
+                #print(O1,GRashiN[O1],O2,GRashiN[O2],RashiGapA(GRashiN[O2],GRashiN[O1]))
+                addToD(str(BN),p21.BAspectedBy,O1)
+               
+            #Mars 4,8th Aspect
+            if (O1 == 'Ma') and (
+                (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 3) or
+                (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 7)):
+                addToD(str(BN),p21.BAspectedBy,O1)
+             
+            #Jupiter 5,9th Aspect
+            if (O1 == 'Ju') and (
+                (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 4) or
+                (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 8)):
+                addToD(str(BN),p21.BAspectedBy,O1)
+                
+            #Saturn 5,9th Aspect
+            if (O1 == 'Sa') and (
+                (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 2) or
+                (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 9)):
+                addToD(str(BN),p21.BAspectedBy,O1)
+                             
+    #print("GAspects",p21.GAspects)
+    #print("GAspectedBy",p21.GAspectedBy)
+    #print("BAspectedBy",p21.BAspectedBy)  
+    
+    p21.GAspects2 = csidtil(p21.GAspects)
+    p21.GAspectedBy2 = csidtil(p21.GAspectedBy)
+    p21.BAspectedBy2 = csidtil(p21.BAspectedBy)
+
+    print("GAspects2",p21.GAspects2)
+    print("GAspectedBy2",p21.GAspectedBy2)
+    print("BAspectedBy2",p21.BAspectedBy2)
+    
+    p21.Aspects = {
+    'GAspects2'   :p21.GAspects2,
+    'GAspectedBy2':p21.GAspectedBy2,
+    'BAspectedBy2':p21.BAspectedBy2
+    }
+
+
+
+
+print('p21utils imported')
 

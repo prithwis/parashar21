@@ -17,6 +17,7 @@ global Graha, GMalefic
 global exaL,exaU, exaR, debL, debU, debR, mool3R
 global friends, enemies, neutrals
 global exaltG, exaltL, debilL,debilG,mool3G,mool3L,ownHouseG,ownHouseL,inFriendG,inEnemyG,inNeutralG,inFriendL,inEnemyL,inNeutralL, Positions
+global Gx, GAspects, GAspectedBy,BAspectedBy,GAspects2, GAspectedBy2,BAspectedBy2,Aspects
 # ------------------------------------------
 BoL = ' '
 LordOf = {"Ari":"Ma","Tau":"Ve","Gem":"Me","Can":"Mo","Leo":"Su","Vir":"Me","Lib":"Ve","Sco":"Ma","Sag":"Ju","Cap":"Sa","Acq":"Sa","Pis":"Ju"} 
@@ -53,3 +54,6 @@ enemies ={'Su':['Ve','Sa'],'Mo':[],'Ma':['Me'],'Me':['Mo'],'Ju':['Me','Ve'],'Ve'
 #print(enemies)
 neutrals = {'Su':['Me'],'Mo':['Ma','Ju','Ve','Sa'],'Ma':['Sa','Ve'],'Me':['Sa','Ma','Ju'],'Ju':['Sa'],'Ve':['Ju'],'Sa':['Ma','Ju']}
 #print(neutrals)
+# ------------------------------------------------------------------------------
+
+Gx = ['La','Su', 'Mo', 'Ma', 'Me', 'Ju', 'Ve', 'Sa','Ra','Ke']
