@@ -454,6 +454,53 @@ def C31_DetermineAspects():
     'BAspectedBy2':p21.BAspectedBy2
     }
 
+def C41_DetermineConjuncts():
+
+    p21.GConjunctsG = dict()         # Which Graha aspects which other Graha
+    p21.BLConjunctsG = dict()      # Which Graha is aspected by which other Graha
+    p21.BLConjunctsBL = dict()      # Which Bhav is aspected by which other Graha
+
+
+
+    for O1 in p21.Gx:
+        for O2 in p21.Gx:
+            #Two Different Grahas in Same Rashi
+            if (p21.GRashiN[O2] == p21.GRashiN[O1]) and (O2 != O1):
+                addToD(O1,p21.GConjunctsG,O2)
+                addToD(O2,p21.GConjunctsG,O1)
+            
+    print(p21.GConjunctsG)
+    #print(p21.Lord)
+    
+    
+    for BN in range(1,13):
+        for O1 in p21.Gx[1:]:                   # ignore 'La'
+            if (p21.GRashiN[p21.Lord[BN]] == p21.GRashiN[O1]) and (p21.Lord[BN] != O1)  :
+                addToD(str(BN),p21.BLConjunctsG,O1)
+    print(p21.BLConjunctsG)
+    
+    for BN1 in range(1,13):
+        for BN2 in range(1,13):                   
+            #if (p21.GRashiN[p21.Lord[BN1]] == p21.GRashiN[p21.Lord[BN2]]) and (str(BN2) not in p21.Lord[BN1]+p21.Lord[BN2])  :
+            #if (p21.GRashiN[p21.Lord[BN1]] == p21.GRashiN[p21.Lord[BN2]])  and (p21.Lord[BN1] not in p21.GrahaLordBhav[p21.Lord[BN1]]) :
+            if  p21.LordBhav[BN2] == p21.LordBhav[BN1] and (BN2 not in p21.GrahaLordBhav[p21.Lord[BN1]]) :
+                addToD(str(BN1),p21.BLConjunctsBL,str(BN2))
+    print(p21.BLConjunctsBL)
+
+    # Bhav number as dict keys have to be converted to str()
+    # Otherwise could not store in MongoDB
+    
+    p21.GConjunctsG2 = csidtil(p21.GConjunctsG)
+    p21.BLConjunctsG2 = csidtil(p21.BLConjunctsG)
+    p21.BLConjunctsBL2 = csidtil(p21.BLConjunctsBL)
+    
+    p21.Conjuncts = {
+    'GConjunctsG2'   :p21.GConjunctsG2,
+    'BLConjunctsG2':p21.BLConjunctsG2,
+    'BLConjunctsBL2':p21.BLConjunctsBL2
+    }
+    
+    
 
 
 
