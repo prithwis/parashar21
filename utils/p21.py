@@ -92,3 +92,5 @@ selCols = {
             'BLConjunctsG2':1 ,      # Which BhavLord conjuncts which Graha { Lord : [ List of Conjunct Grahas]}
             'BLConjunctsBL2':1      # Which Bhav Lord conjuncts with Bhav Lord ( Lord : [ List of Lords]}
            }
+
+print('imported p21')
