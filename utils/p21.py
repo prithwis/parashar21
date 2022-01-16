@@ -43,7 +43,6 @@ debU = {"La":999,"Su":190,"Mo":213,"Ma":118,"Me":345,"Ju":275,"Ve":177,"Sa":20,"
 #Alternatively the entire Rashi can be debilitated
 
 debR = {'La':99,'Su':7, 'Mo':8, 'Ma':4, 'Me':12,'Ju':10,'Ve':6,'Sa':1,'Ra':99,'Ke':99}
-
 mool3R = {'La':99,'Su':5, 'Mo':2, 'Ma':1, 'Me':6,'Ju':9,'Ve':7,'Sa':11,'Ra':99,'Ke':99}
 
 # page 34
@@ -66,13 +65,13 @@ selCols = {
             'pid.name':1,           # Personal ID (name : str)  
             #'pid.tags':1,           # Tags associated with individual
             #'pid.ck':1,            # String carring original data as follows [Gender][YYYY][MM][YY][HH:mm][TZoffset][Lat][Lon]
-            #'BhavN':1,              # [ List of Bhavs] -- not used
-            #'BhavA':1,              # [ List of Rashi Names for each Bhav] - not used
+            #'BhavN':1,              # [ List of Bhavs] -- not used in reporting
+            #'BhavA':1,              # [ List of Rashi Names for each Bhav] - not used in reporting
             'GRet':1,               # Is Graha Retrograde?  { Graha: boolean }
             'GLon':1,               # Graha Long { Graha : Long }
             'Lord':1,               # Lords [ List of Bhav Lords]
-            #'LordRashiN':1,         # [ Rashi number where each Lord resides] - not used
-            #'LordRashiA':1,         # [ Rashi name where each Lord resides] - not used
+            #'LordRashiN':1,         # [ Rashi number where each Lord resides] - not used in reporting
+            #'LordRashiA':1,         # [ Rashi name where each Lord resides] - not used in reporting
             'GRashiN':1,            # [ Rashi number where each Graha resides]
             'GrahaLordBhav':1,      # Graha Lord of Bhav  { Graha : [List of Bhavs where Graha is Lord ]}
             'GrahaBhava':1,         # Graha Location in Bhav { Graha : Bhav }                         
