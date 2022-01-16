@@ -293,7 +293,7 @@ def R512_FormatPage():
     #print(p21.GAspects2)
     #print(p21.GAspectedBy2)
     sorted_BAspectedBy2={}
-    print(p21.BAspectedBy2)
+    #print(p21.BAspectedBy2)
     T1 = {}
     for k,v in p21.BAspectedBy2.items():
         T1[int(k)] =v
