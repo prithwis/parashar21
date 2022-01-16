@@ -20,6 +20,7 @@ import json
 from docx import Document
 from docx.shared import Inches
 from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.shared import Pt
 from datetime import datetime
 from datetime import timedelta
 
@@ -135,7 +136,13 @@ def R12B_drawChart_Bengal():
 
 def R01_CreateReportDoc(cqs):
       
+    
 
+    style = p21.document.styles['Normal']           # Changes the Normal style throuhout the document
+    font = style.font
+    font.name = 'Times New Roman'
+    font.size = Pt(11)                              # Increasing the font size will cause reports to overflow to next page
+    
     p21.document = Document()
     section = p21.document.sections[0]
     header = section.header
@@ -144,11 +151,10 @@ def R01_CreateReportDoc(cqs):
     header01 = header.paragraphs[0]
     header01.text = "Parashar21 | Khona21 MongoDB database"
 
-    now = datetime.now(pytz.timezone('Asia/Kolkata'))
-    #print(now.strftime("%d %b %Y"))
+    
 
-    footer01 = footer.paragraphs[0]
-    footer01.text = "Printed on : "+now.strftime("%d %b %Y")+"\nhttp://parashar21.blogspot.com | https://github.com/prithwis/parashar21"
+    #footer01 = footer.paragraphs[0]
+    #footer01.text = "Printed on : "+now.strftime("%d %b %Y") #+"\nhttp://parashar21.blogspot.com | https://github.com/prithwis/parashar21"
 
     #heading_1 = p21.pName +" >>> "+p21.ChartType
     #heading_1 = ChartType+" Chart of "+pName
@@ -176,9 +182,15 @@ def R01_CreateReportDoc(cqs):
     refer = "Astrology - An Application of Data Science \nhttps://bit.ly/pmastro"
     para = p21.document.add_paragraph(refer)
     para.alignment = WD_ALIGN_PARAGRAPH.CENTER
-
     
-    #p21.document.add_page_break()
+    p21.document.add_paragraph(threeLineGap)
+    
+    now = datetime.now(pytz.timezone('Asia/Kolkata'))
+    printData = 'Printed on : '+now.strftime("%d %b %Y")
+    para = p21.document.add_paragraph(printData)
+    para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    
+    p21.document.add_page_break()
     #return document
     
 # --------------------------------------------------
@@ -248,8 +260,10 @@ def R511_parseChartData(c):
     
 
 def R512_FormatPage():
+
+    
        
-    p21.document.add_page_break()
+    #p21.document.add_page_break()
     
     p2 = p21.document.add_paragraph()
     run_1 = p2.add_run()
@@ -258,19 +272,19 @@ def R512_FormatPage():
     run_2.add_picture('./NavamsaChart.png', width=Inches(3.0))
     #p1 = p21.document.add_paragraph(p21.pName)                                             # skip printing name
     
-    p21.document.add_paragraph(R13A_ShowTrueDict('Retrograde Graha',p21.GRet))     # Show Grahas that are retrograde
-
+    
+    #cPara = R13A_ShowTrueDict('Retrograde Graha',p21.GRet)+'\n'                          # Show Grahas that are retrograde
     cPara = R13B_ListPositions('Lord of ',p21.Lord)                                # Show Lords
     cPara = cPara+"\n"
-    cPara = cPara+'Graha Lord of \n'+json.dumps(p21.GrahaLordBhav)                          # Show the Bhavs of whicha Graha is Lord
-    p21.document.add_paragraph(cPara)
-
-    p21.document.add_paragraph(R13B_ListPositions('Lord in Bhava',p21.LordBhav))   # Which Lord in which Bhav
+    cPara = cPara+'Graha Lord of \n'+json.dumps(p21.GrahaLordBhav)+'\n'                          # Show the Bhavs of whicha Graha is Lord
+    
+    cPara = cPara+R13B_ListPositions('Lord in Bhava',p21.LordBhav)
+    para001 = p21.document.add_paragraph(cPara)
+    #para001.style = p21.document.styles['Normal']
             
     table = p21.document.add_table(rows=1, cols=2)
     cell1 = table.cell(0, 0)
     cell2 = table.cell(0, 1)
-    
     
     cPara1 = 'Graha Status\n'
     cPara1 = cPara1+R13A_ShowTrueDict('Exalted     : ',p21.exaltG)+'\n'
@@ -286,13 +300,12 @@ def R512_FormatPage():
     cPara2 = cPara2+R13C_ListPositions('In Friend   : ',p21.inFriendL)+'\n'
     cPara2 = cPara2+R13C_ListPositions('In Enemy    : ',p21.inEnemyL)
     cell2.add_paragraph(cPara2)
-    #p21.document.add_paragraph(cPara2)
     
     
-    cPara = 'Graha Aspects'
+    cPara = 'Graha Aspects ........................................................'
     cPara = cPara+'\nAspects🤓 '+json.dumps(p21.GAspects2)  
     cPara = cPara+'\nAspected BY 👀'+json.dumps(p21.GAspectedBy2)  
-    p21.document.add_paragraph(cPara)
+    #p21.document.add_paragraph(cPara)
     
     #print(p21.GAspects2)
     #print(p21.GAspectedBy2)
@@ -304,17 +317,17 @@ def R512_FormatPage():
     T2 = dict(sorted(T1.items()))
     #print(T2)
     
-    cPara = 'Bhav Aspect'
+    cPara = cPara+'\nBhav Aspect'
     cPara = cPara+'\nAspected BY 👀'+json.dumps(T2)  
-    p21.document.add_paragraph(cPara)
+    #p21.document.add_paragraph(cPara)
 
-    cPara = 'Conjuncts'
+    cPara = cPara+'\nConjuncts  ...................................................'
     cPara = cPara+'\nGraha Graha '+json.dumps(p21.GConjunctsG2)  
     cPara = cPara+'\nLord Graha '+json.dumps(p21.BLConjunctsG2)  
     cPara = cPara+'\nLord Lord '+json.dumps(p21.BLConjunctsBL2)  
     p21.document.add_paragraph(cPara)
     
-    #p21.document.add_page_break()
+    p21.document.add_page_break()
 
 def tracer():
     print('tracer')

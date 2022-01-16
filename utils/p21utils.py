@@ -462,8 +462,8 @@ def C41_DetermineConjuncts():
 
 
 
-    for O1 in p21.Gx:
-        for O2 in p21.Gx:
+    for O1 in p21.Gx[1:]:                   # ignore 'La'
+        for O2 in p21.Gx[1:]:               # ignore 'La'
             #Two Different Grahas in Same Rashi
             if (p21.GRashiN[O2] == p21.GRashiN[O1]) and (O2 != O1):
                 addToD(O1,p21.GConjunctsG,O2)
