@@ -137,13 +137,14 @@ def R12B_drawChart_Bengal():
 def R01_CreateReportDoc(cqs):
       
     
-
+    p21.document = Document()
+    
     style = p21.document.styles['Normal']           # Changes the Normal style throuhout the document
     font = style.font
     font.name = 'Times New Roman'
     font.size = Pt(11)                              # Increasing the font size will cause reports to overflow to next page
     
-    p21.document = Document()
+    
     section = p21.document.sections[0]
     header = section.header
     footer = section.footer
