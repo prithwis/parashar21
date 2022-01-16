@@ -242,6 +242,10 @@ def R511_parseChartData(c):
     p21.GAspectedBy2 = c['GAspectedBy2']
     p21.BAspectedBy2 = c['BAspectedBy2']
     
+    p21.GConjunctsG2 = c['GConjunctsG2']
+    p21.BLConjunctsG2 = c['BLConjunctsG2']
+    p21.BLConjunctsBL2 = c['BLConjunctsBL2']
+    
 
 def R512_FormatPage():
        
@@ -304,7 +308,11 @@ def R512_FormatPage():
     cPara = cPara+'\nAspected BY 👀'+json.dumps(T2)  
     p21.document.add_paragraph(cPara)
 
-
+    cPara = 'Conjuncts'
+    cPara = cPara+'\nGraha Graha '+json.dumps(p21.GConjunctsG2)  
+    cPara = cPara+'\nLord Graha '+json.dumps(p21.BLConjunctsG2)  
+    cPara = cPara+'\nLord Lord '+json.dumps(p21.BLConjunctsBL2)  
+    p21.document.add_paragraph(cPara)
     
     #p21.document.add_page_break()
 
