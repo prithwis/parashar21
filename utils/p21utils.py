@@ -136,9 +136,24 @@ def C12_BhavOfGraha_Lord():
     #print(p21.LordBhav)
 
     p21.BhavOfGraha_LordInfo = {
+     'GRashiN' : p21.GRashiN,
      'GrahaBhava' : p21.GrahaBhava,
      'LordBhav' : p21.LordBhav
     }
+
+
+def C12A_StoreRashiOfGraha():
+
+#Determines the Rashi where Each planet resides
+
+    
+    
+    print(p21.GRashiN)
+    print(p21.GRashiA)
+
+
+
+
 
 #
 # MULTI STATUS
