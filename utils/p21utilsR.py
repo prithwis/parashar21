@@ -148,7 +148,7 @@ def R12B_drawChart_South():
     
     plt.axis('off')
 
-    plt.text(35, 35, id, fontsize=12)
+    plt.text(25, 35, id, fontsize=12)
 
     # draw vertical line 
     plt.plot([0, 0], [0, 90], 'k-', lw=2)
@@ -177,21 +177,21 @@ def R12B_drawChart_South():
 
     # graha names
 
-    plt.text(0.5, 80, ctxt[12], fontsize=15)
-    plt.text(23, 73, ctxt[1], fontsize=15)
-    plt.text(45.5, 80, ctxt[2], fontsize=15)
-    plt.text(68, 73, ctxt[3], fontsize=15)
+    plt.text(0.5, 80, txt[12], fontsize=15)
+    plt.text(23, 73, txt[1], fontsize=15)
+    plt.text(45.5, 80, txt[2], fontsize=15)
+    plt.text(68, 73, txt[3], fontsize=15)
 
-    plt.text(68, 55, ctxt[4], fontsize=15)
-    plt.text(68, 35, ctxt[5], fontsize=15)
+    plt.text(68, 55, txt[4], fontsize=15)
+    plt.text(68, 35, txt[5], fontsize=15)
 
-    plt.text(68, 13, ctxt[6], fontsize=15)
-    plt.text(45.5, 6, ctxt[7], fontsize=15)
-    plt.text(23, 13, ctxt[8], fontsize=15)
-    plt.text(0.5, 6, ctxt[9], fontsize=15)
+    plt.text(68, 13, txt[6], fontsize=15)
+    plt.text(45.5, 6, txt[7], fontsize=15)
+    plt.text(23, 13, txt[8], fontsize=15)
+    plt.text(0.5, 6, txt[9], fontsize=15)
    
-    plt.text(0.5, 55, ctxt[11], fontsize=15)
-    plt.text(0.5, 35, ctxt[10], fontsize=15)
+    plt.text(0.5, 55, txt[11], fontsize=15)
+    plt.text(0.5, 35, txt[10], fontsize=15)
 
     
     #plt.savefig("CurrentChart.png", bbox_inches='tight')
