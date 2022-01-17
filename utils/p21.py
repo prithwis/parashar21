@@ -63,7 +63,7 @@ Gx = ['La','Su', 'Mo', 'Ma', 'Me', 'Ju', 'Ve', 'Sa','Ra','Ke']
 
 selCols = {
             '_id':0,
-            'pid.name':1,           # Personal ID (name : str)  
+            'pid.name':1,           # Personal ID (name : str)  - obfuscated for privacy
             'pid.tags':1,           # Tags associated with individual
             #'pid.ck':1,            # String carring original data as follows [Gender][YYYY][MM][YY][HH:mm][TZoffset][Lat][Lon]
             #'BhavN':1,              # [ List of Bhavs] -- not used in reporting

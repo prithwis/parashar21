@@ -28,9 +28,6 @@ from datetime import timedelta
 import pytz
 
 
-
-
-
 #
 # --------------------------------------------------
 #
@@ -129,67 +126,7 @@ def R12B_drawChart_Bengal():
     plt.savefig(ChartFile, bbox_inches='tight')
     #plt.show()
 
-def R01_CreateReportDoc(cqs):
-      
-    
-    p21.document = Document()
-    
-    style = p21.document.styles['Normal']           # Changes the Normal style throuhout the document
-    font = style.font
-    font.name = 'Times New Roman'
-    font.size = Pt(11)                              # Increasing the font size will cause reports to overflow to next page
-    
-    
-    section = p21.document.sections[0]
-    header = section.header
-    footer = section.footer
-    
-    header01 = header.paragraphs[0]
-    header01.text = "Parashar21 | Khona21 MongoDB database"
 
-    
-
-    #footer01 = footer.paragraphs[0]
-    #footer01.text = "Printed on : "+now.strftime("%d %b %Y") #+"\nhttp://parashar21.blogspot.com | https://github.com/prithwis/parashar21"
-
-    #heading_1 = p21.pName +" >>> "+p21.ChartType
-    #heading_1 = ChartType+" Chart of "+pName
-    
-    heading_1 = "Selected Charts"  #p21.ReportFile
-    p21.document.add_heading(heading_1, 0)
-    heading_2 = cqs                         # current query string
-    p21.document.add_heading(heading_2, level=3)
-    
-    p21.document.add_picture('./Saraswati.png', width=Inches(4.25))
-    last_paragraph = p21.document.paragraphs[-1] 
-    last_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    
-    threeLineGap = '\n\n\n'
-    
-    p21.document.add_paragraph(threeLineGap)
-    
-    gyan = "Astrology is the science of correlation, not causation."
-    para = p21.document.add_paragraph(gyan)
-    para.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    
-    p21.document.add_paragraph(threeLineGap)
-    
-    
-    refer = "Astrology - An Application of Data Science \nhttps://bit.ly/pmastro"
-    para = p21.document.add_paragraph(refer)
-    para.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    
-    p21.document.add_paragraph(threeLineGap)
-    
-    now = datetime.now(pytz.timezone('Asia/Kolkata'))
-    printData = 'Printed on : '+now.strftime("%d %b %Y")
-    para = p21.document.add_paragraph(printData)
-    para.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    
-    p21.document.add_page_break()
-    #return document
-    
-# --------------------------------------------------
 
 def R13C_ListPositions(text,L):
     # 
@@ -256,6 +193,61 @@ def R511_parseChartData(c):
     p21.BLConjunctsBL2 = c['BLConjunctsBL2']
     
 
+def R01_CreateReportDoc(cqs,pS):
+      
+    
+    p21.document = Document()
+    
+    style = p21.document.styles['Normal']           # Changes the Normal style throuhout the document
+    font = style.font
+    font.name = 'Times New Roman'
+    font.size = Pt(11)                              # Increasing the font size will cause reports to overflow to next page
+    
+    
+    section = p21.document.sections[0]
+    header = section.header
+    footer = section.footer
+    
+    header01 = header.paragraphs[0]
+    header01.text = "Parashar21 | Khona21 MongoDB database"
+
+    now = datetime.now(pytz.timezone('Asia/Kolkata'))
+    footer01 = footer.paragraphs[0]
+    footer01.text = "Printed on : "+now.strftime("%d %b %Y")+" http://parashar21.blogspot.com | https://github.com/prithwis/parashar21"
+
+    #heading_1 = p21.pName +" >>> "+p21.ChartType
+    #heading_1 = ChartType+" Chart of "+pName
+    
+    heading_1 = "Selected Charts : P A C"  #p21.ReportFile
+    p21.document.add_heading(heading_1, 0)
+    heading_2 = cqs                         # current query string
+    p21.document.add_heading(heading_2, level=3)
+    p21.document.add_paragraph(pS)          # print count status
+    
+    p21.document.add_picture('./Saraswati.png', width=Inches(4.25))
+    last_paragraph = p21.document.paragraphs[-1] 
+    last_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    
+    threeLineGap = '\n\n\n'
+    KNRText = 'based on the book\nLearn Hindu Astrology Easily\nK N Rao & K Ashu Rao\nThird Edition\nVani Publications\nDelhi'
+    para = p21.document.add_paragraph(KNRText)
+    para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    
+    p21.document.add_paragraph(threeLineGap)
+    
+    gyan = "Astrology is the science of CORRELATIONS, not CAUSATION\nAstrology - An Application of Data Science \nhttps://bit.ly/pmastro"
+    para = p21.document.add_paragraph(gyan)
+    para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    
+    
+    
+    
+    
+    p21.document.add_page_break()
+    #return document
+    
+# --------------------------------------------------
+
 def R512_FormatPage():
 
     
@@ -273,10 +265,10 @@ def R512_FormatPage():
     #cPara = R13A_ShowTrueDict('Retrograde Graha',p21.GRet)+'\n'                          # Show Grahas that are retrograde
     cPara = ' '.join(p21.pTags)+'\n'
     cPara = cPara+R13B_ListPositions('Lord of ',p21.Lord)                                # Show Lords
-    cPara = cPara+"\n"
-    cPara = cPara+'Graha Lord of \n'+json.dumps(p21.GrahaLordBhav)+'\n'                          # Show the Bhavs of whicha Graha is Lord
+    #cPara = cPara+"\n"
+    #cPara = cPara+'Graha Lord of \n'+json.dumps(p21.GrahaLordBhav)+'\n'                          # Show the Bhavs of whicha Graha is Lord
     
-    cPara = cPara+R13B_ListPositions('Lord in Bhava',p21.LordBhav)
+    cPara = cPara+R13B_ListPositions('\nLord in Bhava',p21.LordBhav)
     para001 = p21.document.add_paragraph(cPara)
     #para001.style = p21.document.styles['Normal']
             
