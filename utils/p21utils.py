@@ -401,7 +401,7 @@ def C31_DetermineAspects():
                 (RashiGapA(p21.GRashiN[O2],p21.GRashiN[O1]) == 8)):
                 addToD(O1,p21.GAspects,O2)
                 addToD(O2,p21.GAspectedBy,O1)
-            #Saturn 5,9th Aspect
+            #Saturn 3,10th Aspect
             if (O1 == 'Sa') and (
                 (RashiGapA(p21.GRashiN[O2],p21.GRashiN[O1]) == 2) or
                 (RashiGapA(p21.GRashiN[O2],p21.GRashiN[O1]) == 9)):
@@ -430,7 +430,7 @@ def C31_DetermineAspects():
                 (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 8)):
                 addToD(str(BN),p21.BAspectedBy,O1)
                 
-            #Saturn 5,9th Aspect
+            #Saturn 3,10th Aspect
             if (O1 == 'Sa') and (
                 (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 2) or
                 (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 9)):
