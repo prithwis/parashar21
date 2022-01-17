@@ -126,6 +126,77 @@ def R12B_drawChart_Bengal():
     plt.savefig(ChartFile, bbox_inches='tight')
     #plt.show()
 
+#Draw Chart as Per South India Style
+def R12B_drawChart_South():
+
+    #ChartFile = p21.pName+p21.ChartType+'.png'
+    #ChartFile = 'CurrentChart.png'
+    generateChartTxt()
+
+    #id = ChartType+'\n'+pName+'\n'+pDate+'\n'+pTime+'\n'+pPlace
+    id = p21.ChartType+'\n'+p21.pName
+    if p21.ChartType == 'Rashi':
+        ChartColour = 'orange'
+        ChartFile = 'RashiChart.png'
+    else:
+        ChartColour = 'olive'
+        ChartFile = 'NavamsaChart.png'
+    
+        
+    #plt.figure(figsize=(7,7))
+    plt.figure(figsize=(7,7),facecolor=ChartColour)
+    
+    plt.axis('off')
+
+    plt.text(35, 35, id, fontsize=12)
+
+    # draw vertical line 
+    plt.plot([0, 0], [0, 90], 'k-', lw=2)
+    plt.plot([22.5, 22.5], [0, 90], 'k-', lw=2)
+
+    plt.plot([45, 45], [0, 22.5], 'k-', lw=2)
+    plt.plot([45, 45], [67.5, 90], 'k-', lw=2)
+
+
+    plt.plot([67.5, 67.5], [0, 90], 'k-', lw=2)
+    plt.plot([90, 90], [0, 90], 'k-', lw=2)
+
+    # draw horizontal line
+
+    plt.plot([0, 90], [0, 0], 'k-', lw=2)
+    plt.plot([0, 90], [22.5, 22.5], 'k-', lw=2)
+
+    plt.plot([0, 22.5], [45, 45], 'k-', lw=2)
+    plt.plot([67.5, 90], [45, 45], 'k-', lw=2)
+    
+    plt.plot([0, 90], [67.5, 67.5], 'k-', lw=2)
+    plt.plot([0, 90], [90, 90], 'k-', lw=2)
+    
+    #draw diagonal lines
+    plt.plot([22.5, 27.5], [85, 90], 'k-', lw=2)
+
+    # graha names
+
+    plt.text(0.5, 80, ctxt[12], fontsize=15)
+    plt.text(23, 73, ctxt[1], fontsize=15)
+    plt.text(45.5, 80, ctxt[2], fontsize=15)
+    plt.text(68, 73, ctxt[3], fontsize=15)
+
+    plt.text(68, 55, ctxt[4], fontsize=15)
+    plt.text(68, 35, ctxt[5], fontsize=15)
+
+    plt.text(68, 13, ctxt[6], fontsize=15)
+    plt.text(45.5, 6, ctxt[7], fontsize=15)
+    plt.text(23, 13, ctxt[8], fontsize=15)
+    plt.text(0.5, 6, ctxt[9], fontsize=15)
+   
+    plt.text(0.5, 55, ctxt[11], fontsize=15)
+    plt.text(0.5, 35, ctxt[10], fontsize=15)
+
+    
+    #plt.savefig("CurrentChart.png", bbox_inches='tight')
+    plt.savefig(ChartFile, bbox_inches='tight')
+    #plt.show()
 
 
 def R13C_ListPositions(text,L):
