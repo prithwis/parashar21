@@ -29,12 +29,7 @@ import pytz
 
 
 
-'''
-Functions for Retrieval and Reporting
 
-
-
-'''
 
 #
 # --------------------------------------------------
@@ -238,6 +233,7 @@ def R511_parseChartData(c):
     p21.GRet = c['GRet']
     pid = c['pid']
     p21.pName = pid['name']
+    p21.pTags = pid['tags']
     p21.GrahaLordBhav = c['GrahaLordBhav']
     p21.Lord = c['Lord']
     p21.GrahaBhava = c['GrahaBhava']
@@ -275,7 +271,8 @@ def R512_FormatPage():
     
     
     #cPara = R13A_ShowTrueDict('Retrograde Graha',p21.GRet)+'\n'                          # Show Grahas that are retrograde
-    cPara = R13B_ListPositions('Lord of ',p21.Lord)                                # Show Lords
+    cPara = ' '.join(p21.pTags)+'\n'
+    cPara = cPara+R13B_ListPositions('Lord of ',p21.Lord)                                # Show Lords
     cPara = cPara+"\n"
     cPara = cPara+'Graha Lord of \n'+json.dumps(p21.GrahaLordBhav)+'\n'                          # Show the Bhavs of whicha Graha is Lord
     

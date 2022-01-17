@@ -6,7 +6,7 @@ global LordOf, Lord, GrahaLordBhav, LordRashiN,LordRashiA,LordInfo
 global GrahaBhava, LordBhav, BhavOfGraha_LordInfo
 global BhavN, BhavA, BhavNBhavA
 global GRashiN, GRashiA
-global GLon, GRet, pName, GLonRet
+global GLon, GRet, pName, GLonRet, pTags
 global ChartType
 global ReportFile, document
 # ------------------------------------------
@@ -64,7 +64,7 @@ Gx = ['La','Su', 'Mo', 'Ma', 'Me', 'Ju', 'Ve', 'Sa','Ra','Ke']
 selCols = {
             '_id':0,
             'pid.name':1,           # Personal ID (name : str)  
-            #'pid.tags':1,           # Tags associated with individual
+            'pid.tags':1,           # Tags associated with individual
             #'pid.ck':1,            # String carring original data as follows [Gender][YYYY][MM][YY][HH:mm][TZoffset][Lat][Lon]
             #'BhavN':1,              # [ List of Bhavs] -- not used in reporting
             #'BhavA':1,              # [ List of Rashi Names for each Bhav] - not used in reporting
