@@ -469,7 +469,7 @@ def C41_DetermineConjuncts():
                 addToD(O1,p21.GConjunctsG,O2)
                 addToD(O2,p21.GConjunctsG,O1)
             
-    print(p21.GConjunctsG)
+    #print(p21.GConjunctsG)
     #print(p21.Lord)
     
     
@@ -477,7 +477,7 @@ def C41_DetermineConjuncts():
         for O1 in p21.Gx[1:]:                   # ignore 'La'
             if (p21.GRashiN[p21.Lord[BN]] == p21.GRashiN[O1]) and (p21.Lord[BN] != O1)  :
                 addToD(str(BN),p21.BLConjunctsG,O1)
-    print(p21.BLConjunctsG)
+    #print(p21.BLConjunctsG)
     
     for BN1 in range(1,13):
         for BN2 in range(1,13):                   
@@ -485,7 +485,7 @@ def C41_DetermineConjuncts():
             #if (p21.GRashiN[p21.Lord[BN1]] == p21.GRashiN[p21.Lord[BN2]])  and (p21.Lord[BN1] not in p21.GrahaLordBhav[p21.Lord[BN1]]) :
             if  p21.LordBhav[BN2] == p21.LordBhav[BN1] and (BN2 not in p21.GrahaLordBhav[p21.Lord[BN1]]) :
                 addToD(str(BN1),p21.BLConjunctsBL,str(BN2))
-    print(p21.BLConjunctsBL)
+    #print(p21.BLConjunctsBL)
 
     # Bhav number as dict keys have to be converted to str()
     # Otherwise could not store in MongoDB
