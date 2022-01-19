@@ -65,7 +65,8 @@ def C02_parsePersonData(P):
         "pid":{
             "tags" : [P['Voc1_Cat'],P['Voc2_Cat'],P['Voc3_Cat']],
             "ck" : ck,
-            "name": string_utils.shuffle(P['Name'])
+            "chartType" : p21.ChartType,
+            "name": string_utils.shuffle(P['Name'][0:8])
         }
     }
     

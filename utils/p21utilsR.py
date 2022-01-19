@@ -202,6 +202,109 @@ def R12B_drawChart_South():
     #plt.show()
 
 
+#Draw Chart as Per North India Style
+def R12B_drawChart_North():
+
+    #ChartFile = p21.pName+p21.ChartType+'.png'
+    #ChartFile = 'CurrentChart.png'
+    generateChartTxt()
+    
+    # for North India, we need to rotate the texts
+    LagnaRashiNumber = p21.GRashiN['La']
+    ntxt = ['']*13
+    j = LagnaRashiNumber
+    for i in range(1,13):
+        ntxt[i] = str(j)+"|"+txt[j]
+        j = j+1
+        if j > 12:
+            j = 1
+        
+
+    #id = ChartType+'\n'+pName+'\n'+pDate+'\n'+pTime+'\n'+pPlace
+    id = p21.ChartType+' | '+p21.pName
+    #id = '25-35'
+    if p21.ChartType == 'Rashi':
+        ChartColour = 'orange'
+        ChartFile = 'RashiChart.png'
+    else:
+        ChartColour = 'olive'
+        ChartFile = 'NavamsaChart.png'
+    
+    #print(p21.GRashiN)    
+    #plt.figure(figsize=(7,7))
+    plt.figure(figsize=(7,7),facecolor=ChartColour)
+    
+    plt.axis('off')
+
+    plt.text(0, -5, id, fontsize=12)
+    
+    
+    
+    # draw vertical line 
+    plt.plot([0, 0], [0, 90], 'k-', lw=2)  # Left Vertical   [x1,x2], [y1,y2]
+    plt.plot([90, 90], [0, 90], 'k-', lw=2) # Right Vertical
+    
+    # draw horizontal lines
+    plt.plot([0, 90], [90, 90], 'k-', lw=2)  # Top Horizontal   [x1,x2], [y1,y2]
+    plt.plot([0, 90], [0, 0], 'k-', lw=2)  # Bottom Horizontal   [x1,x2], [y1,y2]
+    
+    # Diagonal
+    plt.plot([0, 90], [0, 90], 'k-', lw=2)  # Bottom Left Top Right   [x1,x2], [y1,y2]
+    plt.plot([0, 90], [90, 0], 'k-', lw=2)  # Top Left Bottom Right   [x1,x2], [y1,y2]
+    plt.plot([0, 45], [45, 90], 'k-', lw=2) # upward
+    plt.plot([45, 90], [0, 45], 'k-', lw=2)  # upward
+    plt.plot([0, 45], [45, 0], 'k-', lw=2)
+    plt.plot([45, 90], [90, 45], 'k-', lw=2)
+    
+    
+    plt.text(42, 55, str(LagnaRashiNumber), fontsize=18)
+    
+    plt.text(35, 65, ntxt[1], fontsize=12) # 1
+    plt.text(35, 25, ntxt[7], fontsize=12)  # 7
+    
+    plt.text(5, 45, ntxt[4], fontsize=12) # 4
+    plt.text(50, 45, ntxt[10], fontsize=12)  # 10
+    
+    plt.text(7, 85, ntxt[2], fontsize=12) # 2
+    plt.text(53, 85, ntxt[12], fontsize=12)  # 12
+    
+    plt.text(7, 3, ntxt[6], fontsize=12) # 6
+    plt.text(53, 3, ntxt[8], fontsize=12)  # 8
+    
+    plt.text(1, 67.5, ntxt[3], fontsize=12) # 3
+    plt.text(1, 22.5, ntxt[5], fontsize=12)  # 5
+    
+    plt.text(70, 22.5, ntxt[9], fontsize=12) # 9
+    plt.text(70, 67.5, ntxt[11], fontsize=12)  # 11
+    
+
+    #plt.plot([45, 45], [0, 22.5], 'k-', lw=2)
+    #plt.plot([45, 45], [67.5, 90], 'k-', lw=2)
+
+
+    #plt.plot([67.5, 67.5], [0, 90], 'k-', lw=2)
+    #plt.plot([90, 90], [0, 90], 'k-', lw=2)
+
+    # draw horizontal line
+
+    #plt.plot([0, 90], [0, 0], 'k-', lw=2)
+    #plt.plot([0, 90], [22.5, 22.5], 'k-', lw=2)
+
+    #plt.plot([0, 22.5], [45, 45], 'k-', lw=2)
+    #plt.plot([67.5, 90], [45, 45], 'k-', lw=2)
+    
+    #plt.plot([0, 90], [67.5, 67.5], 'k-', lw=2)
+    #plt.plot([0, 90], [90, 90], 'k-', lw=2)
+    
+    
+
+    
+    plt.savefig(ChartFile, bbox_inches='tight')
+    #plt.show()
+    #print('north')
+
+
+
 def R13C_ListPositions(text,L):
     # 
     L1 = L[1:]
