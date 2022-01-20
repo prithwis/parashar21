@@ -218,7 +218,10 @@ def R12B_drawChart_North():
         j = j+1
         if j > 12:
             j = 1
-        
+    
+    #text has to be made vertical for these bhavs!     
+    for i in [3,5,9,11]:
+        ntxt[i] = ntxt[i].replace(' ','\n')
 
     #id = ChartType+'\n'+pName+'\n'+pDate+'\n'+pTime+'\n'+pPlace
     id = p21.ChartType+' | '+p21.pName
@@ -247,6 +250,8 @@ def R12B_drawChart_North():
     # draw horizontal lines
     plt.plot([0, 90], [90, 90], 'k-', lw=2)  # Top Horizontal   [x1,x2], [y1,y2]
     plt.plot([0, 90], [0, 0], 'k-', lw=2)  # Bottom Horizontal   [x1,x2], [y1,y2]
+    plt.plot([42, 48], [86, 86], 'k-', lw=2)  # Lagna Horizontal   [x1,x2], [y1,y2]
+    
     
     # Diagonal
     plt.plot([0, 90], [0, 90], 'k-', lw=2)  # Bottom Left Top Right   [x1,x2], [y1,y2]
@@ -257,10 +262,10 @@ def R12B_drawChart_North():
     plt.plot([45, 90], [90, 45], 'k-', lw=2)
     
     
-    plt.text(42, 55, str(LagnaRashiNumber), fontsize=18)
+    plt.text(40, 55, p21.RashiN2A(LagnaRashiNumber), fontsize=14)
     
-    plt.text(35, 65, ntxt[1], fontsize=12) # 1
-    plt.text(35, 25, ntxt[7], fontsize=12)  # 7
+    plt.text(27.5, 67.5, ntxt[1], fontsize=12) # 1
+    plt.text(27.5, 22.5, ntxt[7], fontsize=12)  # 7
     
     plt.text(5, 45, ntxt[4], fontsize=12) # 4
     plt.text(50, 45, ntxt[10], fontsize=12)  # 10
@@ -271,11 +276,11 @@ def R12B_drawChart_North():
     plt.text(7, 3, ntxt[6], fontsize=12) # 6
     plt.text(53, 3, ntxt[8], fontsize=12)  # 8
     
-    plt.text(1, 67.5, ntxt[3], fontsize=12) # 3
-    plt.text(1, 22.5, ntxt[5], fontsize=12)  # 5
+    plt.text(1, 55, ntxt[3], fontsize=12) # 3
+    plt.text(1, 10, ntxt[5], fontsize=12)  # 5
     
-    plt.text(70, 22.5, ntxt[9], fontsize=12) # 9
-    plt.text(70, 67.5, ntxt[11], fontsize=12)  # 11
+    plt.text(82, 10, ntxt[9], fontsize=12) # 9
+    plt.text(82, 55, ntxt[11], fontsize=12)  # 11
     
 
     #plt.plot([45, 45], [0, 22.5], 'k-', lw=2)

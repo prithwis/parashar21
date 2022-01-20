@@ -96,4 +96,12 @@ selCols = {
             'BLConjunctsBL2':1      # Which Bhav Lord conjuncts with Bhav Lord ( Lord : [ List of Lords]}
            }
 
+# --------------------------------------------------
+
+#converts a Rashi number to the Rashi name
+#
+RashiName = ["RashiName","Mesh","Vrish","Mithun","Karkat","Simha","Kanya","Tula","Vrishchik","Dhanu","Makar","Kumbh","Meen"]
+def RashiN2A(n):
+    return RashiName[n]
+
 print('imported p21')
