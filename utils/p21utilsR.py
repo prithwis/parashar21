@@ -282,27 +282,6 @@ def R12B_drawChart_North():
     plt.text(82, 10, ntxt[9], fontsize=12) # 9
     plt.text(82, 55, ntxt[11], fontsize=12)  # 11
     
-
-    #plt.plot([45, 45], [0, 22.5], 'k-', lw=2)
-    #plt.plot([45, 45], [67.5, 90], 'k-', lw=2)
-
-
-    #plt.plot([67.5, 67.5], [0, 90], 'k-', lw=2)
-    #plt.plot([90, 90], [0, 90], 'k-', lw=2)
-
-    # draw horizontal line
-
-    #plt.plot([0, 90], [0, 0], 'k-', lw=2)
-    #plt.plot([0, 90], [22.5, 22.5], 'k-', lw=2)
-
-    #plt.plot([0, 22.5], [45, 45], 'k-', lw=2)
-    #plt.plot([67.5, 90], [45, 45], 'k-', lw=2)
-    
-    #plt.plot([0, 90], [67.5, 67.5], 'k-', lw=2)
-    #plt.plot([0, 90], [90, 90], 'k-', lw=2)
-    
-    
-
     
     plt.savefig(ChartFile, bbox_inches='tight')
     #plt.show()
@@ -411,13 +390,14 @@ def R01_CreateReportDoc(cqs,pS):
     last_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
     
     threeLineGap = '\n\n\n'
-    KNRText = 'based on the book\nLearn Hindu Astrology Easily\nK N Rao & K Ashu Rao\nThird Edition\nVani Publications\nDelhi'
-    para = p21.document.add_paragraph(KNRText)
-    para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    #KNRText = 'based on the book\nLearn Hindu Astrology Easily\nK N Rao & K Ashu Rao\nThird Edition\nVani Publications\nDelhi'
+    #para = p21.document.add_paragraph(KNRText)
+    #para.alignment = WD_ALIGN_PARAGRAPH.CENTER
     
     p21.document.add_paragraph(threeLineGap)
+    p21.document.add_paragraph(threeLineGap)
     
-    gyan = "Astrology is the science of CORRELATIONS, not CAUSATION\nAstrology - An Application of Data Science \nhttps://bit.ly/pmastro"
+    gyan = "Astrology is the science of CORRELATIONS\nAstrology - An Application of Data Science \nhttps://bit.ly/pmastro"
     para = p21.document.add_paragraph(gyan)
     para.alignment = WD_ALIGN_PARAGRAPH.CENTER
     

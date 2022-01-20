@@ -46,13 +46,7 @@ def appendDict(d1,d2):
 d2l = lambda dic: [(k, v) for (k, v) in dic.items()]
 l2d = lambda lis: dict(lis)
 
-# --------------------------------------------------
 
-#converts a Rashi number to the Rashi name
-#
-RashiName = ["RashiName","Ari","Tau","Gem","Can","Leo","Vir","Lib","Sco","Sag","Cap","Acq","Pis"]
-def RashiN2A(n):
-    return RashiName[n]
 
 # --------------------------------------------------
 
