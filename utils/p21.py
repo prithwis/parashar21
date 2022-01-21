@@ -24,7 +24,14 @@ global Gx, GAspects, GAspectedBy,BAspectedBy,GAspects2, GAspectedBy2,BAspectedBy
 global GConjunctsG, BLConjunctsG, BLConjunctsBL, Conjuncts
 # ------------------------------------------
 BoL = ' '
-LordOf = {"Ari":"Ma","Tau":"Ve","Gem":"Me","Can":"Mo","Leo":"Su","Vir":"Me","Lib":"Ve","Sco":"Ma","Sag":"Ju","Cap":"Sa","Acq":"Sa","Pis":"Ju"} 
+#LordOf = {"Ari":"Ma","Tau":"Ve","Gem":"Me","Can":"Mo","Leo":"Su","Vir":"Me","Lib":"Ve","Sco":"Ma","Sag":"Ju","Cap":"Sa","Acq":"Sa","Pis":"Ju"} 
+LordOf = {"Mesh":"Ma","Vrish":"Ve","Mithun":"Me","Karkat":"Mo","Simha":"Su","Kanya":"Me","Tula":"Ve","Vrishchik":"Ma","Dhanu":"Ju","Makar":"Sa","Kumbh":"Sa","Meen":"Ju"} 
+
+#converts a Rashi number to the Rashi name
+#
+RashiName = ["RashiName","Mesh","Vrish","Mithun","Karkat","Simha","Kanya","Tula","Vrishchik","Dhanu","Makar","Kumbh","Meen"]
+def RashiN2A(n):
+    return RashiName[n]
 
 Graha = ['Su','Mo','Ma','Me','Ju','Ve','Sa']
 GMalefic = {"Su":False,"Mo":False,"Ma":False,"Me":False,"Ju":True,"Ve":False,"Sa":False,"Ra":True,"Ke":True}
@@ -98,10 +105,6 @@ selCols = {
 
 # --------------------------------------------------
 
-#converts a Rashi number to the Rashi name
-#
-RashiName = ["RashiName","Mesh","Vrish","Mithun","Karkat","Simha","Kanya","Tula","Vrishchik","Dhanu","Makar","Kumbh","Meen"]
-def RashiN2A(n):
-    return RashiName[n]
+
 
 print('imported p21')

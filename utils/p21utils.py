@@ -67,7 +67,7 @@ def C10_DetermineBhavs():
             p21.BhavN.append(N)
         
     
-    p21.BhavA = list(map(lambda x : RashiN2A(x) if isinstance(x, numbers.Integral) else p21.BoL,p21.BhavN))
+    p21.BhavA = list(map(lambda x : p21.RashiN2A(x) if isinstance(x, numbers.Integral) else p21.BoL,p21.BhavN))
     
     p21.BhavNBhavA = {
         'BhavN': p21.BhavN,
@@ -84,7 +84,7 @@ def C11_DetermineLord():
 
     #p21.LordOf = {"Ari":"Ma","Tau":"Ve","Gem":"Me","Can":"Mo","Leo":"Su","Vir":"Me","Lib":"Ve","Sco":"Ma","Sag":"Ju","Cap":"Sa","Acq":"Sa","Pis":"Ju"}
     #print(LordOf)
-    p21.Lord = list(map(lambda x : p21.LordOf[RashiN2A(x)] if isinstance(x, numbers.Integral) else p21.BoL, p21.BhavN))
+    p21.Lord = list(map(lambda x : p21.LordOf[p21.RashiN2A(x)] if isinstance(x, numbers.Integral) else p21.BoL, p21.BhavN))
     #print("Lord : ", p21.Lord)
     p21.LordRashiN = list(map(lambda x : p21.GRashiN[x] if x != p21.BoL else p21.BoL, p21.Lord))
     #print("Rashi # of Lord : ",p21.LordRashiN)
@@ -336,7 +336,7 @@ def R11_LocateGrahaInRashi():
 
     p21.GRashiA = {}
     for k,v in p21.GRashiN.items():
-        p21.GRashiA[k] = RashiN2A(v)
+        p21.GRashiA[k] = p21.RashiN2A(v)
         
     #print(p21.GRashiA)
     
