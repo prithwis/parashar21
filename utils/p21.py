@@ -69,38 +69,41 @@ neutrals = {'Su':['Me'],'Mo':['Ma','Ju','Ve','Sa'],'Ma':['Sa','Ve'],'Me':['Sa','
 Gx = ['La','Su', 'Mo', 'Ma', 'Me', 'Ju', 'Ve', 'Sa','Ra','Ke']
 
 # ------------------------------------------------------------------------------
-# MongoDB Fields
+# Structure of Chart object and corresponding fields in MongoDB database
+# Not all the database fields are retrieved while generating reports 
+#
 
 selCols = {
             '_id':0,
-            'pid.name':1,           # Personal ID (name : str)  - obfuscated for privacy
-            'pid.tags':1,           # Tags associated with individual
-            #'pid.ck':1,            # String carring original data as follows [Gender][YYYY][MM][YY][HH:mm][TZoffset][Lat][Lon]
-            #'BhavN':1,              # [ List of Bhavs] -- not used in reporting
-            #'BhavA':1,              # [ List of Rashi Names for each Bhav] - not used in reporting
-            'GRet':1,               # Is Graha Retrograde?  { Graha: boolean }
-            'GLon':1,               # Graha Long { Graha : Long }
-            'Lord':1,               # Lords [ List of Bhav Lords]
-            #'LordRashiN':1,         # [ Rashi number where each Lord resides] - not used in reporting
-            #'LordRashiA':1,         # [ Rashi name where each Lord resides] - not used in reporting
-            'GRashiN':1,            # [ Rashi number where each Graha resides]
-            'GrahaLordBhav':1,      # Graha Lord of Bhav  { Graha : [List of Bhavs where Graha is Lord ]}
-            'GrahaBhava':1,         # Graha Location in Bhav { Graha : Bhav }                         
-            'LordBhav':1,           # Bhav Location of Lord [ List of Bhavs ]
-            'exaltG':1,             # Is Graha Exalted? { Graha : <boolean> }
-            'exaltL':1,             # Is Lord Exalted ? [ List of booleans]
-            'debilG':1,             # Is Graha Debilitated ? { Graha : <boolean>}
-            'debilL':1,            # Is Lord Debilitated ? [ List of booleans]
-            'inFriendG':1,         # Is Graha in Friendly House ? { Graha : boolean}        
-            'inFriendL':1,         # Is Lord in Friendly House ? [ List of booleans]
-            'inEnemyG':1,          # Is Graha in Enemy House ?  { Graha : boolean}
-            'inEnemyL':1,          # Is Lord in Enemy House ? [ List of Booleans]
-            'GAspects2':1,         # Graha aspect whom ? { Graha : [ List of Grahas aspected]}
-            'GAspectedBy2':1,      # Graha aspectedby whom ? { Graha : [ List of Grahas that aspect this Graha]}
-            'BAspectedBy2':1,       # Bhava apectedby whom  ? { BhavNumber : [ List of Grahas that aspect this Bhav]}
-            'GConjunctsG2' :1 ,       # Which Graha Conjuncts Which Graha { Graha : [ List of Conjunct Grahas]} 
-            'BLConjunctsG2':1 ,      # Which BhavLord conjuncts which Graha { Lord : [ List of Conjunct Grahas]}
-            'BLConjunctsBL2':1      # Which Bhav Lord conjuncts with Bhav Lord ( Lord : [ List of Lords]}
+            'pid.name':1,               # Personal ID (name : str)  - obfuscated for privacy
+            'pid.tags':1,               # Tags associated with individual
+            #'pid.ChartType':1,         # chartType ['Rashi','Navamsa'] - currently only Rashi charts are stored, not Navamsa, however Navamsa is printed
+            #'pid.ck':1,                # String carring original data as follows [Gender][YYYY][MM][YY][HH:mm][TZoffset][Lat][Lon]
+            #'BhavN':1,                 # [ List of Bhavs] -- not used in reporting
+            #'BhavA':1,                 # [ List of Rashi Names for each Bhav] - not used in reporting
+            'GRet':1,                   # Is Graha Retrograde?  { Graha: boolean }
+            'GLon':1,                   # Graha Long { Graha : Long }
+            'Lord':1,                   # Lords [ List of Bhav Lords]
+            #'LordRashiN':1,            # [ Rashi number where each Lord resides] - not used in reporting
+            #'LordRashiA':1,            # [ Rashi name where each Lord resides] - not used in reporting
+            'GRashiN':1,                # [ Rashi number where each Graha resides]
+            'GrahaLordBhav':1,          # Graha Lord of Bhav  { Graha : [List of Bhavs where Graha is Lord ]}
+            'GrahaBhava':1,             # Graha Location in Bhav { Graha : Bhav }                         
+            'LordBhav':1,               # Bhav Location of Lord [ List of Bhavs ]
+            'exaltG':1,                 # Is Graha Exalted? { Graha : <boolean> }
+            'exaltL':1,                 # Is Lord Exalted ? [ List of booleans]
+            'debilG':1,                 # Is Graha Debilitated ? { Graha : <boolean>}
+            'debilL':1,                 # Is Lord Debilitated ? [ List of booleans]
+            'inFriendG':1,              # Is Graha in Friendly House ? { Graha : boolean}        
+            'inFriendL':1,              # Is Lord in Friendly House ? [ List of booleans]
+            'inEnemyG':1,               # Is Graha in Enemy House ?  { Graha : boolean}
+            'inEnemyL':1,               # Is Lord in Enemy House ? [ List of Booleans]
+            'GAspects2':1,              # Graha aspect whom ? { Graha : [ List of Grahas aspected]}
+            'GAspectedBy2':1,           # Graha aspectedby whom ? { Graha : [ List of Grahas that aspect this Graha]}
+            'BAspectedBy2':1,           # Bhava apectedby whom  ? { BhavNumber : [ List of Grahas that aspect this Bhav]}
+            'GConjunctsG2' :1 ,         # Which Graha Conjuncts Which Graha { Graha : [ List of Conjunct Grahas]} 
+            'BLConjunctsG2':1 ,         # Which BhavLord conjuncts which Graha { Lord : [ List of Conjunct Grahas]}
+            'BLConjunctsBL2':1          # Which Bhav Lord conjuncts with Bhav Lord ( Lord : [ List of Lords]}
            }
 
 # --------------------------------------------------
