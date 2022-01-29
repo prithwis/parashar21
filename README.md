@@ -11,4 +11,5 @@ Parashar21 is a design or strategy, along with a collection of programs, that ar
 6. Generate a report that gives detailed information about the horoscopes.
 7. Store the report in a MS Word doc file. [Samples shown here](https://github.com/prithwis/parashar21/tree/main/Sample%20Reports%202)
 
-For a history of this project, visit the [Parashar21 Blog](https://parashar21.blogspot.com/)
+For a history of this project, visit the [Parashar21 Blog](https://parashar21.blogspot.com/) <br>
+A preprint of the paper describing this project is available at [DOI: 10.13140/RG.2.2.19476.58240](https://www.researchgate.net/publication/358191949_Efficient_storage_and_retrieval_of_horoscope_data_on_a_computer_system_A_case_study_using_Python_and_MongoDB?channel=doi&linkId=61f47fec007fb50447205dcd&showFulltext=true)
