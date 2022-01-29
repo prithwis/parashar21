@@ -372,10 +372,9 @@ def csidtil(D):
 
 def C31_DetermineAspects():
 
-    p21.GAspects = dict()           # Which Graha aspects which other Graha
-    p21.GAspectedBy = dict()        # Which Graha is aspected by which other Graha
-    p21.BAspectedBy = dict()        # Which Bhav is aspected by which other Graha
-    p21.BAspectedByBL = dict()      # Which Bhav is aspected by which Bhav Lord
+    p21.GAspects = dict()         # Which Graha aspects which other Graha
+    p21.GAspectedBy = dict()      # Which Graha is aspected by which other Graha
+    p21.BAspectedBy = dict()      # Which Bhav is aspected by which other Graha
 
 
 
@@ -433,15 +432,7 @@ def C31_DetermineAspects():
                 (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 2) or
                 (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 9)):
                 addToD(str(BN),p21.BAspectedBy,O1)
-     
-    print("BAspectedBy",p21.BAspectedBy)
-    
-    for BN1 in range(1,13):
-        for BN2 in range(1,13):      
-            if str(BN1) in p21.BAspectedBy.keys():
-                if  p21.Lord[BN2] in p21.BAspectedBy[str(BN1)]:
-                    addToD(str(BN1),p21.BAspectedByBL,str(BN2))
-    
+                             
     #print("GAspects",p21.GAspects)
     #print("GAspectedBy",p21.GAspectedBy)
     #print("BAspectedBy",p21.BAspectedBy)  
@@ -452,7 +443,6 @@ def C31_DetermineAspects():
     p21.GAspects2 = csidtil(p21.GAspects)
     p21.GAspectedBy2 = csidtil(p21.GAspectedBy)
     p21.BAspectedBy2 = csidtil(p21.BAspectedBy)
-    p21.BAspectedByBL2 = csidtil(p21.BAspectedByBL)
 
     #print("GAspects2",p21.GAspects2)
     #print("GAspectedBy2",p21.GAspectedBy2)
@@ -461,15 +451,14 @@ def C31_DetermineAspects():
     p21.Aspects = {
     'GAspects2'   :p21.GAspects2,
     'GAspectedBy2':p21.GAspectedBy2,
-    'BAspectedBy2':p21.BAspectedBy2,
-    'BAspectedByBL2':p21.BAspectedByBL2
+    'BAspectedBy2':p21.BAspectedBy2
     }
 
 def C41_DetermineConjuncts():
 
-    p21.GConjunctsG = dict()        # Which Graha is conjunct which other Graha
-    p21.BLConjunctsG = dict()       # Which Lord is conjunct by which Graha
-    p21.BLConjunctsBL = dict()      # Which Bhav Lord is conjunct by which Bhav Lord
+    p21.GConjunctsG = dict()         # Which Graha aspects which other Graha
+    p21.BLConjunctsG = dict()      # Which Graha is aspected by which other Graha
+    p21.BLConjunctsBL = dict()      # Which Bhav is aspected by which other Graha
 
 
 

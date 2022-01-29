@@ -352,7 +352,6 @@ def R511_parseChartData(c):
     p21.GAspects2 = c['GAspects2']
     p21.GAspectedBy2 = c['GAspectedBy2']
     p21.BAspectedBy2 = c['BAspectedBy2']
-    p21.BAspectedByBL2 = c['BAspectedByBL2']
     
     p21.GConjunctsG2 = c['GConjunctsG2']
     p21.BLConjunctsG2 = c['BLConjunctsG2']
@@ -367,7 +366,7 @@ def R01_CreateReportDoc(cqs,pS):
     style = p21.document.styles['Normal']           # Changes the Normal style throuhout the document
     font = style.font
     font.name = 'Times New Roman'
-    font.size = Pt(10)                              # Increasing the font size will cause reports to overflow to next page
+    font.size = Pt(11)                              # Increasing the font size will cause reports to overflow to next page
     
     
     section = p21.document.sections[0]
@@ -439,8 +438,8 @@ def R512_FormatPage():
     #cPara = R13A_ShowTrueDict('Retrograde Graha',p21.GRet)+'\n'                          # Show Grahas that are retrograde
     cPara = ' '.join(p21.pTags)+'\n'
     cPara = cPara+R13B_ListPositions('Lord of ',p21.Lord)                                # Show Lords
-    cPara = cPara+"\n"
-    cPara = cPara+'Graha Lord of \n'+json.dumps(p21.GrahaLordBhav).replace('"','')                         # Show the Bhavs of whicha Graha is Lord
+    #cPara = cPara+"\n"
+    #cPara = cPara+'Graha Lord of \n'+json.dumps(p21.GrahaLordBhav)+'\n'                          # Show the Bhavs of whicha Graha is Lord
     
     cPara = cPara+R13B_ListPositions('\nLord in Bhava',p21.LordBhav)
     para001 = p21.document.add_paragraph(cPara)
@@ -467,14 +466,13 @@ def R512_FormatPage():
     
     
     cPara = 'Graha Aspects ........................................................'
-    cPara = cPara+'\nAspects🤓 '+json.dumps(p21.GAspects2).replace('"','')  
-    cPara = cPara+'\nAspected BY 👀'+json.dumps(p21.GAspectedBy2).replace('"','')  
+    cPara = cPara+'\nAspects🤓 '+json.dumps(p21.GAspects2)  
+    cPara = cPara+'\nAspected BY 👀'+json.dumps(p21.GAspectedBy2)  
     #p21.document.add_paragraph(cPara)
     
     #print(p21.GAspects2)
     #print(p21.GAspectedBy2)
-    cPara = cPara+'\nBhav Aspect ..................................................'
-    #sorted_BAspectedBy2={}
+    sorted_BAspectedBy2={}
     #print(p21.BAspectedBy2)
     T1 = {}
     for k,v in p21.BAspectedBy2.items():
@@ -482,23 +480,14 @@ def R512_FormatPage():
     T2 = dict(sorted(T1.items()))
     #print(T2)
     
-    
-    cPara = cPara+'\nAspected BY Graha 👀'+json.dumps(T2).replace('"','')  
-    
-    T1 = {}
-    for k,v in p21.BAspectedByBL2.items():
-        T1[int(k)] =v
-    T2 = dict(sorted(T1.items()))
-    #print(T2)
-    
-    
-    cPara = cPara+'\nAspected BY Lords 👀'+json.dumps(T2).replace('"','')  
+    cPara = cPara+'\nBhav Aspect'
+    cPara = cPara+'\nAspected BY 👀'+json.dumps(T2)  
     #p21.document.add_paragraph(cPara)
 
     cPara = cPara+'\nConjuncts  ...................................................'
-    cPara = cPara+'\nGraha Graha '+json.dumps(p21.GConjunctsG2).replace('"','')  
-    cPara = cPara+'\nLord Graha '+json.dumps(p21.BLConjunctsG2).replace('"','')  
-    cPara = cPara+'\nLord Lord '+json.dumps(p21.BLConjunctsBL2).replace('"','')
+    cPara = cPara+'\nGraha Graha '+json.dumps(p21.GConjunctsG2)  
+    cPara = cPara+'\nLord Graha '+json.dumps(p21.BLConjunctsG2)  
+    cPara = cPara+'\nLord Lord '+json.dumps(p21.BLConjunctsBL2)  
     p21.document.add_paragraph(cPara)
     
     p21.document.add_page_break()

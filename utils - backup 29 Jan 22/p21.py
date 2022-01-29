@@ -20,7 +20,7 @@ global Graha, GMalefic
 global exaL,exaU, exaR, debL, debU, debR, mool3R
 global friends, enemies, neutrals
 global exaltG, exaltL, debilL,debilG,mool3G,mool3L,ownHouseG,ownHouseL,inFriendG,inEnemyG,inNeutralG,inFriendL,inEnemyL,inNeutralL, Positions
-global Gx, GAspects, GAspectedBy,BAspectedBy,BAspectedByBL,GAspects2, GAspectedBy2,BAspectedBy2,BAspectedByBL2,Aspects
+global Gx, GAspects, GAspectedBy,BAspectedBy,GAspects2, GAspectedBy2,BAspectedBy2,Aspects
 global GConjunctsG, BLConjunctsG, BLConjunctsBL, Conjuncts
 # ------------------------------------------
 BoL = ' '
@@ -102,7 +102,6 @@ selCols = {
             'GAspects2':1,              # Graha aspect whom ? { Graha : [ List of Grahas aspected]}
             'GAspectedBy2':1,           # Graha aspectedby whom ? { Graha : [ List of Grahas that aspect this Graha]}
             'BAspectedBy2':1,           # Bhava apectedby whom  ? { BhavNumber : [ List of Grahas that aspect this Bhav]}
-            'BAspectedByBL2':1,         # Bhava apectedby whom  ? { BhavNumber : [ List of Bhava Lords]}
             'GConjunctsG2' :1 ,         # Which Graha Conjuncts Which Graha { Graha : [ List of Conjunct Grahas]} 
             'BLConjunctsG2':1 ,         # Which BhavLord conjuncts which Graha { Lord : [ List of Conjunct Grahas]}
             'BLConjunctsBL2':1          # Which Bhav Lord conjuncts with Bhav Lord ( Lord : [ List of Lords]}
