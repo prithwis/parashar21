@@ -110,6 +110,7 @@ def R12B_drawChart_Bengal():
     plt.plot([60,90],[30,0], 'k-', lw=2)
 
     plt.text(32, 38, id, fontsize=12)
+    plt.text(0, 95, p21.cID, fontsize=12)       # unique chartID
 
     plt.text(32, 82, txt[1], fontsize=12)
     plt.text(8, 82, txt[2], fontsize=12)
@@ -152,6 +153,7 @@ def R12B_drawChart_South():
     plt.axis('off')
 
     plt.text(25, 35, id, fontsize=12)
+    plt.text(0, 95, p21.cID, fontsize=12)       # unique chartID
 
     # draw vertical line 
     plt.plot([0, 0], [0, 90], 'k-', lw=2)
@@ -240,6 +242,7 @@ def R12B_drawChart_North():
     plt.axis('off')
 
     plt.text(0, -5, id, fontsize=12)
+    plt.text(0, 95, p21.cID, fontsize=12)       # unique chartID
     
     
     
@@ -331,6 +334,7 @@ def R511_parseChartData(c):
     p21.GRet = c['GRet']
     pid = c['pid']
     p21.pName = pid['name']
+    p21.cID = pid['cID']
     p21.pTags = pid['tags']
     p21.GrahaLordBhav = c['GrahaLordBhav']
     p21.Lord = c['Lord']

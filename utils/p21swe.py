@@ -10,7 +10,9 @@ import dateutil
 
 import math
 import numbers
-import string_utils
+import string    
+import random # define the random module  
+#import string_utils
 
 from datetime import datetime
 from datetime import timedelta
@@ -61,12 +63,15 @@ def C02_parsePersonData(P):
     natalLAT = P['PoB_Lat']
     natalLON = P['PoB_Lon']
     ck = P['Gender']+str(P['DoB_Year'])+str(P['DoB_Mon'])+str(P['DoB_Day'])+P['DoB_Time']+str(P['TZ_OffHours'])+str(P['PoB_Lat'])+str(P['PoB_Lon'])
+    cID = str(''.join(random.choices(string.ascii_uppercase + string.digits, k = 12)))   # string of len 12 consisting of random uppercase and digits
     p21.chart = {
         "pid":{
             "tags" : [P['Voc1_Cat'],P['Voc2_Cat'],P['Voc3_Cat']],
             "ck" : ck,
             "chartType" : p21.ChartType,
-            "name": string_utils.shuffle(P['Name'][0:8])
+            #"name": string_utils.shuffle(P['Name'][0:8])
+            "name": P['Name'][0:10],
+            "cID" : cID
         }
     }
     
