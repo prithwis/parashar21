@@ -434,7 +434,7 @@ def C31_DetermineAspects():
                 (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 9)):
                 addToD(str(BN),p21.BAspectedBy,O1)
      
-    print("BAspectedBy",p21.BAspectedBy)
+    #print("BAspectedBy",p21.BAspectedBy)
     
     for BN1 in range(1,13):
         for BN2 in range(1,13):      
