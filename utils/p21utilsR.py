@@ -501,7 +501,7 @@ def R512_FormatPage():
     cPara = cPara+'\nLord Lord '+json.dumps(p21.BLConjunctsBL2).replace('"','')
     #p21.document.add_paragraph(cPara)
     
-    cPara = cPara+'\nTags: '
+    cPara = cPara+'\nTags ....................................................... \n'
     cPara = cPara+json.dumps(p21.pTags)
     p21.document.add_paragraph(cPara)
     
