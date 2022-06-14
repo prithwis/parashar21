@@ -499,7 +499,7 @@ def R512_FormatPage():
     cPara = cPara+'\nGraha Graha '+json.dumps(p21.GConjunctsG2).replace('"','')  
     cPara = cPara+'\nLord Graha '+json.dumps(p21.BLConjunctsG2).replace('"','')  
     cPara = cPara+'\nLord Lord '+json.dumps(p21.BLConjunctsBL2).replace('"','')
-    p21.document.add_paragraph(cPara)
+    #p21.document.add_paragraph(cPara)
     
     cPara = cPara+'\nTags: '
     cPara = cPara+json.dumps(p21.pTags)
