@@ -23,6 +23,8 @@ global exaltG, exaltL, debilL,debilG,mool3G,mool3L,ownHouseG,ownHouseL,inFriendG
 global Gx, GAspects, GAspectedBy,BAspectedBy,BAspectedByBL,GAspects2, GAspectedBy2,BAspectedBy2,BAspectedByBL2,Aspects
 global GConjunctsG, BLConjunctsG, BLConjunctsBL, Conjuncts
 # ------------------------------------------
+global BudhAdityaText, BudhAditaCond
+global BudhAdityaNRText,BudhAdityaNRCond
 BoL = ' '
 #LordOf = {"Ari":"Ma","Tau":"Ve","Gem":"Me","Can":"Mo","Leo":"Su","Vir":"Me","Lib":"Ve","Sco":"Ma","Sag":"Ju","Cap":"Sa","Acq":"Sa","Pis":"Ju"} 
 LordOf = {"Mesh":"Ma","Vrish":"Ve","Mithun":"Me","Karkat":"Mo","Simha":"Su","Kanya":"Me","Tula":"Ve","Vrishchik":"Ma","Dhanu":"Ju","Makar":"Sa","Kumbh":"Sa","Meen":"Ju"} 
