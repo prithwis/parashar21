@@ -14,3 +14,30 @@ BudhAdityaNRCond = {"$and":
                          {'GRet.Me' : {'$eq': False}}                # Me NOT retrograde  
                         ]
                    } 
+#
+#Gajakesari Yog
+GajakesariText = 'Gajakesari^ yog : the moon and Jupiter is placed in the 1st, 4th, 7th and 10th house which forms the angular houses or Kendra. ^ ref : https://www.astroyogi.com/kundli/yog'
+GajakesariCond = {"$and":
+                    [
+                        {'GConjunctsG2.Ju' : {'$in': ['Mo']}},      # Ju conjunct Mo 
+                        { "$or" : [
+                            {'GrahaBhava.Mo' : {'$eq': 1}},              # Mo in First House
+                            {'GrahaBhava.Mo' : {'$eq': 4}},              # Mo in Fourth House
+                            {'GrahaBhava.Mo' : {'$eq': 7}},              # Mo in Seventh House
+                            {'GrahaBhava.Mo' : {'$eq': 10}}              # Mo in Tenth House
+                          ]
+                        }  
+
+                    ]
+}           
+#
+#RajaYog
+RajYogText = 'Raj^  yog : Jupiter is in Cancer, Venus in the ninth house and Jupiter in the seventh house.^ ref : https://www.astroyogi.com/kundli/yog'
+RajYogCond = {"$and":
+                    [
+                        {'GRashiN.Ju': {'$eq': 4}},               # Jupiter in Cancer
+                        {'GrahaBhava.Ju' : {'$eq': 7}} ,            # Jupiter in 7th House
+                        {'GrahaBhava.Ve' : {'$eq': 9}}             # Jupiter in 7th House
+
+                    ]
+}
