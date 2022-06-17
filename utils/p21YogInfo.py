@@ -29,7 +29,7 @@ GajakesariCond = {"$and":
                         }  
 
                     ]
-}           
+                 }           
 #
 #RajaYog
 RajYogText = 'Raj^  yog : Jupiter is in Cancer, Venus in the ninth house and Jupiter in the seventh house.^ ref : https://www.astroyogi.com/kundli/yog'
@@ -40,4 +40,4 @@ RajYogCond = {"$and":
                         {'GrahaBhava.Ve' : {'$eq': 9}}             # Jupiter in 7th House
 
                     ]
-}
+              }
