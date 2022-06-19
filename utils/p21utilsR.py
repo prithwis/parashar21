@@ -447,39 +447,39 @@ def R01A_CreateReportDoc(cqs,pS):
     #heading_1 = p21.pName +" >>> "+p21.ChartType
     #heading_1 = ChartType+" Chart of "+pName
     
-    heading_1 = "Selected Charts"  #p21.ReportFile
-    p21.document.add_heading(heading_1, 0)
-    heading_2 = cqs                         # current query string
-    p21.document.add_heading(heading_2, level=3)
-    p21.document.add_paragraph(pS)          # print count status
+    #heading_1 = "Selected Charts"  #p21.ReportFile
+    #p21.document.add_heading(heading_1, 0)
+    #heading_2 = cqs                         # current query string
+    #p21.document.add_heading(heading_2, level=3)
+    #p21.document.add_paragraph(pS)          # print count status
     
-    p21.document.add_picture('./Saraswati.png', width=Inches(4.25))
-    last_paragraph = p21.document.paragraphs[-1] 
-    last_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    #p21.document.add_picture('./Saraswati.png', width=Inches(4.25))
+    #last_paragraph = p21.document.paragraphs[-1] 
+    #last_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
     
-    threeLineGap = '\n\n\n'
+    #threeLineGap = '\n\n\n'
     #KNRText = 'based on the book\nLearn Hindu Astrology Easily\nK N Rao & K Ashu Rao\nThird Edition\nVani Publications\nDelhi'
     #para = p21.document.add_paragraph(KNRText)
     #para.alignment = WD_ALIGN_PARAGRAPH.CENTER
     
-    p21.document.add_paragraph(threeLineGap)
+    #p21.document.add_paragraph(threeLineGap)
     #p21.document.add_paragraph(threeLineGap)
     
-    gyan = "Astrology is the science of CORRELATIONS\nAstrology - An Application of Data Science \nhttps://bit.ly/pmastro"
-    para = p21.document.add_paragraph(gyan)
-    para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    #gyan = "Astrology is the science of CORRELATIONS\nAstrology - An Application of Data Science \nhttps://bit.ly/pmastro"
+    #para = p21.document.add_paragraph(gyan)
+    #para.alignment = WD_ALIGN_PARAGRAPH.CENTER
     
-    p21.document.add_paragraph('______________________________________________________________________________')
+    #p21.document.add_paragraph('______________________________________________________________________________')
     
-    p21.document.add_picture('./p21logo.png', width=Inches(1.0))
-    last_paragraph = p21.document.paragraphs[-1] 
-    last_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    
-    
+    #p21.document.add_picture('./p21logo.png', width=Inches(1.0))
+    #last_paragraph = p21.document.paragraphs[-1] 
+    #last_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
     
     
     
-    p21.document.add_page_break()
+    
+    
+    #p21.document.add_page_break()
     #return document
     
 # --------------------------------------------------
