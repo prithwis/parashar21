@@ -362,6 +362,8 @@ def addToD(x,D,y):
 # convert set in dictionary value to list
 # this is required for JSON formatting 
 
+# Bhav number as dict keys have to be converted to str()
+# Otherwise could not store in MongoDB
 def csidtil(D):
     nD = dict()
     for k in D:
