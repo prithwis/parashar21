@@ -437,12 +437,12 @@ def R01A_CreateReportDoc(id = 'dummy'):
     footer = section.footer
     
     header01 = header.paragraphs[0]
-    header01.text = "Parashar21 | "+ id
+    header01.text = "Parashar21 | "+ id + ' | '+ now.strftime("%d %b %Y")
 
     
     footer01 = footer.paragraphs[0]
     #footer01.text = "Printed on : "
-    footer01.text = "http://parashar21.blogspot.com | https://github.com/prithwis/parashar21"+now.strftime("%d %b %Y")
+    footer01.text = "http://parashar21.blogspot.com | https://github.com/prithwis/parashar21"
 
     
     #return document
