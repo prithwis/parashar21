@@ -421,6 +421,68 @@ def R01_CreateReportDoc(cqs,pS):
     #return document
     
 # --------------------------------------------------
+def R01A_CreateReportDoc(cqs,pS):
+      
+    now = datetime.now(pytz.timezone('Asia/Kolkata'))
+    p21.document = Document()
+    
+    style = p21.document.styles['Normal']           # Changes the Normal style throuhout the document
+    font = style.font
+    font.name = 'Times New Roman'
+    font.size = Pt(10)                              # Increasing the font size will cause reports to overflow to next page
+    
+    
+    section = p21.document.sections[0]
+    header = section.header
+    footer = section.footer
+    
+    header01 = header.paragraphs[0]
+    header01.text = "Parashar21 | "+now.strftime("%d %b %Y")
+
+    
+    footer01 = footer.paragraphs[0]
+    #footer01.text = "Printed on : "
+    footer01.text = "http://parashar21.blogspot.com | https://github.com/prithwis/parashar21"
+
+    #heading_1 = p21.pName +" >>> "+p21.ChartType
+    #heading_1 = ChartType+" Chart of "+pName
+    
+    heading_1 = "Selected Charts"  #p21.ReportFile
+    p21.document.add_heading(heading_1, 0)
+    heading_2 = cqs                         # current query string
+    p21.document.add_heading(heading_2, level=3)
+    p21.document.add_paragraph(pS)          # print count status
+    
+    p21.document.add_picture('./Saraswati.png', width=Inches(4.25))
+    last_paragraph = p21.document.paragraphs[-1] 
+    last_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    
+    threeLineGap = '\n\n\n'
+    #KNRText = 'based on the book\nLearn Hindu Astrology Easily\nK N Rao & K Ashu Rao\nThird Edition\nVani Publications\nDelhi'
+    #para = p21.document.add_paragraph(KNRText)
+    #para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    
+    p21.document.add_paragraph(threeLineGap)
+    #p21.document.add_paragraph(threeLineGap)
+    
+    gyan = "Astrology is the science of CORRELATIONS\nAstrology - An Application of Data Science \nhttps://bit.ly/pmastro"
+    para = p21.document.add_paragraph(gyan)
+    para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    
+    p21.document.add_paragraph('______________________________________________________________________________')
+    
+    p21.document.add_picture('./p21logo.png', width=Inches(1.0))
+    last_paragraph = p21.document.paragraphs[-1] 
+    last_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    
+    
+    
+    
+    
+    p21.document.add_page_break()
+    #return document
+    
+# --------------------------------------------------
 
 def R512_FormatPage():
 
