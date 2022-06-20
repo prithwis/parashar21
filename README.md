@@ -1,5 +1,4 @@
 ![parashar21 banner](/images/p21-header-003.png)<br>
-## Casting and storing horoscope charts for Hindu Astrology
 # Motivation
 Astronomical observations that were made with the naked eye and recorded in a vast database by Tycho Brahe and his sister Sophia were the basis for the formulation of Kepler's Laws of Planetary motion. That in turn led to Newton's laws of gravitation and the emergence of European science in the eighteenth century.  Today, the same laws can be deduced very easily and quickly from NASA data on planetary positions. If we wish to do the same with astrology and come out with some clear and umbiguous rules,  we need a vast database of searchable horoscope data. Unfortunately, that is not available at the moment. Parashar21 aspires to create a mechanism to plug this gap.
 # What is Parashar21
