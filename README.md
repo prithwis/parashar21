@@ -21,5 +21,6 @@ A preprint of the paper describing technical aspects is available at [DOI: 10.13
 2. Read the MongoDB database and filter out charts that meet a specific pattern. See this [notebook](https://github.com/prithwis/parashar21/blob/main/P21_45_Pull_Print.ipynb).
 3. For those not having access to MongoDB installation, a standalone mechanism to install MongoDB in the Colab VM. Load sample data and filter out charts as in point 2. See this [notebook](https://github.com/prithwis/parashar21/blob/main/P21_45_Pull_Print_StandAlone.ipynb).
 # Updates
-1. As an extension of the search for arbitrary patterns, we now have a way to search for specific [Astrological Yogs](https://github.com/prithwis/parashar21/blob/main/P21_45_YogFilter.ipynb) in the charts stored in the MongoDB database.
-2. Rather than search for patterns, get all the details about a [single chart](https://github.com/prithwis/parashar21/blob/main/P21_45_SingleChart_Analysis.ipynb).
+1. The horoscope chart data in the MongoDB database can be accessed in an interactive way using MERN (MongoDB, Express, React, Node) application by pulling out and rendering charts. Codes for this are available in the [Khona21 repository](https://github.com/prithwis/khona21)
+2. As an extension of the search for arbitrary patterns, we now have a way to search for specific [Astrological Yogs](https://github.com/prithwis/parashar21/blob/main/P21_45_YogFilter.ipynb) in the charts stored in the MongoDB database.
+3. Rather than search for patterns, get all the details about a [single chart](https://github.com/prithwis/parashar21/blob/main/P21_45_SingleChart_Analysis.ipynb).
