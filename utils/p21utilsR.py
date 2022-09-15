@@ -533,13 +533,14 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     cPara = cPara+json.dumps(p21.pTags)
     p21.document.add_paragraph(cPara)
     
-    if (repStyle == 'MultiChart'):
-        p21.document.add_page_break()
-    else:
+    if len(p21.yogsFound) > 0:                      # Yogs Found 
         cPara = 'Yogs Found :'
         for y in p21.yogsFound:
-            cPara += ' '+ y
+            cPara += ' | '+ y
         p21.document.add_paragraph(cPara)
+    if (repStyle == 'MultiChart'):
+        p21.document.add_page_break()
+        
 
 def tracer():
     print('tracer')
