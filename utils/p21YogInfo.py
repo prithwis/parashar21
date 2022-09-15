@@ -3,7 +3,7 @@
 # --------------------------------------------------
 # Yog Texts, Conditions
 
-global yogText, global yogCond
+global yogText, yogCond
 yogText={}
 yogCond = {}
 
