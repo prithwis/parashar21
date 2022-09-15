@@ -535,6 +535,9 @@ def R512_FormatPage(singleChart = False):
     
     if not(singleChart):
         p21.document.add_page_break()
+    else:
+        cPara = 'Yogs Found'
+        p21.document.add_paragraph(cPara)
 
 def tracer():
     print('tracer')
