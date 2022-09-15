@@ -49,3 +49,37 @@ yogCond['Rajyog'] = {"$and":
 
                     ]
               }
+#
+#Chandra Mangal (Mahalakshmi) Yog
+yogText['ChandraMangal1'] = 'ChandraMangal1^ yog : Moon Conjunct Mars, both Exalted, and NOT in 3rd, 6th, 8th, 12th house. ^ ref : https://www.astroyogi.com/kundli/yog/mahalaxmi'
+yogCond['ChandraMangal1'] = {"$and":
+                    [
+                        {'exaltG.Ma': {'$eq': True}},               # Exalted Mars
+                        {'exaltG.Mo': {'$eq': True}},               # Exalted Mo
+                        {'GConjunctsG2.Ma' : {'$in': ['Mo']}} ,     # Ma conjunct Mo     
+                        {'GrahaBhava.Mo' : {'$nin': [3,6,8,12]}} ,    # Mo not in 3,6,8,12
+                    ]
+         }
+         
+yogText['ChandraMangal2'] = 'ChandraMangal2^ yog : Moon Conjunct Mars, neither debilitated, and NOT in 3rd, 6th, 8th, 12th house. ^ ref : https://www.astroyogi.com/kundli/yog/mahalaxmi'
+yogCond['ChandraMangal2'] = {"$and":
+                    [
+                        {'debilG.Ma': {'$eq': False}},               # not debilitated Mars
+                        {'debilG.Mo': {'$eq': False}},               # not debilitated Moon
+                        {'GConjunctsG2.Ma' : {'$in': ['Mo']}} ,     # Ma conjunct Mo        
+                        {'GrahaBhava.Mo' : {'$nin': [3,6,8,12]}} ,    # Mo not in 3,6,8,12
+                        
+                    ]
+         }
+#
+#Dhan Yog
+#
+yogText['DhanYog'] = 'Dhan^ yog : Conjunctions of Lords of Different Houses ^ ref : LHAE KN Rao, pg 77'
+yogCond['DhanYog'] = {"$or":
+                    [
+                        { 'BLConjunctsBL2.1': {'$in': ['2','5','9','11']} }, # 1st Lord Conjuncts 2,5,9,11 Lord
+                        { 'BLConjunctsBL2.2': {'$in': ['5','9','11']} }  ,
+                        { 'BLConjunctsBL2.5': {'$in': ['9','11']} } ,
+                        { 'BLConjunctsBL2.9': {'$in': ['11']} }  
+                    ]
+         }
