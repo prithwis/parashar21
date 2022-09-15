@@ -3,10 +3,10 @@
 # --------------------------------------------------
 # Yog Texts, Conditions
 
-global yogText, yogCond
+global yogText, yogCond, yogDummy
 yogText={}
 yogCond = {}
-
+yogDummy = 'Dummy'
 # BudhAdiya Yog
 #BudhAdityaText = 'Budhaditya^ yog formed by the conjunction of Sun and Mercury.  Considered to be a very auspicious Yoga. ^ ref : https://www.astroyogi.com/kundli/yog'            
 #BudhAdityaCond = {'GConjunctsG2.Su' : {'$in': ['Me']}}       # Su conjunct Me   
