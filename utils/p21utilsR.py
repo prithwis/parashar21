@@ -449,7 +449,7 @@ def R01A_CreateReportDoc(id = 'dummy'):
     
 # --------------------------------------------------
 
-def R512_FormatPage(singleChart = False):
+def R512_FormatPage(repStyle = 'MultiChart'):
 
     
        
@@ -533,7 +533,7 @@ def R512_FormatPage(singleChart = False):
     cPara = cPara+json.dumps(p21.pTags)
     p21.document.add_paragraph(cPara)
     
-    if not(singleChart):
+    if (repStyle == 'MultiChart'):
         p21.document.add_page_break()
     else:
         cPara = 'Yogs Found :'
