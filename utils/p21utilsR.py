@@ -449,7 +449,7 @@ def R01A_CreateReportDoc(id = 'dummy'):
     
 # --------------------------------------------------
 
-def R512_FormatPage():
+def R512_FormatPage(singleChart = False):
 
     
        
@@ -533,7 +533,8 @@ def R512_FormatPage():
     cPara = cPara+json.dumps(p21.pTags)
     p21.document.add_paragraph(cPara)
     
-    p21.document.add_page_break()
+    if not(singleChart):
+        p21.document.add_page_break()
 
 def tracer():
     print('tracer')
