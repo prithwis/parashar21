@@ -23,4 +23,4 @@ A preprint of the paper describing technical aspects is available at [DOI: 10.13
 # Updates
 1. The horoscope chart data in the MongoDB database can be accessed in an interactive way using MERN (MongoDB, Express, React, Node) application by pulling out and rendering charts. Codes for this are available in the [Khona21 repository](https://github.com/prithwis/khona21)
 2. As an extension of the search for arbitrary patterns, we now have a way to search for specific [Astrological Yogs](https://github.com/prithwis/parashar21/blob/main/P21_45_04_YogFilter.ipynb) in the charts stored in the MongoDB database.
-3. Rather than search for patterns, get all the details about a [single chart](https://github.com/prithwis/parashar21/blob/main/P21_45_05_SingleChart_Analysis.ipynb).
+3. Rather than search for patterns, get all the details about a [single chart](https://github.com/prithwis/parashar21/blob/main/P21_45_05_SingleChart_Analysis.ipynb) and see this [notebook](https://github.com/prithwis/parashar21/blob/main/P21_45_06_SingleChart_Yogs.ipynb), to locate yogs in the single charts
