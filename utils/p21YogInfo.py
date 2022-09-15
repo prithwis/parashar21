@@ -3,7 +3,7 @@
 # --------------------------------------------------
 # Yog Texts, Conditions
 
-global yogText, yogCond, yogDummy
+#global yogText, yogCond, yogDummy
 yogText={}
 yogCond = {}
 yogDummy = 'Dummy'
