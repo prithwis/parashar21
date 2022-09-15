@@ -22,6 +22,7 @@ global friends, enemies, neutrals
 global exaltG, exaltL, debilL,debilG,mool3G,mool3L,ownHouseG,ownHouseL,inFriendG,inEnemyG,inNeutralG,inFriendL,inEnemyL,inNeutralL, Positions
 global Gx, GAspects, GAspectedBy,BAspectedBy,BAspectedByBL,GAspects2, GAspectedBy2,BAspectedBy2,BAspectedByBL2,Aspects
 global GConjunctsG, BLConjunctsG, BLConjunctsBL, Conjuncts
+global yogsFound
 # ------------------------------------------
 
 BoL = ' '
