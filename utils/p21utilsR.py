@@ -529,15 +529,14 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     cPara = cPara+'\nLord Lord '+json.dumps(p21.BLConjunctsBL2).replace('"','')
     #p21.document.add_paragraph(cPara)
     
-    cPara = cPara+'\nTags ....................................................... \n'
-    cPara = cPara+json.dumps(p21.pTags)
+    cPara = cPara+'\n Vocation Tags : '
+    cPara = cPara+json.dumps(p21.pTags)+'\n'
+    if len(p21.yogsFound) > 0:                      # Yogs Found 
+        cPara = cPara+'Yogs Found : '
+        for y in p21.yogsFound:
+            cPara = cPara+y+' '
     p21.document.add_paragraph(cPara)
     
-    if len(p21.yogsFound) > 0:                      # Yogs Found 
-        cPara = 'Yogs Found : '
-        for y in p21.yogsFound:
-            cPara += y+' '
-        p21.document.add_paragraph(cPara)
     if (repStyle == 'MultiChart'):
         p21.document.add_page_break()
         
