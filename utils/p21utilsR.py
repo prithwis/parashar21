@@ -534,9 +534,9 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     p21.document.add_paragraph(cPara)
     
     if len(p21.yogsFound) > 0:                      # Yogs Found 
-        cPara = 'Yogs Found :'
+        cPara = 'Yogs Found : '
         for y in p21.yogsFound:
-            cPara += ' | '+ y
+            cPara += y+'| '
         p21.document.add_paragraph(cPara)
     if (repStyle == 'MultiChart'):
         p21.document.add_page_break()
