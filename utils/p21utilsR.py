@@ -465,7 +465,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     
     #cPara = R13A_ShowTrueDict('Retrograde Graha',p21.GRet)+'\n'                          # Show Grahas that are retrograde
     #cPara = ' '.join(p21.pTags)+'\n'
-    cPara = 'Analysis of '+p21.AnalysisType.upper()+' chart\n'
+    cPara = 'Details of '+p21.AnalysisType.upper()+' chart\n\n'
     cPara = cPara+R13B_ListPositions('Lord of ',p21.Lord)                                # Show Lords
     cPara = cPara+"\n"
     cPara = cPara+'Graha Lord of \n'+json.dumps(p21.GrahaLordBhav).replace('"','')                         # Show the Bhavs of whicha Graha is Lord
@@ -536,7 +536,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     if len(p21.yogsFound) > 0:                      # Yogs Found 
         cPara = 'Yogs Found : '
         for y in p21.yogsFound:
-            cPara += y+'| '
+            cPara += y+' '
         p21.document.add_paragraph(cPara)
     if (repStyle == 'MultiChart'):
         p21.document.add_page_break()
