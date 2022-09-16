@@ -112,7 +112,7 @@ selCols = {
 
 # --------------------------------------------------
 yogsFound = []
-yogList = ['BudhAditya','BudhAdityaNR', 'Gajakesari', 'Rajyog', 'ChandraMangal2','DhanYog']
+yogList = ['BudhAditya','BudhAdityaNR', 'Gajakesari', 'Rajyog', 'ChandraMangal1','ChandraMangal2', 'DhanYog']
 
 
 print('imported p21')
