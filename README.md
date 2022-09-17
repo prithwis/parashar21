@@ -9,7 +9,7 @@ Parashar21 is not a prediction engine. There is no attempt to interpret horoscop
 # Further information
 The philosophy that drives this enterprise is articulated in the article [Astrology - an application of Data Science](https://www.linkedin.com/pulse/astrology-an-application-data-science-prithwis-mukerjee/) <br>
 A preprint of the paper describing technical aspects is available at [DOI: 10.13140/RG.2.2.19476.58240](https://www.researchgate.net/publication/358191949_Efficient_storage_and_retrieval_of_horoscope_data_on_a_computer_system_A_case_study_using_Python_and_MongoDB?channel=doi&linkId=61f47fec007fb50447205dcd&showFulltext=true)<br>
-More technical information is available in the project [wiki](https://github.com/prithwis/parashar21/wiki)
+More technical information is available in the project [wiki](https://github.com/prithwis/parashar21/wiki) <br>
 For a history of this project, visit the [Parashar21 Blog](https://parashar21.blogspot.com/) <br> 
 # Codes available in this repository
 1. Load Birthdata from a CSV file, generate horoscope chart data and load the same into a MongoDB database.  [P21_45_01_Cast_Load](https://github.com/prithwis/parashar21/blob/main/P21_45_01_Cast_Load.ipynb).
