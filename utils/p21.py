@@ -113,7 +113,8 @@ selCols = {
 
 # --------------------------------------------------
 yogsFound = []
-yogList = ['BudhAditya','BudhAdityaNR', 'Gajakesari', 'Rajyog', 'ChandraMangal1','ChandraMangal2', 'DhanYog']
+AnalysisType = 'Rashi'
+#yogList = ['BudhAditya','BudhAdityaNR', 'Gajakesari', 'Rajyog', 'ChandraMangal1','ChandraMangal2', 'DhanYog']
 
 
-print('imported p21')
+#print('imported p21')
