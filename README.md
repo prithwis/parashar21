@@ -8,7 +8,7 @@ Parashar21 is a design or strategy, along with a collection of programs, to stor
 Parashar21 is not a prediction engine. There is no attempt to interpret horoscope charts. 
 # Further information
 The philosophy that drives this enterprise is articulated in the article [Astrology - an application of Data Science](https://www.linkedin.com/pulse/astrology-an-application-data-science-prithwis-mukerjee/) <br>
-A preprint of the paper describing technical aspects is available at [DOI: 10.13140/RG.2.2.19476.58240](https://www.researchgate.net/publication/358191949_Efficient_storage_and_retrieval_of_horoscope_data_on_a_computer_system_A_case_study_using_Python_and_MongoDB?channel=doi&linkId=61f47fec007fb50447205dcd&showFulltext=true)<br>
+A preprint of the paper describing technical aspects is available at [Efficient storage and retrieval of horoscope data on a computer system. A case study using Python and MongoDB](https://www.researchgate.net/publication/358191949_Efficient_storage_and_retrieval_of_horoscope_data_on_a_computer_system_A_case_study_using_Python_and_MongoDB?channel=doi&linkId=61f47fec007fb50447205dcd&showFulltext=true)<br>
 More technical information is available in the project [wiki](https://github.com/prithwis/parashar21/wiki) <br>
 For a history of this project, visit the [Parashar21 Blog](https://parashar21.blogspot.com/) <br> 
 # Codes available in this repository
