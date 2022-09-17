@@ -437,7 +437,7 @@ def R01A_CreateReportDoc(id = 'dummy'):
     footer = section.footer
     
     header01 = header.paragraphs[0]
-    header01.text = "Parashar21 | "+ id + " | "+ now.strftime("%d %b %Y")
+    header01.text = "Parashar21 | "+ id + " | printed : "+ now.strftime("%d %b %Y")
 
     
     footer01 = footer.paragraphs[0]
