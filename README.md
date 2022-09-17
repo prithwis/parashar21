@@ -4,7 +4,7 @@ Tycho Brahe and his sister Sophia made thousands of observations of the position
 # What is Parashar21?
 Parashar21 is a design or strategy, along with a collection of programs, to store horoscope chart data as a high dimensional, but non-relational data model, so that charts that meet certain criteria can be retrieved easily. 
 
-## What Parashar21 is not!
+### What Parashar21 is not!
 Parashar21 is not a prediction engine. There is no attempt to interpret horoscope charts. 
 # Further information
 The philosophy that drives this enterprise is articulated in the article [Astrology - an application of Data Science](https://www.linkedin.com/pulse/astrology-an-application-data-science-prithwis-mukerjee/) <br>
@@ -17,5 +17,5 @@ For a history of this project, visit the [Parashar21 Blog](https://parashar21.bl
 3. Install MongoDB locally in the Colab VM,  load pre-generated horoscope chart data, retrieve charts that meet specific patterns, print reports.  [P21_45_02A_Pull_Print_StandAlone](https://github.com/prithwis/parashar21/blob/main/P21_45_02A_Pull_Print_StandAlone.ipynb).
 4. Instead of searching for random patterns, we search for specific patterns called Yogs [P21_45_04_YogFilter](https://github.com/prithwis/parashar21/blob/main/P21_45_04_YogFilter.ipynb) in the charts stored in the MongoDB database.
 5. Rather than search for horoscopes that meet certain requirements, show detailed analysis of one selected chart, including the names of Yogs, if any, that present in the chart [P21_45_06_SingleChart_Details](https://github.com/prithwis/parashar21/blob/main/P21_45_06_SingleChart_Details.ipynb) 
-## Additional Codes
+### Additional Codes
 The horoscope chart data in a MongoDB database can be accessed in an interactive way using a MERN (MongoDB, Express, React, Node) application to retrieve and disiplay charts. Codes for this are available in the [Khona21 repository](https://github.com/prithwis/khona21)
