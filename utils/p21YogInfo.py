@@ -11,25 +11,21 @@ yogText={}
 yogCond = {}
 # 1 Gajakesari Yog
 #yogText['Gajakesari'] = 'Gajakesari^ yog : Moon and Jupiter is placed in the 1st, 4th, 7th and 10th house which forms the angular houses or Kendra. ^ ref : https://www.astroyogi.com/kundli/yog'
-yogText['Gajkesari'] = 'Gajakesari Yog^ Jupiter is in Kendra or 1,4,7,10th from Moon^ ref BVRaman Page 13'
+yogText['Gajakesari'] = 'Gajakesari Yog^ Jupiter is in Kendra or 1,4,7,10th from Moon^ ref BVRaman Page 13'
 yogCond['Gajakesari'] = {"$or":[
-                                 "$and": [
-                                    'GRashiN.Mo' : {'$eq': 1}}
-                                    {"$or" : [
-                                      {'GRashiN.Ju' : {'$eq': 4}},
-                                      {'GRashiN.Ju' : {'$eq': 7}},
-                                      {'GRashiN.Ju' : {'$eq': 10}}
-                                    ]
-                                 ]
-                                 "$and": [
-                                    'GRashiN.Mo' : {'$eq': 2}}
-                                    {"$or" : [
-                                      {'GRashiN.Ju' : {'$eq': 5}},
-                                      {'GRashiN.Ju' : {'$eq': 8}},
-                                      {'GRashiN.Ju' : {'$eq': 11}}
-                                    ]
-                                 ]
-                                ]
+                                  { "$and":[{'GRashiN.Mo' : {'$eq': 1}},{"$or" : [{'GRashiN.Ju' : {'$eq': 4}},{'GRashiN.Ju' : {'$eq': 7}},{'GRashiN.Ju' : {'$eq': 10}}]}]},
+                                  { "$and":[{'GRashiN.Mo' : {'$eq': 2}},{"$or" : [{'GRashiN.Ju' : {'$eq': 5}},{'GRashiN.Ju' : {'$eq': 8}},{'GRashiN.Ju' : {'$eq': 11}}]}]},
+                                  { "$and":[{'GRashiN.Mo' : {'$eq': 3}},{"$or" : [{'GRashiN.Ju' : {'$eq': 6}},{'GRashiN.Ju' : {'$eq': 9}},{'GRashiN.Ju' : {'$eq': 12}}]}]},
+                                  { "$and":[{'GRashiN.Mo' : {'$eq': 4}},{"$or" : [{'GRashiN.Ju' : {'$eq': 7}},{'GRashiN.Ju' : {'$eq': 10}},{'GRashiN.Ju' : {'$eq': 1}}]}]},
+                                  { "$and":[{'GRashiN.Mo' : {'$eq': 5}},{"$or" : [{'GRashiN.Ju' : {'$eq': 8}},{'GRashiN.Ju' : {'$eq': 11}},{'GRashiN.Ju' : {'$eq': 2}}]}]},
+                                  { "$and":[{'GRashiN.Mo' : {'$eq': 6}},{"$or" : [{'GRashiN.Ju' : {'$eq': 9}},{'GRashiN.Ju' : {'$eq': 12}},{'GRashiN.Ju' : {'$eq': 3}}]}]},
+                                  { "$and":[{'GRashiN.Mo' : {'$eq': 7}},{"$or" : [{'GRashiN.Ju' : {'$eq': 10}},{'GRashiN.Ju' : {'$eq': 1}},{'GRashiN.Ju' : {'$eq': 4}}]}]},
+                                  { "$and":[{'GRashiN.Mo' : {'$eq': 8}},{"$or" : [{'GRashiN.Ju' : {'$eq': 11}},{'GRashiN.Ju' : {'$eq': 2}},{'GRashiN.Ju' : {'$eq': 5}}]}]},
+                                  { "$and":[{'GRashiN.Mo' : {'$eq': 9}},{"$or" : [{'GRashiN.Ju' : {'$eq': 12}},{'GRashiN.Ju' : {'$eq': 3}},{'GRashiN.Ju' : {'$eq': 6}}]}]},
+                                  { "$and":[{'GRashiN.Mo' : {'$eq': 10}},{"$or" : [{'GRashiN.Ju' : {'$eq': 1}},{'GRashiN.Ju' : {'$eq': 4}},{'GRashiN.Ju' : {'$eq': 7}}]}]},
+                                  { "$and":[{'GRashiN.Mo' : {'$eq': 11}},{"$or" : [{'GRashiN.Ju' : {'$eq': 2}},{'GRashiN.Ju' : {'$eq': 5}},{'GRashiN.Ju' : {'$eq': 8}}]}]},
+                                  { "$and":[{'GRashiN.Mo' : {'$eq': 12}},{"$or" : [{'GRashiN.Ju' : {'$eq': 3}},{'GRashiN.Ju' : {'$eq': 6}},{'GRashiN.Ju' : {'$eq': 9}}]}]}
+                               ]
                         }
 
 
