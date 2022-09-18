@@ -385,7 +385,7 @@ def R01_CreateReportDoc(cqs,pS):
     #heading_1 = p21.pName +" >>> "+p21.ChartType
     #heading_1 = ChartType+" Chart of "+pName
     
-    heading_1 = "Selected Charts"  #p21.ReportFile
+    heading_1 = "Charts of Interest"  #p21.ReportFile
     p21.document.add_heading(heading_1, 0)
     heading_2 = cqs                         # current query string
     p21.document.add_heading(heading_2, level=3)
