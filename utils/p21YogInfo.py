@@ -11,7 +11,7 @@ yogText={}
 yogCond = {}
 # 1 Gajakesari Yog
 #yogText['Gajakesari'] = 'Gajakesari^ yog : Moon and Jupiter is placed in the 1st, 4th, 7th and 10th house which forms the angular houses or Kendra. ^ ref : https://www.astroyogi.com/kundli/yog'
-youText['Gajkesari'] = 'Gajakesari Yog^ Jupiter is in Kendra or 1,4,7,10th from Moon^ ref BVRaman Page 13
+youText['Gajkesari'] = 'Gajakesari Yog^ Jupiter is in Kendra or 1,4,7,10th from Moon^ ref BVRaman Page 13'
 yogCond['Gajakesari'] = {"$or":[
                                  "$and": [
                                     'GRashiN.Mo' : {'$eq': 1}}
