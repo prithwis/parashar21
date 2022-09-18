@@ -9,7 +9,36 @@
 #global yogText, yogCond
 yogText={}
 yogCond = {}
+# 1 Gajakesari Yog
+#yogText['Gajakesari'] = 'Gajakesari^ yog : Moon and Jupiter is placed in the 1st, 4th, 7th and 10th house which forms the angular houses or Kendra. ^ ref : https://www.astroyogi.com/kundli/yog'
+youText['Gajkesari'] = 'Gajakesari Yog^ Jupiter is in Kendra or 1,4,7,10th from Moon^ ref BVRaman Page 13
+yogCond['Gajakesari'] = {"$or":[
+                                 "$and": [
+                                    'GRashiN.Mo' : {'$eq': 1}}
+                                    {"$or" : [
+                                      {'GRashiN.Ju' : {'$eq': 4}},
+                                      {'GRashiN.Ju' : {'$eq': 7}},
+                                      {'GRashiN.Ju' : {'$eq': 10}}
+                                    ]
+                                 ]
+                                 "$and": [
+                                    'GRashiN.Mo' : {'$eq': 2}}
+                                    {"$or" : [
+                                      {'GRashiN.Ju' : {'$eq': 5}},
+                                      {'GRashiN.Ju' : {'$eq': 8}},
+                                      {'GRashiN.Ju' : {'$eq': 11}}
+                                    ]
+                                 ]
+                                ]
+                        }
 
+
+
+
+
+
+                            
+#
 # BudhAdiya Yog
 #BudhAdityaText = 'Budhaditya^ yog formed by the conjunction of Sun and Mercury.  Considered to be a very auspicious Yoga. ^ ref : https://www.astroyogi.com/kundli/yog'            
 #BudhAdityaCond = {'GConjunctsG2.Su' : {'$in': ['Me']}}       # Su conjunct Me   
@@ -26,22 +55,7 @@ yogCond['BudhAdityaNR'] = {"$and":
                         ]
                    } 
 #
-#Gajakesari Yog
-yogText['Gajakesari'] = 'Gajakesari^ yog : the moon and Jupiter is placed in the 1st, 4th, 7th and 10th house which forms the angular houses or Kendra. ^ ref : https://www.astroyogi.com/kundli/yog'
-yogCond['Gajakesari'] = {"$and":
-                    [
-                        {'GConjunctsG2.Ju' : {'$in': ['Mo']}},      # Ju conjunct Mo 
-                        { "$or" : [
-                            {'GrahaBhava.Mo' : {'$eq': 1}},              # Mo in First House
-                            {'GrahaBhava.Mo' : {'$eq': 4}},              # Mo in Fourth House
-                            {'GrahaBhava.Mo' : {'$eq': 7}},              # Mo in Seventh House
-                            {'GrahaBhava.Mo' : {'$eq': 10}}              # Mo in Tenth House
-                          ]
-                        }  
 
-                    ]
-                 }           
-#
 #RajaYog
 yogText['Rajyog'] = 'Raj^  yog : Jupiter is in Cancer, Venus in the ninth house and Jupiter in the seventh house.^ ref : https://www.astroyogi.com/kundli/yog'
 yogCond['Rajyog'] = {"$and":
@@ -77,8 +91,8 @@ yogCond['ChandraMangal2'] = {"$and":
 #
 #Dhan Yog
 #
-yogText['DhanYog'] = 'Dhan^ yog : Conjunctions of Lords of Different Houses ^ ref : LHAE KN Rao, pg 77'
-yogCond['DhanYog'] = {"$or":
+yogText['DhanYog0'] = 'DhanYog0^  : Conjunctions of Lords of Different Houses ^ ref : LHAE KN Rao, pg 77'
+yogCond['DhanYog0'] = {"$or":
                     [
                         { 'BLConjunctsBL2.1': {'$in': ['2','5','9','11']} }, # 1st Lord Conjuncts 2,5,9,11 Lord
                         { 'BLConjunctsBL2.2': {'$in': ['5','9','11']} }  ,
