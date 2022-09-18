@@ -1,5 +1,8 @@
-# 𝓟𝓪𝓻𝓪𝓼𝓱𝓪𝓻21
-# 𝓟𝓻𝓲𝓽𝓱𝔀𝓲𝓼 𝓜𝓾𝓴𝓮𝓻𝓳𝓮𝓮
+#Copyright (c) 2022, Prithwis Mukerjee
+#All rights reserved.
+#
+#This source code is licensed under the GNU GPL v3.0 -style license found in the
+#LICENSE file in the root directory of this source tree. 
 # --------------------------------------------------
 # Global Variables
 import p21
