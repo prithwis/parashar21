@@ -6,6 +6,7 @@
 # --------------------------------------------------
 # Global Variables
 import p21
+import p21YogInfo
 # --------------------------------------------------
 #Utility functions 
 
@@ -327,6 +328,14 @@ def R13A_ShowTrueDict(desc,tDict):
         return(desc+'<none>')
     #return(D)
 
+
+def R30_LocateYogs():
+    p21.yogsFound = []
+    for yogName in list(p21YogInfo.yogCond.keys()):                                             # Yog conditions picked up from p21YogInfo.py
+        objList = list(p21.kollection.find(p21YogInfo.yogCond[yogName],{"pid.name" : 1,"_id":0}))   # Get names of people whose charts have these Yogs
+        personList = list(map(lambda e:e['pid']['name'],objList))                               # Convert list of json object to list of string
+        if p21.pName in personList:
+            p21.yogsFound.append(yogName)
 
 def R511_parseChartData(c):
 

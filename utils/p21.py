@@ -24,6 +24,7 @@ global Gx, GAspects, GAspectedBy,BAspectedBy,BAspectedByBL,GAspects2, GAspectedB
 global GConjunctsG, BLConjunctsG, BLConjunctsBL, Conjuncts
 global yogsFound, yogList
 global AnalysisType
+global kollection   # MongoDB collection that stores the horoscope charts
 # ------------------------------------------
 
 BoL = ' '
