@@ -4,11 +4,9 @@
 #This source code is licensed under the GNU GPL v3.0 -style license found in the
 #LICENSE file in the root directory of this source tree. 
 # --------------------------------------------------
-# Yog information taken from '300 Important Combinations', BV Raman, Motilal Banarsidass Publishers, 10th Ed, 7th Reprint
-#
-#--------------------------------------------------
+# Yog Texts, Conditions
 
-#
+#global yogText, yogCond
 yogText={}
 yogCond = {}
 
