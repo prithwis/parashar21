@@ -50,9 +50,9 @@ yogCond['Sunapha'] = {"$or":[
 # --------------------------------------------------------------------------
 # 4 Dhurdhura Yog - Raman pg 20
 yogText['Dhurdhura'] = 'Dhurdhura Yog : Planets on both sides of the Moon'
-part1 = yogCond['Sunapha']
-part2 = yogCond['Anapha']
-yogCond['Dhurdhura'] = {"$and" :[part1,part2]}
+StrSunapha = yogCond['Sunapha']
+StrAnapha = yogCond['Anapha']
+yogCond['Dhurdhura'] = {"$and" :[StrSunapha,StrAnapha]}
 # --------------------------------------------------------------------------
 # 1 Gajakesari Yog - Raman pg 13
 yogText['Gajakesari'] = 'Gajakesari Yog : Jupiter is in Kendra or 1,4,7,10th from Moon'
