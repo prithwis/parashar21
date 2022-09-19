@@ -80,7 +80,6 @@ yogCond['Kemadruma'] = {"$or":[
 
 
 # --------------------------------------------------------------------------
-# --------------------------------------------------------------------------
 # 3 Anapha Yog - Raman pg 19
 yogText['Anapha'] = 'Anapha Yog |Planets other than Sun in 12th Place from Moon'
 yogCond['Anapha'] = {"$or":[
