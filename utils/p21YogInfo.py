@@ -11,7 +11,22 @@
 #
 yogText={}
 yogCond = {}
-
+# 6 Chandra Mangala Yog - page 24
+# Comes in two flavours 
+yogText['ChandraMangal1'] = 'Chandra Mangal Yog | Mars Conjoins Moon'
+yogCond['ChandraMangal1'] = {'GConjunctsG2.Mo' : {'$in': ['Ma']}}
+#
+yogText['ChandraMangal2'] = 'Chandra Mangal Yog | Mars and Moon in Mutual Aspect'
+yogCond['ChandraMangal2'] = {"$and":
+                                [
+                                    {'GAspectedBy2.Ma' : {'$in': ['Mo']}} ,     # Ma aspected by Moon       
+                                    {'GAspectedBy2.Mo' : {'$in': ['Ma']}}       # Moon aspected by Mars 
+                                ]
+                            }
+#
+yogText['ChandraMangal'] = 'Chandra Mangal Yog | Mars Conjoins Moon or  Mars and Moon in Mutual Aspect'
+yogCond['ChandraMangal'] = {"$or":[yogCond['ChandraMangal1'],yogCond['ChandraMangal2']]}
+#--------------------------------------------------
 # 5 Kemadruma Yog - Raman pg 22
 yogText['Kemadruma'] = 'Kemadruma Yog : No planets on either sides of the Moon'
 yogCond['Kemadruma'] = {"$or":[
@@ -141,4 +156,5 @@ yogCond['Gajakesari'] = {"$or":[
                                   { "$and":[{'GRashiN.Mo' : {'$eq': 12}},{"$or" : [{'GRashiN.Ju' : {'$eq': 12}},{'GRashiN.Ju' : {'$eq': 3}},{'GRashiN.Ju' : {'$eq': 6}},{'GRashiN.Ju' : {'$eq': 9}}]}]}
                                ]
                         }
-
+# --------------------------------------------------------------------------------- END
+print(len(list(yogText.keys())), 'Yogs on record')
