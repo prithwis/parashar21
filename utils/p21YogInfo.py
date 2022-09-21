@@ -11,6 +11,149 @@
 #
 yogText={}
 yogCond = {}
+# -----------------------------------------------------------
+# 7 Adhi Yog
+
+yogText['Adhi6'] = 'Adhi6 Yog | Benefics located in 6th from Moon'
+yogCond['Adhi6'] = {"$or" :
+                        [
+                        {"$and": [{'GRashiN.Mo' : {'$eq': 1}},
+                                 {"$or":[{"$and":[{'GRashiN.Su' : {'$eq': 6}},{'beneficG.Su': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ma' : {'$eq': 6}},{'beneficG.Ma': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Me' : {'$eq': 6}},{'beneficG.Me': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ju' : {'$eq': 6}},{'beneficG.Ju': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ve' : {'$eq': 6}},{'beneficG.Ve': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Sa' : {'$eq': 6}},{'beneficG.Sa': {'$eq': True}}]}
+                                         ]
+                                  }
+                                 ]
+                                },
+                        {"$and": [{'GRashiN.Mo' : {'$eq': 2}},
+                                 {"$or":[{"$and":[{'GRashiN.Su' : {'$eq': 7}},{'beneficG.Su': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ma' : {'$eq': 7}},{'beneficG.Ma': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Me' : {'$eq': 7}},{'beneficG.Me': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ju' : {'$eq': 7}},{'beneficG.Ju': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ve' : {'$eq': 7}},{'beneficG.Ve': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Sa' : {'$eq': 7}},{'beneficG.Sa': {'$eq': True}}]}
+                                         ]
+                                  }
+                                 ]
+                                },
+                        {"$and": [{'GRashiN.Mo' : {'$eq': 3}},
+                                 {"$or":[{"$and":[{'GRashiN.Su' : {'$eq': 8}},{'beneficG.Su': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ma' : {'$eq': 8}},{'beneficG.Ma': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Me' : {'$eq': 8}},{'beneficG.Me': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ju' : {'$eq': 8}},{'beneficG.Ju': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ve' : {'$eq': 8}},{'beneficG.Ve': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Sa' : {'$eq': 8}},{'beneficG.Sa': {'$eq': True}}]}
+                                         ]
+                                  }
+                                 ]
+                                },
+                        {"$and": [{'GRashiN.Mo' : {'$eq': 4}},
+                                 {"$or":[{"$and":[{'GRashiN.Su' : {'$eq': 9}},{'beneficG.Su': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ma' : {'$eq': 9}},{'beneficG.Ma': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Me' : {'$eq': 9}},{'beneficG.Me': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ju' : {'$eq': 9}},{'beneficG.Ju': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ve' : {'$eq': 9}},{'beneficG.Ve': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Sa' : {'$eq': 9}},{'beneficG.Sa': {'$eq': True}}]}
+                                         ]
+                                  }
+                                 ]
+                                },
+                        {"$and": [{'GRashiN.Mo' : {'$eq': 5}},
+                                 {"$or":[{"$and":[{'GRashiN.Su' : {'$eq': 10}},{'beneficG.Su': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ma' : {'$eq': 10}},{'beneficG.Ma': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Me' : {'$eq': 10}},{'beneficG.Me': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ju' : {'$eq': 10}},{'beneficG.Ju': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ve' : {'$eq': 10}},{'beneficG.Ve': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Sa' : {'$eq': 10}},{'beneficG.Sa': {'$eq': True}}]}
+                                         ]
+                                  }
+                                 ]
+                                },
+                        {"$and": [{'GRashiN.Mo' : {'$eq': 6}},
+                                 {"$or":[{"$and":[{'GRashiN.Su' : {'$eq': 11}},{'beneficG.Su': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ma' : {'$eq': 11}},{'beneficG.Ma': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Me' : {'$eq': 11}},{'beneficG.Me': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ju' : {'$eq': 11}},{'beneficG.Ju': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ve' : {'$eq': 11}},{'beneficG.Ve': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Sa' : {'$eq': 11}},{'beneficG.Sa': {'$eq': True}}]}
+                                         ]
+                                  }
+                                 ]
+                                },
+                        {"$and": [{'GRashiN.Mo' : {'$eq': 7}},
+                                 {"$or":[{"$and":[{'GRashiN.Su' : {'$eq': 12}},{'beneficG.Su': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ma' : {'$eq': 12}},{'beneficG.Ma': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Me' : {'$eq': 12}},{'beneficG.Me': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ju' : {'$eq': 12}},{'beneficG.Ju': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ve' : {'$eq': 12}},{'beneficG.Ve': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Sa' : {'$eq': 12}},{'beneficG.Sa': {'$eq': True}}]}
+                                         ]
+                                  }
+                                 ]
+                                },
+                        {"$and": [{'GRashiN.Mo' : {'$eq': 8}},
+                                 {"$or":[{"$and":[{'GRashiN.Su' : {'$eq': 1}},{'beneficG.Su': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ma' : {'$eq': 1}},{'beneficG.Ma': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Me' : {'$eq': 1}},{'beneficG.Me': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ju' : {'$eq': 1}},{'beneficG.Ju': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ve' : {'$eq': 1}},{'beneficG.Ve': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Sa' : {'$eq': 1}},{'beneficG.Sa': {'$eq': True}}]}
+                                         ]
+                                  }
+                                 ]
+                                },
+                        {"$and": [{'GRashiN.Mo' : {'$eq': 9}},
+                                 {"$or":[{"$and":[{'GRashiN.Su' : {'$eq': 2}},{'beneficG.Su': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ma' : {'$eq': 2}},{'beneficG.Ma': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Me' : {'$eq': 2}},{'beneficG.Me': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ju' : {'$eq': 2}},{'beneficG.Ju': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ve' : {'$eq': 2}},{'beneficG.Ve': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Sa' : {'$eq': 2}},{'beneficG.Sa': {'$eq': True}}]}
+                                         ]
+                                  }
+                                 ]
+                                },
+                        {"$and": [{'GRashiN.Mo' : {'$eq': 10}},
+                                 {"$or":[{"$and":[{'GRashiN.Su' : {'$eq': 3}},{'beneficG.Su': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ma' : {'$eq': 3}},{'beneficG.Ma': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Me' : {'$eq': 3}},{'beneficG.Me': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ju' : {'$eq': 3}},{'beneficG.Ju': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ve' : {'$eq': 3}},{'beneficG.Ve': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Sa' : {'$eq': 3}},{'beneficG.Sa': {'$eq': True}}]}
+                                         ]
+                                  }
+                                 ]
+                                },
+                        {"$and": [{'GRashiN.Mo' : {'$eq': 11}},
+                                 {"$or":[{"$and":[{'GRashiN.Su' : {'$eq': 4}},{'beneficG.Su': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ma' : {'$eq': 2}},{'beneficG.Ma': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Me' : {'$eq': 2}},{'beneficG.Me': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ju' : {'$eq': 2}},{'beneficG.Ju': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ve' : {'$eq': 2}},{'beneficG.Ve': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Sa' : {'$eq': 2}},{'beneficG.Sa': {'$eq': True}}]}
+                                         ]
+                                  }
+                                 ]
+                                },
+                        {"$and": [{'GRashiN.Mo' : {'$eq': 12}},
+                                 {"$or":[{"$and":[{'GRashiN.Su' : {'$eq': 4}},{'beneficG.Su': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ma' : {'$eq': 4}},{'beneficG.Ma': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Me' : {'$eq': 4}},{'beneficG.Me': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ju' : {'$eq': 4}},{'beneficG.Ju': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Ve' : {'$eq': 4}},{'beneficG.Ve': {'$eq': True}}]},
+                                         {"$and":[{'GRashiN.Sa' : {'$eq': 4}},{'beneficG.Sa': {'$eq': True}}]}
+                                         ]
+                                  }
+                                 ]
+                                }
+                        ]
+                        }
+
+
+# -----------------------------------------------------------
 # 6 Chandra Mangala Yog - page 24
 # Comes in two flavours 
 yogText['ChandraMangal1'] = 'Chandra Mangal Yog | Mars Conjoins Moon'
