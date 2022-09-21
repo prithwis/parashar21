@@ -370,7 +370,7 @@ def R511_parseChartData(c):
     p21.GConjunctsG2 = c['GConjunctsG2']
     p21.BLConjunctsG2 = c['BLConjunctsG2']
     p21.BLConjunctsBL2 = c['BLConjunctsBL2']
-    p21.benficG = c['beneficG']
+    p21.beneficG = c['beneficG']
     p21.maleficG = c['maleficG']
     
 
