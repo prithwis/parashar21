@@ -98,7 +98,7 @@ yogCond['Kemadruma'] = {"$or":[
 # 3 Anapha Yog - Raman pg 19
 yogText['Anapha'] = 'Anapha Yog |Planets other than Sun in 12th Place from Moon'
 yogCond['Anapha'] = {"$or":[
-                                  { "$and":[{'GRashiN.Mo' : {'$eq': 1}},{'GRashiN.Su' : {'$ne': 12}},{"$or" : [{'GRashiN.Ma' : {'$eq': 12}},{'GRashiN.Ma' : {'$eq': 12}},{'GRashiN.Me' : {'$eq': 2}},{'GRashiN.Ju' : {'$eq': 12}},{'GRashiN.Ve' : {'$eq': 12}},{'GRashiN.Sa' : {'$eq': 12}}]}]},
+                                  { "$and":[{'GRashiN.Mo' : {'$eq': 1}},{'GRashiN.Su' : {'$ne': 12}},{"$or" : [{'GRashiN.Ma' : {'$eq': 12}},{'GRashiN.Ma' : {'$eq': 12}},{'GRashiN.Me' : {'$eq': 12}},{'GRashiN.Ju' : {'$eq': 12}},{'GRashiN.Ve' : {'$eq': 12}},{'GRashiN.Sa' : {'$eq': 12}}]}]},
                                   { "$and":[{'GRashiN.Mo' : {'$eq': 2}},{'GRashiN.Su' : {'$ne': 1}},{"$or" : [{'GRashiN.Ma' : {'$eq': 1}},{'GRashiN.Ma' : {'$eq': 1}},{'GRashiN.Me' : {'$eq': 1}},{'GRashiN.Ju' : {'$eq': 1}},{'GRashiN.Ve' : {'$eq': 1}},{'GRashiN.Sa' : {'$eq': 1}}]}]},
                                   { "$and":[{'GRashiN.Mo' : {'$eq': 3}},{'GRashiN.Su' : {'$ne': 2}},{"$or" : [{'GRashiN.Ma' : {'$eq': 2}},{'GRashiN.Ma' : {'$eq': 2}},{'GRashiN.Me' : {'$eq': 2}},{'GRashiN.Ju' : {'$eq': 2}},{'GRashiN.Ve' : {'$eq': 2}},{'GRashiN.Sa' : {'$eq': 2}}]}]},
                                   { "$and":[{'GRashiN.Mo' : {'$eq': 4}},{'GRashiN.Su' : {'$ne': 3}},{"$or" : [{'GRashiN.Ma' : {'$eq': 3}},{'GRashiN.Ma' : {'$eq': 3}},{'GRashiN.Me' : {'$eq': 3}},{'GRashiN.Ju' : {'$eq': 3}},{'GRashiN.Ve' : {'$eq': 3}},{'GRashiN.Sa' : {'$eq': 3}}]}]},
