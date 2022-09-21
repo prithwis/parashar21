@@ -521,7 +521,7 @@ def C51_DetermineBenMal():
     #print('GRashiN',p21.GRashiN['La'])
     #print(type(p21.GRashiN['La']))
     L = p21.RashiN2A(p21.GRashiN['La'])
-    print(L)
+    #print(L)
     if L == 'Mesh':
         p21.beneficG = {'Su': True, 'Mo': True, 'Ma': True, 'Me': True, 'Ju': True, 'Ve': False, 'Sa': False}
         p21.maleficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': True, 'Ju': False, 'Ve': False, 'Sa': False, 'Ra': True, 'Ke': True}
@@ -572,8 +572,8 @@ def C51_DetermineBenMal():
         
     else:
         print("Wrong Lagna", L)
-    print('Benefic G', p21.beneficG) 
-    print('Malefic G', p21.maleficG)   
+    #print('Benefic G', p21.beneficG) 
+    #print('Malefic G', p21.maleficG)   
     p21.BenMalG = {
       'beneficG'  : p21.beneficG,
       'maleficG' : p21.maleficG 

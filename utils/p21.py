@@ -111,7 +111,9 @@ selCols = {
             'BAspectedByBL2':1,         # Bhava apectedby whom  ? { BhavNumber : [ List of Bhava Lords]}
             'GConjunctsG2' :1 ,         # Which Graha Conjuncts Which Graha { Graha : [ List of Conjunct Grahas]} 
             'BLConjunctsG2':1 ,         # Which BhavLord conjuncts which Graha { Lord : [ List of Conjunct Grahas]}
-            'BLConjunctsBL2':1          # Which Bhav Lord conjuncts with Bhav Lord ( Lord : [ List of Lords]}
+            'BLConjunctsBL2':1,         # Which Bhav Lord conjuncts with Bhav Lord ( Lord : [ List of Lords]}
+            'beneficG':1,
+            'maleficG':1
            }
 
 # --------------------------------------------------

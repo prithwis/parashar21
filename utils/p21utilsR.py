@@ -339,6 +339,8 @@ def R30_LocateYogs():
 
 def R511_parseChartData(c):
 
+    #print(c)
+    #print(c['beneficG'])
     p21.GLon = c['GLon']
     p21.GRet = c['GRet']
     pid = c['pid']
@@ -366,6 +368,8 @@ def R511_parseChartData(c):
     p21.GConjunctsG2 = c['GConjunctsG2']
     p21.BLConjunctsG2 = c['BLConjunctsG2']
     p21.BLConjunctsBL2 = c['BLConjunctsBL2']
+    p21.benficG = c['beneficG']
+    p21.maleficG = c['maleficG']
     
 
 def R01_CreateReportDoc(cqs,pS):
@@ -491,7 +495,9 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     cPara1 = cPara1+R13A_ShowTrueDict('Exalted     : ',p21.exaltG)+'\n'
     cPara1 = cPara1+R13A_ShowTrueDict('Debilitated : ',p21.debilG)+'\n'
     cPara1 = cPara1+R13A_ShowTrueDict('in Friend   : ',p21.inFriendG)+'\n'
-    cPara1 = cPara1+R13A_ShowTrueDict('in Enemy    : ',p21.inEnemyG)
+    cPara1 = cPara1+R13A_ShowTrueDict('in Enemy    : ',p21.inEnemyG)+'\n'
+    cPara1 = cPara1+R13A_ShowTrueDict('Benefics    : ',p21.beneficG)+'\n'
+    cPara1 = cPara1+R13A_ShowTrueDict('Malefics    : ',p21.maleficG)
     cell1.add_paragraph(cPara1)
     
     
