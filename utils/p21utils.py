@@ -517,58 +517,59 @@ def C41_DetermineConjuncts():
 # Benefics, Malefics
 #
 def C51_DetermineBenMal():
-    print('DetermineBenMal')
-    #print('GRashiN',p21.GRashiN['La'])
-    #print(type(p21.GRashiN['La']))
+    #
+    # based on https://www.clickastro.com/blog/planets-in-birth-chart/   -- NOT USED
+    # based on https://shrivinayakaastrology.com/Planets/beneficandmaleficplanets.html
+    #
     L = p21.RashiN2A(p21.GRashiN['La'])
     #print(L)
     if L == 'Mesh':
-        p21.beneficG = {'Su': True, 'Mo': True, 'Ma': True, 'Me': True, 'Ju': True, 'Ve': False, 'Sa': False}
+        p21.beneficG = {'Su': True, 'Mo': True, 'Ma': True, 'Me': False, 'Ju': True, 'Ve': False, 'Sa': False}
         p21.maleficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': True, 'Ju': False, 'Ve': False, 'Sa': False, 'Ra': True, 'Ke': True}
         
     elif L == 'Vrish':
         p21.beneficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': True, 'Ju': False, 'Ve': True, 'Sa': True}
-        p21.maleficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': False, 'Ju': False, 'Ve': False, 'Sa': False, 'Ra': False, 'Ke': False}
+        p21.maleficG = {'Su': False, 'Mo': True, 'Ma': True, 'Me': False, 'Ju': True, 'Ve': False, 'Sa': False, 'Ra': True, 'Ke': True}
         
     elif L == 'Mithun':
-        p21.beneficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': True, 'Ju': False, 'Ve': True, 'Sa': True}
-        p21.maleficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': False, 'Ju': False, 'Ve': False, 'Sa': False, 'Ra': False, 'Ke': False}
+        p21.beneficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': False, 'Ju': False, 'Ve': True, 'Sa': True}
+        p21.maleficG = {'Su': True, 'Mo': False, 'Ma': True, 'Me': False, 'Ju': True, 'Ve': False, 'Sa': False, 'Ra': True, 'Ke': True}
         
     elif L == 'Karkat':
         p21.beneficG = {'Su': False, 'Mo': True, 'Ma': True, 'Me': False, 'Ju': False, 'Ve': False, 'Sa': False}
-        p21.maleficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': False, 'Ju': False, 'Ve': False, 'Sa': False, 'Ra': False, 'Ke': False}
+        p21.maleficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': True, 'Ju': True, 'Ve': False, 'Sa': True, 'Ra': False, 'Ke': False}
         
     elif L == 'Simha':
         p21.beneficG = {'Su': True, 'Mo': False, 'Ma': True, 'Me': False, 'Ju': True, 'Ve': False, 'Sa': False}
-        p21.maleficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': False, 'Ju': False, 'Ve': False, 'Sa': False, 'Ra': False, 'Ke': False}
+        p21.maleficG = {'Su': False, 'Mo': True, 'Ma': False, 'Me': True, 'Ju': False, 'Ve': True, 'Sa': False, 'Ra': True, 'Ke': True}
         
     elif L == 'Kanya':
-        p21.beneficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': True, 'Ju': False, 'Ve': True, 'Sa': False}
-        p21.maleficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': False, 'Ju': False, 'Ve': False, 'Sa': False, 'Ra': False, 'Ke': False}
+        p21.beneficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': False, 'Ju': False, 'Ve': True, 'Sa': False}
+        p21.maleficG = {'Su': False, 'Mo': True, 'Ma': True, 'Me': False, 'Ju': True, 'Ve': False, 'Sa': False, 'Ra': True, 'Ke': True}
         
     elif L == 'Tula':
-        p21.beneficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': False, 'Ju': False, 'Ve': True, 'Sa': True}
-        p21.maleficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': False, 'Ju': False, 'Ve': False, 'Sa': False, 'Ra': False, 'Ke': False}
+        p21.beneficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': True, 'Ju': False, 'Ve': True, 'Sa': True}
+        p21.maleficG = {'Su': True, 'Mo': False, 'Ma': True, 'Me': False, 'Ju': True, 'Ve': False, 'Sa': False, 'Ra': True, 'Ke': True}
         
     elif L == 'Vrishchik':
         p21.beneficG = {'Su': True, 'Mo': True, 'Ma': True, 'Me': False, 'Ju': True, 'Ve': False, 'Sa': False}
-        p21.maleficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': False, 'Ju': False, 'Ve': False, 'Sa': False, 'Ra': False, 'Ke': False}
+        p21.maleficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': True, 'Ju': False, 'Ve': True, 'Sa': False, 'Ra': True, 'Ke': True}
         
     elif L == 'Dhanu':
-        p21.beneficG = {'Su': True, 'Mo': False, 'Ma': True, 'Me': True, 'Ju': True, 'Ve': False, 'Sa': False}
-        p21.maleficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': False, 'Ju': False, 'Ve': False, 'Sa': False, 'Ra': False, 'Ke': False}
+        p21.beneficG = {'Su': True, 'Mo': False, 'Ma': True, 'Me': False, 'Ju': False, 'Ve': False, 'Sa': False}
+        p21.maleficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': True, 'Ju': False, 'Ve': True, 'Sa': False, 'Ra': True, 'Ke': True}
         
     elif L == 'Makar':
         p21.beneficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': True, 'Ju': False, 'Ve': True, 'Sa': True}
-        p21.maleficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': False, 'Ju': False, 'Ve': False, 'Sa': False, 'Ra': False, 'Ke': False}
+        p21.maleficG = {'Su': False, 'Mo': True, 'Ma': True, 'Me': False, 'Ju': False, 'Ve': False, 'Sa': False, 'Ra': True, 'Ke': True}
         
     elif L == 'Kumbh':
         p21.beneficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': False, 'Ju': False, 'Ve': True, 'Sa': True}
-        p21.maleficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': False, 'Ju': False, 'Ve': False, 'Sa': False, 'Ra': False, 'Ke': False}
+        p21.maleficG = {'Su': False, 'Mo': True, 'Ma': True, 'Me': False, 'Ju': True, 'Ve': False, 'Sa': False, 'Ra': True, 'Ke': True}
         
     elif L == 'Meen':
         p21.beneficG = {'Su': False, 'Mo': True, 'Ma': True, 'Me': False, 'Ju': True, 'Ve': False, 'Sa': False}
-        p21.maleficG = {'Su': False, 'Mo': False, 'Ma': False, 'Me': False, 'Ju': False, 'Ve': False, 'Sa': False, 'Ra': False, 'Ke': False}
+        p21.maleficG = {'Su': True, 'Mo': False, 'Ma': False, 'Me': False, 'Ju': False, 'Ve': True, 'Sa': False, 'Ra': True, 'Ke': True}
         
     else:
         print("Wrong Lagna", L)

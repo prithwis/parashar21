@@ -340,7 +340,7 @@ def R30_LocateYogs():
 def R511_parseChartData(c):
 
     #print(c)
-    #print(c['beneficG'])
+    #print('parse',c['maleficG'])
     p21.GLon = c['GLon']
     p21.GRet = c['GRet']
     pid = c['pid']
