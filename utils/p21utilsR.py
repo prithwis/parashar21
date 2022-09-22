@@ -615,8 +615,8 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     
     cPara = cPara+'\nVocation Tags : '
     cPara = cPara+json.dumps(p21.pTags)+'\n'
+    cPara = cPara+'Yogs Found : '
     if len(p21.yogsFound) > 0:                      # Yogs Found 
-        cPara = cPara+'Yogs Found : '
         for y in p21.yogsFound:
             cPara = cPara+y+' '
     p21.document.add_paragraph(cPara)
