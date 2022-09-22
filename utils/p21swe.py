@@ -228,8 +228,8 @@ def C61_Cast2JSON(input_df):
             json.dump(p21.chart, writeFile)                          # Storing chart data as JSON file
         finally:
             if ( person % 1000 ) == 0:
-                        print(person, "records processed")
-        
+                        print(person+1, "records processed, so far")
+    print(person+1,' records generated and stored in file peopleData.json')
     writeFile.close()
 
 print('p21swe imported')
