@@ -598,34 +598,35 @@ def C61_Cast2JSON(input_df):
 
             p21swe.C05_buildGLonGRet()                              # create two json docs ( python dicts) to store Graha Lon and Ret status
                                                                     # these are stored as global variables p21.GLon, p21.GRet
-            p21utils.appendDict(p21.chart,p21.GLonRet)              # add Lon, Ret information to chart
+            #p21utils.appendDict(p21.chart,p21.GLonRet)              # add Lon, Ret information to chart
+            appendDict(p21.chart,p21.GLonRet)              # add Lon, Ret information to chart
             
             # ----------------------------------------
-            p21utils.R11_LocateGrahaInRashi()
+            R11_LocateGrahaInRashi()
             
-            p21utils.C10_DetermineBhavs()                           # determine Houses for person
-            p21utils.appendDict(p21.chart,p21.BhavNBhavA)           # add BhavN, BhavA information to chart   
+            C10_DetermineBhavs()                           # determine Houses for person
+            appendDict(p21.chart,p21.BhavNBhavA)           # add BhavN, BhavA information to chart   
              
             # ----------------------------------------    
-            p21utils.C11_DetermineLord()                            # determine Lords of Bhavs
-            p21utils.appendDict(p21.chart,p21.LordInfo)             #  add information on Lords   
+            C11_DetermineLord()                            # determine Lords of Bhavs
+            appendDict(p21.chart,p21.LordInfo)             #  add information on Lords   
 
-            p21utils.C12_BhavOfGraha_Lord()
-            p21utils.appendDict(p21.chart,p21.BhavOfGraha_LordInfo) #  add information on Bhav Residency of Graha and Lords  
+            C12_BhavOfGraha_Lord()
+            appendDict(p21.chart,p21.BhavOfGraha_LordInfo) #  add information on Bhav Residency of Graha and Lords  
             
             
-            p21utils.C21_DeterminePositions()
-            p21utils.appendDict(p21.chart,p21.Positions)            #  add information on Graha / Lord POSITIONS  
+            C21_DeterminePositions()
+            appendDict(p21.chart,p21.Positions)            #  add information on Graha / Lord POSITIONS  
 
-            p21utils.C31_DetermineAspects()
-            p21utils.appendDict(p21.chart,p21.Aspects)              #  add information on Graha / Lord ASPECTS  
+            C31_DetermineAspects()
+            appendDict(p21.chart,p21.Aspects)              #  add information on Graha / Lord ASPECTS  
 
-            p21utils.C41_DetermineConjuncts()           
-            p21utils.appendDict(p21.chart,p21.Conjuncts)            #  add information on Graha / Lord Conjuncts
+            C41_DetermineConjuncts()           
+            appendDict(p21.chart,p21.Conjuncts)            #  add information on Graha / Lord Conjuncts
 
-            p21utils.C51_DetermineBenMal()
+            C51_DetermineBenMal()
             #print(p21.BenMalG)
-            p21utils.appendDict(p21.chart,p21.BenMalG)            #  add information on Benefic, Malefic Grahas
+            appendDict(p21.chart,p21.BenMalG)            #  add information on Benefic, Malefic Grahas
         except :
             print('error on record ', person)
         else :
@@ -635,7 +636,7 @@ def C61_Cast2JSON(input_df):
             json.dump(p21.chart, writeFile)                          # Storing chart data as JSON file
         finally:
             if ( person % 1000 ) == 0:
-                print(person, "records processed")
+                    print(person, "records processed")
         
     writeFile.close()
 
