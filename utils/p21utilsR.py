@@ -7,7 +7,7 @@
 # Global Variables
 import p21
 import p21swe
-import p21utils
+#import p21utils
 import p21YogInfo
 # --------------------------------------------------
 #Utility functions 
@@ -440,65 +440,7 @@ def R01_CreateReportDoc(cqs,pS,repStyle = 'MultiChart'):
     
 # --------------------------------------------------
 
-def C61_Cast2JSON(input_df):
-    writeFile =  open("peopleData.json", "w")  
-    for person in range(len(input_df)):
-        try :
-            personData =input_df.iloc[person]
-            p21swe.C02_parsePersonData(personData)                  # split the data, extract required data into fields
-                                                                    # create skeleton chart json doc as p21.chart
-            p21swe.C03_convertDates()                               # convert date, time of birth into universal time, calculate Ayanamsha
-            p21swe.C04_calculateGrahaPositions()                    # calculate the Lon of each Graha along with Retrograde staus
 
-                        #Horoscope is defined in terms of Natal Longitudes and Retrogrades
-                        # for example
-                        #GLon = {"La":98.5,"Su":178.9,"Mo":250.6,"Ma":196.2,"Me":193.2,"Ju":274.8,"Ve":153.8,"Sa":270.2,"Ra":122.1,"Ke":302.1}
-                        #GRet = {"La":False,"Su":False,"Mo":False,"Ma":False,"Me":True,"Ju":False,"Ve":False,"Sa":False,"Ra":True,"Ke":True}
-
-            p21swe.C05_buildGLonGRet()                              # create two json docs ( python dicts) to store Graha Lon and Ret status
-                                                                    # these are stored as global variables p21.GLon, p21.GRet
-            p21utils.appendDict(p21.chart,p21.GLonRet)              # add Lon, Ret information to chart
-            
-            # ----------------------------------------
-            p21utils.R11_LocateGrahaInRashi()
-            
-            p21utils.C10_DetermineBhavs()                           # determine Houses for person
-            p21utils.appendDict(p21.chart,p21.BhavNBhavA)           # add BhavN, BhavA information to chart   
-             
-            # ----------------------------------------    
-            p21utils.C11_DetermineLord()                            # determine Lords of Bhavs
-            p21utils.appendDict(p21.chart,p21.LordInfo)             #  add information on Lords   
-
-            p21utils.C12_BhavOfGraha_Lord()
-            p21utils.appendDict(p21.chart,p21.BhavOfGraha_LordInfo) #  add information on Bhav Residency of Graha and Lords  
-            
-            
-            p21utils.C21_DeterminePositions()
-            p21utils.appendDict(p21.chart,p21.Positions)            #  add information on Graha / Lord POSITIONS  
-
-            p21utils.C31_DetermineAspects()
-            p21utils.appendDict(p21.chart,p21.Aspects)              #  add information on Graha / Lord ASPECTS  
-
-            p21utils.C41_DetermineConjuncts()           
-            p21utils.appendDict(p21.chart,p21.Conjuncts)            #  add information on Graha / Lord Conjuncts
-
-            p21utils.C51_DetermineBenMal()
-            #print(p21.BenMalG)
-            p21utils.appendDict(p21.chart,p21.BenMalG)            #  add information on Benefic, Malefic Grahas
-        except :
-            print('error on record ', person)
-        else :
-            #insert_result = kollection.insert_one(p21.chart)        # insert one json doc, chart to database
-            #insert_result.acknowledged                              # Confirms that insert is successful
-                                                                     # Bypassing insertion into MongoDB will make processing much faster
-            json.dump(p21.chart, writeFile)                          # Storing chart data as JSON file
-        finally:
-            if ( person % 1000 ) == 0:
-                print(person, "records processed")
-        
-    writeFile.close()
-
-# --------------------------------------------------
 
 def C61_Cast2JSON2(input_df):
     print('Cast2json')

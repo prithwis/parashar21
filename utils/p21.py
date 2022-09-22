@@ -119,7 +119,5 @@ selCols = {
 # --------------------------------------------------
 yogsFound = []
 AnalysisType = 'Rashi'
-#yogList = ['BudhAditya','BudhAdityaNR', 'Gajakesari', 'Rajyog', 'ChandraMangal1','ChandraMangal2', 'DhanYog']
-
 
 #print('imported p21')
