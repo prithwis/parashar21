@@ -22,6 +22,7 @@ from datetime import datetime
 from datetime import timedelta
 
 import swisseph as swe
+import json
 
 
 # --------------------------------------------------
@@ -196,7 +197,7 @@ def C61_Cast2JSON(input_df):
             p21utils.R11_LocateGrahaInRashi()
             
             p21utils.C10_DetermineBhavs()                           # determine Houses for person
-            appendDict(p21.chart,p21.BhavNBhavA)           # add BhavN, BhavA information to chart   
+            p21utils.appendDict(p21.chart,p21.BhavNBhavA)           # add BhavN, BhavA information to chart   
              
             # ----------------------------------------    
             p21utils.C11_DetermineLord()                            # determine Lords of Bhavs
@@ -227,7 +228,7 @@ def C61_Cast2JSON(input_df):
             json.dump(p21.chart, writeFile)                          # Storing chart data as JSON file
         finally:
             if ( person % 1000 ) == 0:
-                    print(person, "records processed")
+                        print(person, "records processed")
         
     writeFile.close()
 
