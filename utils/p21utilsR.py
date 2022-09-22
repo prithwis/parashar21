@@ -6,7 +6,7 @@
 # --------------------------------------------------
 # Global Variables
 import p21
-import p21swe
+#import p21swe
 #import p21utils
 import p21YogInfo
 # --------------------------------------------------
