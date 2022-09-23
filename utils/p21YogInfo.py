@@ -477,14 +477,14 @@ yogCond['Sunapha'] = {"$or":[
 # --------------------------------------------------------------------------
 # 4 Dhurdhura Yog - Raman pg 20
 # -----------------------------------------------------------
-yogText['Dhurdhura'] = 'Dhurdhura Yog : Planets on both sides of the Moon'
+yogText['Dhurdhura'] = 'Dhurdhura Yog | Planets on both sides of the Moon'
 StrSunapha = yogCond['Sunapha']
 StrAnapha = yogCond['Anapha']
 yogCond['Dhurdhura'] = {"$and" :[StrSunapha,StrAnapha]}
 # --------------------------------------------------------------------------
 # 1 Gajakesari Yog - Raman pg 13
 # -----------------------------------------------------------
-yogText['Gajakesari'] = 'Gajakesari Yog : Jupiter is in Kendra or 1,4,7,10th from Moon'
+yogText['Gajakesari'] = 'Gajakesari Yog | Jupiter is in Kendra or 1,4,7,10th from Moon'
 yogCond['Gajakesari'] = {"$or":[
                                   { "$and":[{'GRashiN.Mo' : {'$eq': 1}},{"$or" : [{'GRashiN.Ju' : {'$eq': 1}},{'GRashiN.Ju' : {'$eq': 4}},{'GRashiN.Ju' : {'$eq': 7}},{'GRashiN.Ju' : {'$eq': 10}}]}]},
                                   { "$and":[{'GRashiN.Mo' : {'$eq': 2}},{"$or" : [{'GRashiN.Ju' : {'$eq': 2}},{'GRashiN.Ju' : {'$eq': 5}},{'GRashiN.Ju' : {'$eq': 8}},{'GRashiN.Ju' : {'$eq': 11}}]}]},
