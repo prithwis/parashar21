@@ -6,11 +6,7 @@ Parashar21 is a design or strategy, along with a collection of programs, to stor
 
 ### What Parashar21 is not!
 Parashar21 is not a prediction engine. There is no attempt to interpret horoscope charts. 
-# Further information
-The philosophy that drives this enterprise is articulated in the article [Astrology - an application of Data Science](https://www.linkedin.com/pulse/astrology-an-application-data-science-prithwis-mukerjee/) <br>
-A preprint of the paper describing technical aspects is available at [Efficient storage and retrieval of horoscope data on a computer system. A case study using Python and MongoDB](https://www.researchgate.net/publication/358191949_Efficient_storage_and_retrieval_of_horoscope_data_on_a_computer_system_A_case_study_using_Python_and_MongoDB?channel=doi&linkId=61f47fec007fb50447205dcd&showFulltext=true)<br>
-More technical information is available in the project [wiki](https://github.com/prithwis/parashar21/wiki) <br>
-For a history of this project, visit the [Parashar21 Blog](https://parashar21.blogspot.com/) <br> 
+
 # Codes available in this repository
 1. Load Birthdata from a CSV file, generate horoscope chart data and load the same into a MongoDB database.  [P21_45_01_Cast_Load](https://github.com/prithwis/parashar21/blob/main/P21_45_01_Cast_Load.ipynb).
 2. Read the MongoDB database, retrieve charts that meet a specific pattern, print reports in MS-Word.  [P21_45_02_Pull_Print](https://github.com/prithwis/parashar21/blob/main/P21_45_02_Pull_Print.ipynb).
@@ -19,3 +15,8 @@ For a history of this project, visit the [Parashar21 Blog](https://parashar21.bl
 5. Rather than search for horoscopes that meet certain requirements, show detailed analysis of one selected chart, including the names of Yogs, if any, that present in the chart [P21_45_06_SingleChart_Details](https://github.com/prithwis/parashar21/blob/main/P21_45_06_SingleChart_Details.ipynb) 
 ### Additional Codes
 The horoscope chart data in a MongoDB database can be accessed in an interactive way using a MERN (MongoDB, Express, React, Node) application to retrieve and disiplay charts. Codes for this are available in the [Khona21 repository](https://github.com/prithwis/khona21)
+# Further information
+The philosophy that drives this enterprise is articulated in the article [Astrology - an application of Data Science](https://www.linkedin.com/pulse/astrology-an-application-data-science-prithwis-mukerjee/) <br>
+A preprint of the paper describing technical aspects is available at [Efficient storage and retrieval of horoscope data on a computer system. A case study using Python and MongoDB](https://www.researchgate.net/publication/358191949_Efficient_storage_and_retrieval_of_horoscope_data_on_a_computer_system_A_case_study_using_Python_and_MongoDB?channel=doi&linkId=61f47fec007fb50447205dcd&showFulltext=true)<br>
+More technical information is available in the project [wiki](https://github.com/prithwis/parashar21/wiki) <br>
+For a history of this project, visit the [Parashar21 Blog](https://parashar21.blogspot.com/) <br> 
