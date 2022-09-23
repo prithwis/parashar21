@@ -6,13 +6,13 @@ Parashar21 is a design or strategy, along with a collection of programs, to stor
 
 ### What Parashar21 is not!
 Parashar21 is not a prediction engine. There is no attempt to interpret horoscope charts. 
-
+# Architecture
+![workflow](/images/Workflow.png)<br>
 # Codes available in this repository
 1. Load Birthdata from a CSV file, generate horoscope chart data and load the same into a MongoDB database.  [P21_45_01_Cast_Load](https://github.com/prithwis/parashar21/blob/main/P21_45_01_Cast_Load.ipynb).
 2. Read the MongoDB database, retrieve charts that meet a specific pattern, print reports in MS-Word.  [P21_45_02_Pull_Print](https://github.com/prithwis/parashar21/blob/main/P21_45_02_Pull_Print.ipynb).
-3. Install MongoDB locally in the Colab VM,  load pre-generated horoscope chart data, retrieve charts that meet specific patterns, print reports.  [P21_45_02A_Pull_Print_StandAlone](https://github.com/prithwis/parashar21/blob/main/P21_45_02A_Pull_Print_StandAlone.ipynb).
-4. Instead of searching for random patterns, we search for specific patterns called Yogs [P21_45_04_YogFilter](https://github.com/prithwis/parashar21/blob/main/P21_45_04_YogFilter.ipynb) in the charts stored in the MongoDB database.
-5. Rather than search for horoscopes that meet certain requirements, show detailed analysis of one selected chart, including the names of Yogs, if any, that present in the chart [P21_45_06_SingleChart_Details](https://github.com/prithwis/parashar21/blob/main/P21_45_06_SingleChart_Details.ipynb) 
+3. Search for specific patterns called Yogs [P21_45_04_YogFilter](https://github.com/prithwis/parashar21/blob/main/P21_45_04_YogFilter.ipynb) in the charts stored in the MongoDB database.
+4. Show detailed analysis of one selected chart, including the names of Yogs, if any, that present in the chart [P21_45_06_SingleChart_Details](https://github.com/prithwis/parashar21/blob/main/P21_45_06_SingleChart_Details.ipynb). This notebook, demonstrates the full cycle of reading birth data from a CSV file, converting it first to a basic horoscope using Swiss Ephemeris modules, enhancing the basic horoscope with Bhavs, Lords, Status (Exaltation, Debilitation, Benefic, Malefic), Aspects and Conjuncts, storing it in a MongoDB database and then retrieving charts that meet certain specifications.
 ### Additional Codes
 The horoscope chart data in a MongoDB database can be accessed in an interactive way using a MERN (MongoDB, Express, React, Node) application to retrieve and disiplay charts. Codes for this are available in the [Khona21 repository](https://github.com/prithwis/khona21)
 # Further information
