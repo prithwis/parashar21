@@ -442,35 +442,6 @@ def R01_CreateReportDoc(cqs,pS,repStyle = 'MultiChart'):
 
 
 
-def C61_Cast2JSON2(input_df):
-    print('Cast2json')
-
-def ZZR01A_CreateReportDoc(id = 'dummy'):
-      
-    now = datetime.now(pytz.timezone('Asia/Kolkata'))
-    p21.document = Document()
-    
-    style = p21.document.styles['Normal']           # Changes the Normal style throuhout the document
-    font = style.font
-    font.name = 'Times New Roman'
-    font.size = Pt(10)                              # Increasing the font size will cause reports to overflow to next page
-    
-    
-    section = p21.document.sections[0]
-    header = section.header
-    footer = section.footer
-    
-    header01 = header.paragraphs[0]
-    header01.text = "Parashar21 | "+ id + " | printed : "+ now.strftime("%d %b %Y")
-
-    
-    footer01 = footer.paragraphs[0]
-    #footer01.text = "Printed on : "
-    footer01.text = "http://parashar21.blogspot.com | https://github.com/prithwis/parashar21"
-
-    
-    #return document
-    
 # --------------------------------------------------
 
 def R512_FormatPage(repStyle = 'MultiChart'):
