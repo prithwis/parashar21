@@ -390,7 +390,8 @@ def R01_CreateReportDoc(cqs = '*',pS = '*',repStyle = 'MultiChart'):
     footer = section.footer
     
     header01 = header.paragraphs[0]
-    header01.text = "Parashar21 | "+now.strftime("%d %b %Y")
+    #header01.text = "Parashar21 | "+now.strftime("%d %b %Y")
+    header01.text = "卐 Parashar21 | "
 
     
     footer01 = footer.paragraphs[0]

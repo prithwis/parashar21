@@ -502,5 +502,6 @@ yogCond['Gajakesari'] = {"$or":[
                         }
 # --------------------------------------------------------------------------------- END
 print(len(list(yogText.keys())), 'Yogs on record')
-for y in list(yogText.keys()):
-    print(yogText[y])
+#for y in list(yogText.keys()):
+for i,y in enumerate(yogText.keys()):
+    print(i, ':',yogText[y])
