@@ -9,10 +9,10 @@ Parashar21 is not a prediction engine. There is no attempt to interpret horoscop
 # Overview
 ![workflow](/images/Workflow.png)<br>
 # Codes available in this repository
-1. Load Birthdata from a CSV file, generate horoscope chart data and load the same into a MongoDB database.  [P21_45_01_Cast_Load](https://github.com/prithwis/parashar21/blob/main/P21_45_01_Cast_Load.ipynb).
-2. Read the MongoDB database, retrieve charts that meet a specific pattern, print reports in MS-Word.  [P21_45_02_Pull_Print](https://github.com/prithwis/parashar21/blob/main/P21_45_02_Pull_Print.ipynb).
-3. Search for specific patterns called Yogs [P21_45_04_YogFilter](https://github.com/prithwis/parashar21/blob/main/P21_45_04_YogFilter.ipynb) in the charts stored in the MongoDB database.
-4. Show detailed analysis of one selected chart, including the names of Yogs, if any, that present in the chart [P21_45_06_SingleChart_Details](https://github.com/prithwis/parashar21/blob/main/P21_45_06_SingleChart_Details.ipynb). <br><br>
+1. [P21_45_01_Cast_Load](https://github.com/prithwis/parashar21/blob/main/P21_45_01_Cast_Load.ipynb) - Load Birthdata from a CSV file, generate horoscope chart data and load the same into a MongoDB database.  
+2. [P21_45_02_Pull_Print](https://github.com/prithwis/parashar21/blob/main/P21_45_02_Pull_Print.ipynb) - Read the MongoDB database, retrieve charts that meet a specific pattern, print reports in MS-Word.  
+3. [P21_45_04_YogFilter](https://github.com/prithwis/parashar21/blob/main/P21_45_04_YogFilter.ipynb) - Search for specific patterns called Yogs  in the charts stored in the MongoDB database.
+4. [P21_45_06_SingleChart_Details](https://github.com/prithwis/parashar21/blob/main/P21_45_06_SingleChart_Details.ipynb) - Show detailed analysis of one selected chart, including the names of Yogs, if any, that present in the chart. <br>
 This notebook, demonstrates the full cycle of reading birth data from a CSV file, converting it first to a basic horoscope using Swiss Ephemeris modules, enhancing the basic horoscope with Bhavs, Lords, Status (Exalted, Debilitated, Benefic, Malefic & etc.), Aspects and Conjuncts, storing it in a MongoDB database and then retrieving charts that meet certain specifications.<br> <br>
 A sample report for President Dr APJ Abdul Kalam, is available in [MS-Word](https://github.com/prithwis/parashar21/blob/main/Sample%20Reports%202/p21_APJAbdulKa_Ras_B_100918.doc) and [PDF](https://github.com/prithwis/parashar21/blob/main/Sample%20Reports%202/p21_APJAbdulKa_Ras_B_100918.pdf) format
 ### How to run these codes
