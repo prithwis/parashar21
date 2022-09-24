@@ -9,6 +9,7 @@ Parashar21 is not a prediction engine. There is no attempt to interpret horoscop
 # Architecture
 ![workflow](/images/Workflow.png)<br>
 # Codes available in this repository
+All these codes are packaged as Google Colab Notebooks. They need no software to be installed and can run inside any modern browser, that is similar to Google Chrome. In case, the data needs to stored in a persistent manner, then a MongoDB database needs to be configured on a remote hosting service and login credentials need to be provided. However, both the [YogFilter](https://github.com/prithwis/parashar21/blob/main/P21_45_04_YogFilter.ipynb) and the [Single Chart Analysis](https://github.com/prithwis/parashar21/blob/main/P21_45_06_SingleChart_Details.ipynb) notebooks can be executed with a local MongoDB database that is installed in the Google Colab VM. Just press the blue "Open in Colab" button to initiate the VM.
 1. Load Birthdata from a CSV file, generate horoscope chart data and load the same into a MongoDB database.  [P21_45_01_Cast_Load](https://github.com/prithwis/parashar21/blob/main/P21_45_01_Cast_Load.ipynb).
 2. Read the MongoDB database, retrieve charts that meet a specific pattern, print reports in MS-Word.  [P21_45_02_Pull_Print](https://github.com/prithwis/parashar21/blob/main/P21_45_02_Pull_Print.ipynb).
 3. Search for specific patterns called Yogs [P21_45_04_YogFilter](https://github.com/prithwis/parashar21/blob/main/P21_45_04_YogFilter.ipynb) in the charts stored in the MongoDB database.
