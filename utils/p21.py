@@ -112,8 +112,8 @@ selCols = {
             'GConjunctsG2' :1 ,         # Which Graha Conjuncts Which Graha { Graha : [ List of Conjunct Grahas]} 
             'BLConjunctsG2':1 ,         # Which BhavLord conjuncts which Graha { Lord : [ List of Conjunct Grahas]}
             'BLConjunctsBL2':1,         # Which Bhav Lord conjuncts with Bhav Lord ( Lord : [ List of Lords]}
-            'beneficG':1,
-            'maleficG':1
+            'beneficG':1,               # Which Graha is Benefic for the Lagna of the person { Graha : <boolean> }
+            'maleficG':1                # Which Graha is Malefic for the Lagna of the person { Graha : <boolean> }
            }
 
 # --------------------------------------------------
