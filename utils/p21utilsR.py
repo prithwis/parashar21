@@ -374,7 +374,7 @@ def R511_parseChartData(c):
     p21.maleficG = c['maleficG']
     
 
-def R01_CreateReportDoc(cqs,pS,repStyle = 'MultiChart'):
+def R01_CreateReportDoc(cqs = '*',pS = '*',repStyle = 'MultiChart'):
       
     now = datetime.now(pytz.timezone('Asia/Kolkata'))
     p21.document = Document()
@@ -542,4 +542,4 @@ def tracer():
     print('tracer')
     print(p21.ChartType)
     
-print('p21utilsR imported')
+#print('p21utilsR imported')
