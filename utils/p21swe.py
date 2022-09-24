@@ -232,4 +232,4 @@ def C61_Cast2JSON(input_df):
     print(person+1,' records generated and stored in file peopleData.json')
     writeFile.close()
 
-print('p21swe imported')
+#print('p21swe imported')

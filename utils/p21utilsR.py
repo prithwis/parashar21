@@ -374,7 +374,7 @@ def R511_parseChartData(c):
     p21.maleficG = c['maleficG']
     
 
-def R01_CreateReportDoc(cqs = '*',pS = '*',repStyle = 'MultiChart'):
+def R01_CreateReportDoc(cqs,pS,repStyle = 'MultiChart'):
       
     now = datetime.now(pytz.timezone('Asia/Kolkata'))
     p21.document = Document()
@@ -391,7 +391,7 @@ def R01_CreateReportDoc(cqs = '*',pS = '*',repStyle = 'MultiChart'):
     
     header01 = header.paragraphs[0]
     #header01.text = "Parashar21 | "+now.strftime("%d %b %Y")
-    header01.text = "卐 Parashar21 | "
+    header01.text = "卐 Parashar21  "
 
     
     footer01 = footer.paragraphs[0]
@@ -461,7 +461,9 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     
     #cPara = R13A_ShowTrueDict('Retrograde Graha',p21.GRet)+'\n'                          # Show Grahas that are retrograde
     #cPara = ' '.join(p21.pTags)+'\n'
-    cPara = 'Details of '+p21.AnalysisType.upper()+' chart\n\n'
+    cPara = 'Details of '+p21.AnalysisType.upper()+' chart\n'
+    cPara = cPara+'Text Info : '
+    cPara = cPara+json.dumps(p21.pTags)+'\n\n'
     cPara = cPara+R13B_ListPositions('Lord of ',p21.Lord)                                # Show Lords
     cPara = cPara+"\n"
     cPara = cPara+'Graha Lord of \n'+json.dumps(p21.GrahaLordBhav).replace('"','')                         # Show the Bhavs of whicha Graha is Lord
@@ -527,9 +529,9 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     cPara = cPara+'\nLord Lord '+json.dumps(p21.BLConjunctsBL2).replace('"','')
     #p21.document.add_paragraph(cPara)
     
-    cPara = cPara+'\nVocation Tags : '
-    cPara = cPara+json.dumps(p21.pTags)+'\n'
-    cPara = cPara+'Yogs Found : '
+    #cPara = cPara+'\nVocation Tags : '
+    #cPara = cPara+json.dumps(p21.pTags)+'\n'
+    cPara = cPara+'\nYogs Found : '
     if len(p21.yogsFound) > 0:                      # Yogs Found 
         for y in p21.yogsFound:
             cPara = cPara+y+' '
