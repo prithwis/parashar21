@@ -71,7 +71,7 @@ def C02_parsePersonData(P):
     cID = str(''.join(random.choices(string.ascii_uppercase + string.digits, k = 12)))   # string of len 12 consisting of random uppercase and digits
     p21.chart = {
         "pid":{
-            "tags" : [P['tag1'],P['tag3'],P['tag5']],
+            "tags" : [P['Voc1_Cat'],P['Voc2_Cat'],P['Voc3_Cat']],
             "ck" : ck,
             "chartType" : p21.ChartType,
             #"name": string_utils.shuffle(P['Name'][0:8])
