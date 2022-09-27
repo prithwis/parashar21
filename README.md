@@ -8,7 +8,7 @@ Parashar21 is a design or strategy, along with a collection of programs, to stor
 Parashar21 is not a prediction engine. There is no attempt to interpret horoscope charts. 
 # Overview
 ![workflow](/images/Workflow.png)<br>
-# Codes currently available
+# Sample Programs
 1. [P21_45_01_Cast_Load](https://github.com/prithwis/parashar21/blob/main/P21_45_01_Cast_Load.ipynb) - Load Birthdata from a CSV file, generate horoscope chart data and load the same into a MongoDB database.  
 2. [P21_45_02_Pull_Print](https://github.com/prithwis/parashar21/blob/main/P21_45_02_Pull_Print.ipynb) - Read the MongoDB database, retrieve charts that meet a specific pattern, print reports in MS-Word.  
 3. [P21_45_04_YogFilter](https://github.com/prithwis/parashar21/blob/main/P21_45_04_YogFilter.ipynb) - Search for specific patterns called Yogs  in the charts stored in the MongoDB database.
