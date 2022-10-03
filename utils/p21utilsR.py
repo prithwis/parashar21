@@ -521,9 +521,13 @@ def R512_FormatPage(repStyle = 'MultiChart'):
         T1[int(k)] =v
     T2 = dict(sorted(T1.items()))
     #print(T2)
+    txt[0] = json.dumps(T2).replace('"','')
+    if p21.pName == '_Gochar':
+        txt[0] = txt[0].replace('La','RS')
     
     
-    cPara = cPara+'\nAspected BY Graha 👀'+json.dumps(T2).replace('"','')  
+    #cPara = cPara+'\nAspected BY Graha 👀'+json.dumps(T2).replace('"','')  
+    cPara = cPara+'\nAspected BY Graha 👀'+txt[0]  
     
     T1 = {}
     for k,v in p21.BAspectedByBL2.items():
@@ -533,8 +537,10 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     
     
     txt[0] = json.dumps(T2).replace('"','')
+    #print('QQ',txt[0])
     if p21.pName == '_Gochar':
         txt[0] = txt[0].replace('La','RS')
+    #print('QQ',txt[0])
     cPara = cPara+'\nAspected BY Lords 👀'+txt[0]  
     #cPara = cPara+'\nAspected BY Lords 👀'+json.dumps(T2).replace('"','')  
     #p21.document.add_paragraph(cPara)
