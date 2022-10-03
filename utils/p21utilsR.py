@@ -398,7 +398,7 @@ def R01_CreateReportDoc(cqs,pS,repStyle = 'MultiChart'):
     #footer01.text = "Printed on : "
     footer01.text = "http://parashar21.blogspot.com | https://github.com/prithwis/parashar21"
 
-    if repStyle == 'SingleChart':
+    if repStyle != 'MultiChart':
         return
     
     #heading_1 = p21.pName +" >>> "+p21.ChartType
@@ -537,7 +537,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
             cPara = cPara+y+' '
     p21.document.add_paragraph(cPara)
     
-    if (repStyle == 'MultiChart'):
+    if (repStyle != 'SingleChart'):
         p21.document.add_page_break()
         
 
