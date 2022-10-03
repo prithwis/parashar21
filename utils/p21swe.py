@@ -162,7 +162,7 @@ def C05_buildGLonGRet():
     }
     # ------------------------------------------------------
     if p21.Gochar:
-        print('Gochar True')
+        #print('Gochar True')
         if p21.chart['pid']['name'] == p21.Subject[0:10]:
             print('Subject found', p21.chart['pid']['name'])
             p21.SubMoonLong = p21.GLon['Mo']
