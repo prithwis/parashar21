@@ -1,6 +1,6 @@
-Gender,tag1,tag2,tag3,tag4,tag5,tag6,DoB_Day,DoB_Mon,DoB_Year,DoB_Time,TZ_OffHours,PoB_Lat,PoB_Lon,TZ_Name,TZ_Type,Name
-M,Engineer,nil,Teacher,nil,PostGraduate,nil,15,10,1961,23:42,5.5,22.57,88.37,IST,standard,Ram
-F,Author,nil,Homemaker,nil,PostGraduate,nil,19,12,1965,10:26,5.5,22.57,88.37,IST,standard,Shyam
-M,Engineer,nil,Teacher,nil,PostGraduate,nil,9,10,1990,23:09,5.5,22.57,88.37,IST,standard,Jadu
-F,Biologist,nil,Scientist,nil,PostGraduate,nil,12,9,1990,0:52,5.5,22.87,88.37,IST,standard,Madhu
-M,Politician,nil,Administrator,nil,nil,nil,17,9,1950,23:11,5.5,23.48,72.36,IST,standard,NDModi
+Gender,DoB_Day,DoB_Mon,DoB_Year,DoB_Time,TZ_OffHours,PoB_Lat,PoB_Lon,TZ_Name,TZ_Type,Name,tag1,tag2,tag3,tag4,tag5,tag6
+M,15,10,1961,23:42,5.5,22.57,88.37,IST,standard,Ram,Engineer,nil,Teacher,nil,PostGraduate,nil
+F,19,12,1965,10:26,5.5,22.57,88.37,IST,standard,Shyam,Author,nil,Homemaker,nil,PostGraduate,nil
+M,9,10,1990,23:09,5.5,22.57,88.37,IST,standard,Jadu,Engineer,nil,Teacher,nil,PostGraduate,nil
+F,12,9,1990,0:52,5.5,22.87,88.37,IST,standard,Madhu,Biologist,nil,Scientist,nil,PostGraduate,nil
+M,17,9,1950,23:11,5.5,23.48,72.36,IST,standard,NDModi,Politician,nil,Administrator,nil,nil,nil

@@ -532,13 +532,27 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     #print(T2)
     
     
-    cPara = cPara+'\nAspected BY Lords 👀'+json.dumps(T2).replace('"','')  
+    txt[0] = json.dumps(T2).replace('"','')
+    if p21.pName == '_Gochar':
+        txt[0] = txt[0].replace('La','RS')
+    cPara = cPara+'\nAspected BY Lords 👀'+txt[0]  
+    #cPara = cPara+'\nAspected BY Lords 👀'+json.dumps(T2).replace('"','')  
     #p21.document.add_paragraph(cPara)
 
     cPara = cPara+'\nConjuncts  ...................................................'
-    cPara = cPara+'\nGraha Graha '+json.dumps(p21.GConjunctsG2).replace('"','')  
-    cPara = cPara+'\nLord Graha '+json.dumps(p21.BLConjunctsG2).replace('"','')  
-    cPara = cPara+'\nLord Lord '+json.dumps(p21.BLConjunctsBL2).replace('"','')
+    txt[0] = json.dumps(p21.GConjunctsG2).replace('"','')
+    txt[1] = json.dumps(p21.BLConjunctsG2).replace('"','')
+    txt[2] = json.dumps(p21.BLConjunctsBL2).replace('"','')
+    for i in [0,1,2]:
+        if p21.pName == '_Gochar':
+            txt[i] = txt[i].replace('La','RS')
+    
+    cPara = cPara+'\nGraha Graha '+txt[0]  
+    cPara = cPara+'\nLord Graha '+txt[1] 
+    cPara = cPara+'\nLord Lord '+txt[2]
+    #cPara = cPara+'\nGraha Graha '+json.dumps(p21.GConjunctsG2).replace('"','')  
+    #cPara = cPara+'\nLord Graha '+json.dumps(p21.BLConjunctsG2).replace('"','')  
+    #cPara = cPara+'\nLord Lord '+json.dumps(p21.BLConjunctsBL2).replace('"','')
     #p21.document.add_paragraph(cPara)
     
     #cPara = cPara+'\nVocation Tags : '
