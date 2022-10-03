@@ -71,6 +71,11 @@ def generateChartTxt():
     for i in range(1,13):
         if len(txt[i]) == 0:
             txt[i] = '*'
+        if p21.pName == '_Gochar':
+            if p21.ChartType == 'Rashi':
+                txt[i] = txt[i].replace('La','RS')
+            else:
+                txt[i] = 'NA'
 #print(txt[1],txt[2],txt[3],txt[4],txt[5],txt[6],txt[7],txt[8],txt[9],txt[10],txt[11],txt[12],)
 
 # --------------------------------------------------
@@ -495,8 +500,15 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     
     
     cPara = 'Graha Aspects ........................................................'
-    cPara = cPara+'\nAspects🤓 '+json.dumps(p21.GAspects2).replace('"','')  
-    cPara = cPara+'\nAspected BY 👀'+json.dumps(p21.GAspectedBy2).replace('"','')  
+    txt[0] = json.dumps(p21.GAspects2).replace('"','')
+    #cPara = cPara+'\nAspects🤓 '+json.dumps(p21.GAspects2).replace('"','')   
+    txt[1] = json.dumps(p21.GAspectedBy2).replace('"','')
+    #cPara = cPara+'\nAspected BY 👀'+json.dumps(p21.GAspectedBy2).replace('"','') 
+    for i in [0,1]:
+        if p21.pName == '_Gochar':
+            txt[i] = txt[i].replace('La','RS')
+    cPara = cPara+'\nAspects🤓 '+txt[0]
+    cPara = cPara+'\nAspected BY 👀'+txt[1] 
     #p21.document.add_paragraph(cPara)
     
     #print(p21.GAspects2)
