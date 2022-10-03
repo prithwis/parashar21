@@ -143,6 +143,11 @@ def p21Sub (x,y):
 
 def C05_buildGLonGRet():
     #global GLon, GRet
+    # --------------------------------------------------------
+    print('A',p21.chart)
+    print('B',p21.chart['pid'])
+    print('C',p21.chart['pid']['name'])
+    # --------------------------------------------------------
     p21.GLon = {
     'La':p21Sub(P[1][0],ayanamsha),
     'Su':p21Sub(bLon[0],ayanamsha),
@@ -155,6 +160,15 @@ def C05_buildGLonGRet():
     'Ra':p21Sub(bLon[7],ayanamsha),
     'Ke':p21Sub(p21Sub(bLon[7],ayanamsha),180)
     }
+    # ------------------------------------------------------
+    if p21.Gochar:
+        print('Gochar True')
+        if p21.chart['pid']['name'] == p21.Subject:
+            print('Subject found', p21.chart['pid']['name'])
+            p21.SubMoonLong = p21.GLon['Mo']
+            print(p21.SubMoonLong)
+        if p21.chart['pid']['name'] == '_Gochar':
+            p21.GLon['La'] = p21.SubMoonLong
     
     p21.GRet = {
     'La':False,

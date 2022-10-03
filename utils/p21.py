@@ -119,5 +119,9 @@ selCols = {
 # --------------------------------------------------
 yogsFound = []
 AnalysisType = 'Rashi'
+# --------------------------------------------------
+Subject = ''
+Gochar = False
+SubMoonLong = 0
 
 #print('imported p21')
