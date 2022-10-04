@@ -118,11 +118,11 @@ selCols = {
 
 # --------------------------------------------------
 yogsFound = []
-AnalysisType = 'Rashi'
+AnalysisType = 'Rashi'                  # Default analysis type, alternate is Navamsha
 # --------------------------------------------------
-Subject = ''
-Gochar = False
-SubMoonLong = 0
-gName = '_Gochar'
+Subject = ''                            # Name of subject whose Gochar  is required
+Gochar = False                          # Boolean used to catch Subject Moon Longitude
+SubMoonLong = 0                         # Subjects Moon Longitude preserved for setting Lagna longitude of Gochar
+gName = '_Gochar'                       # Dummy name for Gochar Chart 
 
 #print('imported p21')
