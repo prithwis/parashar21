@@ -123,5 +123,6 @@ AnalysisType = 'Rashi'
 Subject = ''
 Gochar = False
 SubMoonLong = 0
+gName = '_Gochar'
 
 #print('imported p21')

@@ -167,7 +167,7 @@ def C05_buildGLonGRet():
             print('Subject found', p21.chart['pid']['name'])
             p21.SubMoonLong = p21.GLon['Mo']
             #print(p21.SubMoonLong)
-        if p21.chart['pid']['name'] == '_Gochar':
+        if p21.chart['pid']['name'] == p21.gName:
             p21.GLon['La'] = p21.SubMoonLong
             print('La long reset to ',p21.SubMoonLong)
     

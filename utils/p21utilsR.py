@@ -71,7 +71,7 @@ def generateChartTxt():
     for i in range(1,13):
         if len(txt[i]) == 0:
             txt[i] = '*'
-        if p21.pName == '_Gochar':
+        if p21.pName == p21.gName:
             if p21.ChartType == 'Rashi':
                 txt[i] = txt[i].replace('La','RS')
             else:
@@ -505,7 +505,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     txt[1] = json.dumps(p21.GAspectedBy2).replace('"','')
     #cPara = cPara+'\nAspected BY 👀'+json.dumps(p21.GAspectedBy2).replace('"','') 
     for i in [0,1]:
-        if p21.pName == '_Gochar':
+        if p21.pName == p21.gName:
             txt[i] = txt[i].replace('La','RS')
     cPara = cPara+'\nAspects🤓 '+txt[0]
     cPara = cPara+'\nAspected BY 👀'+txt[1] 
@@ -522,7 +522,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     T2 = dict(sorted(T1.items()))
     #print(T2)
     txt[0] = json.dumps(T2).replace('"','')
-    if p21.pName == '_Gochar':
+    if p21.pName == p21.gName:
         txt[0] = txt[0].replace('La','RS')
     
     
@@ -538,7 +538,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     
     txt[0] = json.dumps(T2).replace('"','')
     #print('QQ',txt[0])
-    if p21.pName == '_Gochar':
+    if p21.pName == p21.gName:
         txt[0] = txt[0].replace('La','RS')
     #print('QQ',txt[0])
     cPara = cPara+'\nAspected BY Lords 👀'+txt[0]  
@@ -550,7 +550,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     txt[1] = json.dumps(p21.BLConjunctsG2).replace('"','')
     txt[2] = json.dumps(p21.BLConjunctsBL2).replace('"','')
     for i in [0,1,2]:
-        if p21.pName == '_Gochar':
+        if p21.pName == p21.gName:
             txt[i] = txt[i].replace('La','RS')
     
     cPara = cPara+'\nGraha Graha '+txt[0]  
