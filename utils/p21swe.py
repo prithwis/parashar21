@@ -145,8 +145,8 @@ def C05_buildGLonGRet():
     #global GLon, GRet
     # --------------------------------------------------------
     # Subtracting ayanamsha is apparently NOT the right way to arrive at sidereal positions
-    # Instead, SEFLG_SIDEREAL needs to be set, but where and how, I am not sure
-    # Hence using this HACK here
+    # Instead, SEFLG_SIDEREAL needs to be set, see the demo program on how to do it.  https://github.com/prithwis/parashar21/blob/main/Demo_pyswisseph_v_2_08.ipynb
+    # However the difference is so small, that we have used this approach
     #---------------------------------------------------------
     p21.GLon = {
     'La':p21Sub(P[1][0],ayanamsha),
