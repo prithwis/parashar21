@@ -144,10 +144,10 @@ def p21Sub (x,y):
 def C05_buildGLonGRet():
     #global GLon, GRet
     # --------------------------------------------------------
-    #print('A',p21.chart)
-    #print('B',p21.chart['pid'])
-    #print('C',p21.chart['pid']['name'])
-    # --------------------------------------------------------
+    # Subtracting ayanamsha is apparently NOT the right way to arrive at sidereal positions
+    # Instead, SEFLG_SIDEREAL needs to be set, but where and how, I am not sure
+    # Hence using this HACK here
+    #---------------------------------------------------------
     p21.GLon = {
     'La':p21Sub(P[1][0],ayanamsha),
     'Su':p21Sub(bLon[0],ayanamsha),
@@ -162,7 +162,6 @@ def C05_buildGLonGRet():
     }
     # ------------------------------------------------------
     if p21.Gochar:
-        #print('Gochar True')
         if p21.chart['pid']['name'] == p21.Subject[0:10]:
             print('Subject found', p21.chart['pid']['name'])
             p21.SubMoonLong = p21.GLon['Mo']
