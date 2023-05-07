@@ -459,7 +459,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     p2 = p21.document.add_paragraph()
     run_1 = p2.add_run()
     run_1.add_picture('./RashiChart.png', width=Inches(3.0))
-    if p21.pName == p21.gName: 
+    if p21.pName != p21.gName: 
         run_2 = p2.add_run()
         run_2.add_picture('./NavamsaChart.png', width=Inches(3.0))
     #p1 = p21.document.add_paragraph(p21.pName)                                             # skip printing name
