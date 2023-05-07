@@ -161,6 +161,7 @@ def C05_buildGLonGRet():
     'Ke':p21Sub(p21Sub(bLon[7],ayanamsha),180)
     }
     # ------------------------------------------------------
+    """
     if p21.Gochar:
         if p21.chart['pid']['name'] == p21.Subject[0:10]:
             print('Subject found', p21.chart['pid']['name'])
@@ -169,6 +170,12 @@ def C05_buildGLonGRet():
         if p21.chart['pid']['name'] == p21.gName:
             p21.GLon['La'] = p21.SubMoonLong
             print('La long reset to ',p21.SubMoonLong)
+    """
+    # ------------------------------------------------------
+    if p21.Gochar:
+        p21.GLon['La'] = p21.GLon['Mo']
+        print('La long reset to ',p21.SubMoonLong)
+            
     
     p21.GRet = {
     'La':False,
