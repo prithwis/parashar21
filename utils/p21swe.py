@@ -173,10 +173,10 @@ def C05_buildGLonGRet():
     """
     # ------------------------------------------------------
     if p21.Gochar:
-        p21.SubMoonLong = p21.GLon['Mo']
+        #p21.SubMoonLong = p21.GLon['Mo']
         #print(p21.SubMoonLong)
         p21.GLon['La'] = p21.SubMoonLong
-        print('La long reset to ',p21.GLon['Mo']
+        print('La long reset to ',p21.SubMoonLong)
             
     
     p21.GRet = {
