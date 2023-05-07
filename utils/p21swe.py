@@ -169,7 +169,7 @@ def C05_buildGLonGRet():
             #print(p21.SubMoonLong)
         if p21.chart['pid']['name'] == p21.gName:
             p21.GLon['La'] = p21.SubMoonLong
-            print('La long reset to ',p21.SubMoonLong)
+            print('La long reset to ',p21.GLon['Mo']
     """
     # ------------------------------------------------------
     if p21.Gochar:
