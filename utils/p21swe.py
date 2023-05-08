@@ -176,7 +176,7 @@ def C05_buildGLonGRet():
         #p21.SubMoonLong = p21.GLon['Mo']
         #print(p21.SubMoonLong)
         p21.GLon['La'] = p21.SubMoonLong
-        print('La long reset to ',p21.SubMoonLong)
+        #print('La long reset to ',p21.SubMoonLong)
             
     
     p21.GRet = {
