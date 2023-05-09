@@ -158,16 +158,17 @@ def R12B_drawChart_South():
 
     #id = ChartType+'\n'+pName+'\n'+pDate+'\n'+pTime+'\n'+pPlace
     id = p21.ChartType+'\n'+p21.pName
+    '''
     if p21.ChartType == 'Rashi':
         ChartColour = 'orange'
         ChartFile = 'RashiChart.png'
     else:
         ChartColour = 'olive'
         ChartFile = 'NavamsaChart.png'
-    
+    '''
         
     #plt.figure(figsize=(7,7))
-    plt.figure(figsize=(7,7),facecolor=ChartColour)
+    plt.figure(figsize=(7,7),facecolor=p21.ChartColour)
     
     plt.axis('off')
 
@@ -219,7 +220,7 @@ def R12B_drawChart_South():
 
     
     #plt.savefig("CurrentChart.png", bbox_inches='tight')
-    plt.savefig(ChartFile, bbox_inches='tight')
+    plt.savefig(p21.ChartFile, bbox_inches='tight')
     #plt.show()
 
 
@@ -247,16 +248,17 @@ def R12B_drawChart_North():
     #id = ChartType+'\n'+pName+'\n'+pDate+'\n'+pTime+'\n'+pPlace
     id = p21.ChartType+' | '+p21.pName
     #id = '25-35'
+    '''
     if p21.ChartType == 'Rashi':
         ChartColour = 'orange'
         ChartFile = 'RashiChart.png'
     else:
         ChartColour = 'olive'
         ChartFile = 'NavamsaChart.png'
-    
+    '''
     #print(p21.GRashiN)    
     #plt.figure(figsize=(7,7))
-    plt.figure(figsize=(7,7),facecolor=ChartColour)
+    plt.figure(figsize=(7,7),facecolor=p21.ChartColour)
     
     plt.axis('off')
 
@@ -305,7 +307,7 @@ def R12B_drawChart_North():
     plt.text(82, 55, ntxt[11], fontsize=12)  # 11
     
     
-    plt.savefig(ChartFile, bbox_inches='tight')
+    plt.savefig(p21.ChartFile, bbox_inches='tight')
     #plt.show()
     #print('north')
 
