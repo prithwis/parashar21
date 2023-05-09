@@ -41,12 +41,13 @@ import pytz
 #
 def generateChartTxt():
     global txt
-    # ......
+    # .........  using this function for some additional, common tasks
+    #
     if p21.ChartType == 'Rashi':
-        p21.ChartColour = 'orange'
+        p21.ChartColour = 'white'      # instead of orange
         p21.ChartFile = 'RashiChart.png'
     else:
-        p21.ChartColour = 'olive'
+        p21.ChartColour = 'white'      # instead of olive
         p21.ChartFile = 'NavamsaChart.png'
     # ......    
     txt = ['']*13
