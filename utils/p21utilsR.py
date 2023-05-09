@@ -97,8 +97,8 @@ def R12B_drawChart_Bengal():
         ChartFile = 'NavamsaChart.png'
     
         
-    #plt.figure(figsize=(7,7))
-    plt.figure(figsize=(7,7),facecolor=ChartColour)
+    plt.figure(figsize=(7,7))
+    #plt.figure(figsize=(7,7),facecolor=ChartColour)
     
     plt.axis('off')
 
