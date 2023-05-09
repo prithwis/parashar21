@@ -41,6 +41,14 @@ import pytz
 #
 def generateChartTxt():
     global txt
+    # ......
+    if p21.ChartType == 'Rashi':
+        p21.ChartColour = 'orange'
+        p21.ChartFile = 'RashiChart.png'
+    else:
+        p21.ChartColour = 'olive'
+        p21.ChartFile = 'NavamsaChart.png'
+    # ......    
     txt = ['']*13
     for g,r in p21.GRashiN.items():
         if r == 1:
@@ -89,16 +97,18 @@ def R12B_drawChart_Bengal():
 
     #id = ChartType+'\n'+pName+'\n'+pDate+'\n'+pTime+'\n'+pPlace
     id = p21.ChartType+'\n'+p21.pName
+    '''
     if p21.ChartType == 'Rashi':
         ChartColour = 'orange'
         ChartFile = 'RashiChart.png'
     else:
         ChartColour = 'olive'
         ChartFile = 'NavamsaChart.png'
-    
+    '''
         
     #plt.figure(figsize=(7,7))
-    plt.figure(figsize=(7,7),facecolor=ChartColour)
+    #plt.figure(figsize=(7,7),facecolor=ChartColour)
+    plt.figure(figsize=(7,7),facecolor=p21.ChartColour)
     
     plt.axis('off')
 
@@ -135,7 +145,8 @@ def R12B_drawChart_Bengal():
 
     
     #plt.savefig("CurrentChart.png", bbox_inches='tight')
-    plt.savefig(ChartFile, bbox_inches='tight')
+    #plt.savefig(ChartFile, bbox_inches='tight')
+    plt.savefig(p21.ChartFile, bbox_inches='tight')
     #plt.show()
 
 #Draw Chart as Per South India Style

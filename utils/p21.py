@@ -10,7 +10,7 @@ global GrahaBhava, LordBhav, BhavOfGraha_LordInfo
 global BhavN, BhavA, BhavNBhavA
 global GRashiN, GRashiA
 global GLon, GRet, pName, GLonRet, pTags, cID
-global ChartType
+global ChartType, ChartColour, ChartFile
 global ReportFile, document
 # ------------------------------------------
 global gregflag,iflag,hsysP
