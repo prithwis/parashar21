@@ -90,15 +90,15 @@ def R12B_drawChart_Bengal():
     #id = ChartType+'\n'+pName+'\n'+pDate+'\n'+pTime+'\n'+pPlace
     id = p21.ChartType+'\n'+p21.pName
     if p21.ChartType == 'Rashi':
-        #ChartColour = 'orange'
+        ChartColour = 'orange'
         ChartFile = 'RashiChart.png'
     else:
-        #ChartColour = 'olive'
+        ChartColour = 'olive'
         ChartFile = 'NavamsaChart.png'
     
         
-    plt.figure(figsize=(7,7))
-    #plt.figure(figsize=(7,7),facecolor=ChartColour)
+    #plt.figure(figsize=(7,7))
+    plt.figure(figsize=(7,7),facecolor=ChartColour)
     
     plt.axis('off')
 
