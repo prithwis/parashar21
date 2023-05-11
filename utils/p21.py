@@ -124,5 +124,13 @@ Subject = ''                            # Name of subject whose Gochar  is requi
 Gochar = False                          # Boolean used to catch Subject Moon Longitude
 SubMoonLong = 0                         # Subjects Moon Longitude preserved for setting Lagna longitude of Gochar
 gName = '_Gochar'                       # Dummy name for Gochar Chart 
+# ----------------------------------------------------
+# Vimsottari Dasha 
+Nks1 = ['Ashwini','Bharani','Krittika','Rohini','Mrigashira','Ardra','Punarvasu','Pushya','Aslesha','Magha','P_Phalguni','U_Phalguni','Hasta','Chitra','Swati']
+Nks2 = ['Vishakha','Anuradha','Jyeshtha','Mula','P_Ashada','U_Ashada','Shravana','Dhanistha','Shatavisha','P_Bhadrapad','U_Bhadrapad','Revati']
+Nks = Nks1+Nks2
+DashaSeq = ['Ke','Ve','Su','Mo','Ma','Ra','Ju','Sa','Me']
+DashaDuration =[7,20,6,10,7,18,16,19,17]
+DashaStart = ['Ke','Ve','Su','Mo','Ma','Ra','Ju','Sa','Me','Ke','Ve','Su','Mo','Ma','Ra','Ju','Sa','Me','Ke','Ve','Su','Mo','Ma','Ra','Ju','Sa','Me']
 
 #print('imported p21')
