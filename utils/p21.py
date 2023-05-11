@@ -133,4 +133,6 @@ DashaSeq = ['Ke','Ve','Su','Mo','Ma','Ra','Ju','Sa','Me']
 DashaDuration =[7,20,6,10,7,18,16,19,17]
 DashaStart = ['Ke','Ve','Su','Mo','Ma','Ra','Ju','Sa','Me','Ke','Ve','Su','Mo','Ma','Ra','Ju','Sa','Me','Ke','Ve','Su','Mo','Ma','Ra','Ju','Sa','Me']
 
+DoB = datetime.strptime("1999/1/1", "%Y/%-m/%-d")
+
 #print('imported p21')
