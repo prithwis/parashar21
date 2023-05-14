@@ -133,8 +133,11 @@ Nks1 = ['Ashwini','Bharani','Krittika','Rohini','Mrigashira','Ardra','Punarvasu'
 Nks2 = ['Vishakha','Anuradha','Jyeshtha','Mula','P_Ashada','U_Ashada','Shravana','Dhanistha','Shatavisha','P_Bhadrapad','U_Bhadrapad','Revati']
 Nks = Nks1+Nks2
 DashaSeq = ['Ke','Ve','Su','Mo','Ma','Ra','Ju','Sa','Me']
-DashaDuration =[7,20,6,10,7,18,16,19,17]
+DashaDuration =[7,20,6,10,7,18,16,19,17]                                 # in years
+DashaDuraFract = [0.058,0.167,0.05,0.083,0.058,0.15,0.133,0.158,0.142]
+DashaDurationD =[2557,7305,2192,3653,2557,6575,5844,6940,6209]
 DashaStart = ['Ke','Ve','Su','Mo','Ma','Ra','Ju','Sa','Me','Ke','Ve','Su','Mo','Ma','Ra','Ju','Sa','Me','Ke','Ve','Su','Mo','Ma','Ra','Ju','Sa','Me']
+NksGap = 360/27
 
 DoB = datetime.strptime("1999/1/1", "%Y/%m/%d")
 

@@ -62,8 +62,8 @@ def C02_parsePersonData(P):
     LBTm = int(P['DoB_Time'].split(":")[1])                          # Minute of Birth, Local Time
     LBTs = 0                           # Second of Birth, Local Time
     
-    DoBs = str(P['DoB_Year'])+'/'+str(P['DoB_Mon'])+'/'+str(P['DoB_Day'])
-    p21.DoB = datetime.strptime(DoBs, "%Y/%m/%d")
+    DoBs = str(P['DoB_Year'])+'/'+str(P['DoB_Mon'])+'/'+str(P['DoB_Day'])+' '+str(P['DoB_Time'])
+    p21.DoB = datetime.strptime(DoBs, "%Y/%m/%d %H:%M")
 
     tZone = P['TZ_OffHours']                         # Time Zone Offset. East of Greenwich is +ve
     #print('ppd', LBDY, LBDM,LBDD,LBTh,LBTm,LBTs,tZone)
