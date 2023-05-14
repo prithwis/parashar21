@@ -26,6 +26,7 @@ global yogsFound, yogList
 global AnalysisType
 global kollection   # MongoDB collection that stores the horoscope charts
 global beneficG, maleficG, BenMalG
+global VimDasha
 
 from datetime import datetime
 from datetime import timedelta
