@@ -144,7 +144,8 @@ DashaDuraFract = list(map(lambda x: x/120, DashaDuration))
 
 #Dasha Duration in Days
 #DashaDurationD =[2557,7305,2192,3653,2557,6575,5844,6940,6209]
-DashaDurationD = list(map(lambda x: round(365.25*x), DashaDuration))
+#DashaDurationD = list(map(lambda x: round(365.25*x), DashaDuration))
+DashaDurationD = list(map(lambda x: 365.25*x, DashaDuration))
 
 DashaStart = ['Ke','Ve','Su','Mo','Ma','Ra','Ju','Sa','Me','Ke','Ve','Su','Mo','Ma','Ra','Ju','Sa','Me','Ke','Ve','Su','Mo','Ma','Ra','Ju','Sa','Me']
 NksGap = 360/27
