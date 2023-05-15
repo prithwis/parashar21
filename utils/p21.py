@@ -140,7 +140,7 @@ DashaDuration =[7,20,6,10,7,18,16,19,17]                                 # in ye
 
 #
 #DashaDuraFract = [0.058,0.167,0.05,0.083,0.058,0.15,0.133,0.158,0.142]
-DashaDuraFract = list(map(lamba x: x/120, DashaDuration))
+DashaDuraFract = list(map(lambda x: x/120, DashaDuration))
 
 #Dasha Duration in Days
 #DashaDurationD =[2557,7305,2192,3653,2557,6575,5844,6940,6209]
