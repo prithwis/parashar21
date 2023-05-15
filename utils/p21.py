@@ -151,5 +151,6 @@ DashaStart = ['Ke','Ve','Su','Mo','Ma','Ra','Ju','Sa','Me','Ke','Ve','Su','Mo','
 NksGap = 360/27
 
 DoB = datetime.strptime("1999/1/1", "%Y/%m/%d")
+printDasha = False
 
 #print('imported p21')
