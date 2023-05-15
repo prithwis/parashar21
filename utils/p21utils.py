@@ -580,7 +580,74 @@ def C51_DetermineBenMal():
       'beneficG'  : p21.beneficG,
       'maleficG' : p21.maleficG 
     }
+# -----------------------------------------------------
+# Vimsottari Dasha Functions
+#
+#
+def NextDasha(cd):
+  cdIndex = p21.DashaSeq.index(cd)
+  ndIndex = cdIndex+1
+  if ndIndex > 8:
+    ndIndex = 0
+  return(p21.DashaSeq[ndIndex])
 
+# Generates Dasha, Antardasha Dates
+# 
+def GetDasha():
+  
+  BirthNks = int(p21.SubMoonLong/p21.NksGap)                    # Number of Birth Nakshatra
+  print('Birth Nakshatra ',BirthNks,p21.Nks[BirthNks])
+  BirthDasha = p21.DashaStart[BirthNks]                         # BirthDasha
+  print('BirthDasha ',BirthDasha)
+  BirthDashaIndex = p21.DashaSeq.index(BirthDasha)
+  print('Birth Dasha Index', BirthDashaIndex, )
+
+  DashaConsumedDeg = p21.SubMoonLong - BirthNks*p21.NksGap
+  #print(DashaConsumedDeg)
+  #DashaConsumedDuration = round((DashaConsumedDeg/p21.NksGap) * p21.DashaDurationD[BirthDashaIndex])
+  DashaConsumedDuration = (DashaConsumedDeg/p21.NksGap) * p21.DashaDurationD[BirthDashaIndex]          # Rounding Causes cumulative errors
+
+  print('Birth Dasha Duration',p21.DashaDurationD[BirthDashaIndex], 'Birth Dasha Consumed Duration', DashaConsumedDuration )
+  #DaysToStartOfBirthDasha = int(DashaConsumedDuration * 365)
+  
+  StartOfBirthDasha = p21.DoB - timedelta(days=DashaConsumedDuration)
+  print('Start of Birth Dasha',StartOfBirthDasha)
+  print('Date of Birth',p21.DoB)
+  L1Dasha = BirthDasha
+  StartOfL1Dasha = StartOfBirthDasha
+  p21.VimDasha = {}
+  for i in range(9):
+    L1DashaDuration = p21.DashaDurationD[p21.DashaSeq.index(L1Dasha)]
+    EndOfL1Dasha = StartOfL1Dasha + timedelta(days=L1DashaDuration)
+    DashaDict = {}
+    
+    DashaDict['Start'] = StartOfL1Dasha.strftime("%d %b %Y")
+    DashaDict['End'] = EndOfL1Dasha.strftime("%d %b %Y")
+    DashaDict['Duration'] = L1DashaDuration
+    L2Dasha = L1Dasha
+    StartOfL2Dasha = StartOfL1Dasha
+    for j in range(9):
+      AntarDashaDict = {}
+      #L2DashaDuration = round(L1DashaDuration * p21.DashaDuraFract[p21.DashaSeq.index(L2Dasha)])
+      L2DashaDuration = L1DashaDuration * p21.DashaDuraFract[p21.DashaSeq.index(L2Dasha)]
+
+      #L2DashaDuration = L1DashaDuration * p21.DashaDuraFract[p21.DashaSeq.index(L2Dasha)]
+      EndOfL2Dasha = StartOfL2Dasha + timedelta(days=L2DashaDuration)
+      AntarDashaDict['Start'] = StartOfL2Dasha.strftime("%d %b %Y")
+      AntarDashaDict['End'] = EndOfL2Dasha.strftime("%d %b %Y")
+      AntarDashaDict['Duration'] = L2DashaDuration
+      #AntarDashaDict['Antardasha'] = L2Dasha
+      #AntarDashaDict[L2Dasha] = AntarDashaDictX
+      DashaDict[L2Dasha] = AntarDashaDict
+      #L2Dasha = p21utils.NextDasha(L2Dasha)
+      L2Dasha = NextDasha(L2Dasha)
+      StartOfL2Dasha = EndOfL2Dasha
+    p21.VimDasha[L1Dasha] = DashaDict
+    #print(i+1,'Dasha',Dasha,'Starts',StartOfDasha,'Ends',EndOfDasha,'Followed by',p21utils.NextDasha(Dasha))
+    #L1Dasha = p21utils.NextDasha(L1Dasha)
+    L1Dasha = NextDasha(L1Dasha)
+    StartOfL1Dasha = EndOfL1Dasha
+  
 
 # --------------------------------------------------
 

@@ -588,6 +588,45 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     if (repStyle != 'SingleChart'):
         p21.document.add_page_break()
         
+#---------------------------------------------------------------------------------------------------
+# Dasha Printing Functions
+
+def printVimSottari():
+  for k1, v1 in p21.VimDasha.items():
+    #print('outer')
+    for k2, v2 in v1.items():
+      if (type(v2) is dict):
+        print(k1,' Dasha ends on ',v1['End'],' | ',k2,' Antardasha ends on ',v2['End'])
+    Error = datetime.strptime(v1['End'],"%d %b %Y") - datetime.strptime(v2['End'],"%d %b %Y")
+    print('----------- Error of ', Error.days,' days in ',v1['Duration'],' day Dasha')
+#
+#-------------
+#  
+def printMahaDasha():
+  for k1, v1 in p21.VimDasha.items():
+    print(k1,' Dasha ends on ',v1['End'])
+#
+#-------------
+#
+def printAntarDasha():
+    #today = datetime.now(pytz.timezone('Asia/Calcutta'))
+    today = datetime.now()
+    print(today)
+    count = 0
+    for k1, v1 in p21.VimDasha.items():
+        if (today < datetime.strptime(v1['End'],"%d %b %Y")) and (count < 2):
+            if (count == 0):
+                print('Current Dasha', count, k1)
+            else:
+                print('Next Dasha',count)
+            #print('count', count)
+            for k2, v2 in v1.items():
+                if (type(v2) is dict):
+                    print(k1,' Dasha ends ',v1['End'],' | ',k2,' Antardasha ends ',v2['End'])
+                #Error = datetime.strptime(v1['End'],"%d %b %Y") - datetime.strptime(v2['End'],"%d %b %Y")
+                #print('----------- Error of ', Error.days,' days in ',v1['Duration'],' day Dasha')
+            count = count+1
+
 
 def tracer():
     print('tracer')
