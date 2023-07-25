@@ -10,11 +10,11 @@ Parashar21 is not a prediction engine. There is no attempt to interpret horoscop
 ![workflow](/images/Workflow.png)<br>
 # Sample Programs
 ### How to run sample programs
-## WARNING 
-Because of a recent change in the MongoDB installation process, none of these notebooks are currently working.
-We will modify the codes, as soon as we are able to arrive at a reasonable way to fix the problem
-
-## End of WARNING
+# WARNING 
+Because of a recent change in the MongoDB installation process, there is a problem with MongoDB installation process
+Some notebooks have been fixed with a temporary patch. Others will be fixed as we discover better solutions
+Sorry for the inconvenience
+# End of WARNING
 1. [P21_45_01_Cast_Load](https://github.com/prithwis/parashar21/blob/main/P21_45_01_Cast_Load.ipynb) - Load Birthdata from a CSV file, generate horoscope chart data and load the same into a MongoDB database.  
 2. [P21_45_02_Pull_Print](https://github.com/prithwis/parashar21/blob/main/P21_45_02_Pull_Print.ipynb) - Read the MongoDB database, retrieve charts that meet a specific pattern, print reports in MS-Word.  
 3. [P21_45_04_YogFilter](https://github.com/prithwis/parashar21/blob/main/P21_45_04_YogFilter.ipynb) - Search for specific patterns called Yogs  in the charts stored in the MongoDB database.
