@@ -225,6 +225,9 @@ def C61_Cast2JSON(input_df):
             
             p21utils.C10_DetermineBhavs()                           # determine Houses for person
             p21utils.appendDict(p21.chart,p21.BhavNBhavA)           # add BhavN, BhavA information to chart   
+            
+            # ---------------------------------------- AshtaVarga stuff
+            p21utils.GenAshtakVargaData()
              
             # ----------------------------------------    
             p21utils.C11_DetermineLord()                            # determine Lords of Bhavs

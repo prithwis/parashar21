@@ -596,23 +596,25 @@ def NextDasha(cd):
 def GetDasha():
   
   BirthNks = int(p21.SubMoonLong/p21.NksGap)                    # Number of Birth Nakshatra
-  print('Birth Nakshatra ',BirthNks,p21.Nks[BirthNks])
+  #print('Birth Nakshatra ',BirthNks,p21.Nks[BirthNks])
+  
   BirthDasha = p21.DashaStart[BirthNks]                         # BirthDasha
-  print('BirthDasha ',BirthDasha)
+  #print('BirthDasha ',BirthDasha)
+  
   BirthDashaIndex = p21.DashaSeq.index(BirthDasha)
-  print('Birth Dasha Index', BirthDashaIndex, )
+  #print('Birth Dasha Index', BirthDashaIndex, )
 
   DashaConsumedDeg = p21.SubMoonLong - BirthNks*p21.NksGap
   #print(DashaConsumedDeg)
   #DashaConsumedDuration = round((DashaConsumedDeg/p21.NksGap) * p21.DashaDurationD[BirthDashaIndex])
   DashaConsumedDuration = (DashaConsumedDeg/p21.NksGap) * p21.DashaDurationD[BirthDashaIndex]          # Rounding Causes cumulative errors
 
-  print('Birth Dasha Duration',p21.DashaDurationD[BirthDashaIndex], 'Birth Dasha Consumed Duration', DashaConsumedDuration )
+  #print('Birth Dasha Duration',p21.DashaDurationD[BirthDashaIndex], 'Birth Dasha Consumed Duration', DashaConsumedDuration )
   #DaysToStartOfBirthDasha = int(DashaConsumedDuration * 365)
   
   StartOfBirthDasha = p21.DoB - timedelta(days=DashaConsumedDuration)
-  print('Start of Birth Dasha',StartOfBirthDasha)
-  print('Date of Birth',p21.DoB)
+  #print('Start of Birth Dasha',StartOfBirthDasha)
+  #print('Date of Birth',p21.DoB)
   L1Dasha = BirthDasha
   StartOfL1Dasha = StartOfBirthDasha
   p21.VimDasha = {}
@@ -650,6 +652,114 @@ def GetDasha():
   
 
 # --------------------------------------------------
+
+def GenAshtakVargaData():
+#
+# Calculation of AshtaVarga Points 
+# https://www.thevedichoroscope.com/asthvarga-lessons/asthvarga-lessons-1/
+#
+    def nxt(s,p):
+        d = s+p-1
+        if d > 12:
+            d = d - 12
+        return(d)
+    print('GRashiN', p21.GRashiN)
+    #
+    # Bhinna Ashtak Varga Points for Su
+    # ----------------------------------------
+    b8v_Su = [0,0,0,0,0,0,0,0,0,0,0,0]
+    
+    start = p21.GRashiN['Su']
+    for i in [1,2,4,7,8,9,10,11]:
+        b8v_Su[nxt(start,i)-1] = b8v_Su[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Mo']
+    for i in [3,6,10,11]:
+        b8v_Su[nxt(start,i)-1] = b8v_Su[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Ma']
+    for i in [1,2,4,7,8,9,10,11]:
+        b8v_Su[nxt(start,i)-1] = b8v_Su[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Me']
+    for i in [3,5,6,9,10,11,12]:
+        b8v_Su[nxt(start,i)-1] = b8v_Su[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Ju']
+    for i in [5,6,9,11]:
+        b8v_Su[nxt(start,i)-1] = b8v_Su[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Sa']
+    for i in [1,2,4,7,8,9,10,11]:
+        b8v_Su[nxt(start,i)-1] = b8v_Su[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Ve']
+    for i in [6,7,12]:
+        b8v_Su[nxt(start,i)-1] = b8v_Su[nxt(start,i)-1] + 1
+    start = p21.GRashiN['La']
+    for i in [3,4,6,10,11,12]:
+        b8v_Su[nxt(start,i)-1] = b8v_Su[nxt(start,i)-1] + 1
+        
+    print('b8v_Su',b8v_Su)
+    
+    #
+    # Bhinna Ashtak Varga Points for Mo
+    # ----------------------------------------
+    b8v_Mo = [0,0,0,0,0,0,0,0,0,0,0,0]
+    
+    start = p21.GRashiN['Mo']
+    for i in [1,3,6,7,10,11]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Su']
+    for i in [3,6,7,8,10,11]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Ma']
+    for i in [2,3,5,6,9,10,11]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Me']
+    for i in [3,4,5,7,8,10,11]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Ju']
+    for i in [1,4,7,8,10,11,12]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Sa']
+    for i in [3,5,6,11]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Ve']
+    for i in [3,4,5,7,9,10,11]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['La']
+    for i in [3,6,10,11]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+        
+    print('b8v_Mo',b8v_Mo)
+    
+    #
+    # Bhinna Ashtak Varga Points for Ma
+    # ----------------------------------------
+    b8v_Ma = [0,0,0,0,0,0,0,0,0,0,0,0]
+    
+    start = p21.GRashiN['Ma']
+    for i in [1,2,4,7,8,10,11]:
+        b8v_Ma[nxt(start,i)-1] = b8v_Ma[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Su']
+    for i in [3,5,6,10,11]:
+        b8v_Ma[nxt(start,i)-1] = b8v_Ma[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Mo']
+    for i in [3,6,11]:
+        b8v_Ma[nxt(start,i)-1] = b8v_Ma[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Me']
+    for i in [3,5,6,11]:
+        b8v_Ma[nxt(start,i)-1] = b8v_Ma[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Ju']
+    for i in [6,10,11,12]:
+        b8v_Ma[nxt(start,i)-1] = b8v_Ma[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Sa']
+    for i in [1,4,7,8,9,10,11]:
+        b8v_Ma[nxt(start,i)-1] = b8v_Ma[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Ve']
+    for i in [6,8,11,12]:
+        b8v_Ma[nxt(start,i)-1] = b8v_Ma[nxt(start,i)-1] + 1
+    start = p21.GRashiN['La']
+    for i in [1,3,6,10,11]:
+        b8v_Ma[nxt(start,i)-1] = b8v_Ma[nxt(start,i)-1] + 1
+        
+    print('b8v_Ma',b8v_Ma)
+    
 
 #print('p21utils imported')
 
