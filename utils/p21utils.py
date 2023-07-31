@@ -702,7 +702,7 @@ def GenAshtakVargaData():
     b8v_Mo = [0,0,0,0,0,0,0,0,0,0,0,0]
     
     start = p21.GRashiN['Mo']
-    for i in [1,3,6,7,10,11]:
+    for i in [1,3,6,7,9,10,11]:                                       # https://ashtakvargajyoti.wordpress.com/2014/12/08/moons-ashtakvarga-basic-understanding/
         b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
     start = p21.GRashiN['Su']
     for i in [3,6,7,8,10,11]:
