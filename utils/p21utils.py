@@ -656,7 +656,9 @@ def GetDasha():
 def GenAshtakVargaData():
 #
 # Calculation of AshtaVarga Points 
-# https://www.thevedichoroscope.com/asthvarga-lessons/asthvarga-lessons-1/
+# 1 https://www.thevedichoroscope.com/asthvarga-lessons/asthvarga-lessons-1/
+# 2 https://ashtakvargajyoti.wordpress.com/category/ashtakvarga-system/
+# 3 https://blog.indianastrologysoftware.com/the-ashtakavarga-of-moon/
 #
     def nxt(s,p):
         d = s+p-1
@@ -702,7 +704,7 @@ def GenAshtakVargaData():
     b8v_Mo = [0,0,0,0,0,0,0,0,0,0,0,0]
 
     start = p21.GRashiN['Mo']
-    for i in [1,2,4,6,8,10,11]:                                       # https://ashtakvargajyoti.wordpress.com/2014/12/08/moons-ashtakvarga-basic-understanding/
+    for i in [1,3,6,7,10,11]:                                       # https://ashtakvargajyoti.wordpress.com/2014/12/08/moons-ashtakvarga-basic-understanding/
         b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
     start = p21.GRashiN['Su']
     for i in [3,6,7,8,10,11]:
@@ -726,7 +728,64 @@ def GenAshtakVargaData():
     for i in [3,6,10,11]:
         b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
         
-    print('b8v_Mo',b8v_Mo)
+    print('b8v_Mo 1',b8v_Mo)
+    
+    b8v_Mo = [0,0,0,0,0,0,0,0,0,0,0,0]
+
+    start = p21.GRashiN['Mo']
+    for i in [1,3,6,7,10,11]:                                       # https://ashtakvargajyoti.wordpress.com/2014/12/08/moons-ashtakvarga-basic-understanding/
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Su']
+    for i in [3,6,7,8,10,11]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Ma']
+    for i in [2,3,5,6,9,10,11]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Me']
+    for i in [1,3,4,5,7,8,10,11]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Ju']
+    for i in [1,4,7,8,10,11,12]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Sa']
+    for i in [3,6,10,11]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Ve']
+    for i in [3,5,6,11]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['La']
+    for i in [3,6,10,11]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+        
+    print('b8v_Mo 3',b8v_Mo)
+   
+    b8v_Mo = [0,0,0,0,0,0,0,0,0,0,0,0]
+    start = p21.GRashiN['Mo']
+    for i in [1,3,6,7,9,10,11]:                                       # https://ashtakvargajyoti.wordpress.com/2014/12/08/moons-ashtakvarga-basic-understanding/
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Su']
+    for i in [3,6,7,8,10,11]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Ma']
+    for i in [2,3,5,6,10,11]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Me']
+    for i in [1,3,4,5,7,8,10,11]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Ju']
+    for i in [1,2,4,7,8,10,11]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Sa']
+    for i in [3,5,6,11]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Ve']
+    for i in [3,4,5,7,9,10,11]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    start = p21.GRashiN['La']
+    for i in [3,6,10,11]:
+        b8v_Mo[nxt(start,i)-1] = b8v_Mo[nxt(start,i)-1] + 1
+    
+    print('b8v_Mo 2',b8v_Mo)
 
     #
     # Bhinna Ashtak Varga Points for Ma
@@ -810,7 +869,7 @@ def GenAshtakVargaData():
     for i in [1,2,4,7,8,10,11]:
         b8v_Ju[nxt(start,i)-1] = b8v_Ju[nxt(start,i)-1] + 1
     start = p21.GRashiN['Me']
-    for i in [6,8,11,12]:                                                   # error data
+    for i in [1,2,4,5,6,9,10,11]:                                                   # error data # https://ashtakvargajyoti.wordpress.com/category/ashtakvarga-system/
         b8v_Ju[nxt(start,i)-1] = b8v_Ju[nxt(start,i)-1] + 1
     start = p21.GRashiN['Sa']
     for i in [3,5,6,12]:
@@ -855,6 +914,38 @@ def GenAshtakVargaData():
         b8v_Ve[nxt(start,i)-1] = b8v_Ve[nxt(start,i)-1] + 1
         
     print('b8v_Ve',b8v_Ve)
+    
+    #
+    # Bhinna Ashtak Varga Points for Sa
+    # ----------------------------------------
+    b8v_Sa = [0,0,0,0,0,0,0,0,0,0,0,0]
+
+    start = p21.GRashiN['Sa']
+    for i in [3,5,6,11]:
+        b8v_Sa[nxt(start,i)-1] = b8v_Sa[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Su']
+    for i in [1,2,4,7,8,10,11]:
+        b8v_Sa[nxt(start,i)-1] = b8v_Sa[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Mo']
+    for i in [3,6,11]:
+        b8v_Sa[nxt(start,i)-1] = b8v_Sa[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Ma']
+    for i in [3,5,6,10,11,12]:
+        b8v_Sa[nxt(start,i)-1] = b8v_Sa[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Ve']
+    for i in [6,11,12]:
+        b8v_Sa[nxt(start,i)-1] = b8v_Sa[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Ju']
+    for i in [5,6,11,12]:
+        b8v_Sa[nxt(start,i)-1] = b8v_Sa[nxt(start,i)-1] + 1
+    start = p21.GRashiN['Me']
+    for i in [6,8,9,10,11,12]:
+        b8v_Sa[nxt(start,i)-1] = b8v_Sa[nxt(start,i)-1] + 1
+    start = p21.GRashiN['La']
+    for i in [1,3,4,6,10,11]:
+        b8v_Sa[nxt(start,i)-1] = b8v_Sa[nxt(start,i)-1] + 1
+        
+    print('b8v_Sa',b8v_Sa)
 
 
 #print('p21utils imported')
