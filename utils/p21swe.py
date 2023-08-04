@@ -151,6 +151,8 @@ def C05_buildGLonGRet():
     # Instead, SEFLG_SIDEREAL needs to be set, see the demo program on how to do it.  https://github.com/prithwis/parashar21/blob/main/Demo_pyswisseph_v_2_08.ipynb
     # However the difference is so small, that we have used this approach
     #---------------------------------------------------------
+    # In the case of Gochar chart, the La long is set to the Natal Moon long
+    #
     p21.GLon = {
     'La':p21Sub(P[1][0],ayanamsha),
     'Su':p21Sub(bLon[0],ayanamsha),
