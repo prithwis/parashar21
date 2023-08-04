@@ -7,7 +7,7 @@
 # Global Variables
 import p21
 #import p21swe
-#import p21utils
+import p21utils
 import p21YogInfo
 # --------------------------------------------------
 #Utility functions 
@@ -312,8 +312,9 @@ def R12B_drawChart_North():
     plt.savefig(p21.ChartFile, bbox_inches='tight')
     #plt.show()
     #print('north')
-
-
+#
+# Functions to convert lists to strings for transfering to MS Word docs
+#
 
 def R13C_ListPositions(text,L):
     # 
@@ -336,6 +337,13 @@ def R13B_ListPositions(text,L):
         D = D+' '+str(c)+':'+str(e)+' '
     return(D)
         
+def R13D_ListContents(text,L):
+    # 
+    #L1 = L[1:]
+    D = text
+    for c,e in enumerate(L,1):
+        D = D+' '+str(e)
+    return(D)
 
 def R13A_ShowTrueDict(desc,tDict):
     # creates a string with Keys that have Value True
@@ -485,6 +493,50 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     cPara = 'Details of '+p21.AnalysisType.upper()+' chart\n'
     cPara = cPara+'Tags : '
     cPara = cPara+json.dumps(p21.pTags)+'\n\n'
+    #
+    # Ashtakvarga Printing -----------------------------------------------------------
+    #
+    cPara = cPara+'Ashtakvarga Data'+'\n'
+    s8v = p21utils.GenAshtakVargaData_v1()
+    rashiSum = [0,0,0,0,0,0,0,0,0,0,0,0]
+    for i in range(7):
+        #print(p21.Graha[i],s8v[i])
+        cPara = cPara + R13D_ListContents('\n'+p21.Graha[i],s8v[i])
+    for i in range(12):
+        rashiSum[i] = 0
+        for j in range(7):
+            rashiSum[i] = rashiSum[i]+s8v[j][i]
+    chksum = 0
+    for i in range(12):
+        chksum = chksum + rashiSum[i]
+    #print(' +',rashiSum, ' = ',chksum)
+    cPara = cPara + R13D_ListContents('\n +',rashiSum)
+    s8vB = [[] for x in range(12)]
+    #print(p21.BhavA)
+    for g in range(7):
+        temp = [0,0,0,0,0,0,0,0,0,0,0,0]
+        for b in range(12):
+            b1 = b+1;
+            if b1 > 12:
+                b1 = b1 - 12
+            temp[b] = s8v[g][int(p21.BhavN[b1])-1]
+        s8vB[g] = temp
+    # --------------------------
+    rashiSum = [0,0,0,0,0,0,0,0,0,0,0,0]
+    for i in range(7):
+        #print(p21.Graha[i],s8vB[i])
+        cPara = cPara + R13D_ListContents('\n'+p21.Graha[i],s8vB[i])
+    for i in range(12):
+        rashiSum[i] = 0
+        for j in range(7):
+            rashiSum[i] = rashiSum[i]+s8vB[j][i]
+    
+    chksum = 0
+    for i in range(12):
+        chksum = chksum + rashiSum[i]
+    #print(' +',rashiSum, ' = ',chksum)
+    cPara = cPara + R13D_ListContents('\n +',rashiSum)
+    cPara = cPara+'\n.....................................'+'\n'
     cPara = cPara+R13B_ListPositions('Lord of ',p21.Lord)                                # Show Lords
     cPara = cPara+"\n"
     cPara = cPara+'Graha Lord of \n'+json.dumps(p21.GrahaLordBhav).replace('"','')                         # Show the Bhavs of whicha Graha is Lord
