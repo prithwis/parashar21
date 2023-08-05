@@ -340,9 +340,9 @@ def R13B_ListPositions(text,L):
 def R13D_ListContents(text,L):
     # 
     #L1 = L[1:]
-    D = text
+    D = text+'\t'
     for c,e in enumerate(L,1):
-        D = D+' '+str(e)
+        D = D+str(e)+'\t'
     return(D)
 
 def R13A_ShowTrueDict(desc,tDict):
@@ -485,6 +485,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     if p21.pName != p21.gName: 
         run_2 = p2.add_run()
         run_2.add_picture('./NavamsaChart.png', width=Inches(3.0))
+    # ----------------------------------------------------------------------------------------------------End of Paragraph    
     #p1 = p21.document.add_paragraph(p21.pName)                                             # skip printing name
     
     
@@ -496,55 +497,38 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     #
     # Ashtakvarga Printing -----------------------------------------------------------
     #
-    cPara = cPara+'Ashtakvarga Data'+'\n'
-    s8v = p21utils.GenAshtakVargaData_v1()
-    rashiSum = [0,0,0,0,0,0,0,0,0,0,0,0]
+    cPara = cPara+'\n'+'Ashtakvarga by Rashi ---------------------'
+    #s8v = p21utils.GenAshtakVargaData_v1()
+    AshtakVarga = p21utils.SarvaAshtakVarga()
+    s8v = AshtakVarga[0]
     for i in range(7):
         #print(p21.Graha[i],s8v[i])
         cPara = cPara + R13D_ListContents('\n'+p21.Graha[i],s8v[i])
-    for i in range(12):
-        rashiSum[i] = 0
-        for j in range(7):
-            rashiSum[i] = rashiSum[i]+s8v[j][i]
-    chksum = 0
-    for i in range(12):
-        chksum = chksum + rashiSum[i]
-    #print(' +',rashiSum, ' = ',chksum)
+    rashiSum = AshtakVarga[1]
+    
     cPara = cPara + R13D_ListContents('\n +',rashiSum)
-    s8vB = [[] for x in range(12)]
-    #print(p21.BhavA)
-    for g in range(7):
-        temp = [0,0,0,0,0,0,0,0,0,0,0,0]
-        for b in range(12):
-            b1 = b+1;
-            if b1 > 12:
-                b1 = b1 - 12
-            temp[b] = s8v[g][int(p21.BhavN[b1])-1]
-        s8vB[g] = temp
-    # --------------------------
-    rashiSum = [0,0,0,0,0,0,0,0,0,0,0,0]
+    cPara = cPara+'\n'+'Ashtakvarga by Bhav ---------------------'
+    s8vB = AshtakVarga[2]
     for i in range(7):
         #print(p21.Graha[i],s8vB[i])
         cPara = cPara + R13D_ListContents('\n'+p21.Graha[i],s8vB[i])
-    for i in range(12):
-        rashiSum[i] = 0
-        for j in range(7):
-            rashiSum[i] = rashiSum[i]+s8vB[j][i]
     
-    chksum = 0
-    for i in range(12):
-        chksum = chksum + rashiSum[i]
-    #print(' +',rashiSum, ' = ',chksum)
-    cPara = cPara + R13D_ListContents('\n +',rashiSum)
+    bhavSum = AshtakVarga[3]
+    
+    
+    cPara = cPara + R13D_ListContents('\n +',bhavSum)
     cPara = cPara+'\n.....................................'+'\n'
     cPara = cPara+R13B_ListPositions('Lord of ',p21.Lord)                                # Show Lords
     cPara = cPara+"\n"
     cPara = cPara+'Graha Lord of \n'+json.dumps(p21.GrahaLordBhav).replace('"','')                         # Show the Bhavs of whicha Graha is Lord
     
     cPara = cPara+R13B_ListPositions('\nLord in Bhava',p21.LordBhav)
-    para001 = p21.document.add_paragraph(cPara)
+    para009 = p21.document.add_paragraph(cPara)
     #para001.style = p21.document.styles['Normal']
-            
+    para009_format = para009.paragraph_format
+    para009_tab_stops = para009_format.tab_stops
+    para_tab_stop = para009_tab_stops.add_tab_stop(Inches(0.25))
+    # ----------------------------------------------------------------------------------------------------End of Paragraph        
     table = p21.document.add_table(rows=1, cols=2)
     cell1 = table.cell(0, 0)
     cell2 = table.cell(0, 1)
@@ -557,6 +541,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     cPara1 = cPara1+R13A_ShowTrueDict('Benefics    : ',p21.beneficG)+'\n'
     cPara1 = cPara1+R13A_ShowTrueDict('Malefics    : ',p21.maleficG)
     cell1.add_paragraph(cPara1)
+    # ----------------------------------------------------------------------------------------------------End of Paragraph        
     
     
     cPara2 = 'Lord Status\n'
@@ -565,7 +550,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     cPara2 = cPara2+R13C_ListPositions('In Friend   : ',p21.inFriendL)+'\n'
     cPara2 = cPara2+R13C_ListPositions('In Enemy    : ',p21.inEnemyL)
     cell2.add_paragraph(cPara2)
-    
+    # ----------------------------------------------------------------------------------------------------End of Paragraph        
     
     cPara = 'Graha Aspects ........................................................'
     txt[0] = json.dumps(p21.GAspects2).replace('"','')
@@ -636,6 +621,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
         for y in p21.yogsFound:
             cPara = cPara+y+' '
     p21.document.add_paragraph(cPara)
+    # ----------------------------------------------------------------------------------------------------End of Paragraph        
     # Dasha Printing
     #
     if p21.printDasha:
@@ -669,6 +655,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
             cPara = cPara+'---------------------\n'
         p21.document.add_paragraph(cPara)
     
+    # ----------------------------------------------------------------------------------------------------End of Paragraph        
     if (repStyle != 'SingleChart'):
         p21.document.add_page_break()
         
