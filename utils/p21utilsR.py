@@ -518,6 +518,8 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     
     
     cPara = cPara + R13D_ListContents('\n +',bhavSum)
+    bhavSplit = AshtakVarga[4]
+    cPara = cPara + R13D_ListContents('\n Ban 1+5+9:Sev 2+6+10:Pos 3+7+11:Gha 4+8+12:CHK',bhavSplit)
     cPara = cPara+'\n.....................................'+'\n'
     cPara = cPara+R13B_ListPositions('Lord of ',p21.Lord)                                # Show Lords
     cPara = cPara+"\n"

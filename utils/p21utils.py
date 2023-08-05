@@ -961,5 +961,10 @@ def SarvaAshtakVarga():
         bchksum = bchksum + bhavSum[i]
     print(' +',bhavSum, ' = ',bchksum)
     #print('chksum',chksum)
-    return(s8v,rashiSum,s8vB,bhavSum)
+    Bandhu = bhavSum[0]+ bhavSum[4] + bhavSum[8]
+    Sevak = bhavSum[1]+ bhavSum[5] + bhavSum[9]
+    Poshak = bhavSum[2] + bhavSum[6] + bhavSum[10]
+    Ghatak = bhavSum[3] + bhavSum[7] + bhavSum[11]
+    print('Bandhu: ',Bandhu,'Sevak: ',Sevak,'Poshak: ',Poshak,'Ghatak: ',Ghatak)
+    return(s8v,rashiSum,s8vB,bhavSum,[Bandhu,Sevak,Poshak,Ghatak,bchksum])
 
