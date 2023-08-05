@@ -493,20 +493,21 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     #cPara = ' '.join(p21.pTags)+'\n'
     cPara = 'Details of '+p21.AnalysisType.upper()+' chart\n'
     cPara = cPara+'Tags : '
-    cPara = cPara+json.dumps(p21.pTags)+'\n\n'
+    cPara = cPara+json.dumps(p21.pTags)+'\n'
     #
     # Ashtakvarga Printing -----------------------------------------------------------
     #
-    cPara = cPara+'\n'+'Ashtakvarga by Rashi ---------------------'
+    
     #s8v = p21utils.GenAshtakVargaData_v1()
     AshtakVarga = p21utils.SarvaAshtakVarga()
     s8v = AshtakVarga[0]
-    for i in range(7):
-        #print(p21.Graha[i],s8v[i])
-        cPara = cPara + R13D_ListContents('\n'+p21.Graha[i],s8v[i])
-    rashiSum = AshtakVarga[1]
+    #cPara = cPara+'\n'+'Ashtakvarga by Rashi ---------------------'
+    #for i in range(7):
+    #    #print(p21.Graha[i],s8v[i])
+    #    cPara = cPara + R13D_ListContents('\n'+p21.Graha[i],s8v[i])
+    #rashiSum = AshtakVarga[1]
     
-    cPara = cPara + R13D_ListContents('\n +',rashiSum)
+    #cPara = cPara + R13D_ListContents('\n +',rashiSum)
     cPara = cPara+'\n'+'Ashtakvarga by Bhav ---------------------'
     s8vB = AshtakVarga[2]
     for i in range(7):
