@@ -645,7 +645,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
                     for k2, v2 in v1.items():
                         if (type(v2) is dict):
                             print(k1,' Dasha ends ',v1['End'],' | ',k2,' Antardasha ends ',v2['End'])
-                            cPara = cPara+k1+' Dasha end '+v1['End']+' | '+k2+' Antardasha ends '+v2['End']+'\n'
+                            cPara = cPara+k1+'\tDasha end\t'+v1['End']+'\t| '+k2+'\tAntardasha ends\t'+v2['End']+'\n'
                         #Error = datetime.strptime(v1['End'],"%d %b %Y") - datetime.strptime(v2['End'],"%d %b %Y")
                         #print('----------- Error of ', Error.days,' days in ',v1['Duration'],' day Dasha')
                     count = count+1
@@ -654,7 +654,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
             cPara = 'Mahadasha -----------------\n'
             for k1, v1 in p21.VimDasha.items():
                 #print(k1,' Dasha ends on ',v1['End'])
-                cPara = cPara+k1+' Dasha ends on '+v1['End']+'\n'
+                cPara = cPara+k1+'\tDasha ends on\t'+v1['End']+'\n'
             cPara = cPara+'---------------------\n'
         p21.document.add_paragraph(cPara)
     
