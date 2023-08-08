@@ -508,7 +508,8 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     #rashiSum = AshtakVarga[1]
     
     #cPara = cPara + R13D_ListContents('\n +',rashiSum)
-    cPara = cPara+'\n'+'Ashtakvarga by Bhav ---------------------'
+    print("p21.GRashiN['La']",p21.GRashiN['La'],'1st Bhav', p21.RashiN2A(p21.GRashiN['La']))
+    cPara = cPara+'\n'+'Ashtakvarga Points for Bhavs starting from '+p21.RashiN2A(p21.GRashiN['La'])
     s8vB = AshtakVarga[2]
     for i in range(7):
         #print(p21.Graha[i],s8vB[i])
