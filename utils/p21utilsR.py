@@ -498,29 +498,31 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     # Ashtakvarga Printing -----------------------------------------------------------
     #
     
-    #s8v = p21utils.GenAshtakVargaData_v1()
-    AshtakVarga = p21utils.SarvaAshtakVarga()
-    s8v = AshtakVarga[0]
-    #cPara = cPara+'\n'+'Ashtakvarga by Rashi ---------------------'
-    #for i in range(7):
-    #    #print(p21.Graha[i],s8v[i])
-    #    cPara = cPara + R13D_ListContents('\n'+p21.Graha[i],s8v[i])
-    #rashiSum = AshtakVarga[1]
-    
-    #cPara = cPara + R13D_ListContents('\n +',rashiSum)
-    print("p21.GRashiN['La']",p21.GRashiN['La'],'1st Bhav', p21.RashiN2A(p21.GRashiN['La']))
-    cPara = cPara+'\n'+'Ashtakvarga Points for Bhavs starting from '+p21.RashiN2A(p21.GRashiN['La'])
-    s8vB = AshtakVarga[2]
-    for i in range(7):
-        #print(p21.Graha[i],s8vB[i])
-        cPara = cPara + R13D_ListContents('\n'+p21.Graha[i],s8vB[i])
-    
-    bhavSum = AshtakVarga[3]
-    
-    
-    cPara = cPara + R13D_ListContents('\n +',bhavSum)
-    bhavSplit = AshtakVarga[4]
-    cPara = cPara + R13D_ListContents('\n Ban 1+5+9:Sev 2+6+10:Pos 3+7+11:Gha 4+8+12:CHK',bhavSplit)
+    if repStyle != 'MultiChart':
+        #s8v = p21utils.GenAshtakVargaData_v1()
+        AshtakVarga = p21utils.SarvaAshtakVarga()
+        s8v = AshtakVarga[0]
+        #cPara = cPara+'\n'+'Ashtakvarga by Rashi ---------------------'
+        #for i in range(7):
+        #    #print(p21.Graha[i],s8v[i])
+        #    cPara = cPara + R13D_ListContents('\n'+p21.Graha[i],s8v[i])
+        #rashiSum = AshtakVarga[1]
+        
+        #cPara = cPara + R13D_ListContents('\n +',rashiSum)
+        print("p21.GRashiN['La']",p21.GRashiN['La'],'1st Bhav', p21.RashiN2A(p21.GRashiN['La']))
+        cPara = cPara+'\n'+'Ashtakvarga Points for Bhavs starting from '+p21.RashiN2A(p21.GRashiN['La'])
+        s8vB = AshtakVarga[2]
+        for i in range(7):
+            #print(p21.Graha[i],s8vB[i])
+            cPara = cPara + R13D_ListContents('\n'+p21.Graha[i],s8vB[i])
+        
+        bhavSum = AshtakVarga[3]
+        
+        
+        cPara = cPara + R13D_ListContents('\n +',bhavSum)
+        bhavSplit = AshtakVarga[4]
+        cPara = cPara + R13D_ListContents('\n Ban 1+5+9:Sev 2+6+10:Pos 3+7+11:Gha 4+8+12:CHK',bhavSplit)
+        
     cPara = cPara+'\n.....................................'+'\n'
     cPara = cPara+R13B_ListPositions('Lord of ',p21.Lord)                                # Show Lords
     cPara = cPara+"\n"
