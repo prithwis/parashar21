@@ -495,7 +495,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     cPara = cPara+'Tags : '
     cPara = cPara+json.dumps(p21.pTags)+'\n'
     #
-    # Ashtakvarga Printing -----------------------------------------------------------
+    # Ashtakvarga Printing -------------------- ONLY for single chart scenario
     #
     
     if repStyle != 'MultiChart':
