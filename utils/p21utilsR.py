@@ -498,7 +498,8 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     # Ashtakvarga Printing -------------------- ONLY for single chart scenario
     #
     
-    if repStyle != 'MultiChart':
+    #if repStyle != 'MultiChart':
+    if repStyle == 'SingleChart':
         #s8v = p21utils.GenAshtakVargaData_v1()
         AshtakVarga = p21utils.SarvaAshtakVarga()
         s8v = AshtakVarga[0]
@@ -630,7 +631,8 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     # ----------------------------------------------------------------------------------------------------End of Paragraph        
     # Dasha Printing
     #
-    if p21.printDasha:
+    #if p21.printDasha:
+    if repStyle == 'SingleChart':
         if p21.pName == p21.gName:
             cPara = 'Antardasha -----------------\n'
             today = datetime.now()
