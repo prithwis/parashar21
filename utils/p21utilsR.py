@@ -460,10 +460,6 @@ def R01_CreateReportDoc(cqs,pS,repStyle = 'MultiChart'):
     last_paragraph = p21.document.paragraphs[-1] 
     last_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
     
-    
-    
-    
-    
     p21.document.add_page_break()
     #return document
     
