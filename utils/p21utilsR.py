@@ -471,14 +471,11 @@ def R01_CreateReportDoc(cqs,pS,repStyle = 'MultiChart'):
 
 
 
-# --------------------------------------------------
-
 def R512_FormatPage(repStyle = 'MultiChart'):
 
     
        
     #p21.document.add_page_break()
-    
     p2 = p21.document.add_paragraph()
     run_1 = p2.add_run()
     run_1.add_picture('./RashiChart.png', width=Inches(3.0))
@@ -493,49 +490,16 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     #cPara = ' '.join(p21.pTags)+'\n'
     cPara = 'Details of '+p21.AnalysisType.upper()+' chart\n'
     cPara = cPara+'Tags : '
-    cPara = cPara+json.dumps(p21.pTags)+'\n'
-    #
-    # Ashtakvarga Printing -------------------- ONLY for single chart scenario
-    #
-    
-    #if repStyle != 'MultiChart':
-    if repStyle == 'SingleChart':
-        #s8v = p21utils.GenAshtakVargaData_v1()
-        AshtakVarga = p21utils.SarvaAshtakVarga()
-        s8v = AshtakVarga[0]
-        #cPara = cPara+'\n'+'Ashtakvarga by Rashi ---------------------'
-        #for i in range(7):
-        #    #print(p21.Graha[i],s8v[i])
-        #    cPara = cPara + R13D_ListContents('\n'+p21.Graha[i],s8v[i])
-        #rashiSum = AshtakVarga[1]
-        
-        #cPara = cPara + R13D_ListContents('\n +',rashiSum)
-        print("p21.GRashiN['La']",p21.GRashiN['La'],'1st Bhav', p21.RashiN2A(p21.GRashiN['La']))
-        cPara = cPara+'\n'+'Ashtakvarga Points for Bhavs starting from '+p21.RashiN2A(p21.GRashiN['La'])
-        s8vB = AshtakVarga[2]
-        for i in range(7):
-            #print(p21.Graha[i],s8vB[i])
-            cPara = cPara + R13D_ListContents('\n'+p21.Graha[i],s8vB[i])
-        
-        bhavSum = AshtakVarga[3]
-        
-        
-        cPara = cPara + R13D_ListContents('\n +',bhavSum)
-        bhavSplit = AshtakVarga[4]
-        cPara = cPara + R13D_ListContents('\n Ban 1+5+9:Sev 2+6+10:Pos 3+7+11:Gha 4+8+12:CHK',bhavSplit)
-        
+    cPara = cPara+json.dumps(p21.pTags)
+    #cPara = cPara+json.dumps(p21.pTags)+'\n'
     cPara = cPara+'\n.....................................'+'\n'
     cPara = cPara+R13B_ListPositions('Lord of ',p21.Lord)                                # Show Lords
     cPara = cPara+"\n"
     cPara = cPara+'Graha Lord of \n'+json.dumps(p21.GrahaLordBhav).replace('"','')                         # Show the Bhavs of whicha Graha is Lord
     
     cPara = cPara+R13B_ListPositions('\nLord in Bhava',p21.LordBhav)
-    para009 = p21.document.add_paragraph(cPara)
-    #para001.style = p21.document.styles['Normal']
-    para009_format = para009.paragraph_format
-    para009_tab_stops = para009_format.tab_stops
-    para_tab_stop = para009_tab_stops.add_tab_stop(Inches(0.25))
-    # ----------------------------------------------------------------------------------------------------End of Paragraph        
+    p21.document.add_paragraph(cPara)
+    
     table = p21.document.add_table(rows=1, cols=2)
     cell1 = table.cell(0, 0)
     cell2 = table.cell(0, 1)
@@ -632,75 +596,72 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     # Dasha Printing
     #
     #if p21.printDasha:
-    '''
-    if repStyle == 'SingleChart':
-        if p21.pName == p21.gName:
-            cPara = 'Antardasha -----------------\n'
-            today = datetime.now()
-            #print(today)
-            count = 0
-            for k1, v1 in p21.VimDasha.items():
-                if (today < datetime.strptime(v1['End'],"%d %b %Y")) and (count < 2):
-                    if (count == 0):
-                        #print('Current Dasha', count, k1)
-                        cPara = cPara+'Current Dasha '+k1+'\n'
-                    else:
-                        #print('Next Dasha',count
-                        cPara = cPara+'Next Dasha \n'
-                    #print('count', count)
-                    for k2, v2 in v1.items():
-                        if (type(v2) is dict):
-                            print(k1,' Dasha ends ',v1['End'],' | ',k2,' Antardasha ends ',v2['End'])
-                            cPara = cPara+k1+'\tDasha end\t'+v1['End']+'\t| '+k2+'\tAntardasha ends\t'+v2['End']+'\n'
-                        #Error = datetime.strptime(v1['End'],"%d %b %Y") - datetime.strptime(v2['End'],"%d %b %Y")
-                        #print('----------- Error of ', Error.days,' days in ',v1['Duration'],' day Dasha')
-                    count = count+1
-            cPara = cPara+'---------------------\n'
-        else:
-            cPara = 'Mahadasha -----------------\n'
-            for k1, v1 in p21.VimDasha.items():
-                #print(k1,' Dasha ends on ',v1['End'])
-                cPara = cPara+k1+'\tDasha ends on\t'+v1['End']+'\n'
-            cPara = cPara+'---------------------\n'
-        p21.document.add_paragraph(cPara)
-    
-'''
+
     # ----------------------------------------------------------------------------------------------------End of Paragraph        
     if (repStyle != 'SingleChart'):
         p21.document.add_page_break()
         
 
-def R512_FormatPage2(repStyle = 'MultiChart'):
-    if repStyle == 'SingleChart':
-            if p21.pName == p21.gName:
-                cPara = 'Antardasha -----------------\n'
-                today = datetime.now()
-                #print(today)
-                count = 0
-                for k1, v1 in p21.VimDasha.items():
-                    if (today < datetime.strptime(v1['End'],"%d %b %Y")) and (count < 2):
-                        if (count == 0):
-                            #print('Current Dasha', count, k1)
-                            cPara = cPara+'Current Dasha '+k1+'\n'
-                        else:
-                            #print('Next Dasha',count
-                            cPara = cPara+'Next Dasha \n'
-                        #print('count', count)
-                        for k2, v2 in v1.items():
-                            if (type(v2) is dict):
-                                print(k1,' Dasha ends ',v1['End'],' | ',k2,' Antardasha ends ',v2['End'])
-                                cPara = cPara+k1+'\tDasha end\t'+v1['End']+'\t| '+k2+'\tAntardasha ends\t'+v2['End']+'\n'
-                            #Error = datetime.strptime(v1['End'],"%d %b %Y") - datetime.strptime(v2['End'],"%d %b %Y")
-                            #print('----------- Error of ', Error.days,' days in ',v1['Duration'],' day Dasha')
-                        count = count+1
-                cPara = cPara+'---------------------\n'
-            else:
-                cPara = 'Mahadasha -----------------\n'
-                for k1, v1 in p21.VimDasha.items():
-                    #print(k1,' Dasha ends on ',v1['End'])
-                    cPara = cPara+k1+'\tDasha ends on\t'+v1['End']+'\n'
-                cPara = cPara+'---------------------\n'
-            p21.document.add_paragraph(cPara)
+def R512_FormatPage2():
+#
+    # Ashtakvarga Printing -------------------- ONLY for single chart scenario
+    #
+    AshtakVarga = p21utils.SarvaAshtakVarga()
+    s8v = AshtakVarga[0]
+    
+    print("p21.GRashiN['La']",p21.GRashiN['La'],'1st Bhav', p21.RashiN2A(p21.GRashiN['La']))
+    #cPara = cPara+'\n'+'Ashtakvarga Points for Bhavs starting from '+p21.RashiN2A(p21.GRashiN['La'])
+    cPara = '\n'+'Ashtakvarga Points for Bhavs starting from '+p21.RashiN2A(p21.GRashiN['La'])
+    s8vB = AshtakVarga[2]
+    for i in range(7):
+        #print(p21.Graha[i],s8vB[i])
+        cPara = cPara + R13D_ListContents('\n'+p21.Graha[i],s8vB[i])
+    
+    bhavSum = AshtakVarga[3]
+    
+    
+    cPara = cPara + R13D_ListContents('\n +',bhavSum)
+    bhavSplit = AshtakVarga[4]
+    cPara = cPara + R13D_ListContents('\n Ban 1+5+9:Sev 2+6+10:Pos 3+7+11:Gha 4+8+12:CHK',bhavSplit)
+    
+    
+    para009 = p21.document.add_paragraph(cPara)
+    #para001.style = p21.document.styles['Normal']
+    para009_format = para009.paragraph_format
+    para009_tab_stops = para009_format.tab_stops
+    para_tab_stop = para009_tab_stops.add_tab_stop(Inches(0.25))
+    # ----------------------------------------------------------------------------------------------------End of Paragraph
+    #if repStyle == 'SingleChart':
+    if p21.pName == p21.gName:
+        cPara = 'Antardasha -----------------\n'
+        today = datetime.now()
+        #print(today)
+        count = 0
+        for k1, v1 in p21.VimDasha.items():
+            if (today < datetime.strptime(v1['End'],"%d %b %Y")) and (count < 2):
+                if (count == 0):
+                    #print('Current Dasha', count, k1)
+                    cPara = cPara+'Current Dasha '+k1+'\n'
+                else:
+                    #print('Next Dasha',count
+                    cPara = cPara+'Next Dasha \n'
+                #print('count', count)
+                for k2, v2 in v1.items():
+                    if (type(v2) is dict):
+                        print(k1,' Dasha ends ',v1['End'],' | ',k2,' Antardasha ends ',v2['End'])
+                        cPara = cPara+k1+'\tDasha end\t'+v1['End']+'\t| '+k2+'\tAntardasha ends\t'+v2['End']+'\n'
+                    #Error = datetime.strptime(v1['End'],"%d %b %Y") - datetime.strptime(v2['End'],"%d %b %Y")
+                    #print('----------- Error of ', Error.days,' days in ',v1['Duration'],' day Dasha')
+                count = count+1
+        cPara = cPara+'---------------------\n'
+    else:
+        cPara = 'Mahadasha -----------------\n'
+        for k1, v1 in p21.VimDasha.items():
+            #print(k1,' Dasha ends on ',v1['End'])
+            cPara = cPara+k1+'\tDasha ends on\t'+v1['End']+'\n'
+        cPara = cPara+'---------------------\n'
+    
+    p21.document.add_paragraph(cPara)
 
 #---------------------------------------------------------------------------------------------------
 # Dasha Printing Functions
