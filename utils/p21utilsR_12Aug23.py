@@ -667,7 +667,108 @@ def R512_FormatPage2B():
     para009_tab_stops = para009_format.tab_stops
     para_tab_stop = para009_tab_stops.add_tab_stop(Inches(0.25))
     
+'''
+def R512_FormatPage2_original():
+#
+    # Ashtakvarga Printing -------------------- ONLY for single chart scenario
+    #
+    AshtakVarga = p21utils.SarvaAshtakVarga()
+    s8v = AshtakVarga[0]
+    
+    print("p21.GRashiN['La']",p21.GRashiN['La'],'1st Bhav', p21.RashiN2A(p21.GRashiN['La']))
+    #cPara = cPara+'\n'+'Ashtakvarga Points for Bhavs starting from '+p21.RashiN2A(p21.GRashiN['La'])
+    cPara = '\n'+'Ashtakvarga Points for Bhavs starting from '+p21.RashiN2A(p21.GRashiN['La'])
+    s8vB = AshtakVarga[2]
+    for i in range(7):
+        #print(p21.Graha[i],s8vB[i])
+        cPara = cPara + R13D_ListContents('\n'+p21.Graha[i],s8vB[i])
+    
+    bhavSum = AshtakVarga[3]
+    
+    
+    cPara = cPara + R13D_ListContents('\n +',bhavSum)
+    bhavSplit = AshtakVarga[4]
+    cPara = cPara + R13D_ListContents('\n Ban 1+5+9:Sev 2+6+10:Pos 3+7+11:Gha 4+8+12:CHK',bhavSplit)
+    
+    
+    para009 = p21.document.add_paragraph(cPara)
+    #para001.style = p21.document.styles['Normal']
+    para009_format = para009.paragraph_format
+    para009_tab_stops = para009_format.tab_stops
+    para_tab_stop = para009_tab_stops.add_tab_stop(Inches(0.25))
+    # ----------------------------------------------------------------------------------------------------End of Paragraph
+    #if repStyle == 'SingleChart':
+    if p21.pName == p21.gName:
+        cPara = 'Antardasha -----------------\n'
+        today = datetime.now()
+        #print(today)
+        count = 0
+        for k1, v1 in p21.VimDasha.items():
+            if (today < datetime.strptime(v1['End'],"%d %b %Y")) and (count < 2):
+                if (count == 0):
+                    #print('Current Dasha', count, k1)
+                    cPara = cPara+'Current Dasha '+k1+'\n'
+                else:
+                    #print('Next Dasha',count
+                    cPara = cPara+'Next Dasha \n'
+                #print('count', count)
+                for k2, v2 in v1.items():
+                    if (type(v2) is dict):
+                        print(k1,' Dasha ends ',v1['End'],' | ',k2,' Antardasha ends ',v2['End'])
+                        cPara = cPara+k1+'\tDasha end\t'+v1['End']+'\t| '+k2+'\tAntardasha ends\t'+v2['End']+'\n'
+                    #Error = datetime.strptime(v1['End'],"%d %b %Y") - datetime.strptime(v2['End'],"%d %b %Y")
+                    #print('----------- Error of ', Error.days,' days in ',v1['Duration'],' day Dasha')
+                count = count+1
+        cPara = cPara+'---------------------\n'
+    else:
+        cPara = 'Mahadasha -----------------\n'
+        for k1, v1 in p21.VimDasha.items():
+            #print(k1,' Dasha ends on ',v1['End'])
+            cPara = cPara+k1+'\tDasha ends on\t'+v1['End']+'\n'
+        cPara = cPara+'---------------------\n'
+    
+    p21.document.add_paragraph(cPara)
 
+#---------------------------------------------------------------------------------------------------
+# Dasha Printing Functions
+
+def printVimSottari():
+  for k1, v1 in p21.VimDasha.items():
+    #print('outer')
+    for k2, v2 in v1.items():
+      if (type(v2) is dict):
+        print(k1,' Dasha ends on ',v1['End'],' | ',k2,' Antardasha ends on ',v2['End'])
+    Error = datetime.strptime(v1['End'],"%d %b %Y") - datetime.strptime(v2['End'],"%d %b %Y")
+    print('----------- Error of ', Error.days,' days in ',v1['Duration'],' day Dasha')
+#
+#-------------
+#  
+def printMahaDasha():
+  for k1, v1 in p21.VimDasha.items():
+    print(k1,' Dasha ends on ',v1['End'])
+#
+#-------------
+
+
+def printAntarDasha():
+    #today = datetime.now(pytz.timezone('Asia/Calcutta'))
+    today = datetime.now()
+    print(today)
+    count = 0
+    for k1, v1 in p21.VimDasha.items():
+        if (today < datetime.strptime(v1['End'],"%d %b %Y")) and (count < 2):
+            if (count == 0):
+                print('Current Dasha', count, k1)
+            else:
+                print('Next Dasha',count)
+            #print('count', count)
+            for k2, v2 in v1.items():
+                if (type(v2) is dict):
+                    print(k1,' Dasha ends ',v1['End'],' | ',k2,' Antardasha ends ',v2['End'])
+                #Error = datetime.strptime(v1['End'],"%d %b %Y") - datetime.strptime(v2['End'],"%d %b %Y")
+                #print('----------- Error of ', Error.days,' days in ',v1['Duration'],' day Dasha')
+            count = count+1
+'''
 
 def tracer():
     print('tracer')
