@@ -748,7 +748,7 @@ def printMahaDasha():
     print(k1,' Dasha ends on ',v1['End'])
 #
 #-------------
-'''
+
 
 def printAntarDasha():
     #today = datetime.now(pytz.timezone('Asia/Calcutta'))
@@ -768,7 +768,7 @@ def printAntarDasha():
                 #Error = datetime.strptime(v1['End'],"%d %b %Y") - datetime.strptime(v2['End'],"%d %b %Y")
                 #print('----------- Error of ', Error.days,' days in ',v1['Duration'],' day Dasha')
             count = count+1
-
+'''
 
 def tracer():
     print('tracer')
