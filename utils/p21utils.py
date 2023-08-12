@@ -915,8 +915,8 @@ def SarvaAshtakVarga():
     print('SarvaAshtakVarga | Rashi', p21.GRashiN)
     #print('GRashiN : ', p21.GRashiN)
     rashiSum = [0,0,0,0,0,0,0,0,0,0,0,0]
-    for i in range(7):
-        print(p21.Graha[i],s8v[i])
+    #for i in range(7):
+    #    print(p21.Graha[i],s8v[i])
     for i in range(12):
         rashiSum[i] = 0
         for j in range(7):
@@ -949,8 +949,8 @@ def SarvaAshtakVarga():
         s8vB[g] = temp
     # --------------------------
     bhavSum = [0,0,0,0,0,0,0,0,0,0,0,0]
-    for i in range(7):
-        print(p21.Graha[i],s8vB[i])
+    #for i in range(7):
+    #    print(p21.Graha[i],s8vB[i])
     for i in range(12):
         bhavSum[i] = 0
         for j in range(7):
