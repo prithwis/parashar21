@@ -632,6 +632,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     # Dasha Printing
     #
     #if p21.printDasha:
+    '''
     if repStyle == 'SingleChart':
         if p21.pName == p21.gName:
             cPara = 'Antardasha -----------------\n'
@@ -663,10 +664,44 @@ def R512_FormatPage(repStyle = 'MultiChart'):
             cPara = cPara+'---------------------\n'
         p21.document.add_paragraph(cPara)
     
+'''
     # ----------------------------------------------------------------------------------------------------End of Paragraph        
     if (repStyle != 'SingleChart'):
         p21.document.add_page_break()
         
+
+def R512_FormatPage2(repStyle = 'MultiChart'):
+    if repStyle == 'SingleChart':
+            if p21.pName == p21.gName:
+                cPara = 'Antardasha -----------------\n'
+                today = datetime.now()
+                #print(today)
+                count = 0
+                for k1, v1 in p21.VimDasha.items():
+                    if (today < datetime.strptime(v1['End'],"%d %b %Y")) and (count < 2):
+                        if (count == 0):
+                            #print('Current Dasha', count, k1)
+                            cPara = cPara+'Current Dasha '+k1+'\n'
+                        else:
+                            #print('Next Dasha',count
+                            cPara = cPara+'Next Dasha \n'
+                        #print('count', count)
+                        for k2, v2 in v1.items():
+                            if (type(v2) is dict):
+                                print(k1,' Dasha ends ',v1['End'],' | ',k2,' Antardasha ends ',v2['End'])
+                                cPara = cPara+k1+'\tDasha end\t'+v1['End']+'\t| '+k2+'\tAntardasha ends\t'+v2['End']+'\n'
+                            #Error = datetime.strptime(v1['End'],"%d %b %Y") - datetime.strptime(v2['End'],"%d %b %Y")
+                            #print('----------- Error of ', Error.days,' days in ',v1['Duration'],' day Dasha')
+                        count = count+1
+                cPara = cPara+'---------------------\n'
+            else:
+                cPara = 'Mahadasha -----------------\n'
+                for k1, v1 in p21.VimDasha.items():
+                    #print(k1,' Dasha ends on ',v1['End'])
+                    cPara = cPara+k1+'\tDasha ends on\t'+v1['End']+'\n'
+                cPara = cPara+'---------------------\n'
+            p21.document.add_paragraph(cPara)
+
 #---------------------------------------------------------------------------------------------------
 # Dasha Printing Functions
 
