@@ -486,7 +486,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     #cPara = ' '.join(p21.pTags)+'\n'
     cPara = 'Details of '+p21.AnalysisType.upper()+' chart\n'
     if p21.pName == p21.gName:
-        cPara = cPara+'Subject :'+p21.Subject
+        cPara = cPara+'Subject : '+p21.Subject
     else:
         cPara = cPara+'Tags : '
         cPara = cPara+json.dumps(p21.pTags)
