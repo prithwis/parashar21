@@ -667,7 +667,21 @@ def R512_FormatPage2B():
     para009_tab_stops = para009_format.tab_stops
     para_tab_stop = para009_tab_stops.add_tab_stop(Inches(0.25))
     
+def R512_FormatPage3_RollForward():
 
+    
+       
+    #p21.document.add_page_break()
+    p29 = p21.document.add_paragraph()
+    for i in p21.BhavList[1:]:
+        L = [i]                                 # Generating each image for each bhav, one by one
+        
+        iName = './Bhav'+L[0]+'.png'
+        run_1 = p29.add_run()
+        run_1.add_picture(iName, width=Inches(3.0))
+    
+    
+    # ----------------------------------------------------------------------------------------------------End of Paragraph   
 
 def tracer():
     print('tracer')
