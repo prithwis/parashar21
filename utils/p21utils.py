@@ -968,3 +968,36 @@ def SarvaAshtakVarga():
     print('Bandhu: ',Bandhu,'Sevak: ',Sevak,'Poshak: ',Poshak,'Ghatak: ',Ghatak)
     return(s8v,rashiSum,s8vB,bhavSum,[Bandhu,Sevak,Poshak,Ghatak,bchksum])
 
+# ----------------------------------------------------------------------------------
+# For Transits 
+# ----------------------------------------------------------------------------------
+def getData(cDT):
+    DoB_Day = int(cDT.strftime("%-d"))
+    DoB_Mon = int(cDT.strftime("%-m"))
+    DoB_Year = int(cDT.strftime("%Y"))
+    #print(DoB_Time)
+    DoB_Time = '12:01'
+    PoB_Lat = 25.43
+    PoB_Lon = 81.85
+    Name = p21.gName
+    Gender = 'x'
+    tag1 = 'nil'
+    tag3 = 'nil'
+    tag5 = 'nil'
+    p21.pName = p21.gName
+    p21.ChartType = 'Rashi'
+    TZ_OffHours = 5.5
+
+    sData = [DoB_Day,DoB_Mon,DoB_Year,DoB_Time,TZ_OffHours,PoB_Lat,PoB_Lon,Name, Gender, tag1, tag3,tag5]
+    sLabels = ['DoB_Day','DoB_Mon','DoB_Year','DoB_Time','TZ_OffHours','PoB_Lat','PoB_Lon','Name','Gender','tag1','tag3','tag5']
+    return(pd.Series(sData, index = sLabels))
+# ----------------------------------------------------------------------------------
+def setData(c):
+    p21swe.C02_parsePersonData(c)
+    p21swe.C03_convertDates()
+    p21swe.C04_calculateGrahaPositions()
+    p21swe.C05_buildGLonGRet()
+    #p21.GLonRet['GLon']['La'] = RashiLon
+    p21.GLonRet['GLon']['La'] = p21.SubMoonLong
+    p21utils.R11_LocateGrahaInRashi()
+    #print(p21.GRashiA)
