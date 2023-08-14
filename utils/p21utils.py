@@ -971,7 +971,7 @@ def SarvaAshtakVarga():
 # ----------------------------------------------------------------------------------
 # For Transits 
 # ----------------------------------------------------------------------------------
-def getData(cDT):
+def getTransitData(cDT):
     DoB_Day = int(cDT.strftime("%-d"))
     DoB_Mon = int(cDT.strftime("%-m"))
     DoB_Year = int(cDT.strftime("%Y"))
@@ -992,7 +992,7 @@ def getData(cDT):
     sLabels = ['DoB_Day','DoB_Mon','DoB_Year','DoB_Time','TZ_OffHours','PoB_Lat','PoB_Lon','Name','Gender','tag1','tag3','tag5']
     return(pd.Series(sData, index = sLabels))
 # ----------------------------------------------------------------------------------
-def setData(c):
+def setTransitData(c):
     p21swe.C02_parsePersonData(c)
     p21swe.C03_convertDates()
     p21swe.C04_calculateGrahaPositions()
