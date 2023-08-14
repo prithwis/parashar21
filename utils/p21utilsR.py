@@ -485,8 +485,12 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     #cPara = R13A_ShowTrueDict('Retrograde Graha',p21.GRet)+'\n'                          # Show Grahas that are retrograde
     #cPara = ' '.join(p21.pTags)+'\n'
     cPara = 'Details of '+p21.AnalysisType.upper()+' chart\n'
-    cPara = cPara+'Tags : '
-    cPara = cPara+json.dumps(p21.pTags)
+    if p21.Subject != p21.gName:
+        cPara = cPara+'Tags : '
+        cPara = cPara+json.dumps(p21.pTags)
+    else:
+        cPara = cPara+'Subject :'+p21.Subject
+    #cPara = cPara+'Tags : '
     #cPara = cPara+json.dumps(p21.pTags)+'\n'
     cPara = cPara+'\n.....................................'+'\n'
     cPara = cPara+R13B_ListPositions('Lord of ',p21.Lord)                                # Show Lords
