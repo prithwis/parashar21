@@ -999,5 +999,6 @@ def setData(c):
     p21swe.C05_buildGLonGRet()
     #p21.GLonRet['GLon']['La'] = RashiLon
     p21.GLonRet['GLon']['La'] = p21.SubMoonLong
-    p21utils.R11_LocateGrahaInRashi()
+    #p21utils.R11_LocateGrahaInRashi()
+    R11_LocateGrahaInRashi()
     #print(p21.GRashiA)
