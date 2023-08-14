@@ -1,4 +1,4 @@
-#Copyright (c) 2022, Prithwis Mukerjee
+#Copyright (c) 2022, Prithwis Mukerjee ..
 #All rights reserved.
 #
 #This source code is licensed under the GNU GPL v3.0 -style license found in the
