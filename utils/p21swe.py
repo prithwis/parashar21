@@ -70,7 +70,7 @@ def C02_parsePersonData(P):
     #print(P['Gender'])
     natalLAT = P['PoB_Lat']
     natalLON = P['PoB_Lon']
-    ck = P['Gender']+'|'+str(P['DoB_Year'])+' '+str(P['DoB_Mon'])+' '+str(P['DoB_Day'])+' '+P['DoB_Time']+'|'+str(P['TZ_OffHours'])+'|'+str(P['PoB_Lat'])+','+str(P['PoB_Lon'])
+    ck = P['Gender']+' '+str(P['DoB_Year'])+' '+str(P['DoB_Mon'])+' '+str(P['DoB_Day'])+' '+P['DoB_Time']+'|'+str(P['TZ_OffHours'])+'|'+str(P['PoB_Lat'])+','+str(P['PoB_Lon'])
     cID = str(''.join(random.choices(string.ascii_uppercase + string.digits, k = 12)))   # string of len 12 consisting of random uppercase and digits
     p21.chart = {
         "pid":{
