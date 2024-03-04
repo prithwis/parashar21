@@ -375,6 +375,7 @@ def R511_parseChartData(c):
     p21.GRet = c['GRet']
     pid = c['pid']
     p21.pName = pid['name']
+    p21.ck = pid['ck']
     p21.cID = pid['cID']
     p21.pTags = pid['tags']
     p21.GrahaLordBhav = c['GrahaLordBhav']

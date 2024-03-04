@@ -9,7 +9,7 @@ global LordOf, Lord, GrahaLordBhav, LordRashiN,LordRashiA,LordInfo
 global GrahaBhava, LordBhav, BhavOfGraha_LordInfo
 global BhavN, BhavA, BhavNBhavA
 global GRashiN, GRashiA
-global GLon, GRet, pName, GLonRet, pTags, cID
+global GLon, GRet, pName, GLonRet, pTags, cID,ck
 global ChartType, ChartColour, ChartFile
 global ReportFile, document
 # ------------------------------------------
@@ -89,7 +89,7 @@ selCols = {
             'pid.name':1,               # Personal ID (name : str)  - obfuscated for privacy
             'pid.tags':1,               # Tags associated with individual
             #'pid.ChartType':1,         # chartType ['Rashi','Navamsa'] - currently only Rashi charts are stored, not Navamsa, however Navamsa is printed
-            #'pid.ck':1,                # String carring original data as follows [Gender][YYYY][MM][YY][HH:mm][TZoffset][Lat][Lon]
+            'pid.ck':1,                # String carring original data as follows [Gender][YYYY][MM][YY][HH:mm][TZoffset][Lat][Lon]
             'pid.cID':1,                # Random String of Len 12, unique chartID
             #'BhavN':1,                 # [ List of Bhavs] -- not used in reporting
             #'BhavA':1,                 # [ List of Rashi Names for each Bhav] - not used in reporting
