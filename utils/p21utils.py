@@ -595,8 +595,9 @@ def NextDasha(cd):
 # 
 def GetDasha():
   
+  print('p21.SubMoonLong ',p21.SubMoonLong)
   BirthNks = int(p21.SubMoonLong/p21.NksGap)                    # Number of Birth Nakshatra
-  #print('Birth Nakshatra ',BirthNks,p21.Nks[BirthNks])
+  print('Birth Nakshatra ',BirthNks,p21.Nks[BirthNks])
   
   BirthDasha = p21.DashaStart[BirthNks]                         # BirthDasha
   #print('BirthDasha ',BirthDasha)
