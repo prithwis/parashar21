@@ -375,6 +375,7 @@ def R511_parseChartData(c):
     p21.GRet = c['GRet']
     pid = c['pid']
     p21.pName = pid['name']
+    p21.ck = pid['ck']
     p21.cID = pid['cID']
     p21.pTags = pid['tags']
     p21.GrahaLordBhav = c['GrahaLordBhav']
@@ -420,6 +421,8 @@ def R01_CreateReportDoc(cqs,pS,repStyle = 'MultiChart'):
     header01 = header.paragraphs[0]
     header01.text = "卐 Parashar21 | "+now.strftime("%d %b %Y")
     #header01.text = "卐 Parashar21  "
+    if repStyle != 'MultiChart':
+        header01.text = header01.text+' ~ '+p21.ck
 
     
     footer01 = footer.paragraphs[0]
