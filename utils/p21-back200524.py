@@ -106,10 +106,8 @@ selCols = {
             'exaltL':1,                 # Is Lord Exalted ? [ List of booleans]
             'debilG':1,                 # Is Graha Debilitated ? { Graha : <boolean>}
             'debilL':1,                 # Is Lord Debilitated ? [ List of booleans]
-            'ownHouseG':1,              # Is Graha in own house? { Graha : boolean}
             'inFriendG':1,              # Is Graha in Friendly House ? { Graha : boolean}        
             'inFriendL':1,              # Is Lord in Friendly House ? [ List of booleans]
-            'ownHouseL':1,              # Is Lord in own house? { Graha : boolean}
             'inEnemyG':1,               # Is Graha in Enemy House ?  { Graha : boolean}
             'inEnemyL':1,               # Is Lord in Enemy House ? [ List of Booleans]
             'GAspects2':1,              # Graha aspect whom ? { Graha : [ List of Grahas aspected]}
