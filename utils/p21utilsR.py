@@ -511,7 +511,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     cPara1 = 'Graha Status\n'
     cPara1 = cPara1+R13A_ShowTrueDict('Exalted     : ',p21.exaltG)+'\n'
     cPara1 = cPara1+R13A_ShowTrueDict('Debilitated : ',p21.debilG)+'\n'
-    cPara1 = cPara1+R13A_ShowTrueDict('OwnHouse    : ',p21.ownHouseG)+'\n'
+    cPara1 = cPara1+R13A_ShowTrueDict('in Own    : ',p21.ownHouseG)+'\n'
     cPara1 = cPara1+R13A_ShowTrueDict('in Friend   : ',p21.inFriendG)+'\n'
     cPara1 = cPara1+R13A_ShowTrueDict('in Enemy    : ',p21.inEnemyG)+'\n'
     cPara1 = cPara1+R13A_ShowTrueDict('Benefics    : ',p21.beneficG)+'\n'
@@ -523,7 +523,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     cPara2 = 'Lord Status\n'
     cPara2 = cPara2+R13C_ListPositions('Exalted     : ',p21.exaltL)+'\n'
     cPara2 = cPara2+R13C_ListPositions('Debilitated : ',p21.debilL)+'\n'
-    cPara2 = cPara2+R13C_ListPositions('OwnHouse    : ',p21.ownHouseL)+'\n'
+    cPara2 = cPara2+R13C_ListPositions('in Own    : ',p21.ownHouseL)+'\n'
     cPara2 = cPara2+R13C_ListPositions('In Friend   : ',p21.inFriendL)+'\n'
     cPara2 = cPara2+R13C_ListPositions('In Enemy    : ',p21.inEnemyL)
     cell2.add_paragraph(cPara2)
