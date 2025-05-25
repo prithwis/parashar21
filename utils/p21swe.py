@@ -110,10 +110,11 @@ def C04_calculateGrahaPositions():
     global bLon,bRet,P
     #Position of Planets
     #
-    # body 0 = Sun, 1 = Moon, 2 = Merc, 3 = Ven, 4 = Mars, 5 = Jup, 6 = Sat, 11 = True Node (Rahu)
+    # body 0 = Sun, 1 = Moon, 2 = Merc, 3 = Ven, 4 = Mars, 5 = Jup, 6 = Sat,10 = Mean Node 11 = True Node (Rahu)
     bLon = []
     bRet = []
-    for body in [0,1,2,3,4,5,6,11]:
+    #for body in [0,1,2,3,4,5,6,11]:          - for Rahu as True Node
+    for body in [0,1,2,3,4,5,6,10]:             # for Rahu as Mean Node
         pData = swe.calc_ut(natalUT,body,p21.iflag)
         bLon.append(pData[0][0])
         if pData[0][3] >= 0:
