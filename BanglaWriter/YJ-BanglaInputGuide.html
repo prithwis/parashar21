@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0060)http://yantrajaal.50webs.com/bangla/YJ-BanglaInputGuide.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<style type="text/css">
+table {
+    text-align: center;
+}
+caption {
+    font-size: 150%;
+    font-family: impact;
+    color: grey;
+}
+</style><title>Guide to Using the Bengali Converter</title></head><body>
+
+
+<center>
+<h2 name="qtips">Quick Tips</h2>
+</center>
+
+<ul>
+ <li>The Bengali characters might not appear unless your 
+   browser is configured for Bengali text. Make sure you 
+   have the proper fonts</li>
+ <li>Read the keymap (and please report discrepancies)</li>
+ <li>You can't save the html, but you can cut and paste into 
+   Unicode aware editors like Notepad, Word (?), Gedit and 
+   Yudit</li>
+ <li>Proper rendering may or may not be available for your platform
+   (<a href="http://www.stat.wisc.edu/%7Edeepayan/Bengali/WebPage/Status/browser.html">details</a>), but as mentioned
+   above, cut-and-paste should work. </li> </ul>
+
+
+
+
+<center>
+<h2>Character Map</h2>
+</center>
+
+<p>
+The following table shows the character map used for the 
+conversion, i.e., what latin letters you need to enter to get
+the output you want. The column headed 'User map' is what
+you need. The 'Internal Map' column describes some 
+parameters used in the code internally, and are given here
+mainly to ease debugging. This is discussed in more details
+below.
+</p>
+
+<table border="1" cellspacing="0" width="100%">
+  <caption>Vowels</caption>
+  <tbody><tr>
+    <td><em>Bengali Codepoint</em></td>
+    <td><em>User map</em></td>
+    <td><em>Internal Map</em></td>
+    <td><em>Comments</em></td></tr>
+  <tr>
+    <td>অ, অ-কার</td>
+    <td>a</td>
+    <td>a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>আ, ◌া</td>
+    <td>aa, A</td>
+    <td>A</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ই, ি◌</td>
+    <td>i</td>
+    <td>i</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ঈ, ◌ী</td>
+    <td>ii, ee, I</td>
+    <td>I</td>
+    <td>use e_e for এএ</td>
+  </tr>
+  <tr>
+    <td>উ, ◌ু</td>
+    <td>u</td>
+    <td>u</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ঊ, ◌ূ</td>
+    <td>uu, U</td>
+    <td>U</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ঋ, ◌ৃ</td>
+    <td>RRi, Ri</td>
+    <td>R</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>এ, ে◌</td>
+    <td>e</td>
+    <td>e</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ঐ, ৈ◌</td>
+    <td>ai</td>
+    <td>E</td>
+    <td>use a_i for অই</td>
+  </tr>
+  <tr>
+    <td>ও, ে◌া</td>
+    <td>o</td>
+    <td>o</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ঔ, ে◌ৗ</td>
+    <td>au</td>
+    <td>O</td>
+    <td>use a_u for অউ</td>
+  </tr>
+</tbody></table>
+
+
+
+<table border="1" cellspacing="0" width="100%">
+  <caption>Consonants</caption>
+  <tbody><tr>
+    <td><em>Bengali Codepoint</em></td>
+    <td><em>User map</em></td>
+    <td><em>Internal Map</em></td>
+    <td><em>Comments</em></td>
+  </tr>
+  <tr>
+    <td>ক</td>
+    <td>k</td>
+    <td>k</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>খ</td>
+    <td>kh</td>
+    <td>kh</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>গ</td>
+    <td>g</td>
+    <td>g</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ঘ</td>
+    <td>gh</td>
+    <td>gh</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ঙ</td>
+    <td>G, GN</td>
+    <td>G</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>চ</td>
+    <td>ch</td>
+    <td>c</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ছ</td>
+    <td>chh</td>
+    <td>ch</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>জ</td>
+    <td>j</td>
+    <td>j</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ঝ</td>
+    <td>jh</td>
+    <td>jh</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ঞ</td>
+    <td>J, JN</td>
+    <td>J</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ট</td>
+    <td>T</td>
+    <td>T</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ঠ</td>
+    <td>Th</td>
+    <td>Th</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ড</td>
+    <td>D</td>
+    <td>D</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ঢ</td>
+    <td>Dh</td>
+    <td>Dh</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ণ</td>
+    <td>N</td>
+    <td>N</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ত</td>
+    <td>t</td>
+    <td>t</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>থ</td>
+    <td>th</td>
+    <td>th</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>দ</td>
+    <td>d</td>
+    <td>d</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ধ</td>
+    <td>dh</td>
+    <td>dh</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ন</td>
+    <td>n</td>
+    <td>n</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>প</td>
+    <td>p</td>
+    <td>p</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ফ</td>
+    <td>f, ph</td>
+    <td>ph</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ব</td>
+    <td>b, v</td>
+    <td>b</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ভ</td>
+    <td>bh</td>
+    <td>bh</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ম</td>
+    <td>m</td>
+    <td>m</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>য</td>
+    <td>y</td>
+    <td>y</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>র</td>
+    <td>r</td>
+    <td>r</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ল</td>
+    <td>l</td>
+    <td>l</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>শ</td>
+    <td>sh</td>
+    <td>sh</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ষ</td>
+    <td>Sh, S</td>
+    <td>S</td>
+    <td></td>
+  </tr>
+ <tr>
+    <td>স</td>
+    <td>s</td>
+    <td>s</td>
+    <td></td>
+  </tr>
+ <tr>
+    <td>হ</td>
+    <td>h</td>
+    <td>h</td>
+    <td></td>
+  </tr>
+ <tr>
+    <td>ড়</td>
+    <td>.D</td>
+    <td>X</td>
+    <td></td>
+  </tr>
+ <tr>
+    <td>ঢ়</td>
+    <td>.Dh</td>
+    <td>Z</td>
+    <td></td>
+  </tr>
+ <tr>
+    <td>য়</td>
+    <td>Y, .y</td>
+    <td>Y</td>
+    <td></td>
+  </tr>
+ <tr>
+    <td>০-৯</td>
+    <td>0-9</td>
+    <td>0-9</td>
+    <td>not implemented yet</td>
+  </tr>
+</tbody></table>
+
+
+
+
+<table border="1" cellspacing="0" width="100%">
+  <caption>Miscellaneous</caption>
+  <tbody><tr>
+    <td><em>Bengali Codepoint</em></td>
+    <td><em>User map</em></td>
+    <td><em>Internal Map</em></td>
+    <td><em>Comments</em></td>
+  </tr>
+   <tr>
+    <td> ◌ং</td>
+    <td>.n, M</td>
+    <td>M</td>
+    <td></td>
+  </tr>
+ <tr>
+    <td>◌ঁ</td>
+    <td>.N, C</td>
+    <td>C</td>
+    <td></td>
+  </tr>
+ <tr>
+    <td>◌ঃ</td>
+    <td>:, H</td>
+    <td>H</td>
+    <td></td>
+  </tr>
+<tr>
+    <td>।</td>
+    <td>|</td>
+    <td>|</td>
+    <td>daanri</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>_</td>
+    <td>nothing</td>
+    <td>used to disambiguate strings like au, ee, etc.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>#</td>
+    <td>zero-width non-joiner</td>
+    <td>needed for khando-ta and hasanta in the middle of a word</td>
+  </tr>
+</tbody></table>
+
+<p>
+The keymap is modelled on, but not exactly equivalent to, the default
+Bengali input map that ships with <a href="http://www.yudit.org/">Yudit</a>. The main difference is that it does not need an explicit
+`a' to indicate the Vowel Sign corresponding to অ (a). This is close
+to what most people would normally use to write Bengali using latin
+letters. The underscore character (_) may be used to denote an
+explicit hasanta at the end of a word.
+</p>
+
+<p>
+There is usually no need for anything to indicate a `hasanta' (it is
+sometimes required in the middle of a word, when successive consonants
+are required to be displayed separately without forming a conjugate --
+use the `#' sign there to indicate a ZERO-WIDTH NON-JOINER (U+20CC)
+). যুক্তাক্ষরs (conjugates) and vowel signs need no special treatment.
+
+</p><h3>How the Code works</h3>
+
+<p>
+To keep things simple, the processing is done in two stages. The
+first step is to convert the given input into an internal format. 
+The `simplicity' comes from the fact that this format has to use 
+only a one or two letter code for each bengali codepoint in the 
+unicode chart (none for the more esoteric and rarely used points 
+like ৠ ) [Note: this is without the trailing vowel, if any]. In the 
+first stage of processing a more intuitive and flexible format is 
+transformed into the internal format by <em>simple string 
+replacements</em>.
+</p>
+
+<h3>Future Changes in the Keymap</h3>
+
+<p>
+I have no objection to adding new representations as long as 
+they can be implemented easily (that is, no ambiguity, no 
+backwards incompatibility, and can be transformed into the 
+internal coding by a straight string replacement). Just let 
+me know.
+</p>
+
+<p>
+The code is very simple javascript, and can be easily modified
+to work with other keymaps. The code is GPL-ed, so you are free
+to modify it as you please, as long as you adhere to the GPL if
+and when you redistribute it. In which case, also let me know, I 
+would like to keep a copy here.
+</p>
+
+
+
+<center>
+<h2>What Is This Thing Anyway ?</h2>
+</center>
+
+<p> This page is essentially some JavaScript code to process latin
+(english) characters entered in a Textarea field and transform them
+into some other characters, which when interpreted as being encoded in
+UTF-8, represent Bengali characters. This is done according to a
+particular algorithm, explained briefly in the section above. Try
+playing around with it (enter some text that you think should make
+sense as bengali, completing the word by hitting the Space bar). If
+you don't understand what's going on, go away, this page is not for
+you (... unless you see lots of boxes, in which case read on).  </p>
+
+
+<center>
+<h2>What Do I Need to Get it to Work ?</h2>
+</center>
+
+<p>
+You need 
+</p><ul>
+<li>a browser that supports JavaScript</li>
+<li>a Bengali Unicode font</li>
+</ul>
+
+<p>
+The term `JavaScript' is somewhat ill-defined, but (at least 
+the latest versions of) Internet Explorer, Mozilla and 
+Konqueror all have enough support to run this.
+</p>
+
+<p> I have only tested this with Truetype/Open Type fonts, but other
+fonts should also work. If you don't have a Bengali font (or your
+browser is not configured properly to display Bengali), you could
+download my <a href="http://www.stat.wisc.edu/%7Edeepayan/Bengali/WebPage/Font/fonts.html">Likhan</a> font, or get one
+from the <a href="http://www.nongnu.org/freebangfont">The Free Bangla
+Font Project</a> or the <a href="http://www.bengalinux.org/">Bengalinux</a> page. The code assumes that the Likhan font will be
+used (via a stylesheet element), but this can easily be changed by
+removing or modifying the <code>font-family: likhan</code>
+line. [Sorry about this, but saw no other way for Konqueror, and IE
+doesn't seem to recognize Likhan as a Bengali font automatically.]
+</p>
+
+<p> If you don't know much about the status of <a href="http://www.stat.wisc.edu/%7Edeepayan/Bengali/WebPage/Status/browser.html">support for Indic languages on various
+operating systems</a>, you should be aware that proper display of
+Bengali needs the display software to support Unicode and Open Type
+Layout Features in fonts.  This should be available in IE on up to
+date Windows distributions, but not so much (yet) in Web Browsers on
+Linux (other options are available, though, for instance Yudit, or
+Gedit using recent versions of Pango and Freetype. Cut and paste from
+Mozilla into these editors should work.)  </p>
+
+
+<center>
+<h2>What Use Will This be ?</h2>
+</center>
+
+<p>
+This is obviously a very Bengali-specific tool, but it could be easily
+extended to other languages. My reason for writing this was to
+function as a support tool for my <a href="http://www.stat.wisc.edu/%7Edeepayan/Bengali/WebPage/Contrib/bengali.html">Bengali
+Document Archive Project</a>. Linux has nice editors for writing
+Bengali unicode, but Windows doesn't (Yudit, for example, is difficult
+to set up. And Windows users are typically somewhat challenged :-P
+when it comes to setting up software). It is potentially also useful
+in other contexts where a simple way of coming up with a piece of
+Bengali unicode text is required.
+</p>
+
+<center>
+<h2>But This Is Already Doable, why bother ?</h2>
+</center>
+
+<p>
+Yes, this can already be done. For example, ITRANS can convert 
+LateX-style markup to many formats, including UTF-8. It even has a
+Web interface. The advantage of this is that it requires nothing 
+more than a half-decent browser and a (any) Bengali Unicode font 
+(rendering proper looking text is another matter, though). And you
+don't need a web connection to use it, if you save the page locally.
+</p>
+
+
+
+</body></html>

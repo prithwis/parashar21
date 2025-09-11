@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0055)http://yantrajaal.50webs.com/bangla/YJ-BanglaInput.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--
+ Copyright 2002  Deepayan Sarkar <deepayan@stat.wisc.edu>
+
+ For what it's worth, this document/code is made available 
+ under the terms of the GNU General Public License, version 2, 
+ or at your option, any later version, incorporated herein by 
+ reference. This basically means that you are free to use,
+ modify and redistribute it to your heart's content, with the 
+ proviso that if you ever distribute it or any modifications 
+ of it to anyone, you must do so under the GPL again (no more, 
+ no less), and preserve the copyright notice (adding your own, 
+ of course, when applicable) above.
+
+ This program is distributed in the hope that it will be
+ useful, but WITHOUT ANY WARRANTY; without even the implied
+ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ PURPOSE.  See the GNU General Public License for more
+ details.
+
+--><title>Convert Romanized Bengali to Unicode</title>
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+
+body {
+    text-align: left;
+    background: rgb(247,247,247);
+    color: rgb(55,55,0);
+}
+
+input.input {
+    width:100%;
+    font-size: 90%;
+    background: rgb(231, 231, 231);
+}
+
+input.preview {
+    width:100%;
+    background: rgb(247,247,247);
+    border:0;
+
+}
+
+input.helpbutton {
+    background: none;
+    border: 0;
+    color: red;
+    font-size: 150%;
+    font-family: cursive;
+    font-family: impact;
+}
+
+textarea.output {
+    width:100%;
+    font-size: 150%;
+    font-family: Likhan;
+}
+</style>
+
+<script type="text/javascript">
+
+
+/*
+Keymap for reference:
+
+
+a  অ  A আ  i  ই  I   ঈ
+u  উ   U ঊ  R  ঋ
+e  এ  E  ঐ  o  ও  O   ঔ 
+
+
+
+aa া
+i ি
+ii ী
+u  ু
+uu  ূ
+RRi  ৃ
+e ে
+ai ৈ
+o  ো
+au  ৌ
+hasanta  ্
+
+
+k ক kh খ g গ gh ঘ G ঙ 
+c চ ch ছ j জ jh ঝ J ঞ
+t ত th থ d দ dh ধ n ন
+T ট Th ঠ D ড Dh ঢ N ণ
+p প ph ফ b ব bh ভ m ম
+y য r র l ল
+sh শ Sh ষ s স h হ
+
+H ঃ
+M  ং
+C    ঁ
+
+
+
+*/
+
+keymap = new Array();
+
+keymap['0'] = '০';
+keymap['1'] = '১';
+keymap['2'] = '২';
+keymap['3'] = '৩';
+keymap['4'] = '৪';
+keymap['5'] = '৫';
+keymap['6'] = '৬';
+keymap['7'] = '৭';
+keymap['8'] = '৮';
+keymap['9'] = '৯';
+
+keymap['a'] = 'অ';
+keymap['A'] = 'আ';
+keymap['i'] = 'ই';
+keymap['I'] = 'ঈ';
+keymap['u'] = 'উ';
+keymap['U'] = 'ঊ';
+keymap['e'] = 'এ';
+keymap['E'] = 'ঐ';
+keymap['o'] = 'ও';
+keymap['O'] = 'ঔ';
+keymap['R'] = 'ঋ';
+
+
+keymap['amatra'] = '';
+keymap['Amatra'] = 'া';
+keymap['imatra'] = 'ি';
+keymap['Imatra'] = 'ী';
+keymap['umatra'] = 'ু';
+keymap['Umatra'] = 'ূ';
+keymap['ematra'] = 'ে';
+keymap['Ematra'] = 'ৈ';
+keymap['omatra'] = 'ো';
+keymap['Omatra'] = 'ৌ';
+keymap['Rmatra'] = 'ৃ';
+
+
+keymap['hasanta'] = '্';
+
+keymap['k'] = 'ক';
+keymap['kh'] = 'খ';
+keymap['g'] = 'গ';
+keymap['gh'] = 'ঘ';
+keymap['G'] = 'ঙ';
+keymap['c'] = 'চ';
+keymap['ch'] = 'ছ';
+keymap['j'] = 'জ';
+keymap['jh'] = 'ঝ';
+keymap['J'] = 'ঞ';
+keymap['t'] = 'ত';
+keymap['th'] = 'থ';
+keymap['d'] = 'দ';
+keymap['dh'] = 'ধ';
+keymap['n'] = 'ন';
+keymap['T'] = 'ট';
+keymap['Th'] = 'ঠ';
+keymap['D'] = 'ড';
+keymap['Dh'] = 'ঢ';
+keymap['N'] = 'ণ';
+keymap['p'] = 'প';
+keymap['ph'] = 'ফ';
+keymap['b'] = 'ব';
+keymap['bh'] = 'ভ';
+keymap['m'] = 'ম';
+keymap['y'] = 'য';
+keymap['r'] = 'র';
+keymap['l'] = 'ল';
+keymap['sh'] = 'শ';
+keymap['S'] = 'ষ';
+keymap['s'] = 'স';
+keymap['h'] = 'হ';
+
+keymap['H'] = 'ঃ';
+keymap['M'] = 'ং';
+keymap['C'] = 'ঁ';
+
+keymap['Y'] = 'য়';
+keymap['X'] = 'ড়';
+keymap['Z'] = 'ঢ়';
+
+keymap['|'] = '।'; // daanri
+keymap['#'] = '‌'; // zero-width non-joiner ?
+
+
+function mreplace(s, prv, nxt)
+{
+    while (s.indexOf(prv) > -1)
+        s = s.replace(prv, nxt);
+    return s;
+}
+
+
+/* probably better if usage is correct
+
+isn't because . matches wildcard
+
+function mreplace(s, prv, nxt)
+{
+    re = new RegExp(prv, 'g');
+    return s.replace(re, nxt);
+}
+
+*/
+
+
+
+function romanToBengali(intext) {
+
+      ans = '';
+
+      intext = mreplace(intext, 'b ', 'ba ');
+      intext = mreplace(intext, 'c ', 'ca ');
+      intext = mreplace(intext, 'd ', 'da ');
+      intext = mreplace(intext, 'f ', 'fa ');
+      intext = mreplace(intext, 'g ', 'ga ');
+      intext = mreplace(intext, 'h ', 'ha ');
+      intext = mreplace(intext, 'j ', 'ja ');
+      intext = mreplace(intext, 'k ', 'ka ');
+      intext = mreplace(intext, 'l ', 'la ');
+      intext = mreplace(intext, 'm ', 'ma ');
+      intext = mreplace(intext, 'n ', 'na ');
+      intext = mreplace(intext, 'p ', 'pa ');
+      intext = mreplace(intext, 'r ', 'ra ');
+      intext = mreplace(intext, 's ', 'sa ');
+      intext = mreplace(intext, 't ', 'ta ');
+      intext = mreplace(intext, 'v ', 'va ');
+      intext = mreplace(intext, 'y ', 'ya ');
+
+      intext = mreplace(intext, 'D ', 'Da ');
+      intext = mreplace(intext, 'G ', 'Ga ');
+      intext = mreplace(intext, 'J ', 'Ja ');
+      intext = mreplace(intext, 'N ', 'Na ');
+      intext = mreplace(intext, 'S ', 'Sa ');
+      intext = mreplace(intext, 'T ', 'Ta ');
+      intext = mreplace(intext, 'Y ', 'Ya ');
+
+      intext = mreplace(intext, '. ', '.a ');
+
+      if (intext.indexOf('|') > -1) {
+
+           intext = mreplace(intext, 'b|', 'ba|');
+           intext = mreplace(intext, 'c|', 'ca|');
+           intext = mreplace(intext, 'd|', 'da|');
+           intext = mreplace(intext, 'f|', 'fa|');
+           intext = mreplace(intext, 'g|', 'ga|');
+           intext = mreplace(intext, 'h|', 'ha|');
+           intext = mreplace(intext, 'j|', 'ja|');
+           intext = mreplace(intext, 'k|', 'ka|');
+           intext = mreplace(intext, 'l|', 'la|');
+           intext = mreplace(intext, 'm|', 'ma|');
+           intext = mreplace(intext, 'n|', 'na|');
+           intext = mreplace(intext, 'p|', 'pa|');
+           intext = mreplace(intext, 'r|', 'ra|');
+           intext = mreplace(intext, 's|', 'sa|');
+           intext = mreplace(intext, 't|', 'ta|');
+           intext = mreplace(intext, 'v|', 'va|');
+           intext = mreplace(intext, 'y|', 'ya|');
+
+           intext = mreplace(intext, 'D|', 'Da|');
+           intext = mreplace(intext, 'G|', 'Ga|');
+           intext = mreplace(intext, 'J|', 'Ja|');
+           intext = mreplace(intext, 'N|', 'Na|');
+           intext = mreplace(intext, 'S|', 'Sa|');
+           intext = mreplace(intext, 'T|', 'Ta|');
+           intext = mreplace(intext, 'Y|', 'Ya|');
+
+           intext = mreplace(intext, '.|', '.a|');
+
+      }
+
+      intext = mreplace(intext, 'aa', 'A');
+      intext = mreplace(intext, 'ii', 'I');
+      intext = mreplace(intext, 'ee', 'I');
+      intext = mreplace(intext, 'uu', 'U');
+      intext = mreplace(intext, 'ai', 'E');
+      intext = mreplace(intext, 'au', 'O');
+      intext = mreplace(intext, 'RRi', 'R');
+      intext = mreplace(intext, 'Ri', 'R');   // needed ?
+
+      intext = mreplace(intext, 'chh', 'TMPUNIKSTR');
+      intext = mreplace(intext, 'ch', 'c');
+      intext = mreplace(intext, 'TMPUNIKSTR', 'ch');
+      intext = mreplace(intext, 'GN', 'G');
+      intext = mreplace(intext, 'JN', 'J');
+      intext = mreplace(intext, 'Sh', 'S');
+
+
+      intext = mreplace(intext, '.n', 'M');
+      intext = mreplace(intext, '.N', 'C');
+      intext = mreplace(intext, '.y', 'Y');
+      intext = mreplace(intext, '.Dh', 'Z');
+      intext = mreplace(intext, '.D', 'X');
+      intext = mreplace(intext, 'Dh.', 'Z');
+      intext = mreplace(intext, 'D.', 'X');
+      intext = mreplace(intext, ':', 'H');
+
+      intext = mreplace(intext, 'f', 'ph');
+      intext = mreplace(intext, 'v', 'b');
+
+      intext = mreplace(intext, '_', '');
+
+      var i = 0;
+      var len = intext.length;
+      var cur;
+      var next;
+      var comb;
+
+      while (i < len) {
+
+           var cur = intext.charAt(i);
+           if (i+1 < len) {
+               next = intext.charAt(i+1);
+           }
+           else {
+               next = '';
+           }
+           comb = cur + next;
+
+           if (cur == 'a' || cur == 'A' || cur == 'i' || cur == 'I' ||
+               cur == 'u' || cur == 'U' || cur == 'e' || cur == 'E' ||
+               cur == 'o' || cur == 'O' || cur == 'R' || cur == 'M' ||
+               cur == 'H' || cur == 'C' || cur == '|' || cur == '#' ||
+               (cur >= '0' && cur <= '9')) {
+               ans += keymap[cur];
+               i++;
+           }
+           else if (cur == 'k' || cur == 'g' || cur == 'G' || cur == 'c' ||
+                    cur == 'j' || cur == 'J' || cur == 't' || cur == 'd' ||
+                    cur == 'n' || cur == 'T' || cur == 'D' || cur == 'N' ||
+                    cur == 'p' || cur == 'b' || cur == 'm' || cur == 's' ||
+                    cur == 'h' || cur == 'y' || cur == 'r' || cur == 'l' ||
+                    cur == 'X' || cur == 'Y' || cur == 'Z' || cur == 'S') {
+
+               if (comb == 'kh' || comb == 'gh' || comb == 'ch' ||
+                   comb == 'jh' || comb == 'th' || comb == 'dh' ||
+                   comb == 'Th' || comb == 'Dh' || comb == 'ph' ||
+                   comb == 'bh' || comb == 'sh') {
+
+                   cur = comb;
+                   i++;
+                   if (i+1 < len) next = intext.charAt(i+1);
+                   else next = '';
+               }
+
+               if (next == 'a' || next == 'A' || next == 'i' || next == 'I' ||
+                   next == 'u' || next == 'U' || next == 'e' || next == 'E' ||
+                   next == 'o' || next == 'O' || next == 'R') { // vowel-matra
+
+                   ans += (keymap[cur] + keymap[next+'matra']);
+                   i+=2;
+               }
+               else {
+                   ans += (keymap[cur] + keymap['hasanta']);
+                   i+=1;
+               }
+           }
+           else {
+               ans += cur;
+               i++;
+           }
+      }
+      return ans;
+}
+
+
+
+
+
+function handleKeyPress(force, newline) {
+
+    inp = self.document.getElementById('keyInput');
+    if (force == 1) inp.value += ' ';
+
+    if (force == 1 || inp.value.indexOf(' ') > -1) {
+        self.document.getElementById('textOutput').value += romanToBengali(inp.value);
+        if (newline == 1) self.document.getElementById('textOutput').value += '\n';
+        inp.value = '';
+        self.document.getElementById('preview').value = '';
+    }
+    else {
+        self.document.getElementById('preview').value = romanToBengali(inp.value + ' ');
+    }
+}
+
+
+function changeValue() {
+    helpEl = self.document.getElementById('helpButton');
+    helpEl.value = 'Press Here';
+    helpEl.style.color='green';
+}
+
+function revertValue() {
+    helpEl = self.document.getElementById('helpButton');
+    helpEl.value = 'User Manual';
+    helpEl.style.color='red';
+}
+
+function showHelp() {
+    newWin = window.open("YJ-BanglaInputGuide.html", "theGuide",
+        "menubar=yes,status=yes,location=no,height=800,width=600,scrollbars=yes");
+    newWin.focus();
+}
+
+
+
+</script><script charset="utf-8" id="injection_graph_func" src="./Convert Romanized Bengali to Unicode_files/injection_graph_func.js.download"></script></head><body>
+
+<center>
+<input value="User Manual" id="helpButton" class="helpbutton" onmouseover="changeValue()" onmouseout="revertValue()" onclick="showHelp()" type="button" style="color: red;">
+</center>
+
+
+<input class="input" id="keyInput" onkeyup="handleKeyPress(0, 0)" onblur="handleKeyPress(1, 0)" type="text">
+
+
+
+<input class="preview" id="preview" value="Start typing in the text field above" type="text">
+
+
+<textarea class="output" id="textOutput" rows="10"></textarea>
+
+Write in English in the top box, see Bangla text appear below ! Then copy and paste wherever you want to ...
+<address>deepayan at stat.wisc.edu</address>
+<address>prithwis at yantrajaal dot com</address>
+Free Service from Yantrajaal : <a href="http://www.yantrajaal.com/" target="_blank">http://www.yantrajaal.com</a>
+<!-- hhmts start --><!-- hhmts end --> 
+
+</body></html>
