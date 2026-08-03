@@ -120,7 +120,6 @@ def AddHeader(lines, analysisMode):
     def add(text=""):
         lines.append(text)
 
-
     add("HOROSCOPE DATA FOR JYOTISHA REASONING")
     add("=====================================")
     add("")
@@ -134,8 +133,6 @@ def AddHeader(lines, analysisMode):
 
     add("")
 
-
-
 # --------------------------------------------------
 # House Lordship Generator
 # --------------------------------------------------
@@ -144,7 +141,6 @@ def AddHouseLordship(lines):
 
     def add(text=""):
         lines.append(text)
-
 
     add("HOUSE LORDSHIP")
     add("--------------")
@@ -159,7 +155,7 @@ def AddHouseLordship(lines):
 
     add("")
 	
-	# --------------------------------------------------
+# --------------------------------------------------
 # Planetary Information Generator
 # --------------------------------------------------
 
@@ -167,7 +163,6 @@ def AddPlanetaryInformation(lines):
 
     def add(text=""):
         lines.append(text)
-
 
     add("PLANETARY INFORMATION")
     add("---------------------")
@@ -225,8 +220,6 @@ def AddPlanetaryInformation(lines):
 
     add("")
 
-
-
 # --------------------------------------------------
 # Planetary Aspects
 # --------------------------------------------------
@@ -236,10 +229,8 @@ def AddPlanetaryAspects(lines):
     def add(text=""):
         lines.append(text)
 
-
     add("PLANETARY ASPECTS")
     add("-----------------")
-
 
     for graha, targets in p21.GAspects2.items():
 
@@ -247,10 +238,7 @@ def AddPlanetaryAspects(lines):
             f"{GName(graha)} aspects {GList(targets)}"
         )
 
-
     add("")
-
-
 
 # --------------------------------------------------
 # Planets Aspected By
@@ -261,10 +249,8 @@ def AddPlanetsAspectedBy(lines):
     def add(text=""):
         lines.append(text)
 
-
     add("PLANETS ASPECTED BY")
     add("--------------------")
-
 
     for graha, sources in p21.GAspectedBy2.items():
 
@@ -275,8 +261,6 @@ def AddPlanetsAspectedBy(lines):
 
     add("")
 
-
-
 # --------------------------------------------------
 # Planetary Conjunctions
 # --------------------------------------------------
@@ -286,10 +270,8 @@ def AddPlanetaryConjunctions(lines):
     def add(text=""):
         lines.append(text)
 
-
     add("PLANETARY CONJUNCTIONS")
     add("-----------------------")
-
 
     for graha, targets in p21.GConjunctsG2.items():
 
@@ -297,10 +279,7 @@ def AddPlanetaryConjunctions(lines):
             f"{GName(graha)} conjuncts {GList(targets)}"
         )
 
-
     add("")
-
-
 
 # --------------------------------------------------
 # House Lord - Planet Relationships
@@ -311,10 +290,8 @@ def AddHouseLordRelationships(lines):
     def add(text=""):
         lines.append(text)
 
-
     add("HOUSE LORD RELATIONSHIPS")
     add("-------------------------")
-
 
     for lord, grahas in p21.BLConjunctsG2.items():
 
@@ -322,10 +299,7 @@ def AddHouseLordRelationships(lines):
             f"Lord of Bhava {lord} conjuncts {GList(grahas)}"
         )
 
-
     add("")
-
-
 
 # --------------------------------------------------
 # Lord - Lord Relationships
@@ -336,23 +310,19 @@ def AddLordLordRelationships(lines):
     def add(text=""):
         lines.append(text)
 
-
     add("LORD LORD RELATIONSHIPS")
     add("-----------------------")
-
 
     for lord, others in p21.BLConjunctsBL2.items():
 
         others = [int(x) for x in others]
-
         add(
             f"Lord of Bhava {lord} connected with Lords {others}"
         )
 
-
     add("")
 	
-	# --------------------------------------------------
+# --------------------------------------------------
 # Bhava Aspects
 # --------------------------------------------------
 
@@ -361,10 +331,8 @@ def AddBhavaAspects(lines):
     def add(text=""):
         lines.append(text)
 
-
     add("BHAVA ASPECTS")
     add("--------------")
-
 
     for bhav in sorted(p21.BAspectedBy2.keys(), key=int):
 
@@ -373,10 +341,7 @@ def AddBhavaAspects(lines):
             f"{GList(p21.BAspectedBy2[bhav])}"
         )
 
-
     add("")
-
-
 
 # --------------------------------------------------
 # Bhava Aspected By Lords
@@ -387,10 +352,8 @@ def AddBhavaAspectedByLords(lines):
     def add(text=""):
         lines.append(text)
 
-
     add("BHAVA ASPECTED BY LORDS")
     add("------------------------")
-
 
     for bhav in sorted(p21.BAspectedByBL2.keys(), key=int):
 
@@ -399,10 +362,7 @@ def AddBhavaAspectedByLords(lines):
             f"{p21.BAspectedByBL2[bhav]}"
         )
 
-
     add("")
-
-
 
 # --------------------------------------------------
 # Yogas
@@ -413,18 +373,14 @@ def AddYogas(lines):
     def add(text=""):
         lines.append(text)
 
-
     add("IDENTIFIED YOGAS")
     add("----------------")
-
 
     for yoga in p21.yogsFound:
 
         add(yoga)
 
-
     add("")
-
 
 
 # --------------------------------------------------
@@ -436,23 +392,18 @@ def AddDasha(lines):
     def add(text=""):
         lines.append(text)
 
-
     add("VIMSHOTTARI DASHA")
     add("-----------------")
-
 
     if p21.pName == p21.gName:
 
         add("Current Dasha Status")
         add("")
 
-
         today = datetime.now()
         count = 0
-
-
+        
         for maha, mahaData in p21.VimDasha.items():
-
 
             if (
                 today < datetime.strptime(
@@ -518,8 +469,6 @@ def AddDasha(lines):
 
     add("")
 
-
-
 # --------------------------------------------------
 # Main LLM Input Generator
 # --------------------------------------------------
@@ -528,48 +477,34 @@ def R601_GenerateLLMInput04(filename="LLMInput2_Natal.txt"):
 
     lines = []
 
-
     analysisMode, filename = GetAnalysisMode(filename)
-
 
     AddHeader(
         lines,
         analysisMode
     )
 
-
     AddHouseLordship(lines)
-
 
     AddPlanetaryInformation(lines)
 
-
     AddPlanetaryAspects(lines)
-
 
     AddPlanetsAspectedBy(lines)
 
-
     AddPlanetaryConjunctions(lines)
-
 
     AddHouseLordRelationships(lines)
 
-
     AddLordLordRelationships(lines)
-
 
     AddBhavaAspects(lines)
 
-
     AddBhavaAspectedByLords(lines)
-
 
     AddYogas(lines)
 
-
     AddDasha(lines)
-
 
     with open(
         filename,
