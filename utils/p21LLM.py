@@ -7,8 +7,21 @@
 # Global Variables
 import p21
 
-def R601_GenerateLLMInput03(filename="LLM_Input.txt"):
+def R601_GenerateLLMInput03(filename="LLMInput_Natal.txt"):
 
+    import os
+
+    # -------------------------------------------------------
+    # Determine analysis type and output filename
+    # -------------------------------------------------------
+
+    analysisMode = "Natal"
+
+    if os.path.exists(filename):
+        filename = "LLMInput_Gochar.txt"
+        analysisMode = "Gochar"
+
+    # -------------------------------------------------------
     lines = []
 
     def add(text=""):
@@ -56,6 +69,10 @@ def R601_GenerateLLMInput03(filename="LLM_Input.txt"):
         return rashiName.get(int(r), r)
 
 
+    gender = "Unknown"
+    if hasattr(p21, "ck") and len(p21.ck) > 0:
+        gender = genderName.get(p21.ck[0].upper(), p21.ck[0])
+
     # -------------------------------------------------------
     # Header
     # -------------------------------------------------------
@@ -63,7 +80,10 @@ def R601_GenerateLLMInput03(filename="LLM_Input.txt"):
     add("HOROSCOPE DATA FOR JYOTISHA REASONING")
     add("=====================================")
     add("")
+    add("Analysis : " + analysisMode)
     add("Chart Type : " + str(p21.AnalysisType))
+    add("Gender : " + gender)
+
 
     if hasattr(p21, "pTags"):
         add("Tags : " + str(p21.pTags))
