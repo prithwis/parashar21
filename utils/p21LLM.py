@@ -10,6 +10,7 @@ import p21
 def R601_GenerateLLMInput03(filename="LLMInput_Natal.txt"):
 
     import os
+    from datetime import datetime
 
     # -------------------------------------------------------
     # Determine analysis type and output filename
@@ -68,7 +69,10 @@ def R601_GenerateLLMInput03(filename="LLMInput_Natal.txt"):
     def RName(r):
         return rashiName.get(int(r), r)
 
-
+    genderName = {
+    "M": "Male",
+    "F": "Female"
+}
     gender = "Unknown"
     if hasattr(p21, "ck") and len(p21.ck) > 0:
         gender = genderName.get(p21.ck[0].upper(), p21.ck[0])
@@ -273,6 +277,59 @@ def R601_GenerateLLMInput03(filename="LLMInput_Natal.txt"):
 
     for yoga in p21.yogsFound:
         add(yoga)
+
+
+        # -------------------------------------------------------
+    # Vimshottari Dasha
+    # -------------------------------------------------------
+
+    add("")
+    add("VIMSHOTTARI DASHA")
+    add("-----------------")
+
+    if p21.pName == p21.gName:
+
+        add("Current Dasha Status")
+        add("")
+
+        today = datetime.now()
+        count = 0
+
+        for maha, mahaData in p21.VimDasha.items():
+
+            if (today < datetime.strptime(mahaData["End"], "%d %b %Y")) and (count < 2):
+
+                if count == 0:
+                    add("Current Mahadasha : " + GName(maha))
+                else:
+                    add("Next Mahadasha : " + GName(maha))
+
+                add("Mahadasha ends : " + mahaData["End"])
+
+                for antar, antarData in mahaData.items():
+
+                    if isinstance(antarData, dict):
+
+                        add("    Antardasha : " + GName(antar))
+                        add("    Ends : " + antarData["End"])
+
+                add("")
+                count += 1
+
+    else:
+
+        add("Mahadasha Sequence")
+        add("")
+
+        for maha, mahaData in p21.VimDasha.items():
+
+            add(
+                GName(maha) +
+                " : ends on " +
+                mahaData["End"]
+            )
+
+    add("")
 
 
     # -------------------------------------------------------
