@@ -412,7 +412,6 @@ def C31_DetermineAspects():
 
     # Bhav number as dict keys have to be converted to str()
     # Otherwise could not store in MongoDB
-    '''
     for O1 in p21.Gx:
         for BN in range(1,13):
             #Normal 7th Aspect
@@ -437,32 +436,7 @@ def C31_DetermineAspects():
                 (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 2) or
                 (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 9)):
                 addToD(str(BN),p21.BAspectedBy,O1)
-    ''' 
-    
-    # EXACT FIX (Replace only this loop in your existing script) - From Gemini
-    # -------------------------------------------------------------
-    # 2. Graha-to-Bhava Aspects
-    for O1 in p21.Gx:
-        for BN in range(1, 13):
-            # FIX: Use p21.BhavN[BN] to get the Rashi at House BN
-            house_rashi = p21.BhavN[BN]
-            
-            # Universal 7th House Aspect
-            if RashiGapA(house_rashi, p21.GRashiN[O1]) == 6:
-                addToD(str(BN), p21.BAspectedBy, O1)
-                
-            # Mars Special 4th (gap 3) and 8th (gap 7) House Aspects
-            if O1 == 'Ma' and (RashiGapA(house_rashi, p21.GRashiN[O1]) == 3 or RashiGapA(house_rashi, p21.GRashiN[O1]) == 7):
-                addToD(str(BN), p21.BAspectedBy, O1)
-                
-            # Jupiter Special 5th (gap 4) and 9th (gap 8) House Aspects
-            if O1 == 'Ju' and (RashiGapA(house_rashi, p21.GRashiN[O1]) == 4 or RashiGapA(house_rashi, p21.GRashiN[O1]) == 8):
-                addToD(str(BN), p21.BAspectedBy, O1)
-                
-            # Saturn Special 3rd (gap 2) and 10th (gap 9) House Aspects
-            if O1 == 'Sa' and (RashiGapA(house_rashi, p21.GRashiN[O1]) == 2 or RashiGapA(house_rashi, p21.GRashiN[O1]) == 9):
-                addToD(str(BN), p21.BAspectedBy, O1)
-                
+     
     #print("BAspectedBy",p21.BAspectedBy)
     
     for BN1 in range(1,13):
