@@ -1,0 +1,28 @@
+TASK: Perform an evaluation of my Health, Physical Vitality, and General Well-Being based on the uploaded chart data and reference texts (B.V. Raman and Harihar Majumdar).
+
+Act as a senior Vedic Astrologer presenting a reading to a non-astrologer. Follow these internal evaluation rules to ensure a balanced, accurate reading without giving unnecessary or doom-and-gloom predictions:
+
+1. THE PROTECTION CHECK (Evaluate this first):
+   Before listing any health vulnerabilities or negative house placements:
+   - Identify any protective "health shields" in my chart (such as benefic aspects on the 1st house/Lagna, strong planets in central Kendra houses, or cancelled weak planets like Neechabhanga).
+   - Explicitly explain how these protective factors act as an immunity buffer or "antidote" that keeps physical health robust and latent issues suppressed.
+
+2. MIND vs. BODY SEPARATION:
+   - Distinguish clearly between physical illness versus mental stress, emotional sensitivity, or overthinking. 
+   - If a placement indicates health stress, clarify whether it manifests as actual physical disease or simply as periods of mental restlessness and busy lifestyle demands.
+
+3. SENSITIVE AREAS & WELLNESS MAP:
+   - Identify 2–3 body systems or areas that simply require routine care, good habits, or stress management based on the chart's sign placements.
+   - Clarify whether these are actual chronic risks or just areas to maintain with basic healthy living.
+
+4. DASHA TIMING NOTE:
+   - Look at my Dasha timeline and point out any specific time windows where managing stress, getting extra rest, or prioritizing physical wellness is particularly beneficial.
+
+FORMAT YOUR RESPONSE:
+- Overall Vitality Summary (A clear, plain-English rating of overall physical resilience: e.g., Robust, Balanced, or Sensitive).
+- Primary Health Shields (What keeps my body resilient and protected?).
+- Wellness & Stress Management Areas (Which body systems benefit from healthy habits?).
+- Timing & Care Windows (Key Dasha periods to focus on rest and well-being).
+- Executive Conclusion (Final summary of physical stamina and longevity).
+
+Keep the tone grounded, practical, and clear. Avoid dense technical jargon, or define terms simply if used.
