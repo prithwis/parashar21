@@ -81,6 +81,8 @@ def C10_DetermineBhavs():
 #Determines the Rashi number where each Lord resides
 #Determines the Rashi name where each Lord resides
 #
+
+'''
 def C11_DetermineLord():
 
     #p21.LordOf = {"Ari":"Ma","Tau":"Ve","Gem":"Me","Can":"Mo","Leo":"Su","Vir":"Me","Lib":"Ve","Sco":"Ma","Sag":"Ju","Cap":"Sa","Acq":"Sa","Pis":"Ju"}
@@ -114,6 +116,42 @@ def C11_DetermineLord():
      'GrahaLordBhav' : p21.GrahaLordBhav
     }
 
+'''
+
+import numbers
+
+def C11_DetermineLord():
+
+    #p21.LordOf = {"Ari":"Ma","Tau":"Ve","Gem":"Me","Can":"Mo","Leo":"Su","Vir":"Me","Lib":"Ve","Sco":"Ma","Sag":"Ju","Cap":"Sa","Acq":"Sa","Pis":"Ju"}
+    #print(LordOf)
+    p21.Lord = list(map(lambda x : p21.LordOf[p21.RashiN2A(x)] if isinstance(x, numbers.Integral) else p21.BoL, p21.BhavN))
+    #print("Lord : ", p21.Lord)
+    p21.LordRashiN = list(map(lambda x : p21.GRashiN[x] if x != p21.BoL else p21.BoL, p21.Lord))
+    #print("Rashi # of Lord : ",p21.LordRashiN)
+    p21.LordRashiA = list(map(lambda x : p21.GRashiA[x] if x != p21.BoL else p21.BoL, p21.Lord))
+    #print("Rashi Name of Lord :",p21.LordRashiA)
+
+# --------------------------------------------------
+
+#Determines the Bhava where each Graha is Lord
+#Grahas other than Sun and Moon are Lords of Two Bhava
+#Since index returns only the first position where an instance is found
+#A simple index() does not return the second position
+# https://stackoverflow.com/questions/22267241/how-to-find-the-index-of-the-nth-time-an-item-appears-in-a-list
+
+    p21.GrahaLordBhav = {}
+    for G in ('Su','Mo','Ma','Me','Ju','Ve','Sa'):
+            # CHANGED: enumerate(..., 1) ensures 1-based Bhava indexing
+            L = [i for i, n in enumerate(p21.Lord, 1) if n == G]
+            p21.GrahaLordBhav[G] = L
+    #print('Bhav where Graha is Lord : ',p21.GrahaLordBhav)
+    
+    p21.LordInfo = {
+     'Lord' : p21.Lord,
+     'LordRashiN' : p21.LordRashiN,
+     'LordRashiA' : p21.LordRashiA,
+     'GrahaLordBhav' : p21.GrahaLordBhav
+    }
 
 def C12_BhavOfGraha_Lord():
 
@@ -138,6 +176,7 @@ def C12_BhavOfGraha_Lord():
      'GrahaBhava' : p21.GrahaBhava,
      'LordBhav' : p21.LordBhav
     }
+
 
 
 def C12A_StoreRashiOfGraha():
@@ -294,7 +333,77 @@ def C21_DeterminePositions():
         #'inNeutralL' : p21.inNeutralL,
     }
 
+'''
 
+def C21_DeterminePositions():
+    p21.exaltG = l2d(list(map(lambda x: C21A_checkGexa(x), p21.Graha)))               # determines if Graha is Exalted
+    #print('Exalted Graha',p21.exaltG)
+    p21.exaltL = list(map(lambda x: C21B_checkLexa(x),p21.Lord))                       # determines if Lord is exalted
+    #print('Exalted Lord',p21.exaltL)
+    
+    p21.debilG = l2d(list(map(lambda x: C21C_checkGdeb(x),p21.Graha)))               # determines if Graha is debilitated
+    #print('Debilited Graha',p21.debilG)
+    p21.debilL = list(map(lambda x: C21D_checkLdeb(x),p21.Lord))
+    #print('Debilited Lord',p21.debilL)
+    
+    p21.mool3G = l2d(list(map(lambda x: C21E_checkm3G(x),p21.Graha))) 
+    #print('Mool3G',p21.mool3G)
+    p21.mool3L = [False]*13
+
+    for ix in range(1,13):
+        #print(ix)
+        # Using [ix - 1] maps House 1..12 to Lord[0..11] safely
+        p21.mool3L[ix] = p21.mool3G[p21.Lord[ix - 1]]
+    #print('Mool3L',p21.mool3L)
+
+    p21.ownHouseG = l2d(list(map(lambda x: C21F_checkOwnHG(x),p21.Graha)))
+    #print('ownHouseG',p21.ownHouseG)
+    
+    p21.ownHouseL = [False]*13
+
+    for ix in range(1,13):
+        #print(ix)
+        p21.ownHouseL[ix] = p21.ownHouseG[p21.Lord[ix - 1]]
+    #print('ownHouseL',p21.ownHouseL)
+    
+    p21.inFriendG =  l2d(list(map(lambda x: C21G_checkfen(x,p21.friends),p21.Graha)))
+    p21.inEnemyG =  l2d(list(map(lambda x: C21G_checkfen(x,p21.enemies),p21.Graha)))
+    p21.inNeutralG =  l2d(list(map(lambda x: C21G_checkfen(x,p21.neutrals),p21.Graha)))
+    
+    #print('inFriendG',p21.inFriendG)
+    #print('inEnemyG',p21.inEnemyG)
+    #print('inNeutralG',p21.inNeutralG)
+
+    p21.inFriendL = [False]*13
+    p21.inEnemyL = [False]*13
+    p21.inNeutralL = [False]*13
+
+    for ix in range(1,13):
+        p21.inFriendL[ix] = p21.inFriendG[p21.Lord[ix - 1]]
+        p21.inEnemyL[ix] = p21.inEnemyG[p21.Lord[ix - 1]]
+        p21.inNeutralL[ix] = p21.inNeutralG[p21.Lord[ix - 1]]
+        
+    #print('inFriendL',p21.inFriendL)
+    #print('inEnemyL',p21.inEnemyL)
+    #print('inNeutralL',p21.inNeutralL)
+    
+    p21.Positions = {
+        'exaltG' : p21.exaltG,
+        'debilG' : p21.debilG,
+        #'mool3G' : p21.mool3G,
+        'ownHouseG' : p21.ownHouseG,
+        'inFriendG' : p21.inFriendG,
+        'inEnemyG' : p21.inEnemyG,
+        #'inNeutralG' : p21.inNeutralG,
+        'exaltL' : p21.exaltL,
+        'debilL' : p21.debilL,
+        #'mool3L' : p21.mool3L,
+        'ownHouseL' : p21.ownHouseL,
+        'inFriendL' : p21.inFriendL,
+        'inEnemyL' : p21.inEnemyL
+        #'inNeutralL' : p21.inNeutralL,
+    }
+'''
 # --------------------------------------------------
 
 # Convert the longitude of a Graha into its Rashi of residence
