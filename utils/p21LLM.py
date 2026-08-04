@@ -99,6 +99,7 @@ def GetGender():
     return gender
 
 
+'''
 def GetAnalysisMode(filename):
 
     analysisMode = "Natal"
@@ -109,12 +110,22 @@ def GetAnalysisMode(filename):
 
     return analysisMode, filename
 
+'''
 
+def GetAnalysisMode(filename):
+
+    analysisMode = "Natal"
+
+    if os.path.exists(filename):
+        filename = 'Gochar_'+filename
+        analysisMode = "Gochar"
+
+    return analysisMode, filename
 
 # --------------------------------------------------
 # Header Generator
 # --------------------------------------------------
-
+'''
 def AddHeader(lines, analysisMode):
 
     def add(text=""):
@@ -122,6 +133,25 @@ def AddHeader(lines, analysisMode):
 
     add("HOROSCOPE DATA FOR JYOTISHA REASONING")
     add("=====================================")
+    add("")
+
+    add("Analysis : " + analysisMode)
+    add("Chart Type : " + str(p21.AnalysisType))
+    add("Gender : " + GetGender())
+
+    if hasattr(p21, "pTags"):
+        add("Tags : " + str(p21.pTags))
+
+    add("")
+'''
+
+def AddHeader(lines, analysisMode, title):
+
+    def add(text=""):
+        lines.append(text)
+
+    add(title)
+    add("=" * len(title))
     add("")
 
     add("Analysis : " + analysisMode)
@@ -515,3 +545,74 @@ def R601_GenerateLLMInput04(filename="LLMInput2_Natal.txt"):
         f.write(
             "\n".join(lines)
         )
+        
+# --------------------------------------------------------------------------------------------
+def R601_GenerateLLMInput05(filename="Chart.txt"):
+
+    lines = []
+
+    analysisMode, filename = GetAnalysisMode(filename)
+
+    AddHeader(
+        lines,
+        analysisMode,
+        "HOROSCOPE DATA FOR JYOTISHA REASONING"
+    )
+
+    AddHouseLordship(lines)
+
+    AddPlanetaryInformation(lines)
+
+    AddPlanetaryAspects(lines)
+
+    AddPlanetsAspectedBy(lines)
+
+    AddPlanetaryConjunctions(lines)
+
+    AddHouseLordRelationships(lines)
+
+    AddLordLordRelationships(lines)
+
+    AddBhavaAspects(lines)
+
+    AddBhavaAspectedByLords(lines)
+
+    AddYogas(lines)
+
+    #AddDasha(lines)
+
+    with open(
+        filename,
+        "w",
+        encoding="utf-8"
+    ) as f:
+
+        f.write(
+            "\n".join(lines)
+        )
+# --------------------------------------------------------------------------------------------
+def R602_GenerateLLMInput01(filename="Dasha.txt"):
+
+    lines = []
+
+    analysisMode, filename = GetAnalysisMode(filename)
+
+    AddHeader(
+        lines,
+        analysisMode,
+        "VIMSHOTTARI DASHA FOR JYOTISHA REASONING"
+    )
+
+
+    AddDasha(lines)
+
+    with open(
+        filename,
+        "w",
+        encoding="utf-8"
+    ) as f:
+
+        f.write(
+            "\n".join(lines)
+        )
+# --------------------------------------------------------------------------------------------
