@@ -374,98 +374,84 @@ def csidtil(D):
     return(nD)
 
 def C31_DetermineAspects():
+    """
+    Calculates bi-directional planetary and house aspects using 1-based house step offsets:
+    - Standard 7th aspect (6 steps ahead / 7th house)
+    - Mars: 4th house (3 steps ahead) & 8th house (7 steps ahead)
+    - Jupiter: 5th house (4 steps ahead) & 9th house (8 steps ahead)
+    - Saturn: 3rd house (2 steps ahead) & 10th house (9 steps ahead)
+    """
+    p21.GAspects = dict()
+    p21.GAspectedBy = dict()
+    p21.BAspectedBy = dict()
+    p21.BAspectedByBL = dict()
 
-    p21.GAspects = dict()           # Which Graha aspects which other Graha
-    p21.GAspectedBy = dict()        # Which Graha is aspected by which other Graha
-    p21.BAspectedBy = dict()        # Which Bhav is aspected by which other Graha
-    p21.BAspectedByBL = dict()      # Which Bhav is aspected by which Bhav Lord
-
-
-
-    for O1 in p21.Gx:
-        for O2 in p21.Gx:
-            #Normal 7th Aspect
-            if (RashiGapA(p21.GRashiN[O2],p21.GRashiN[O1]) == 6):
-                #print(O1,GRashiN[O1],O2,GRashiN[O2],RashiGapA(GRashiN[O2],GRashiN[O1]))
-                if not (O1 in ['Ra','Ke'] and O2 in ['Ra','Ke']):
-                    addToD(O1,p21.GAspects,O2)
-                    addToD(O2,p21.GAspectedBy,O1)
-            #Mars 4,8th Aspect
-            if (O1 == 'Ma') and (
-                (RashiGapA(p21.GRashiN[O2],p21.GRashiN[O1]) == 3) or
-                (RashiGapA(p21.GRashiN[O2],p21.GRashiN[O1]) == 7)):
-                addToD(O1,p21.GAspects,O2)
-                addToD(O2,p21.GAspectedBy,O1)
-            #Jupiter 5,9th Aspect
-            if (O1 == 'Ju') and (
-                (RashiGapA(p21.GRashiN[O2],p21.GRashiN[O1]) == 4) or
-                (RashiGapA(p21.GRashiN[O2],p21.GRashiN[O1]) == 8)):
-                addToD(O1,p21.GAspects,O2)
-                addToD(O2,p21.GAspectedBy,O1)
-            #Saturn 3,10th Aspect
-            if (O1 == 'Sa') and (
-                (RashiGapA(p21.GRashiN[O2],p21.GRashiN[O1]) == 2) or
-                (RashiGapA(p21.GRashiN[O2],p21.GRashiN[O1]) == 9)):
-                addToD(O1,p21.GAspects,O2)
-                addToD(O2,p21.GAspectedBy,O1)
-
-
-    # Bhav number as dict keys have to be converted to str()
-    # Otherwise could not store in MongoDB
-    for O1 in p21.Gx:
-        for BN in range(1,13):
-            #Normal 7th Aspect
-            if (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 6):
-                #print(O1,GRashiN[O1],O2,GRashiN[O2],RashiGapA(GRashiN[O2],GRashiN[O1]))
-                addToD(str(BN),p21.BAspectedBy,O1)
-               
-            #Mars 4,8th Aspect
-            if (O1 == 'Ma') and (
-                (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 3) or
-                (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 7)):
-                addToD(str(BN),p21.BAspectedBy,O1)
-             
-            #Jupiter 5,9th Aspect
-            if (O1 == 'Ju') and (
-                (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 4) or
-                (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 8)):
-                addToD(str(BN),p21.BAspectedBy,O1)
-                
-            #Saturn 3,10th Aspect
-            if (O1 == 'Sa') and (
-                (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 2) or
-                (RashiGapA(p21.BhavN[BN],p21.GRashiN[O1]) == 9)):
-                addToD(str(BN),p21.BAspectedBy,O1)
-     
-    #print("BAspectedBy",p21.BAspectedBy)
+    # Define aspect rules using forward step gaps: (House_Target - House_Source) % 12
+    # 4th house = 3 steps, 5th house = 4 steps, 7th house = 6 steps, 8th house = 7 steps, 9th house = 8 steps, 10th house = 9 steps
     
-    for BN1 in range(1,13):
-        for BN2 in range(1,13):      
-            if str(BN1) in p21.BAspectedBy.keys():
-                if  p21.Lord[BN2] in p21.BAspectedBy[str(BN1)]:
-                    addToD(str(BN1),p21.BAspectedByBL,str(BN2))
+    SPECIAL_ASPECTS = {
+        'Ma': [3, 6, 7],  # 4th, 7th, 8th
+        'Ju': [4, 6, 8],  # 5th, 7th, 9th
+        'Sa': [2, 6, 9],  # 3rd, 7th, 10th
+    }
     
-    #print("GAspects",p21.GAspects)
-    #print("GAspectedBy",p21.GAspectedBy)
-    #print("BAspectedBy",p21.BAspectedBy)  
-    
-    # Bhav number as dict keys have to be converted to str()
-    # Otherwise could not store in MongoDB
-    
+    ALL_PLANETS = ['Su', 'Mo', 'Ma', 'Me', 'Ju', 'Ve', 'Sa']
+
+    # -------------------------------------------------------------
+    # 1. GRAHA-TO-GRAHA ASPECTS
+    # -------------------------------------------------------------
+    for O1 in ALL_PLANETS: # Source Planet
+        source_rashi = p21.GRashiN[O1]
+        
+        # Determine allowed gap steps for O1
+        allowed_gaps = SPECIAL_ASPECTS.get(O1, [6]) # Default is 7th aspect only (gap = 6)
+
+        for O2 in p21.Gx: # Target Planet (including Rahu/Ketu as targets)
+            if O1 == O2:
+                continue
+            
+            target_rashi = p21.GRashiN[O2]
+            gap = RashiGapA(target_rashi, source_rashi)
+
+            if gap in allowed_gaps:
+                addToD(O1, p21.GAspects, O2)      # O1 aspects O2
+                addToD(O2, p21.GAspectedBy, O1)    # O2 is aspected by O1
+
+    # -------------------------------------------------------------
+    # 2. GRAHA-TO-BHAVA ASPECTS
+    # -------------------------------------------------------------
+    for O1 in ALL_PLANETS: # Source Planet
+        source_rashi = p21.GRashiN[O1]
+        allowed_gaps = SPECIAL_ASPECTS.get(O1, [6])
+
+        for BN in range(1, 13): # Target Bhava Number (1 to 12)
+            house_rashi = p21.BhavN[BN] # Get Rashi occupying Bhava BN
+            gap = RashiGapA(house_rashi, source_rashi)
+
+            if gap in allowed_gaps:
+                addToD(str(BN), p21.BAspectedBy, O1) # House BN receives aspect from O1
+
+    # -------------------------------------------------------------
+    # 3. BHAVA-TO-BHAVA LORD ASPECTS
+    # -------------------------------------------------------------
+    for BN1 in range(1, 13):
+        if str(BN1) in p21.BAspectedBy:
+            for BN2 in range(1, 13):
+                lord_of_bn2 = p21.Lord[BN2]
+                if lord_of_bn2 in p21.BAspectedBy[str(BN1)]:
+                    addToD(str(BN1), p21.BAspectedByBL, str(BN2))
+
+    # Format output dictionaries for JSON compatibility
     p21.GAspects2 = csidtil(p21.GAspects)
     p21.GAspectedBy2 = csidtil(p21.GAspectedBy)
     p21.BAspectedBy2 = csidtil(p21.BAspectedBy)
     p21.BAspectedByBL2 = csidtil(p21.BAspectedByBL)
 
-    #print("GAspects2",p21.GAspects2)
-    #print("GAspectedBy2",p21.GAspectedBy2)
-    #print("BAspectedBy2",p21.BAspectedBy2)
-    
     p21.Aspects = {
-    'GAspects2'   :p21.GAspects2,
-    'GAspectedBy2':p21.GAspectedBy2,
-    'BAspectedBy2':p21.BAspectedBy2,
-    'BAspectedByBL2':p21.BAspectedByBL2
+        'GAspects2': p21.GAspects2,
+        'GAspectedBy2': p21.GAspectedBy2,
+        'BAspectedBy2': p21.BAspectedBy2,
+        'BAspectedByBL2': p21.BAspectedByBL2
     }
 
 def C41_DetermineConjuncts():
