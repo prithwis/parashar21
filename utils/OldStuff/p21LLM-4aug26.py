@@ -99,6 +99,31 @@ def GetGender():
     return gender
 
 
+'''
+def GetAnalysisMode(filename):
+
+    analysisMode = "Natal"
+
+    if os.path.exists(filename):
+        filename = "LLMInput2_Gochar.txt"
+        analysisMode = "Gochar"
+
+    return analysisMode, filename
+
+
+
+def GetAnalysisMode(filename):
+
+    analysisMode = "Natal"
+
+    if os.path.exists(filename):
+        filename = 'Gochar_'+filename
+        analysisMode = "Gochar"
+
+    return analysisMode, filename
+    
+'''
+
 # Convention:
 # p21.pName == p21.gName  -> Gochar analysis
 # p21.pName != p21.gName  -> Natal analysis
@@ -116,7 +141,25 @@ def GetAnalysisMode(filename):
 # --------------------------------------------------
 # Header Generator
 # --------------------------------------------------
+'''
+def AddHeader(lines, analysisMode):
 
+    def add(text=""):
+        lines.append(text)
+
+    add("HOROSCOPE DATA FOR JYOTISHA REASONING")
+    add("=====================================")
+    add("")
+
+    add("Analysis : " + analysisMode)
+    add("Chart Type : " + str(p21.AnalysisType))
+    add("Gender : " + GetGender())
+
+    if hasattr(p21, "pTags"):
+        add("Tags : " + str(p21.pTags))
+
+    add("")
+'''
 
 def AddHeader(lines, analysisMode, title):
 
@@ -389,7 +432,89 @@ def AddYogas(lines):
 # --------------------------------------------------
 # Vimshottari Dasha
 # --------------------------------------------------
+'''
+def AddDasha(lines):
 
+    def add(text=""):
+        lines.append(text)
+
+    add("VIMSHOTTARI DASHA")
+    add("-----------------")
+
+    if p21.pName == p21.gName:
+
+        add("Current Dasha Status")
+        add("")
+
+        today = datetime.now()
+        count = 0
+        
+        for maha, mahaData in p21.VimDasha.items():
+
+            if (
+                today < datetime.strptime(
+                    mahaData["End"],
+                    "%d %b %Y"
+                )
+                and count < 2
+            ):
+
+                if count == 0:
+                    add(
+                        "Current Mahadasha : "
+                        + GName(maha)
+                    )
+
+                else:
+                    add(
+                        "Next Mahadasha : "
+                        + GName(maha)
+                    )
+
+
+                add(
+                    "Mahadasha ends : "
+                    + mahaData["End"]
+                )
+
+
+                for antar, antarData in mahaData.items():
+
+                    if isinstance(antarData, dict):
+
+                        add(
+                            "    Antardasha : "
+                            + GName(antar)
+                        )
+
+                        add(
+                            "    Ends : "
+                            + antarData["End"]
+                        )
+
+
+                add("")
+
+                count += 1
+
+
+    else:
+
+        add("Mahadasha Sequence")
+        add("")
+
+
+        for maha, mahaData in p21.VimDasha.items():
+
+            add(
+                GName(maha)
+                + " : ends on "
+                + mahaData["End"]
+            )
+
+
+    add("")
+'''
 def AddDashaFull(lines):
 
     def add(text=""):
@@ -418,11 +543,60 @@ def AddDashaFull(lines):
 
     add("")
 
+
+
 # --------------------------------------------------
 # Main LLM Input Generator
 # --------------------------------------------------
+'''
+def R601_GenerateLLMInput04(filename="LLMInput2_Natal.txt"):
+
+    lines = []
+
+    analysisMode, filename = GetAnalysisMode(filename)
+
+    AddHeader(
+        lines,
+        analysisMode
+    )
+
+    AddHouseLordship(lines)
+
+    AddPlanetaryInformation(lines)
+
+    AddPlanetaryAspects(lines)
+
+    AddPlanetsAspectedBy(lines)
+
+    AddPlanetaryConjunctions(lines)
+
+    AddHouseLordRelationships(lines)
+
+    AddLordLordRelationships(lines)
+
+    AddBhavaAspects(lines)
+
+    AddBhavaAspectedByLords(lines)
+
+    AddYogas(lines)
+
+    AddDasha(lines)
+
+    with open(
+        filename,
+        "w",
+        encoding="utf-8"
+    ) as f:
+
+        f.write(
+            "\n".join(lines)
+        )
+        
+'''
+# --------------------------------------------------------------------------------------------
 
 
+# --------------------------------------------------------------------------------------------
 def R601_GenerateLLMInput05(filename="Chart.txt"):
 
     lines = []
