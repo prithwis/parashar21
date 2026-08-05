@@ -31,7 +31,7 @@ Begin by identifying:
 * The most significant features of the horoscope.
 * Dominant planets, houses, signs, yogas, and planetary relationships.
 * Strong and weak areas of the chart.
-* Major supportive combinations.
+* Major supportive combinations, spcifically yogas
 * Major conflicts, tensions, and vulnerabilities.
 * Important themes visible across all twelve houses.
 

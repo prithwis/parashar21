@@ -453,7 +453,7 @@ def R601_GenerateLLMInput05(filename="Chart.txt"):
 
     AddBhavaAspectedByLords(lines)
 
-    AddYogas(lines)
+    #AddYogas(lines)
 
     #AddDasha(lines)
 
