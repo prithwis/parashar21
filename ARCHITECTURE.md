@@ -39,6 +39,138 @@ Report Generation
 ```
 
 ---
+Note: The function names below reflect the current implementation (Parashar21 v51). The architectural stages are expected to remain stable even if individual functions are renamed or refactored in future versions.
+---
+
+# Function Call Sequence
+
+The principal notebook driving the LLM pipeline is **`p21_51_chart2llm`**.
+
+Execution proceeds through the following stages.
+
+## 1. Swiss Ephemeris Initialisation
+
+```python
+p21swe.C01_configSWE()
+```
+
+Initialises the Swiss Ephemeris environment required for all astronomical calculations.
+
+---
+
+## 2. Natal Horoscope Construction
+
+```python
+p21swe.C61_Cast2JSON(df)
+```
+
+This is the core computational engine of Parashar21. Starting from the birth data, it computes planetary positions using the Swiss Ephemeris and progressively enriches the horoscope with the information required for Jyotisha analysis.
+
+Internally this function invokes several utility routines, including:
+
+- `C02_parsePersonData()` — Parse birth details.
+- `C03_convertDates()` — Convert local time to Universal Time and compute Ayanamsha.
+- `C04_calculateGrahaPositions()` — Calculate planetary longitudes.
+- `C05_buildGLonGRet()` — Store corrected longitudes and retrograde status.
+- `C10_DetermineBhavs()` — Determine Bhava positions.
+- `C11_DetermineLord()` — Determine House Lords.
+- `C12_BhavOfGraha_Lord()` — Compute Graha–Bhava relationships.
+- `C12A_StoreRashiOfGraha()` — Assign planets to Rashis.
+- `C21A–G` — Determine Exaltation, Debilitation, Moolatrikona, Own House and Friend/Enemy status.
+- `C31_DetermineAspects()` — Compute Graha and Bhava aspects.
+- `C41_DetermineConjuncts()` — Determine planetary conjunctions.
+- `C51_DetermineBenMal()` — Determine Functional Benefic and Malefic status.
+
+The result is a fully enriched horoscope represented as a JSON document.
+
+---
+
+## 3. Vimshottari Dasha
+
+```python
+p21utils.GetDasha()
+```
+
+Calculates the complete Vimshottari Mahadasha and Antardasha sequence using the natal Moon longitude.
+
+---
+
+## 4. Working Chart Object
+
+```python
+getChartData()
+```
+
+Loads the generated JSON into the global single-row Pandas DataFrame named `chart`.
+
+Although originally introduced to support MongoDB storage and retrieval, this object has become the canonical in-memory representation used throughout the remainder of the system.
+
+---
+
+## 5. Human Report Generation
+
+```python
+genChart('Bengal')
+```
+
+Generates the Microsoft Word horoscope report.
+
+This stage includes:
+
+- Horoscope drawing
+- Yoga detection
+- AshtakVarga computation
+- Dasha reporting
+- Report formatting
+
+These calculations operate on the already constructed horoscope rather than recalculating it.
+
+---
+
+## 6. Gochar Chart Construction
+
+```python
+p21swe.C61_Cast2JSON(df)
+```
+
+The same computational pipeline is executed a second time to generate the Moon-based Gochar chart.
+
+Unlike the Natal chart, the Gochar chart uses the natal Moon as the reference Lagna while recomputing all Bhava-based relationships.
+
+---
+
+## 7. LLM Chart Generation
+
+```python
+p21LLM.R601_GenerateLLMInput05()
+```
+
+Produces a structured textual representation of the horoscope intended for reasoning by Large Language Models.
+
+The output contains sections describing:
+
+- House Lordship
+- Planetary Information
+- Planetary Aspects
+- Planets Aspected By
+- Planetary Conjunctions
+- House Lord Relationships
+- Lord–Lord Relationships
+- Bhava Aspects
+- Bhava Aspected By Lords
+- Yogas
+
+---
+
+## 8. LLM Dasha Generation
+
+```python
+p21LLM.R602_GenerateLLMInput01()
+```
+
+Produces a second structured document containing the complete Vimshottari Mahadasha and Antardasha sequence.
+
+Separating static horoscope information from time-dependent Dasha information has been found to improve reasoning by Large Language Models.
 
 # Processing Stages
 
