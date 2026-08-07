@@ -16,9 +16,9 @@ The overall architecture of the project is illustrated below.
 
 ![Parashar21 Architecture](/images/p21-Arch-2026.png)<br>
 
-For a detailed description of the system architecture, design rationale, and processing pipeline, see **[Docs/Architecture.md](docs/Architecture.md)**.
+For a detailed description of the system architecture, design rationale, and processing pipeline, see **[Docs/Architecture.md]([docs/Architecture.md](https://github.com/prithwis/parashar21/blob/main/Docs/ARCHITECTURE.md))**.
 
-The historical documentation describing the original Parashar21 implementation has been retained as **[Docs/README.md](docs/README-00.md)** for reference.
+The historical documentation describing the original Parashar21 implementation has been retained as **[Docs/README.md]([docs/](https://github.com/prithwis/parashar21/blob/main/Docs/README-00.md)** for reference.
 
 This is what the architecture looks like at the moment
 
