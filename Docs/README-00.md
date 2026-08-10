@@ -9,8 +9,7 @@ Parashar21 is not a prediction engine. There is no attempt to interpret horoscop
 # Overview
 ![workflow](/images/Workflow.png)<br>
 ### WARNING 
-Because of a recent change in the MongoDB installation process, there is a problem with MongoDB installation process
-Some notebooks have been fixed with a temporary patch. Others will be fixed as we discover better solutions
+Since moving to a new MongoDB free architecture, the old demo programs that are referred to in this document have been moved to the "Archived" folder. Hence all links in this document would be broken because they all point to the home directory. However all files exist, except that they are found somewhere ( "Archived") else
 Sorry for the inconvenience
 ### End of WARNING
 # Sample Programs
