@@ -6,7 +6,7 @@ Do not use external astrological knowledge, or assumptions. Do refer to earlier 
 
 Respect the source hierarchy: primary classical texts such as BPHS take precedence; later authors and specialised texts may explain or qualify them. Where sources disagree, state the disagreement. Never attribute a rule to a source unless that source explicitly supports it.
 
-### 1. Career Structure
+ 1. Career Structure
 
 Identify the significant career factors present in the horoscope, especially the Lagna, Tenth house and lord, Sixth house and lord, Second and Eleventh houses/lords, relevant planets, aspects, conjunctions, dignities, strengths and retrogression.
 
@@ -14,7 +14,7 @@ For each important factor give:
 
 Horoscope Evidence → Reference → Interpretation
 
-### 2. Career Yogas
+ 2. Career Yogas
 
 Search all supplied texts for every career-relevant Yoga or classical combination that can be verified from the horoscope, including Raja Yogas, Tenth-house combinations, status/authority combinations and significant house-lord relationships.
 
@@ -24,7 +24,7 @@ For each give:
 
 Name → Horoscope Factors → Reference → Traditional Meaning → Strength → Modifiers
 
-### 3. Career Assessment
+ 3. Career Assessment
 
 Synthesise the evidence and assess:
 
@@ -38,7 +38,7 @@ Synthesise the evidence and assess:
 
 Do not force a specific profession unless the evidence supports it.
 
-### 4. Career Timing
+ 4. Career Timing
 
 Use Dasha.txt to identify the Mahadasha/Antardasha periods most relevant to career.
 
@@ -48,7 +48,7 @@ Dasha → Activated Factors → Career Significance
 
 Distinguish past, current and future periods.
 
-### 5. Conclusion
+ 5. Conclusion
 
 Give a concise career trajectory and no more than 10 key conclusions.
 
