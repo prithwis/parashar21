@@ -106,7 +106,7 @@ def GetGender():
 def GetAnalysisMode(filename):
 
     if p21.AnalysisType == 'Navamsa':
-        filename = 'Navamsa'+filename
+        filename = 'Navamsa_'+filename
         
     if p21.pName == p21.gName:
         analysisMode = "Gochar"
