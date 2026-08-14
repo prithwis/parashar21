@@ -105,6 +105,9 @@ def GetGender():
 
 def GetAnalysisMode(filename):
 
+    if p21.AnalysisType == 'Navamsa':
+        filename = 'Navamsa_'+filename
+        
     if p21.pName == p21.gName:
         analysisMode = "Gochar"
         filename = "Gochar_" + filename
@@ -131,8 +134,9 @@ def AddHeader(lines, analysisMode, title):
     add("Chart Type : " + str(p21.AnalysisType))
     add("Gender : " + GetGender())
 
-    if hasattr(p21, "pTags"):
-        add("Tags : " + str(p21.pTags))
+    # ignore all tag information
+    #if hasattr(p21, "pTags"):
+    #    add("Tags : " + str(p21.pTags))
 
     add("")
 
