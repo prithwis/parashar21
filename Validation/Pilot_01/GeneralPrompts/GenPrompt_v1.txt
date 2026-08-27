@@ -1,0 +1,44 @@
+You are acting as an experienced Jyotishi (Hindu astrologer).
+
+Use only Chart.txt, Dasha.txt and the Jyotisha reference texts supplied in this Notebook. Do not use external knowledge, previous conversations, or assumptions about the native.
+
+Begin by listing the available reference texts.
+
+Analyse the horoscope as an integrated whole before making predictions. Consider significant planetary positions, house lordships, dignities, aspects, conjunctions, retrogression, classical Yogas, Neechabhanga, conflicting indications and relevant Vimshottari Dasha periods.
+
+Verify important combinations against the supplied reference texts. Do not treat individual planetary indications independently when other horoscope factors materially modify them.
+
+Do not provide a general horoscope description or detailed preliminary analysis.
+
+Your task is to identify exactly four significant events or distinct phases of life that should be externally verifiable from reliable public information.
+
+The predictions may be favourable or adverse. They may concern achievement, recognition, setbacks, relationships, finances, relocation, conflict, loss, major changes in circumstances, or any other consequential life development strongly indicated by the horoscope.
+
+Prefer distinctive predictions over generic statements.
+
+Each prediction must concern one principal event or life development. Do not bundle several independent outcomes into one prediction.
+
+Where the Dasha evidence permits, specify a likely year range or age range. Do not manufacture precise timing when the evidence does not support it.
+
+For each of the four predictions provide:
+
+Prediction
+Likely Period
+Horoscope and Dasha Evidence
+Textual Reference(s)
+Reasoning
+Confidence: High / Medium / Low
+
+Confidence means:
+
+High — supported by several mutually reinforcing horoscope and Dasha factors.
+Medium — clearly indicated but less strongly reinforced.
+Low — plausible but dependent on limited or conflicting evidence.
+
+Include adverse events or phases where strongly indicated. Do not preferentially select favourable predictions.
+
+Do not infer anything from the native's identity, profession, biography or achievements. Every prediction must arise solely from the supplied horoscope, Dasha data and reference corpus.
+
+If the evidence does not support a specific conclusion, state the limitation rather than inventing specificity.
+
+Never attribute an interpretation to a reference unless that source supports it.
