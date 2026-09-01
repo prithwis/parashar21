@@ -403,7 +403,7 @@ INDICATIONS OF KEl'U
 
 
 
-BHAVAS-THE HOROSCOPE HOUSES	37
+BHAVAS-THE HOROSCOPE HOUSES	
 
 
 
@@ -426,7 +426,7 @@ houses.
 
 
 FIRST HOUSE IS A DHARMA HOUSE, CONNECTED TO LIFE PURPOSE.
-i.	• the personal self. ego
+• the personal self. ego
 • appearance. face, head
 • character, disposition, tendencies, conduct
 • well-being, happiness
@@ -448,10 +448,10 @@ MATTERS.
 • face, mouth, tongue
 • vision In right eye, neck, throat
 • confidence, timidity
-
-38	• food one eats
+• food one eats
 • charity
 • dress
+
 THIRD HOUSE IS A KAMA HOUSE, CONNECTED TO DESIRES.
 • one's own efforts and adventures
 • younger brothers and sisters
@@ -467,9 +467,10 @@ THIRD HOUSE IS A KAMA HOUSE, CONNECTED TO DESIRES.
 • hearing, the right ear
 • the hands. arms, shoulders
 • letters, writings.journals, all communications
-• firmness of personaliW (mental stability-but not the mind)
-• Travel-short journey,;
-,	FOURTH HOUSE IS A MOKSHA HOUSE. CONNECTED TO FINAL
+• firmness of personality (mental stability-but not the mind)
+• Travel-short journey
+
+FOURTH HOUSE IS A MOKSHA HOUSE. CONNECTED TO FINAL
 LIBERATION.
 • mother
 • happiness and contentment
@@ -493,8 +494,7 @@ FIFTH HOUSE IS A DHARMA HOUSE CONNECTED TO LIFE PURPOSE.
 • morals, good deeds. charity
 • merit. fine qualities, integrity, humility. ability
 • religious-mindedness
-• 
-pleasures, fun, sports	39
+• pleasures, fun, sports	
 • art of painting or drawing
 
 SIXTII HOUSE IS AN ARTHA HOUSE, CONNECTED TO WEALTH MATTERS.
@@ -541,20 +541,11 @@ NINTH HOUSE IS A DHARMA HOUSE CONNECTED TO LIFE PURPOSE.
 • spiritual teachers, elders
 • travel-long journeys
 •wisdom
-
-
-40	• higher knowledge of all kinds, higher education
+• higher knowledge of all kinds, higher education
 •law
 • performance of good deeds, charity, virtue
-TENTH HOUSE JS AN ARTHA HOUSE, CONNECTED TO WEALTH
-MATTERS.
 
-
-I
-I
-,I.
-
-RASIS-THE ZODIAC SIGNS	41
+TENTH HOUSE iS AN ARTHA HOUSE, CONNECTED TO WEALTH MATTERS.
 
 • career, professiQ_nal activities
 • the dhanna, or lif purpose.
@@ -564,17 +555,19 @@ RASIS-THE ZODIAC SIGNS	41
 • good deeds, activities which benefit society
 • authority figures, eminent persons, government officials
 
-ELEVENTH HOUSE JS A KAMA HOUSE, CONNECTED TO DESIRES.
-. • major goals, ambitions, and desires
+ELEVENTH HOUSE Ji A KAMA HOUSE, CONNECTED TO DESIRES.
+
+• major goals, ambitions, and desires
 • opporlunltles
 • eldest sibling
 • gains and profits by any means (wealth)
 • sudden financial fluctuations
 • supplemental monies: wealth from sideline jobs or sudden ventures
 • paternal uncle
-• legs and ankles	'
-1WELFTH HOUSE JS A MOKSHA HOUSE CONNECTED TO FINAL
-LIBERATION.
+• legs and ankles	
+
+TWELFTH HOUSE IS A MOKSHA HOUSE CONNECTED TO FINAL LIBERATION.
+
 • expenditure, expenses
 • moksha, self-realization, enlightenment, final liberation, salvation
 • the state after death (heaven or hell), lokas, or planes of existence
@@ -593,6 +586,8 @@ LIBERATION.
 • secret enemies
 
 
+RASIS-THE ZODIAC SIGNS	
+
      Although the signs of the zodiac In Hindu astrology are of the same characteristics as In the Western system (except that Capricorn Is repres­ ented as a crocodile Instead of a goat), there Is veiy little information extracted from their use. Certain modern Hindu astrological authors have used sign delineations In their texts, however, It appears that they have taken their knowledge from Western astrological wisdom. In Hindu scrip­ tures signs are simply not employed In this way. And In practice, nor do Hindu astrologers bother with sign Interpretations.
 
       Rasis, or signs, are not totally disregarded, but they are used In a veiy basic and simplistic way. For example, It may be said that a person born with a Gemini ascendant will be Intellectually oriented, since Mer­ cuiy rules his ascending sign. Or an astrologer may note that Venus posited In a sign of Mars (i.e., Scorpio) will give a person strong sexual passions. But the Western sort of explanation of Venus In Scorpio, de­ scribing jealousy, Intensity, selfishness, etc., Is out of bounds In this sys­ tem. There are only simplistic statements made, based upon the mixture of the posited planet and the lord of the particular sign. It may be that there is In fact value to sign delineations In Hindu astrology-that. for example, more leaders are born with Leo ascendants, or more spiritualists have Aquarian or Pisces mldheavens. But It should be understood by Western astrologers that this kind of delineation Is not Hindu astrology as handed down by the ancient sages or as practiced In India at the pres­ ent time.
@@ -601,119 +596,77 @@ LIBERATION.
 
      Since there Is no great body of Information which has been im­ parted regarding the effects of signs, what Is given below are simply the Hindu names of each sign, as well as their essential characteristics. These attributes are known as elements and trlplicitles, and as they are used only In scriptural delineations In a technical manner, no explanation of their meaning Is necessaiy. When studying the scriptures, these must be learned.
 
-42	SIGNS	HINDU NAME
-Aries	 Mesha	 Cardinal		Fire	 masculine Taurus	 Vrishabh	 Fixed		 Earth	 feminine Gemini	 Mtthuna	 Dual	 Air	 masculine Cancer	 Kataka	 Cardinal	 Water	 feminine Leo	 Simha	 Fixed	 Fire	 masculine Virgo	 Kanya	 Dual		 Earth	 feminine Libra	Thula	Cardinal	Air	masculine Scorpio	 Vrischik	 Fixed	 Water	 feminine Sagittarius     Dhanus      Dual     Fire     masculine Capricorn     Makara      Cardinal   Earth    feminine Aquarius      Kumbha     Fixed    Air      masculine Pisces       Meena       Dual     Water    feminine
-
-
-)('V''.;>II=$Vl&lI"""'(11
-
-
-GAINING PERSPECTIVE OF THE HINDU SYSTEM	43
-
-
-
-
-     Hindu predictive astrology Is very different from Western astrology. In order to learn this system, It Is crucial to approach the work Innocently and newly, disregarding as best as possible whatever Is known from West­ ern astrological wisdom. It Is not the difference In specific techniques which is of significance. It is that the ESSENCE of delineation is radically dissimilar. The Hindu method Is much more simple and circumscribed than Western astrology. Planets are either benefic or malefic by nature. Any planet conjunct with or aspected by a benefic flourishes. Planets aspected by malefics are destroyed. Houses are either weak or powerful. and power produces good effects while weakness destroys significations. Beneflc planets cast beneficial aspects onto houses; malefic aspects de­ stroy houses. The trlnal houses (5th and 9th) give good results, while the dusthanas, or evil. houses (6th. 8th. and 12th) cause misery. Therefore, make no mistake about It: there is no meditative blending or symbolic Imagery to be used in this system. There are only rules to be followed and accounted for. Once having learned the basic significations. there Is simply the process of considering the Innumerable Influences. some posi­ tive and some negative, and then drawing a final conclusion as to whether a signification Is more likely to flourish, wither. or function somewhere In between. Astrologers who carry detailed sign analysis or symbolic Imagery into this work will fall flat when It comes to prediction. They will also have Invented a brand new system of astrology!
-
-     Because of the preconceptions Western astrologers may have. and simply in order to gain a more clear perspective and sense of proportion regarding Hindu techniques, the reader Is requested at this point to read l or 2 pages of the section titled "Horoscopes of Famous People." This should be done, however, in a very light and easy fashion, with no inten­ tion at all to understand the details Involved, but merely to get a sense of how this ancient system of astrology works. Otherwise, when attempting to learn the various elements given in this book, there Is likely to be a difficulty in knowing which factors take precedence over others and which deserve emphasis In terms of delineation. This could especially occur because the section titled "Planets In The Houses" forms the bulk of this text and therefore may seem to be the predominant factor Involved. One might then be somewhat surprised when finally reaching the practi­ cal application section "Horoscopes of Famous People." Those astrologers familiar with horary astrology may find the work easier, since horary is also a system Im.sect upon many rules, regulations. and significations.
-
-44  However, anyone with a sincere desire to learn this system and with a moderate degree of patience will soon be making accurate predictions. And as always, experimentation and experience with the system are the best teachers.
+SIGNS	HINDU NAME
+Aries	 Mesha	 Cardinal		Fire	 masculine 
+Taurus	 Vrishabh	 Fixed		 Earth	 feminine 
+Gemini	 Mtthuna	 Dual	 Air	 masculine 
+Cancer	 Kataka	 Cardinal	 Water	 feminine 
+Leo	 Simha	 Fixed	 Fire	 masculine 
+Virgo	 Kanya	 Dual		 Earth	 feminine 
+Libra	Thula	Cardinal	Air	masculine 
+Scorpio	 Vrischik	 Fixed	 Water	 feminine 
+Sagittarius     Dhanus      Dual     Fire     masculine 
+Capricorn     Makara      Cardinal   Earth    feminine 
+Aquarius      Kumbha     Fixed    Air      masculine 
+Pisces       Meena       Dual     Water    feminine
 
 
 
 
 
+GAINING PERSPECTIVE OF THE HINDU SYSTEM	
 
 
 
 
+     Hindu predictive astrology Is very different from Western astrology. In order to learn this system, It Is crucial to approach the work Innocently and newly, disregarding as best as possible whatever Is known from Western astrological wisdom. It Is not the difference In specific techniques which is of significance. It is that the ESSENCE of delineation is radically dissimilar. The Hindu method Is much more simple and circumscribed than Western astrology. Planets are either benefic or malefic by nature. Any planet conjunct with or aspected by a benefic flourishes. Planets aspected by malefics are destroyed. Houses are either weak or powerful. and power produces good effects while weakness destroys significations. Beneflc planets cast beneficial aspects onto houses; malefic aspects de­ stroy houses. The trlnal houses (5th and 9th) give good results, while the dusthanas, or evil. houses (6th. 8th. and 12th) cause misery. Therefore, make no mistake about It: there is no meditative blending or symbolic Imagery to be used in this system. There are only rules to be followed and accounted for. Once having learned the basic significations. there Is simply the process of considering the Innumerable Influences. some posi­ tive and some negative, and then drawing a final conclusion as to whether a signification Is more likely to flourish, wither. or function somewhere In between. Astrologers who carry detailed sign analysis or symbolic Imagery into this work will fall flat when It comes to prediction. They will also have Invented a brand new system of astrology!
 
+     Because of the preconceptions Western astrologers may have. and simply in order to gain a more clear perspective and sense of proportion regarding Hindu techniques, the reader Is requested at this point to read l or 2 pages of the section titled "Horoscopes of Famous People." This should be done, however, in a very light and easy fashion, with no intention at all to understand the details Involved, but merely to get a sense of how this ancient system of astrology works. Otherwise, when attempting to learn the various elements given in this book, there Is likely to be a difficulty in knowing which factors take precedence over others and which deserve emphasis In terms of delineation. This could especially occur because the section titled "Planets In The Houses" forms the bulk of this text and therefore may seem to be the predominant factor Involved. One might then be somewhat surprised when finally reaching the practi­ cal application section "Horoscopes of Famous People." Those astrologers familiar with horary astrology may find the work easier, since horary is also a system Im.sect upon many rules, regulations. and significations.
 
-
-
-
-
-
-
+  However, anyone with a sincere desire to learn this system and with a moderate degree of patience will soon be making accurate predictions. And as always, experimentation and experience with the system are the best teachers.
 
 
 
 	
-FRIENDSHIPS uEl'WEEN PLANETS	45
-
-
+FRIENDSHIPS between PLANETS	
 
 
 
      In Hindu astrology, planets have friends, enemies, and those which are considered neutral. Generally Rahu, Venus, Saturn, & Mercury are friendly to each other, while Jupiter, the Sun, the Moon, & Mars welcome each other's presence. While Rahu ts included in the friendship scheme, Ketu is not. However, most astrologers consider Rahu's enemies to also be inimical to Ketu.
 
-     The friends, enemies, and neutrals of each planet have been given separately in the descriptions of each planet. However, below are 2 horo­ scope forms showing in which signs each planet is welcome or unwel­ come. If a planet is not posited in a parlicular sign in either char!, It is because that sign is a neutral influence to the planet. Until the knowledge of planetary friendships is second nature, these graphs should be kept in sight when delineating any horoscope.
+     The friends, enemies, and neutrals of each planet have been given separately in the descriptions of each planet. However, below are 2 horoscope forms showing in which signs each planet is welcome or unwel­ come. If a planet is not posited in a parlicular sign in either char!, It is because that sign is a neutral influence to the planet. Until the knowledge of planetary friendships is second nature, these graphs should be kept in sight when delineating any horoscope.
 
 
-     Friendships are a basic and important par! of delineation, as a planet in an enemy's house cannot be expected to produce the same effects as It will in a sign where It is welcomed as a friend. Placement in a friendly or unfriendly sign will not affect a planet with the same intensity as would an exaltation or fallen status, but the influence is not insignifi­ cant enough to be ignored. Astrological work is essentially the considera­ tion and blending of an innumerable number of factors, of which friend­ ships are a basic technique to help tip the scales in either a positive or negative direction.
+     Friendships are a basic and important par! of delineation, as a planet in an enemy's house cannot be expected to produce the same effects as It will in a sign where It is welcomed as a friend. Placement in a friendly or unfriendly sign will not affect a planet with the same intensity as would an exaltation or fallen status, but the influence is not insignificant enough to be ignored. Astrological work is essentially the considera­ tion and blending of an innumerable number of factors, of which friend­ ships are a basic technique to help tip the scales in either a positive or negative direction.
 
-What is discussed above is the issue of "permanent" or "natural"
-
-
-
-
-46 friendships. There is another matter, known as "temporary," or "acciden­ tal," friendships. which has to do with the relationship between 2 planets based upon their house placements. This is a more complicated, technical matter calculated in shad bala todetermine the strength of a planet. and ts not included in this text.
+What is discussed above is the issue of "permanent" or "natural" friendships. There is another matter, known as "temporary," or "acciden­ tal," friendships. which has to do with the relationship between 2 planets based upon their house placements. This is a more complicated, technical matter calculated in shad bala todetermine the strength of a planet. and ts not included in this text.
 
 
 
-
-
-
-
-I
+PLANETARY POWERS	
 
 
 
 
 
 
-
-
-
-
-
-
-
-PLANETARY POWERS	47
-
-
-
-
-
-Uchcha	Neecha	Moolatrtkona	Swakshetm
-(exalted)	(fallen)	( I st triangle)	(own sign)
-Sun	10" 'V'	10° :0::	00-20"	ol.	20"-30" ol_
-Mootl	03" (,.j)	03'  Iv\,	03'-30'  (<?	000_300 $
-Mars	28'	230 g;	00'-12' 'V'	12'-30' '1,/'	00'-30' Iv\,
-Mercury	15' rte	15° ){	16'-20'  rte	20'-30'rte	oo•-30• II
-Jupiter	05' $	05'	oo•-05• I	05'-30'I	00'-30'  ){
-Saturn	20° :0::	20' '1,/'	00°-20° =	20°-30°=	00'-30'
-Rahu	II rte	fnconcluslve	inconclusive	inconclusive Ketu	 II rte	 inconclusive	 inconclusive	inconclusive
 NOTE-Planets in degrees preceding their deepest point of exaltation or fall are still of the described condition but less Intensely so. Planets following the most extreme point are tech• nically no longer of the specified state and gtve nowhere near such exceptional effects.
 
-     Planetruy powers are an extremely basic and important part of Hindu astrology and must be memorized. Until this is done, the table above should be kept in sight when analyzing any horoscope. What is revealed ls in what sign each planet functions in an extraordinary fashion. Naturally, a planet posited in the sign it owns will operate smoothly and powerfully and give very good results. However, the best effects are manifested when a planet is found in its exaltation sign, for thisis its absolute, best placement. In this event. the significations of the planet, as well as the houses it rules, greatly flourish.
+     Planetry powers are an extremely basic and important part of Hindu astrology and must be memorized. Until this is done, the table above should be kept in sight when analyzing any horoscope. What is revealed ls in what sign each planet functions in an extraordinary fashion. Naturally, a planet posited in the sign it owns will operate smoothly and powerfully and give very good results. However, the best effects are manifested when a planet is found in its exaltation sign, for thisis its absolute, best placement. In this event. the significations of the planet, as well as the houses it rules, greatly flourish.
 
      The worst condition of a planet occurs when it occupies its fallen sign. This is the sign exactly opposite the place where the planet would be exalted. A planet in the fallen state is terribly weakened and afflicted and produces only misery unless otherwise very well aspected.
 
      The next situation to be considered is called moolatrikona, or Ist triangle, which has no parallel in Western astrology. The moolatrikona is generally a portion of a planet's own sign which has been found to be the segment where the planet functions best. For example, Venus rules both Libra and Taurus, and it has ·been determined that. of the two signs, Venus gives best effects in the Ist 20 degrees of Libra A planet in its moolatrikona sign gives results in between its swakshetra and exaltation.
 
-     While Western astrology employs planetruy powers, or dignities, in much the same way as Hindu astrology, there are certain differences
+     While Western astrology employs planetery powers, or dignities, in much the same way as Hindu astrology, there are certain differences 	other than what has been m loned regarding moolatrikonas. First of all, there are no "detriments" In the Hindu system. Detriments are a negative condition In Western astrology which occur when a planet Is In the sign opposite the sign It rules. However. this state does not exist In Hindu astrology. and Western astrologers are cautioned against assuming negative effects when noticing such a condition. It must also be noted that in Hindu astrology Mercury is exalted in Virgo, not Aquarius. Finally, and this is a most lmporlant point, the Hindus have narrowed down the exalted and fallen placements of a planet to a particular degree. It cannot be overemphasized that these extreme points are amazingly intense In their effects. For example. If Saturn. which is exalted In Libra, Is In 5 degrees of that sign, then It will give excellent results. But If It Is In 20 degrees, which is its deepest exaltation, then the results will be phenomenal! The same delineations exist, of course, for fallen placements. It Is also lmporlant to remember that, as the scriptures have stated, when a planet has passed its deepest degree of exaltation or fall. it is no longer of that specified status. For example. Saturn in 25 degrees Is no longer con­ sidered exalted. though It still may give relatively good results.
 
-48	other than what has been m loned regarding moolatrtkonas. First of all, there are no "detriments" In the Hindu system. Detriments are a nega­ tive condition In Western astrology which occur when a planet Is In the sign opposite the sign It rules. However. this state does not exist In Hindu astrology. and Western astrologers are cautioned against assuming nega­ tive effects when noticing such a condition. It must also be noted that in Hindu astrology Mercury is exalted in Virgo, not Aquarius. Finally, and this is a most lmporlant point, the Hindus have narrowed down the exalted and fallen placements of a planet to a particular degree. It cannot be overemphasized that these extreme points are amazingly intense In their effects. For example. If Saturn. which is exalted In Libra, Is In 5 degrees of that sign, then It will give excellent results. But If It Is In 20 degrees, which is its deepest exaltation, then the results will be phenom­ enal! The same delineations exist, of course, for fallen placements. It Is also lmporlant to remember that, as the scriptures have stated, when a planet has passed its deepest degree of exaltation or fall. it is no longer of that specified status. For example. Saturn in 25 degrees Is no longer con­ sidered exalted. though It still may give relatively good results.
-
-     Regarding Rahu and Ketu, nearly every ancient sage has given out differing opinions on the exaltations and ownership signs. Most practic­ ing Indian astrologers, however, consider both Rahuand Ketu tofunction best In Mercury's signs. The reason for this is logical. Because Rahu and Ketu are the head and body of a demon, they benefit tremendously from the Intellectual influence of Mercury. In the birthcharts of extremely sptrltual or Intuitive individuals, it is typical to find Ketu (planet of enlightenment and discrimination) either In Gemini or Virgo, or conjunct with Mercury. Modem astrologers have concluded that both Rahu and Ketuare EXALTED In Virgo, and In their OWN SIGNS In Gemini. It should NOT be deduced, however, that they are fallen In the opposite signs (Sagittarius and Pisces).
+     Regarding Rahu and Ketu, nearly every ancient sage has given out differing opinions on the exaltations and ownership signs. Most practic­ ing Indian astrologers, however, consider both Rahu and Ketu tofunction best In Mercury's signs. The reason for this is logical. Because Rahu and Ketu are the head and body of a demon, they benefit tremendously from the Intellectual influence of Mercury. In the birth-charts of extremely sptrltual or Intuitive individuals, it is typical to find Ketu (planet of enlightenment and discrimination) either In Gemini or Virgo, or conjunct with Mercury. Modem astrologers have concluded that both Rahu and Ketuare EXALTED In Virgo, and In their OWN SIGNS In Gemini. It should NOT be deduced, however, that they are fallen In the opposite signs (Sagittarius and Pisces).
 
      Planetary powers are an essential of this system and a simple way for the beginning astrologer to see the accuracy and consistency of Hindu astrology. Even without an awareness of aspects, rulershlps, and other subtleties. there will be predictable results a good percentage of the time simply by relying on these sign placements.
-fJ
 
 
 
-HOUSE RULERSHIPS	49
+HOUSE RULERSHIPS
 
 
 
@@ -722,43 +675,31 @@ HOUSE RULERSHIPS	49
 
      Below is a horoscope showing the lord of each sign. This must be memorized. The outer planets Uranus, Neptune, and Pluto were not used in ancient times and are still unnecessary In so far as making accurate predictions. which Is the essence of Hindu astrology.
 
-)(
-2i'Y
-cf"'?'II=
-Tl$
-))V!
-Tlol
-0I
-2iM,,
-o'""
-'?Ill
-     Regarding rulerships, every planet carries with It. over and above its essential nature, a beneflc or malefic Influence because of the house It rules. For example. the trtkonas, or trlnal houses 5 & 9, are the best houses In a horoscope, and therefore whichever planet rules either one of these takes on a very positive energy and greatly benefits whichever house it occupies. It Is then called a yogakaraka. or union maker, or functional benefic. In certain horoscopes, depending upon the ascending sign, a planet will rule 2 auspicious houses. Then It becomes a raja yogakaraka. or royal union maker. giving the finest results possible. For example,
 
-
-
-50  Saturn, in a Taurus ascendant horoscope, rules the 9th and 10th, both excellent houses, and thus Saturn becomes a raja yogakaraka. Not all horoscopes have such a planet, but no matter what the ascendant, there will always be certain yogakarakas. There will also be functional malefics, which are benefics that take on malefic status because they rule bad houses. And there will, of course, be those that are neutral or unaffected in either direction by the houses they own. Below is a table indicating the good and bad planets for each ascendant. Any planet considered neutral is omitted from the graph but should be kept in mind as such. The planet in the 1st column is the best planet for the ascendant, then follows other beneficial planets, and then the bad planets or functional malefics. The table is based on numerous and rather complicated scriptural rules, which would be difficult to Uy to memorize. The sages have taken into consideration the fact that a planet may be carrying.negative energy from one house it rules and a positive influence from another. Conclusions have been made accordingly as to which influence outweighs the other.
-
-
+     Regarding rulerships, every planet carries with It. over and above its essential nature, a beneflc or malefic Influence because of the house It rules. For example. the trikonas, or trlnal houses 5 & 9, are the best houses In a horoscope, and therefore whichever planet rules either one of these takes on a very positive energy and greatly benefits whichever house it occupies. It Is then called a yogakaraka. or union maker, or functional benefic. In certain horoscopes, depending upon the ascending sign, a planet will rule 2 auspicious houses. Then It becomes a raja yogakaraka. or royal union maker. giving the finest results possible. For example, Saturn, in a Taurus ascendant horoscope, rules the 9th and 10th, both excellent houses, and thus Saturn becomes a raja yogakaraka. Not all horoscopes have such a planet, but no matter what the ascendant, there will always be certain yogakarakas. There will also be functional malefics, which are benefics that take on malefic status because they rule bad houses. And there will, of course, be those that are neutral or unaffected in either direction by the houses they own. Below is a table indicating the good and bad planets for each ascendant. Any planet considered neutral is omitted from the graph but should be kept in mind as such. The planet in the 1st column is the best planet for the ascendant, then follows other beneficial planets, and then the bad planets or functional malefics. The table is based on numerous and rather complicated scriptural rules, which would be difficult to Uy to memorize. The sages have taken into consideration the fact that a planet may be carrying.negative energy from one house it rules and a positive influence from another. Conclusions have been made accordingly as to which influence outweighs the other.
 
      NOTE-A word of caution. The rules which have gone into the preparation for this table are given separately later on. It will be seen that the sages have assigned the rulers of the 2nd. 8th. and 12th houses as neutral. It is unknown why they have done so since all throughout the astrological works they condemn the 8th and 12th lords as causing nothing but destruction. So although the graph Is othelwise extremely helpful, one must know that the ruler ofany dusthana house will cany the most malefic energy.
 
-	
 
-     House rulerships are so crucial that this graph must be kept in sight when analyzing any horoscope. A good deal of experience is neces­ sary to understand the practical effects of rulerships in terms of their functional benefic or malefic influence. The essential nature of a planet
-
-does not change just because it carries positive or negative energy by its    51
-lordship status. For example, Saturn, as raja yogakaraka of Taurus
-ascendant, when placed in the 5th house (offspring), still will not give more than a very few children. But those which are born will be decidedly special or powerful. Likewise, Mars, the best planet for a Leo ascendant when placed in the 7th house, will still greatly disturb the married life, but the spouse will be prosperous, special, or famous. On the other hand, natural benefic planets, such as the waxing Moon, Venus, and Jupiter, will always give good results, but when they own bad houses they will not be as beneficial and will ultimately give certain negative effects also.
+     House rulerships are so crucial that this graph must be kept in sight when analyzing any horoscope. A good deal of experience is neces­ sary to understand the practical effects of rulerships in terms of their functional benefic or malefic influence. The essential nature of a planet does not change just because it carries positive or negative energy by its lordship status. For example, Saturn, as raja yogakaraka of Taurus ascendant, when placed in the 5th house (offspring), still will not give more than a very few children. But those which are born will be decidedly special or powerful. Likewise, Mars, the best planet for a Leo ascendant when placed in the 7th house, will still greatly disturb the married life, but the spouse will be prosperous, special, or famous. On the other hand, natural benefic planets, such as the waxing Moon, Venus, and Jupiter, will always give good results, but when they own bad houses they will not be as beneficial and will ultimately give certain negative effects also.
 
 RAJA YOGA.KARAKAS
 
-     A rajayoga, or royal union occurs when the lords of 2 auspicious houses join together In one house. This produces a very fortunate effect on the significations governed by the house they are posited in, even though the planets themselves may be malefics by nature. For certain horoscopes the union may occur naturally due to one planet ruling 2 for­ tunate houses. But this is rare and only happens for Taurus, Cancer, and Libra ascendants.
+     A rajayoga, or royal union occurs when the lords of 2 auspicious houses join together In one house. This produces a very fortunate effect on the significations governed by the house they are posited in, even though the planets themselves may be malefics by nature. For certain horoscopes the union may occur naturally due to one planet ruling 2 fortunate houses. But this is rare and only happens for Taurus, Cancer, and Libra ascendants.
 
 Ascendant
+
 ARIES-the Sun and Jupiter, when joined together, cause rajayoga.
 TAURUS-Saturn, which rules houses 9 and 10, alone causes rajayoga.
-GEMINI-Venus and Mercury, when joined together, cause rajayoga. CANCER-Mars, which rules houses 5 and 10, alone causes rajayoga. LEO-Jupiter and Mars, when joined together, cause rajayoga.
-VIRGO-Venus and Mercury, when joined together, cause rajayoga. LIBRA-Saturn, which rules houses 4 and 5, alone causes, rajayoga. SCORPIO-The Sun and Moon, when joined together cause, rajayoga. SAGITTARIUS-Mars and Jupiter, when joined together, cause rajayoga. CAPRICORN-Venus and Mercury, when joined together, cause rajayoga. AQUARIUS-Venus and Mars, when joined together, cause rajayoga.
+GEMINI-Venus and Mercury, when joined together, cause rajayoga. 
+CANCER-Mars, which rules houses 5 and 10, alone causes rajayoga. 
+LEO-Jupiter and Mars, when joined together, cause rajayoga.
+VIRGO-Venus and Mercury, when joined together, cause rajayoga. 
+LIBRA-Saturn, which rules houses 4 and 5, alone causes, rajayoga. 
+SCORPIO-The Sun and Moon, when joined together cause, rajayoga. 
+SAGITTARIUS-Mars and Jupiter, when joined together, cause rajayoga. 
+CAPRICORN-Venus and Mercury, when joined together, cause rajayoga. 
+AQUARIUS-Venus and Mars, when joined together, cause rajayoga.
 PISCES-Mars and the Moon, or Mars and Jupiter when joined together cause rajayoga.
 
 SOME RULES WHICH FORM THE RULERSHIP TABLE GIVEN ON
@@ -769,10 +710,8 @@ KENDRAS (angular houses)-!st,4th, 7th, & 10th
 • Benefics which rule kendras take on negative energy and the ability to do harm.
 • Malefics which rule kendras take on positive energy and the ability to do good.
 • Lords of kendras are powerful. Of them, the lord of the 1st is weakest. the lord of the 4th stronger, the lord of the 7th stronger still, and the ruler of the 10th strongest.
+• Planets In kendras are powerful, and they are prominent Influences In a person's life.
 
-
-
-52	• Planets In kendras are powerful, and they are prominent Influences In a person's life.
 TRIKONAS (trlnal houses)-5th & 9th
 
 • Any planet ruling a trtkona Is auspicious and carries the most positive energy with It.
@@ -780,39 +719,36 @@ TRIKONAS (trlnal houses)-5th & 9th
 • Planets posited In a trtkona house flourish, as do the houses they rule.
 • The Lord of the 5th Is not quite as powerful as the lord of the 9th.
 
-NOfE-Some astrologers consider the ruler of the 1st as a trtkona and a kendra lord.
-UPACHAYAS-3rd,6th, 10th & 11th
+NOtE-Some astrologers consider the ruler of the 1st as a trikona and a kendra lord.
 
-NOTE-the 10th house is an upachaya house in terms of its nature and behavior, but for lordship purposes 1t is considered a kendm.
+UPACHAYAS - 3rd,6th, 10th & 11th
+
+NOTE - the 10th house is an upachaya house in terms of its nature and behavior, but for lordship purposes 1t is considered a kendra
 
 • Upachayas are growing houses where planets gain In strength through­ out a person's life, and conditions Indicated by the house can Improve In time with effort.
-
 • Any planet ruling an upachaya house takes on negative energy, though not of an Intense nature, and may cause slight harm.
 • Maleflcs In upachayas give excellent results.
 • Beneflcs In upachayas give good but not great results and are not par- ticularly enhanced or benefited by the house energy.
-• Of the upachayas, the 3rd Is the weakest and the 11th the strongest. NEUTRAL HOUSES-the lords of the 2nd, 8th, & 12th
-• Are said to give good results If they are conjunct with a beneflc planet. On practice, Indian astrologers do not follow this advice except per­ haps for the lord of the 2nd. Practically speaking, the 8th and the 12th destroy all of their associations.)
+• Of the upachayas, the 3rd Is the weakest and the 11th the strongest. 
 
-• Planets posited In the 2nd house are not greatly Influenced one way or the other, unless by asp•ect or sign placement.
-DUSTHANAS (evil houses)- th, 8th, & 12th
+NEUTRAL HOUSES - the lords of the 2nd, 8th, & 12th
+• Are said to give good results If they are conjunct with a beneflc planet. On practice, Indian astrologers do not follow this advice except perhaps for the lord of the 2nd. Practically speaking, the 8th and the 12th destroy all of their associations.)
+• Planets posited In the 2nd house are not greatly Influenced one way or the other, unless by aspeect or sign placement.
+
+DUSTHANAS (evil houses)- 6th, 8th, & 12th
 
 • Any planet ruling a dusthana carries negative energy with It and causes destruction where It Is posited.
 • Any planet posited In a dusthana Is ruined, as are the houses It rules.
 • The 6th house and Its ruler are the least malefic of the dusthanas, especially since the 6th Is a growing house where conditions may Improve.
 
-MARAKAS (Death-inflicting planets)-the rulers of the  2nd  and  7th	53
-houses.
+MARAKAS (Death-inflicting planets)-the rulers of the  2nd  and  7th	houses.
 
-• The houses of life are the 8th and the 3rd (the 3rd being the 8th from the 8th). The 12th house Is known as the house of loss. The 12th from the 8th house Is the 7th: therefore the 7th takes on an evil influence to life. The 12th from the 3rd Is the 2nd, and It also becomes destructive. This matter Is an extreme subtlety, and con­ cern over marakas should be delayed until the astrologer is highly
-I	experienced In Hindu astrology. The most obvious effect occurs when both marakas are posited in the same house. In such a case there may be an evil effect which is otherwise astrologically undetec­ table. Most astrologers use the marakas to determine the time of death, because many people die in a period or sub-period of a mar­ aka. However, this is a very complicated matter, and there must be other strong afflictions to the planet in question for a death to occur.
+• The houses of life are the 8th and the 3rd (the 3rd being the 8th from the 8th). The 12th house Is known as the house of loss. The 12th from the 8th house Is the 7th: therefore the 7th takes on an evil influence to life. The 12th from the 3rd Is the 2nd, and It also becomes destructive. This matter Is an extreme subtlety, and con­ cern over marakas should be delayed until the astrologer is highly experienced In Hindu astrology. The most obvious effect occurs when both marakas are posited in the same house. In such a case there may be an evil effect which is otherwise astrologically undetec­ table. Most astrologers use the marakas to determine the time of death, because many people die in a period or sub-period of a mar­ aka. However, this is a very complicated matter, and there must be other strong afflictions to the planet in question for a death to occur.
 
-      NOTE-While no scriptures distinguish which carries more power to affect a house, occupying planets or house rulers, the author's expe­ rience is that the house ruler is slightly (perhaps 5-10%) more important. This is because the house ruler relates to the STRUCTURE of the house. An analogy which might illumine the point is to imagine of what use beautiful furniture would be In a house with a corroded foundation. Some good effects would certainly be enjoyed but ultimately there would always be problems.
+      NOTE - While no scriptures distinguish which carries more power to affect a house, occupying planets or house rulers, the author's experience is that the house ruler is slightly (perhaps 5-10%) more important. This is because the house ruler relates to the STRUCTURE of the house. An analogy which might illumine the point is to imagine of what use beautiful furniture would be In a house with a corroded foundation. Some good effects would certainly be enjoyed but ultimately there would always be problems.
 
 
-
-DRISHTIS-PLANETARYASPECTS	55
-
-
+DRISHTIS-PLANETARYASPECTS
 
 
 • All planets aspect the 7th house from themselves.
@@ -823,122 +759,61 @@ DRISHTIS-PLANETARYASPECTS	55
      Planets In the horoscope affect not only the houses they occupy but also other houses and planets they cast their glance upon. These glances are called aspects, except when refening to the relationship between 2 planets posited In the saroe sign. That Is called a conjunction and works In basically the saroe way as an aspect. The effect of an aspect depends mainly on the planet casting the glance. Malefic planets throw destructive aspects. They also harm any planet they are conjoined with. Benefic planets throw beneficial aspects and enhance any planet they conjunct. It Is also necessary to consider the characteristics of the planets Involved. For example, a Saturn aspect, aside from the harm It causes, will bestow an ascetic or restrictive energy onto any planet or house It glances on. Jupiter, apart from the benevolence It gives, brings a spiritual or religious vibration to Its associations. The rulershlp status of aspecting planets Is also crucial. For Instance, the ruler of the 9th house as the aspecting planet grants extremely positive energy, as well a spiritual vibration, Aspects received from the 8th or 12th house Lords cause destruction, loss, and misery. In this manner, based upon the qualities and rulershlps of a planet, aspects should be understood. Though seemingly complicated, these matters are easily grasped when reading the practical section "Hor­ oscopes of Famous People" given later In this book.
      Aspects are of major Importance and must never be Ignored. One of the easiest ways to see how powerful aspects can be Is to note the effect 3 or 4 planets posited In one house will have on the opposite house. This Is because all planets aspect the 7th from themselves. For example, If there are 4 planets In the 9th house, the person will have highly significant experiences of 3rd house matters, e.g., brothers and sisters, the fine arts, etc. Whether these experiences are good or bad depends, of course, on the nature of the aspectlng planets. But In any event, the house itself would be highly energized.
 
-     There are fundamental differences between Hindu and Western astrology In the matter of aspects. First of all, In Hindu astrology planets aspect houses as well as other planets, whereas In the Western system
-
-56   they are powerless to aspect houses. Also, In Hindu astrology aspects are cast from sign to sign rather than from a particular degree. There Is no such thing as what Is called an orb of Influence, which In Western astrol­ ogy means the 8 or 10 degrees (generally) that a planet's aspect may have an effect. In Hindu astrology a planet In 2 degrees or 28 degrees will aspect the entire 30 degrees of a sign It Is designated to aspect. Likewise, a planet In one sign Is conjunct with any planet In that same sign regard­ less of the degree. Naturally, the closer the the aspect Is, the greater Is the Influence experienced, but even aspects not within a tight orb will pro­ duce a recognizable effect.
+     There are fundamental differences between Hindu and Western astrology In the matter of aspects. First of all, In Hindu astrology planets aspect houses as well as other planets, whereas In the Western system   they are powerless to aspect houses. Also, In Hindu astrology aspects are cast from sign to sign rather than from a particular degree. There Is no such thing as what Is called an orb of Influence, which In Western astrol­ ogy means the 8 or 10 degrees (generally) that a planet's aspect may have an effect. In Hindu astrology a planet In 2 degrees or 28 degrees will aspect the entire 30 degrees of a sign It Is designated to aspect. Likewise, a planet In one sign Is conjunct with any planet In that same sign regard­ less of the degree. Naturally, the closer the the aspect Is, the greater Is the Influence experienced, but even aspects not within a tight orb will pro­ duce a recognizable effect.
 
      Concerning aspects, there are a few Important points to keep In mind. Whenever a planet aspects the house It rules or the signs where It would be exalted or fallen, the results are somewhat altered. The logic Is that a planet will give special treatment to Its own house or any signs It Is compatible with. In other words, If Jupiter In a particular horoscope aspects the 4th house, which In this case, say, Is owned by Saglttartus, then It Is an even more favorable glance than the ordinary Jupiter aspect. However, this Is a subtle matter and not to be taken as an absolute, all­ encompassing rule, because the effect will also depend on the nature of the house being aspected. For example, If Mars aspects the 2nd house, which hypothetically Is owned by Scorpio, the aspect may energize the 2nd house and give good results for wealth matters. But If Mars were to aspect the 7th house even though ruled by Scorpio, married life could not possibly benefit from such a harsh energy. The Mars aspect would simply cause Its usual destruction. Also as has been mentioned, If a planet aspects the sign where It would be exalted, It gives an extra beneficial energy. In the same way, a planet aspectlng Its fallen sign can cause great harm.
 
-Below Is a horoscope demonstrating how aspects work.
 
-)('( 'V' 01 °
-66	24°r.;,n
-.,""'
-0	20°:::.:
-1i	''24°
-cf	29°V!
-1  28°yJ
-21	04°
-))	03°M,<>
-'I.J	24°Ill
-In this chart:
-• The Sun aspects the 1st house.
-• The Moon aspects the 11th.
-• Mars aspects the 3rd, 6th.& 7th.
-• 
-Mercury aspects the 12th.	57
-• Jupiter aspects the 9th, 11th, & 1st.
-• Venus aspects the 3rd.
-• Saturn aspects the 2nd, 6th, and 9th.
-• Rahu and Ketu do not throw aspects.
 
-• The Moon Is conjunct with Jupiter.
-• Mars Is conjunct with Saturn.
-• Mars aspects Ketu.
-• Mars aspects the Sun.
-!	• Mars aspects Mercury.
-• Saturn aspects Venus.
-• Saturn aspects Mercury.
-• Saturn aspects Rahu.
-• Venus Is conjunct with Rahu.
-• Venus aspects Ketu.
-• Jupiter aspects Venus.
-• Jupiter aspects Rahu.
-• Jupiter Is conjunct with the Moon.
+     There Is also a difference between Hindu and Western astrology In the way aspects work, which should be made clear below. In Hindu astrology both planets Involved in a mutual aspect (either the conjunction or the opposition) are affected, but one planet may be beneficially aspected while the other Is harmed. Note how this occurs in the sample horoscope above.
 
-     There Is also a difference between Hindu and Western astrology In the way aspects work, which should be made clear below. In Hindu astrol­ ogy both planets Involved in a mutual aspect (either the conjunction or the opposition) are affected, but one planet may be beneficially aspected while the other Is harmed. Note how this occurs in the sample horoscope above.
 
-• Mercury ls negatively aspected by Mars.
-• Mars Is beneficially aspected by Mercury.
-• Mercury ls negatively aspected by Saturn.
-• Saturn Is beneficially aspected by Mercury.
-• Rahu Is beneficially aspected by Venus.
-• Venus Is negatively aspected by Rahu.
-• Venus beneficially aspects Ketu.
-• Mars negatively aspects Saturn.
-• Saturn negatively aspects Mars.
-• Jupiter beneficially aspects the Moon.
-• The Moon's aspect on Jupiter Is not so beneficial because the Moon ls waning and ruling a bad house, the 12th.
-
-NOTE-Although there Is no mention of this matter made in the scriptures. it appears from experience that the waning Moon often casts a beneficial aspect
+NOTE - Although there Is no mention of this matter made in the scriptures. it appears from experience that the waning Moon often casts a beneficial aspect
 ASPECTS WHICH HAVE AN ALTERED EFFECT
 
-• Venus aspects Its own house, Libra (the 3rd house).
-• Saturn aspects Its fallen placement, Aries (the 10th house).
-• Saturn aspects Its own house, Capricorn (the 6th house).
 
 
 
-
-
-58	• The Sun aspects its own house, Leo (the 1st house).
-• Mars aspects its exaltation house, Capricorn (the 6th house).
-
-PARI'IAL ASPECTS
+PARTIIAL ASPECTS
 
      The aspects which have been given are "full" aspects and are a basic ingredient necessruy to correctly analyze a horoscope. They are used by all Indian astrologers. However. in the scriptural rules there are also aspects which are called 3/4 aspects, 1/2 aspects, and 1/4 aspects. These do have an effect but are insignificant enough to be disregarded by practic­ ing astrologers. For purely technical purposes and for astrologers who wish to analyze the Information, these more slight aspects are now given.
 
-• All planets aspect the 3rd and 10th houses from themselves with a 1/4
-effect.
-• All planets aspect the 5th and 9th houses from themselves with a 1/2
-effect.
-• All planets aspect the 4th and 8th houses from themselves with a 3/4
-effect.
+• All planets aspect the 3rd and 10th houses from themselves with a 1/4 effect.
+• All planets aspect the 5th and 9th houses from themselves with a 1/2 effect.
+• All planets aspect the 4th and 8th houses from themselves with a 3/4 effect.
 • Some astrological scriptures say that Rahu and Ketu aspect the fifth, seventh, and ninth houses, but not all astrologers accept the fact.
 
 EXCHANGE OF SIGNS
 
-     When 2 planets occupy each other's sign. they are In a gifted condi­ tion, whereby both planets become more powerful. The planets not only gain strength but are more able to fully express their essential natures. In Western astrology this is known as mutual reception. For example, If Saturn and the Sun are in opposition in a horoscope, the aspect may produce a spiritual or ascetic nature, and the person may be somewhat detached from ambition and worldly desires. But If the planets exchange signs, that ts. if Saturn Is In Leo-the Sun's sign-and the Sun is in Aquarius-Saturn's sign-then the aspect produces its utmost possibil­ ity. The spiritual nature of the person becomes quite extraordinary.
-•
+     When 2 planets occupy each other's sign. they are In a gifted condition, whereby both planets become more powerful. The planets not only gain strength but are more able to fully express their essential natures. In Western astrology this is known as mutual reception. For example, If Saturn and the Sun are in opposition in a horoscope, the aspect may produce a spiritual or ascetic nature, and the person may be somewhat detached from ambition and worldly desires. But If the planets exchange signs, that ts. if Saturn Is In Leo - the Sun's sign - and the Sun is in Aquarius - Saturn's sign-then the aspect produces its utmost possibility. The spiritual nature of the person becomes quite extraordinary.
 
-SHAD BALA-DETERMININGPLANETARY STRENGTHS	59
+
+SHAD BALA-DETERMININGPLANETARY STRENGTHS
 
 
 
 
      Ancient Hindu sages have given out a wealth of information con­ cerning the conditions which strengthen or weaken the planets. An exceptionally detailed computation system has been devised to delineate these strengths. The system is called shad bala. or "six strengths." The significance of shad bala Is that it reveals whether a planet will produce positive or negative effects, for power in this system enables a planet to function well and give benefits, while weakness destroys this ability. Clearly, a powerful or well-disposed malefic, such as Mars or Saturn, will give good results, while a weak or afflicted benefic causes problems and misery.
 
-     The calculations of shad bala take many hours. and although some few astrologers will take the time to do them, most do not. For there are so many basic conditions which are easily discernable that to go through the tedious process needed to ascertain the exact numelical strength of a planet seems unnecessruy. This is not to say that shad bala does not produce precise, efficient, and useful Information. It does. How­ ever, the procedure is simply too time-consuming. And in any case, good results are achieved if the essential elements of shad bala areused even without mathematical precision. In this book just the basics will be given. For those who wish to learn the calculations, there are two books which teach the method:Graha and Bhava Balas, by B.V. Raman, and Constel­ lational Astrology, by Robert De Luce.
+     The calculations of shad bala take many hours. and although some few astrologers will take the time to do them, most do not. For there are so many basic conditions which are easily discernable that to go through the tedious process needed to ascertain the exact numelical strength of a planet seems unnecessruy. This is not to say that shad bala does not produce precise, efficient, and useful Information. It does. However, the procedure is simply too time-consuming. And in any case, good results are achieved if the essential elements of shad bala are used even without mathematical precision. In this book just the basics will be given.
 
      Of the 6 sources of strength, the first 3 are easily observable, while the others are more obscure and therefore generally ignored by most astrologers.
 
-I. STHANNA BALA-POSITIONALSTRENGTH
+I. STHANNA BALA - POSITIONAL STRENGTH
 
 • Planets in exaltation signs are strongest.
 • Planets In their moolatrtkona signs are second most powerful.
 • Planets in their own signs are very strong.
 • Planets occupying houses of their fliends are strong.
-• Planets occupying their exaltation or own signs in the navamsa chali (or many of the other va,:gas) are also strong.
+• Planets occupying their exaltation or own signs in the navamsa chart (or many of the other vargas) are also strong.
 
-     Planets which occupy the same sign in the navamsa and the natal chali are also strong. This condition is called Va,:gottama, and scliptures
-
-60	declare that this condition Is almost as beneficial as a planet occupying Its own sign. This should not be applied to a fallen planet, however.
+     Planets which occupy the same sign in the navamsa and the natal chart are also strong. This condition is called Vargottama, and scriptures declare that this condition Is almost as beneficial as a planet occupying Its own sign. This should not be applied to a fallen planet, however.
 
 • Planets In their fallen signs are weakest.
 • Planets In houses owned by enemies are weakened.
 • Planets In fallen signs In the navamsa (or other vargas) are also weakened.
 
-2. DIK BALA-DIRECTIONAL STRENGTH
+2. DIK BALA - DIRECTIONAL STRENGTH
 
 •Jupiter and Mercury are most powerful In the 1st house.
 • The Sun and Mars are most powerful In the 10th house.
@@ -947,50 +822,25 @@ I. STHANNA BALA-POSITIONALSTRENGTH
 
      The planets are weakest In the houses opposite their most powerful placements. Planets In between their weakest and strongest positions receive an appropriate numerical value In the dik bala source of strength.
 
-3. DRIGBALA-ASPECT STRENGTH
+3. DRIGBALA - ASPECT STRENGTH
 
 • Planets which are aspected by beneflcs (Venus, Jupiter, Moon, Mercury) are strengthened.
-
 • Planets aspected by maleflcs are weakened. The closer the degree of aspect, the more Intense the effects.
 
-4. NAISARGIKA BALA-BRIGHTNESS STRENGTH
+4. NAISARGIKA BALA - BRIGHTNESS STRENGTH
 
-     Each planet Is assigned a natural strength based upon Its bright­ ness In the heavens. The Moon's nodes, though not visibly perceptible, are curiously the strongest.
-
-IN ORDE!xOF INCREASING STRENGTH
-
-6. CHESTA BALA-MOTIONAL STRENGTH	61
-
-     Planets traveling in slower motion at birth are strong. Therefore all planets other than the Sun and the Moon gain this source of strength when in retrograde motion. A planet moving in forward motion but slower than Its usual pace is also extremely powerful.
-
-• The Sun and Moon are strong In the signs of their northerly course, i.e.. Capricorn, Aquarius. Pisces, Aries, Taurus, and Gemini.
-t
-NOTE-Retrograde planets, though assigned chesta bala strength, are not necessarily to be
-considered powerful in horoscope delineation. Please see "Retrogrades" on page 63.
-IMPORTANT CONDITIONS NOT MENTIONED IN SHAD BALA
-
-     PLANETARY WAR-When 2 planets are conjunct within 1 degree of each other, they are said to fight a war. The winner Is the planet in the earliest longitude. For example. if Venus occupies 5° Leo 23' and Jupiter is 6° Leo 07', then Venus wins the war and its significations are strength­ ened. Jupiter and the houses It rules are weakened or spoiled. However, it Is important to note whether a planet loses a war to a benefic or malefic because when losing to a beneflc, some good results are also bound to occur. Planetary wars do not include the Sun, the Moon, Rahu. or Ketu.
-
-     COMBUSTION (ECLIPSED)-Any planet within 8 degrees of the Sun (except Rahu or Ketu) Is known to be combusted, or eclipsed. It Is thus burnt up or absorbed by the Sun's Intense rays and as such becomes powerless. Its significations, as well as the houses it rules, are spoiled.
-
-     HOUSE PLACEMENTS-Planets in trikonas (5th and 9th) are enhanced. Planets In dusthanas (6th, 8th, or 12th) are ruined. Planets In any kendra (1st. 4th. 7th, or 10th) are powerful.
-
-ASPECTS-Planets aspected by the lord of the 5th  or 9th  are
-
+     Each planet Is assigned a natural strength based upon Its brightness In the heavens. The Moon's nodes, though not visibly perceptible, are curiously the strongest.
+	 
+	 In order of increasing strength
+	 
 1. Rahu & Ketu
 2. The Sun
 3. The Moon
 4. Venus
-5. 
-Juplter
+5. Juplter
 6. Mercury
-7. Mars 8.Saturn
-
-enhanced. Planets aspected by the lord of the 6th, 8th, or 12th are harmed.
-
-PLANETARY ZONES FOR PLANETS IN ODD SIGNS (II;\/',/;!,=, /,  1
-
-
+7. Mars 
+8.Saturn
 
 5. KALA BALA-TIME STRENGTH
 
@@ -1000,24 +850,51 @@ PLANETARY ZONES FOR PLANETS IN ODD SIGNS (II;\/',/;!,=, /,  1
 • Beneflcs are strong for births during the bright phase of the Moon.
 • Maleflcs are strong for births during the dark half of the month.
 
+6. CHESTA BALA-MOTIONAL STRENGTH	
+
+     Planets traveling in slower motion at birth are strong. Therefore all planets other than the Sun and the Moon gain this source of strength when in retrograde motion. A planet moving in forward motion but slower than Its usual pace is also extremely powerful.
+
+• The Sun and Moon are strong In the signs of their northerly course, i.e.. Capricorn, Aquarius. Pisces, Aries, Taurus, and Gemini.
+
+NOTE-Retrograde planets, though assigned chesta bala strength, are not necessarily to be
+considered powerful in horoscope delineation. Please see "Retrogrades" on page 63.
+
+IMPORTANT CONDITIONS NOT MENTIONED IN SHAD BALA
+
+     PLANETARY WAR-When 2 planets are conjunct within 1 degree of each other, they are said to fight a war. The winner Is the planet in the earliest longitude. For example. if Venus occupies 5° Leo 23' and Jupiter is 6° Leo 07', then Venus wins the war and its significations are strengthened. Jupiter and the houses It rules are weakened or spoiled. However, it Is important to note whether a planet loses a war to a benefic or malefic because when losing to a beneflc, some good results are also bound to occur. Planetary wars do not include the Sun, the Moon, Rahu. or Ketu.
+
+     COMBUSTION (ECLIPSED)-Any planet within 8 degrees of the Sun (except Rahu or Ketu) Is known to be combusted, or eclipsed. It Is thus burnt up or absorbed by the Sun's Intense rays and as such becomes powerless. Its significations, as well as the houses it rules, are spoiled.
+
+     HOUSE PLACEMENTS - Planets in trikonas (5th and 9th) are enhanced. Planets In dusthanas (6th, 8th, or 12th) are ruined. Planets In any kendra (1st. 4th. 7th, or 10th) are powerful.
+
+ASPECTS-Planets aspected by the lord of the 5th  or 9th  are enhanced. Planets aspected by the lord of the 6th, 8th, or 12th are harmed.
+
+PLANETARY ZONES FOR PLANETS IN ODD SIGNS 
+
+
 00°-06° childhood state
 06°-12° boyhood state
-12°-18° adulthood state 18°-24° old age state 24°-30° death state
+12°-18° adulthood state 
+18°-24° old age state 
+24°-30° death state
 
-For planets In even signs. the reverse Is the case.	•
+For planets In even signs. the reverse Is the case.	
 
 
 
 
-62		Planets In the first or last few degrees of a sign are especially weak. Those which occupy the very first or last degree are usually totally devas­ tated and cannot even slightly benefit the houses they rule.
+		Planets In the first or last few degrees of a sign are especially weak. Those which occupy the very first or last degree are usually totally devas­ tated and cannot even slightly benefit the houses they rule.
 
       BHEETA (ACCELERATION)-Any planet traveling at a more rapid speed than Its usual pace (durtng one·s birth) ls weakened.
 
      STATIONARY DIRECT-Planets in this state are extraord!nartly powerful. This condition ls noted !n the ephemeris by the letter D.
 
-     HEMMED IN-If a planet ls flanked on both sides exclusively by beneflcs or maleflcs. it ls said to be hemmed !n. Either It will be benefited or harmed. depending on the nature of the planets involved. This condi­ tion exists even if one or both of the flanking planets are in a directly preceding or following house. However. it does not exist !f planets of the opposite nature are also in the way or aspect!ng the considered planet. It ls especially devastating if the Moon ls hemmed in by maleflcs. This ls known as papakartharL
-     EXCHANGE OF SIGNS-This occurs when 2 planets are posited in each others signs. For example. if Jupiter occupies Cancer and the Moon ls in Pisces, then both planets become more powerful unless they are rul­ ing bad houses. To understand the effect of this condition. it ls necessary to consider the nature of the planets involved. The most s!gnlflcant result of this condition occurs when a dasa bhukti of both planets comes to pass.
-     PLANETS OPPOSITE OWN SIGNS-Planets that occupy signs op­ posite their ownership sign function poorly. For example, Since Saturn rules Capricorn and Aquartus, it is badly placed in Cancer and Leo and will cause more grtef than usual to those houses. As another example, Jupiter, which rules Sagittarius and Pisces, is bal':llyplaced in Gemini and Virgo and will not give its usual amount of abundac,ce in those signs. This rule applies to all planets and is important if one is to gain full interpretive accuracy.
+     HEMMED IN - If a planet ls flanked on both sides exclusively by beneflcs or maleflcs. it ls said to be hemmed in. Either It will be benefited or harmed. depending on the nature of the planets involved. This condition exists even if one or both of the flanking planets are in a directly preceding or following house. However, it does not exist if planets of the opposite nature are also in the way or aspecteng the considered planet. It ls especially devastating if the Moon ls hemmed in by maleflcs. This ls known as papakarthari
+	 
+	 
+     EXCHANGE OF SIGNS - This occurs when 2 planets are posited in each others signs. For example. if Jupiter occupies Cancer and the Moon ls in Pisces, then both planets become more powerful unless they are ruling bad houses. To understand the effect of this condition. it ls necessary to consider the nature of the planets involved. The most s!gnlflcant result of this condition occurs when a dasa bhukti of both planets comes to pass.
+	 
+     PLANETS OPPOSITE OWN SIGNS - Planets that occupy signs op­ posite their ownership sign function poorly. For example, Since Saturn rules Capricorn and Aquartus, it is badly placed in Cancer and Leo and will cause more grtef than usual to those houses. As another example, Jupiter, which rules Sagittarius and Pisces, is badly placed in Gemini and Virgo and will not give its usual amount of abundance in those signs. This rule applies to all planets and is important if one is to gain full interpretive accuracy.
 
 THE EFFECT OF RETROGRADE PLANETs	63
 
@@ -5120,1243 +4997,7 @@ with any of these lords.
 
 
 
-HOROSCOPES OF FAMOUS PEOPLE	245
-
-
-
-
-
-      This section on horoscopes of famous people Is considered the most Important chapter because It applies all the principles In this book. It should be read carefully. There Is nothing so simple as astrology when It works, and nothing so perplexing when It does not. Many of the deli­ neated conditions which follow would have been mere child's play to pre­ dict beforehand. Others are complex enough that this astrologer would likely have been left scratching his head In bewilderment, cursing the day this mystical science presented Itself. Also, although most of the delinea­ tions are simple, It should not be Ignored that this work has been done In retrospect. But the work Is In earnest. and If any indiscretions exist. It Is hoped that the author may be forgiven.
-
-     At the start of this book the prospect of analyzing celebrities' lives was by far the most exciting feature. It Is fortunate that this work was left for last, for, It was not obvious how difficult It might be to present this technical material to beginners In a way which Is not extraordinarily tedious. Reading and comprehending technical Information, such as the delineations which follow, Is a slow process for most, and It requires a good deal of patience. There will be patience only If the desire to learn Is strong. But It cannot be overstated that this section Is crucial for the astrologer who wishes to learn this system and practice It regularly. Much of the reason Hindu astrology has never taken hold In the West is that It has only been presented In books. And difficult ones at that! In this next section I have tried to present the work In the same way that my teachers did for me. Hindu astrology will not likely be learned by simply studying all the different techniques. It Is necessruy to know how to put them together. This Is the reason that the following section Is of such Impor­ tance. It Is as close as possible to having a teacher present. Therefore, after finishing this text, It will be good for those who are serious about the work to read the section over again from time to time. For there are so many variables and subtleties In Hindu astrology that It Is quite easy to forget any number of essentials without an awareness that something Is missing.
-
-     The charts which have been analyzed were chosen because they are mostly contemporary and known to all. The first 4 or 5 have been more elaborated upon, while the rest are included because they easily indicate 1 or 2 rather obvious life conditions. It Is assumed that by this time the reader has some working knowledge of the significations of the houses and
-
-
-
-
-
-246  planets. Also, it may be mentioned that relatively little emphasis has been placed on specific details gained from planets In houses. The basic mean­ ings of course are applied. but subtleties have been Ignored for purely practical reasons. Concerning the common use of Hindu terms, the reader may wish to consult the glossary rather than wading through a whole section of explanation If any terms or techniques have been forgotten.
-
-     The calculations for the horoscopes and dasa bhuktis have been taken from a computer program which lists the longitudes of the mean (approximate) nodes for Rahu and Ketu. However, In certain cases the true node would cause a planet to occupy a different house In the navamsa. Whenever this has occurred, it Is the true node which has been employed, and this Is acknowledged In the birth data. Also, a sample hor­ oscope page has been Included which contains crucial Information to be considered whenever attempting to delineate a birthchart. This should be referred to throughout the reading of the chapter.
-
-      Finally, it Is Important to know that the horoscopes presented are generally quite special, which Is of course why these people are famous. When analyzing charts on a dally basis, one may be surprised at the mediocrity of many of them. This Is especially significant when attempt­ Ing to predict the results of the dasa bhuktis, because If the planets Involved are not either Intensely well or poorly disposed, there may be little one can predict In terms of actual occurrences. If the astrologer Is to be honest, there will be many occasions when it will be necessary to Inform clients that not much of any consequence (at least In the outer world) Is likely to occur for the next few years. Regarding the other ele­ ments of prediction-transits and the maturity of planets-little mention has been made of them In this section, but they are both Important ele­ ments and not to be Ignored when practicing Hindu astrology.
-
-
-
-
-
-
-
-
-NOTE: The information on the following page must be memorized. Planets in friendly or enemy signs, the exact degrees of planetary exaltations and falls, and beneflc or malefic planets byvirtue of rulerships are of utmost importance. Until memorization is accomplished, readers should at all times keep a copy of page 247 before them when analyzing horoscopes. This point cannot be overemphasized.
-
-
-247
-
-
-
-
-
-
-VIMSOTIARI
-DASA	BHUKTl
-MO. DAY YR.	MO. DAY YR.0))cfn21Tl9'<J'?
-248
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-u9 0	21
-T1
-
-NAVAMSA
-y
-'?0
-))
-Richard M. Nixon
-01-09-1913 9:35 p.m. PST
-33°N53' l l 7°W49'True Node
-
-
-
-RICHARD NIXON	249
-
-
-
-
-
-
-
-     This horoscope Is exceptional. as the 1st. 5th and 9th houses are extremely powerful. These are all dhanna houses, and a profound destiny and life purpose are therefore Indicated. The ascendant Is well fortified. as It Is aspected by 2 benefics. Venus and Jupiter. Also. the ascendant lord (the Sun) Is In the auspicious 5th house. conjunct with Jupiter. and achieves vargottama. The 5th house is extraordinary, as the two yoga­ karakas for Leo ascendant (the Sun and Mars) are posited within thus forming the best of all conditions, the rajayoga. Also, the lord of the 5th (Jupiter) is in the 5th. The combination of such beneficial lords as the 1st, 4th, 5th. 9th, and 11th all in one house is extremely fortunate. While the 8th lord, Jupiter. is also in the 5th. it is not so harmful. since it is posited in its own sign, Sagittarius. The 9th house is remarkable. as its ruler. Mars, is in the 5th. winning the war with Mercury and conjoined within 2 degrees of Jupiter. Note that no planets occupy houses of ene­ mies except in the navamsa. Also, the results of the 16 varga charts (given on page322 ) reveal extraordinary power for nearly all 9 planets.
-
-     FAME-Aside from the rare destiny already described above. Jup­ iter and Venus both aspect the ascendant. The ascendant lord occupies the auspicious 5th house and is conjunct with Jupiter. The 10th lord (Venus) aspects the ascendant. Poorvapunya is extremely powerful. as noted by the strong 5th house. Saturn in the 10th house is excellent for career success if the rest of the horoscope is well disposed. as this one is. Saturn is also retrograde. which, since it is a malefic. makes it all the more powerful for its house placement. To add even more strength. Saturn occupies its own sign in the navamsa. Luck. which plays a signif­ icant part in one's attaining fame. is very strong. as noted by the well­ disposed Mars, ruler of the 9th house.
-
-     POWERFUL SENSE OF DESTINY-During his military years RN. proclaimed he would become President. This is due to the exceptional 5th house, which. when powerful, gives a sense of destiny due to its rulership of poorvapunya.
-     INTEREST IN POLITICS AND RULERSHIP-These tendecies are obvious, as the entire horoscope centers on the powerful 5th house. Also. there is the kingly Leo ascendant, and its ruler (Sun) in the house of politics and kingship (the 5th). conjunct with the ruler of the the 5th. Saturn in the 10th gives great ambition, leadership. and a desire to min-
-
-250	tster to the masses. The Interest and ability In politics came so early that
-R.N. became president of the student body at both of the colleges he attended.
-
-     INTELLIGENCE-R.N. graduated both of the colleges he attended at the top of his class With honors. This ts again a result of his wonderful 5th house. However, because Mercuiy, the planet of Intellectual functions, Is ruined due to losing the planetaiy war to Mars, there are "blind spots" In R.N.'s thinking. But Intelligence Is great In any case.
-
-PRACTICALI1Y, TECHNICALABILl1Y, CAREER IN LAW-Mars con­
-junct With Mercuiy In the house of poorvapunya Indicates that R.N. was born With these abilities as a result of efforts from previous lives. Jupiter In the 5th and conjunct with the ascendant lord also favors the Interest In law. Saturn In the I0th house gives seriousness and great practicality.
-
-     ABILI1Y & INTEREST IN SPORTS-This Is due to the powerful Mars and 5th house. R.N. played football In college and has continued to bowl, golf, and enjoy professional sports as a spectator.
-
-TENDENCY TO LIE OR USE FOUL LANGUAGE-Ancient Hindu
-sages have declared that Mars cortjolned With Mercuiy makes one a thief or liar. The 2nd house, which governs speech and truthfulness, Is In one way. badly marred. as Its lord, Mercuiy, loses the planetaiy war to Mars. It was In the Mercuiy period that lying caused R.N.'s undoing. Exalted Ketu In the 2nd of course strengthens 2nd house affairs but still tends to cause the use of foul language. The White House tapes proved that R.N. not only lied but also used a good deal of foul language.
-
-GOOD ORATORICAL AND DEBATING ABILl1Y-Exalted Ketu In
-2nd house gives excellent speaking ability and knowledge, both essentials for debating. R.N. won debating awards In college and defeated J.F.K. (technically) In the Presidential debates.
-
-     WEALTHY & KNOWLEDGEABLE-Ketu Is exalted In the 2nd house, thereby giving these attributes. It took some time to gain wealth, however, since Mercuiy, the ruler of the 2nd. Is so devastated. Money has also come from highly successful Investments, as a result of the powerful 5th house.
-
-      TWO BROTHERS DIE BEFORE ADULTHOOD-Mercuiy, lord of the 11th, loses the war to Mars, thus harming the eldest brother. The 3rd house Is completely unaspected, and Its ruler Venus Is closely aspected by Saturn. However, the negative effects on younger siblings are not so obvious or definite as those on the eldest sibling, especially since Mars, the karaka of brothers, ts so well disposed.
-
-     MANY ENEMIES OR JEALOUS FOES-The most personal influ­ ence, the Moon. occupies the house of enemies (the 6th). The Moon harms
-
-6th house significations by Its rulershlp of the 12th. The lord of the 6th occupies the 10th. causing career enemies. Another detrimental effect ts caused by Saturn. the ruler of the 6th, being retrograde. It is an accepted fact that R.N. had a phenomenal number of enemies and detrac­ tors (including the press), both before and after he made his great come­ back by winning the I968 Presidential election. The indications that he could overcome such great enemies come from his powerful ascendant and beneficial 9th ( the house ofluck).
-     FRIENDS CAUSE PROBLEMS-Mercuiy. lord of the 11th. loses the war to Mars. R.N. surounded himself With some of the most questionable characters in politics, from his ousted Vice President to those who planned and carried out the Watergate caper. These people were not merely subordinates (6th house) but close friends.
-     PERFECTIONISM & DETAIL ABILl1Y-The waxing Moon in the 6th and the Mars Mercuiy conjunction causes these attributes. R.N. had a reputation veiy early on as a man of"flawless efficiency.''
-ADORES MOTHER (CONSIDERS HER A SAINT)-Mars. the lord of
-the 4th. occupies the beneficial 5th house. wins the war with Mercuiy. and conjuncts Jupiter Within 2 degrees. This is an extremely fortunate con­ dition, which would also benefit his mother and give her a long life. How­ ever. because the Moon is In the evil 6th house and. though waxing, Is not veiy bright. the mother's life was difficult. Since Mars also rules the 9th house. it is evident that R.N. was born of strong parentage on both sides.
-
-     LASTING MARRIAGE-Venus in the 7th is generally quite favorable for married life. Also. both Venus and Saturn are strengthened because they exchange signs. However. married life cannot be too sweet. as Venus is closely aspected by Saturn, and Saturn. the 7th ruler, Is retrograde.
-
-      WNG	LIFE-Extremely powerful ascendant and ascendant lord. Jupiter. the lord of the 8th (longevity) Is strong, as it is In its own sign in the auspicious 5th house. Although It Is veiy close to Mars. it Is not much harmed, since together these 2 planets form a rajayoga. as they makea conjunction of the 5th and 9th lords. Rahu in the8th is a good Influence, since it ts in the sign of a benefic which in this case ts not an en my.A Jong life is relatively certain. Ayush karaka Saturn Is of little help m deli­ neation in this case, since it Is of mixed disposition. It is weak by its retrograde condition but strong by being In a friendly sign and In its
-swakshetra In the navamsa.
-     MANY MAJOR UPS & DOWNS-Saturn in any kendra. In this case In the 10th. causes this condition.
-     SEXUAL PASSIONS TONED DOWN-Although Venus In the 7th gives strong passion and sensuality. Saturn in the 10th closely aspects
-
-251 \
-
-
-
-
-
-252	Venus, the 7th, and 12th, houses. Also, ancient sages have declared that the Moon in the 6th causes one to lack sexual passion.
-
-AILMENTS INVOLVING LEGS (PHLEBJTJS)-RN. was hospitalized
-for this serious condition in the early part of Mercmy dasa. Mercuiy Is badly afflicted-in the sign of Sagittarius, which rules thighs. Mercuiy also rules the 11th house, which governs the legs.
-
-     SUCCESS IN FOREIGN AFFAIRS-The 12th house is aspected by its own ruler, the Moon. More significantly, the 12th house from the Moon is veiy powerful. Mars and Saturn also aspect the natal 12th, which energizes the house but causes problems in foreign countries, such as the occurrence in Latin America in 1958, when RN. and his wife were assailed by mobs of anti-U.S. demonstrators.
-
-WAITING FOR A SOLUTION TO WATERGATE-RN. tried to stone­
-wall the Watergate affair, to an extent because anyone with a powerful 9th house is used to excellent luck and solutions to nearly all problems.
-
-     SUPERIORITY COMPLEX-Jupiter in the house of the mind gives this effect.
-
-     INFAMOUS DOWNFALL-This cannot be seen in RN.'s natal horo­ scope without analyzing the dasas. It is true that Saturn in any kendra gives many major ups and downs; however, his phenomenal decline Is due to his entering the Mercuiy dasa. As Mercuiy is so afflicted in the 5th house, it seems that this also was a result of his poorvapunya.
-
-DASA-BHUKTI HIGHLIGHTS
-
-      MARS DASA-It Is generally quite beneficial when one ls born into a dasa of a powerful or well-disposed planet. since the early formative years have such a great bearing on the entire life. Therefore RN. was lucky to be born Into the middle of the Mars period. While Saturn Is the planet of leadership, It is Mars that gives the tendencies and abilities to rule or command others. This sort of disposition, then, was Ingrained veiy early on.
-
-      JUPITER MARS-Whenever a dasa bhukti occurs between 2 planets in close aspect. especially the conjunction or opposition, intense results are bound to occur. Mars and Jupiter are within 2 degrees of each other, and Mars is well disposed. not only because It ls conjunct with Mercuiy and Jupiter but also because it is the yogakaraka for Leo ascendant. Also since Mars and Jupiter rule the 5th and 9th houses, they form the best condition of all-the rajayoga. This dasa bhukti would not specifically portend fame, since neither planet rules the.1st or 10th houses. However. it would have to be predicted that at this time beneficial results relating
-
-to RN.'s destiny and his credit from past-life efforts would burst forth. It was during this period that RN. gained national prominence by his work on the famous un-American activities case of Alger Hiss.
-
-      SATURN DASA-As the planet of leadership, Saturn occupying the career house gave RN. his most successful and powerful years. Saturn, when unafflicted. always causes one to work diligently in one's career and reap the rewards of past efforts. It is especially beneficial in terms of form and structure. At the veiy commencement of the dasa, RN. was propelled to the Vice Presidency in which he served from 1952 to 1958. Saturn is strong because it functions veiy well in either of Venus' signs (since Libra is Its exaltation position). Saturn is also exchanging signs with Venus and occupies Its own sign in the navamsa. Finally. retrograde malefics give excellent results, especially in one of the upachaya houses where malefics are welcomed.
-
-      SATURN VENUS-At this point RN. ran for President. Saturn and Venus are both well forified, since they occupy kendras which are owned by friends. They also gain strength (especially during the specific dasa bhuktt) because they exchange signs. However, Venus, which rules the houses of career (the 10th) and efforts & desires (the 3rd), is veiy closely aspected by malefic Saturn. This aspect was effective, and the election was lost. though by an absurdly small margin.
-
-      SATURN MOON-RN. ran for governor of California and lost to Jeriy Brown by some 296,000 votes out of 6,000,000. He bitterly blamed his enemies-the press-for theloss and stated, 'You won't have Nixon to kick around anymore.'' Although Saturn and the Moon are in the auspi­ cious 5th and 9th relationship from each other. the Moon, as a dusthana lord (the 12th) posited in the 6th, caused enemies to show up.
-
-      SATURN JUPITER-Jupiter rules and occupies the house of king­ ship (politics) and poorvapunya (the 5th). It was during this period that RN. finally won the Presidency and fulfilled his long-intended destiny.
-
-      MERCURY DASA-Thebeginning of this period produced intensely mixed results. There is little doubt that Mercuiy would fall to cause great troubles due to Its planetaiy war with Mars. However. Mercuiy is also 2 degrees away from Jupiter and achieves vargottama. The outcome was that RN. was elected President by the largest landslide in U.S. histoiy up
-.to that time. However. there was also a great anti-Nixon movement work­ ing against him via college students. the intelligentsia. and the press-all Mercurial influences! And the Watergate affair was a problem practically from the first day of his second term. What enabled Watergate to bring about his ruin were two Mercurial functions: his lying and the private tape recordings of all White House conversations. Also. of course. RN.'s entire mentality was now veiy badly affected.
-
-253
-
-254		MERCURY VENUS-It was In late 1974 that R.N. resigned the Pre- sidency. Considering public opinion, It is Interesting that what seemed Inevitable took so long to finally occur. However, even though Watergate began In the very beginning of 1973, It was somewhat unlikely that he would have fallen at any point during that year because the bhuktt In effect was Ketu, which In this blrthchart Is exalted. But when the sub­ period of Venus arrived, the end was definitely near. This Is because Venus rules the 10th house (career) and Is powerfully aspected by malefic Saturn. Also, Venus Is In an enemy's sign In both the rast and navamsa charts.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-JOHN LENNON	255
-
-
-
-
-
-
-
-     This horoscope Is a good example of a man fortunate enough to make the statement 'We're more popular than Jesus." The phenomenal attention that Lennon received Is due mainly to one enormously positive influence In the 1st house. Rahu, which represents Insatiable worldly desires and benefits, Is exalted In the 1st house in both the rast and navamsa charts. It Is in the exact degree of the ascendant and just barely beginning Its forward motion some 6 hours after it had been stationary direct. Rahu dasa began In 1960 and the rtse to stardom was on!
-
-     The next most slgnlflcant Influence, which also aided In attaining such vast fame, Is the well-disposed condition of Saturn, which rules the 5th (poorvapunya) and 6th (ability to rise above competitors). At first glance Saturn may seem badly afflicted because It occupies the 8th house In the highest degree of Its neecha placement. However, It Is also retro­ grade, which greatly weakens the negative Influence. Further, It Is exalted in the navamsa, and Hindu sages are emphatic that when a planet Is fallen In the rast and exalted In the navamsa, It will produce good results. Most Importantly, Saturn has won the war with Jupiter, and this Is a condition of Immense benefit because of the beneflc nature of Jupiter. Whenever a neecha planet conjoins a beneflc, It Is the beneflc which Is spoiled, while the fallen planet flourtshes. On top of all this, Saturn Is beneficially aspected by Mercury, ruler of the 1st and 10th houses. There­ fore all 5th and 6th house significations are greatly empowered.
-
-     In terms of the 4 basic functions of human life according to Hindu philosophy, the emphasis In this horoscope Is on dharma and moksha. The powerful dharma Is seen by the many planets occupying the 1st and 5th and the beneficial disposition of the rulers of those houses. The mok­ sha Influence Is seen by the moksha lord In a moksha house (the 4th lord In the 8th), and moksha lords(the 8th and 12th) In the ascendant. Also, the placement of yogakaraka Venus In the 12th house, and other planetary Influences mentioned below under "splrttualit:y," had their Impact.
-
-     POET, WIT, & PROLIFIC SONGWRITER-Mercury In the 2nd gives these abilities because the 2nd Is the house of Imagination, speech, po­ etry, knowledge, etc. In this case, Mercury Is In a friend's house, and the Intense energy It has received from the close aspects of both Jupiter and Saturn has had a most fortunate effect. It Is also noted that the entire horoscope revolves around Intellectual tendencies. From the waxing Moon
-
-256
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-o'9 ))
-
-NAVAMSA0u
-21 Tl
-John Lennon
-10-09- I940 07:00 a.m. DST
-53°N03°W
-
-
-
-Note: There is currently disagreement regarding John Lennon's birthtime due to different accounts from Lennon's relatives. One birthtime gives Lennon a Pisces ascendant and the other gives Virgo rising. I agree with the Virgo ascendant because for me, the Virgo rising chart works, while Pisces does not. Also, the few astrologers in the business ofbirthtime rectification that I have spoken with concur with Virgo rising. (For more info. on this subject see page 343 of The Astrology of Death by Richard Houck.
-
-In the 5th (house of mind) to the Mercmy-ruled ascendants containing	257
-exalted Rahu In both the ras! and navamsa.
-
-     INTEREST IN ART-Lennon's aunt was told by the school head­ master that J.L. "must either be an artist (painting & drawing) or nothing at all." And this was what he studied In his short-lived college education. It Is the placement of the all-Important Moon In the house of art and the well-disposed 5th house which have given such Inclinations. It is also noted that Venus Is posited In the 1st house In the navamsa. Though talented, J.L. was not considered a particularly great artist. Venus, the planet of art, Is aspected by Jupiter but Is In an enemy's sign In the de­ structive 12th house.
-
-     MUSICAL CAREER-Oddly enough, It wotild have been difficult to predict that J.L.'s chosen profession would be music. The ruler of the 3rd house, Mars, Is In the 1st and conjunct with the atmakaraka Sun, so musical Interest Is somewhat Indicated. But Mars Is In an enemy's sign, conjunct with 2 malefics, and the 3rd house Is completely unaspected. So whereas art, poetiy, and writing are obvious facets of the life, music does not so powerfully present Itself except In the retrospective conclusion that the extraordinary Mercmy has given such talent. For Mercuiy does In fact relate to music and other fine arts.
-
-     LITTLE HAPPINESS FROM MOTHER-Although the Moon, as ka­ raka of the mother, Is waxing and in the beneficial 5th house, the 4th house Is devastated. The ruler of the 4th, Jupiter, Is weakened by its ret­ rograde status. It Is In the evil 8th house and aspected by Mars. Much worse, It has lost the planetary war with malefic Saturn. Mars also aspects the 4th, causing further ruin of the house. There Is some good influence, as Jupiter aspects the 4th, Its own house (Saglttartus). Due to this and the well-placed Moon, J.L did have a strong love for his mother. However. as the 4th house Is so spoiled, J.L was raised by his aunt rather than his mother. His mother lived a difficult life, was abandoned by John's father a year or two after J.L.'s birth, and died a veiy early death, never having witnessed her son's fame.
-
-     NO HAPPINESS FROM FATHER-Lennon barely knew his father, who left home when he was still a baby. The ruler of the 9th house, Venus, Is In the destructive 12th In an enemy's sign. There are no aspects to the 9th. The karaka of the father, the Sun Is In the 1st, conjunct with two malefics, Mars and RahlL Malefics, even when exalted. generally harm the planets they conjoin and In this case Rahu Is within only 5 degrees of the Sun. Theonly beneficial Influence to the signification of the father Is that Jupiter aspects Venus, the 9th ruler. When J.L. became famous and his father, who was a dishwasher, came to visit, he was rather quickly shown to the door!
-
-258	LITTLE HIGHER EDUCATION & NO DEGREE-Gaining higher
-knowledge has to do wl th the 9th house, which, as already described, Is weak. Failing to obtain a degree Is due to the badly marred 4th house. There Is definitely good Intelligence, though, as noted by the waxing Moon In the 5th, the well-disposed Saturn, ruler of the 5th, and the strong Mercury.
-
-     MARRIED LIFE & DIVORCE-J.L. was married for the 1st time In 1962, after his girlfriend Cynthia became pregnant. It Is reported that he felt marriage was the only "proper" thing to do, and this may be due to the Moon In the 5th, which makes a person virtuous, of good morals, and Intent on doing good deeds. In any event, there was a great lack of com­ patlb!l!ty, and divorce resulted In 1968. Marriage difficulties are easily seen In this horoscope, The ruler of the 7th, Jupiter, as already explained Is very badly afflicted. And either of the nodes In the 7th, In this case Ketu, causes constant Issues and upheavals In the domestic sphere. The 7th house ls aspected by two vyayas, the lords of the 8th and 12th. Venus, the karaka of the 7th, ls In the 12th In an enemy's house. Finally, Mars In the 1st ls causing Kujadosha. It ls unusual, however, that J.L. left his wife and was not the obvious "victim" of the divorce, as ls generally the case with a K,yadosha horoscope.
-
-     Choosing a spouse such as Yoko Is rather discernible, since Ketu In the 7th gives a "strange," "weird," or spiritual spouse. Also, as Jupiter, the 7th lord, conjoins Saturn, Yoko was some years older than John. And Saturn rules ascetic-type gurus and wise persons, which, If not actually the case, certainly was John's experience of Yoko. Even this marriage was not without Incident, and after John took leave of Yoko and then wanted to return, he was forced to wait unt!l Yoko felt he was "ready." Their sepa­ ration lasted a year and a half.
-
-     SPECIAL FRIENDS-The 11th house must have been well disposed for J.L. to attract such friends as the other 3 beatles. This Is noted by the 11th lord waxing Moon aspectlng Its own house from Its auspicious placement In the 5th. The fact of the 11th lord occupying the house of poorvapunya Indicates that these friends were a result of past l!fe efforts and a certainty of his destiny. Friendships, however, were not devoid of d!ff!cultles, as Saturn aspected the 11th lord, Moon, and Jupiter, the ka­ raka of the 11th, ls badly afflicted.
-
-     SPECIAL OR FAMOUS CHILDREN-The 5th house's being so en­ hanced by the occupancy of the bright Moon, along with the well disposed condition of the house ruler, Saturn, has produced children whose l!ves should be very special. John's eldest son, Jul!an (from the 1st marriage), has already gained International fame as a musician. Regarding the births of two sons, the Moon, which Is a feminine planet, often produces boys when the lord of the house Is well disposed, as this one Is. Were It
-
-not for Saturn's aspect on the 5th house Moon and the weak Jupiter	259 ( karaka of the 5th), there would have been more children. It may also be mentioned that Yoko had three miscarriages before the birth of Sean, and
-this must be due to her horoscope. The children of J.L. will also be of spiritual or ascetic disposition due to the abovementioned Saturn aspect. Finally, it is the Moon In the 5th which led John to take such a strong interest In raising his second son by becoming a "house husband" during the last 5 years of his life.
-
-RESIDENCE & SUCCESS IN FOREIGN COUNTRIES-Considered
-an unhappy fate by ancient Hindus, residence in foreign lands usually occurs as a result of an afflicted 7th house and a beneficial 12th (remote foreign lands). In this horoscope both of these conditions are In place.
-
-     SPIRITUALITY-Although Jupiter and the 9th house are both weak, there Is overall a tremendous emphasis on moksha In this chart. The 2 outer planets In Hindu astrology, Jupiter & Saturn, are conjoined with each other. They are also posited In the 8th, a moksha house, and Jupiter is therefore a lord of a moksha house (the 4th) occupying another mok­ sha house. More dramatically, the ascendant Is occupied by 3 spiritual influences: 2 moksha lords (Mars rules the 8th and the Sun rules the 12th) and exalted Rahu. It may here be mentioned that Rahu is unique in being able to represent both worldly benefits and moksha tendencies at the same time. The next powerful Influence Is Saturn's aspect on the Moon which leads to asceticism and worship of Shiva Finally, the ascen­ dant lord, Mercury, is closely aspected by the 2 spiritual planets, Jupiter and Saturn, and yogakaraka Venus is posited in the 12th, which specifi­ cally rules moksha. Also note that the Moon occupies the house of spiri­ tual techniques and the 9th house In the navamsa Is well disposed. Aside from the fact that J.L. was always Intent on self-development and higher consciousness, he spent some months In India meditating with Mahari­ shi Mahesh Yogi, founder of the Transcendental Meditation Program. He also had private audiences with Satya Sal Baba the reputed avatar In India, and AC. Bhaktivedanta Swami, founder of the Hare Krishna move­ ment. However, due to the afflicted 9th house and Jupiter, he never stayed with any one guru. During the last few years of his l!fe, J.L. practiced macrobiotics, a spiritual way of l!fe through the eating of natural foods.
-GENEROUS & INTENT ON PERFORMING GOOD DEEDS-Venus
-is the one planet considered by ancient Hindu sages to produce good results in the 12th house. It gives wealth, generosity, and the tendency to spend on good causes. Beneflcs In the 2nd. In this case Mercury, also make one charitable. And the Moon In the 5th Indicates good character, morals. and the Intention to perform good deeds. J.L. was known to be charitable and also establ!shed Apple Corp. In order to give unknown artists a chance to be heard. Despite his aggressive moodiness, rebel­ liousness, and drug abuse, an honest, charitable, and sincere person Is
-
-260	indicated by this horoscope.
-     EARLY AND VIOLENT DEATH-This occurrence is easier seen by the dasa bhukti in effect at the time of death than by the natal horo­ scope. However, as ominous as the indiq1tions of premature death are in this horoscope, it is important to acknowledge that astrology as practiced by man is not an absolute science. Therefore sometimes even classic text­ book examples, such as the one in this chart, fail to produce the expected result. Unfortunately this was not the case here, and any Hindu astrologer worth his salt would have advised J.L. to begin chanting a Jupiter mantra and to perform other religious austerities prior to (or during) the Jupiter dasa. The severely afflicted Jupiter in the house of death could not have helped but produce terrible effects in its period, especially since it has achieved death-inflicting power as a maraka (ruler of the 7th),As frighten­ ing as the possibilities were for Jupiter dasa.Jupiter bhukti it is the period of Jupiter Saturn which most blatantly spells death, and this is when the assasination took place. The tendency to attract violence is shown by the Sun Mars conjunction in the Ist (both planets ruling evil houses). However, the greatest cause was the current dasa planet occupy­ ing the 8th house and closely conjoined with the malefic Saturn, not to mention the aspect from Mars. That the ruler of the 8th, Mars, was in an enemy's house conjunct with two malefics cannot have helped matters!
-
-     PERSONALI1Y-Though personality analysis is usually better left to Western astrological techniques, there are several fascinating condi­ tions revealed in this chart. Regarding the I st house, there is a great amount of energy present. The ascendant lord, Mercuiy, is powerfully aspected in the house of money and knowledge, and thus these become enjoyable and vital facets of the life. The energizing aspects to the ascen­ dant lord also serve to enhance the ego, fame, energy, and well-being. The 3 planets in the Ist house immediately enlarge the ego and indicate one who will not go through life unnoticed. The 2 malefics Mars and Sun, because they rule the most evil houses (the 8th and 12th), ruin the self­ confidence, self-esteem, and self-love, but this would not be obvious to all, since the Sun and Mars are proud and aggressive influences. Therefore
-J.L. would act extroverted and like a class clown, etc,, but those close to him would see the tremendous sensitivity and need for acceptance, recognition, and unconditional love. It may also be mentioned that be­ cause Mars and the Sun are hot planets, there would exist an occasionally angiy disposition capable oflashing out sarcastically or in other ways.
-
-     Although it is predominantly the exalted Rahu in the 1st which has given fame, it has also produced its normal 1st house effect of a self­ centered or self-indulgent personality. Rahu in the ascendant indeed pro­ duces one who will struggle the entire life for a positive self-image. And this was the case with J.L. However, because Rahu is exalted it has given another side of the personality: almost God-like confidence, which was essential to his immense creativity.
-     
-It is important to note that while J.L. was spiritual and therefore of	261 a certain contentment, happiness would always remain a terribly difficult proposition. This is because the 4th house and Venus, which govern this
-issue, are both afflicted, the 4th more so than Venus. Mental distress is also revealed by the isolated position of the Moon combined with the Saturn aspect upon it. Also, the Moon in the house of the mind causes moodiness and a highly passionate response to one's beliefs and thoughts, both of which characterized this artist.
-
-     RESTING IN HEAVEN-Venus, the natural benefic and yogakar­ aka for Virgo ascendant posited in the 12th house and aspected by Jup­ iter, indicates that J.L. now resides in a heavenly plane of existence.
-
-     CHANDRA LAGNA-When analyzing this horoscope using the Moon's position as the !st house, the houses found to be extremely pow­ erful are the Ist, 2nd, and 9th. This has further fortified the chances of fame, luck, and wealth. Mercuiy in the 10th from the Moon strengthens the likelihood of a career centered on communications, intellectual func­ tions, and the written or spoken word, etc. The 4th house is also quite powerful and may have some bearing on the fact that J.L. owned many mansions and some Rolls Royces.
-
-
-
-
-
-
-
-
-262
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-'lj0
-NAVAMSA
-21
-11)) 01/
-John F. Kennedy
-05-29-1917 03:00 p,m, EST
-42°Nl9' 71°W06'
-Source-M, Moore
-
-
-
-JOHNF.KENNEDY  263
-
-
-
-
-
-
-     The horoscope of J,FK Is a fascinating example of a birthchart with a mixture of extreme Indications, The most Interesting and complex planet Is that ofMercmy, lord of the 1st and 10th houses, It Is marred by its placement In the evil 8th house, the aspect It receives from Saturn (a worse aspect than usual, since Mercu,:y occupies Aries, the sign where Saturn energy is most harmful-Le,, Saturn's neecha placement) and Its almost exact conjunction with malefic Mars, However, It also Is in perhaps the most powerful state possible: statlona,:y direct! The latter situation has given Intense fame and a super-charismatic personality, while the former condition Is responsible for a life of chronic and painful physical ailments and a violent early death, Regarding fame, this has not occurred solely due to Mercu,:y but also because the I0th house holds exalted Ketu. Jupiter aspects the ascendant, and there Is Immense luck, as indicated by the 9th house. Also quite significant Is the fact that exalted Rahu occu­ pies the ascendant In the navamsa.
-     ELDEST BROTHER DIES-The 11th house is ve,:y badly afflicted as It Is occupied by Saturn, which Is not welcomed In Cancer, an enemy's sign, Saturn Is also aspected by Mars, which In this case is a terrible aspect for both the house and Saturn because Mars Is aspectlng Its fallen sign, Cancer. Further, Saturn occupies an enemy's sign In the navamsa. Worse yet. the ruler of the 11th, the Moon is posited in the evil 12th house and Is fallen In the navamsa. Finally, Jupiter, the karaka of the 11th, is powerless due to Its position In the 1st degree of a sign, Its conjunction with the 12th lord Sun, and Its fallen placement In the navamsa, Joseph Kennedy, the eldest brother, died tragically In a plane crash during his milita,:y years.
-
-     COURAGE----J.F.K., honored for brave,:y In his naval career and author of Profiles In Courage, remarked to his wife that courage was the single quality he most admired. Mars Is about the most potent planet In this horoscope, for although It Is Mercu,:y which Is statlona,:y direct, it Is Mars that benefits most from the energy due to the 2 degree conjunction with the benefic. Also, Mars occupies Its own sign In both charts, Aries In the ras andScorpio In the navamsa, The 3rd house. which rules hero­ Ism and brave,:y, etc., Is greatly energized by the aspects of 4 planets, These are Jupiter, Venus, the Sun, and Mars. which beneficially aspects Its own house, Scorpio in this case, These 3rd house indications have also produced famous younger siblings and great adventures, Saturn's already
-
-264		described cruel aspect on Mars In the 8th Is a clue to the ill-fated destiny of his younger brother Bobby.	·
-
-      POLITICS, LAW, & TECHNICAL ABILI1Y-The 5th house (politics) Is receiving some powerful favorable energy, as It Is aspected by Jupiter and Its own lord, Saturn. However, Saturn as lord of 5th Is in bad condi­ tion, as already mentioned. Therefore the significations of politics (and Intelligence, for that matter) must exist elsewhere. In this case It Is the Mercury Mars conjunction of such exceptional disposition (Mars in Its own sign and Mercury stationary direct) which Is responsible for both of these noted qualities. Whenever Mercury Is aspected by the malefics Mars or Saturn, there Is a practical nature and leanings towards a career In law, engineering, or any technical field. Mercury In this chart Is aspected by both Mars and Saturn. Incidentally, It Is Interesting to note how many politicians have the Mercury Mars conjunction, which the ancient Hindu sages declared makes one a thief or liar. J.F.K. was not generally consid­ ered such, but It Is thought that his election to the Presidency was "bought," and It Is certain that his people cheated In some states when counting the ballots. It Is also Important to mention that Mars, which rules commanders, aspects the ascendant lord In the charts of nearly every modem-day U.S. President, J.F.K's being no exception.
-
-HUGE SEXUAL APPETITE AND GREAT SEXUAL PLEASURE­
-There ls one particular condition known to certain Hindu astrologers which produces an enormous sexual appetite, and that occurs whenever Venus and the Moon are conjunct, or angular, to each other (assuming there Is no Saturn aspect Interfering with either planet). In this case the 2 planets are not only angular from each other but In the exact same degree! That Mars, the planet of sexual desires and activities, Is so power­ ful ls also significant In this matter. And It Is obvious that these strong desires would not go unfulfilled, due to the vital and well-disposed 12th house. The Moon, whose house position ls always an area of great energy and Interest. In this case occupies the 12th. As the Moon Is fallen In navamsa, however, It ls not so good an Influence as It would usually be. But, the lord of the 12th, the Sun, Is In the auspicious 9th house and Is hemmed In by 2 beneflcs, one of which Is the yogakaraka for Virgo ascendant and occupies Its own sign (Venus). The Sun Is also vargottama and therefore stronger still. There can be no doubt that this Is a powerful 12th house! Much has been wrttten about J.F.K.'s escapades and alleged orgies, both before marriage and durtng his White House years. As his affair with Martlyn Monroe Is common knowledge, It cannot be denied that he was fortunate Indeed In the matter of what Hindus term "bed pleasures"!
-
-     SEXUAL ATTRACTIVENES--The8th house governs sexual strength and Is In this horoscope extremely powerful. Although It ls badly aspected by Saturn glancing on Its fallen sign Artes. Mars In Its own sign. conjunct
-
-stationary direct Mercury has greatly fortified the house. Therefore J.F.K. may perhaps be considered one of the sexiest U.S. Presidents.
-
-     MARRIAGE DIFFICULTIES-Although J.F.K. was not divorced, a very difficult married life Is certainly indicated. The 7th house ruler. Jup­ iter, Is In the powerless and fateful 1st degree and Is conjunct with the 12th lord malefic Sun. It Is also fallen In the navamsa. Venus. the karaka of the 7th, while In the beneficial 9th house and In Its own sign. Is also ( to Its detrtment) conjunct with the Sun. Even these indications are in a sense Insignificant, since Kujadosha Is revealed by Mars In the 8th house. Therefore, there may have been some truth to the rumors of Jack­ ie's desires to divorce J.F.K. before the Presidential election. In any event. married life was no state of bliss. and divorce would have been an eventu­ ality had J.F.K. lived. Since Jupiter (ruler of the 7th) dasa began in August 1961. It Is probable that marrted life became more strained than usual at that time. J.F.K. did not marry until the age of 36. and It Is said that he finally did so because It was essential for one who wanted the Presidency. It Is also alleged that he was constantly engaged In extramart­ tal affairs and spent relatively little time or Interest on his marrtage. Note that there are no aspects to the 7th house to energize It, and the ruler. Jupiter, is In the powerless 1st degree. Also, that he would get a wife who was pretty, aesthetic, or artistic Is due to the 7th ruler's conjunction (wide though It be) with Venus.
-
-     HOMES-It Is worth noting that for all his wealth and power, J.F.K. did not own his own home until he had been married for 4 years. This Is due to the weakness of Jupiter. ruler of the 4th house. Also, the karakas of the 4th are the Moon and Mercury. and the Moon occupies the 12th and Is fallen In the navamsa. Mercury Itself Is of mixed disposition.
-
-     THE INTELLECTUAL PRESIDENT-J.F.K. was a rartty amongst Presidents In that he was regarded as one of the most Intellectually oriented of them. Most, It seems, are essentially concerned with power and rulershlp. Note the Virgo ascendant with Its ruler Mercury stationary direct. Also, Virgo Is the ascendant sign In the navamsa.
-     THE INSPIRATIONAL PRESIDENT-Apart from J.F.K.'s great cha­ risma which Is a 1st house matter, he was an extremely inspirational President due to the powerful 9th house. The two beneflcs Venus and Jupiter (Venus being yogakaraka) and the atmakaraka In the 9th indi­ cate a person with a strong natural faith In God and a sense of devotion. More Importantly, these conditions reveal one who Is profoundly Involved In philosophical matters. Because of his strong philosophical base, J.F.K. was able to Inspire an entire generation of people.
-
-     LUCK & FATHER-Contemperary politicians were constantly awed by the extent of good fortune that J.F.K. enjoyed durtng his ascendancy to
-
-265
-
-266 the top. That the rich and powerful Joseph Kennedy would spare no expense to put his son In the White House Is a commonly known fact. Both of these conditions are revealed by the well-disposed 9th house and Its karakas. theSun and Jupiter. The Sun, though occupying an enem1/'s house, Is In the auspicious 9th and Is vargottama. It Is quite beneficially hemmed In by 2 beneflcs, one of them, Venus occupying Its own sign and being the yogakaraka for Virgo ascendant. The 9th house Itself holds yogakaraka Venus, Jupiter, and the Sun. Though the Sun rules the evil 12th house, the 9th Is on the whole veiy powerful, especially since Its lord, Venus, Is In Its own sign. The other 9th house karaka. Jupiter, Is for Its own significations rather weak, but Is nevertheless a good Influence for the house It occupies. These Indications also show that from the time
-J.F.K. was born his father would greatly prosper.
-
-     CHILDREN---J.F.K. fathered four children, and lost two either at birth or slightly afterwards. The ruler of the 5th, Saturn, Is badly afflicted, and Jupiter, karaka of the 5th, Is also weak. The aspect of Jupiter on the 5th, however, means that there should be some living children. According to Hindu astrological technique, at least three pregnancies would have been expected. This Is because two planets (Jupiter and Saturn) aspect the 5th house and one planet (Mars) aspects the ruler of the 5th. Saturn's aspect on the 5th, even though aspectlng Its own house (Capricorn), Is not veiy beneficial regarding children.
-
-ENERGY, LIFE, MOTNATION, & ENTHUSIASM---J.F.K. exhibited
-these qualities to an enormous degree, nearly transcending the agonizing pain he lived with daily. The public was generally unaware of the amount of time that the President spent on crutches while In the White House. In fact, years later Bobby Kennedy stated that half of his brother's days on earth were spent In Intense physical pain. The physical ailments are due to the ascendant lord's placement so close to Mars and the cruel aspect Saturn makes to Mercuiy In the sign of Aries (Saturn's neecha position). The adventurousness, energy, and great life force J.F.K. possessed are due to the phenomenally powerful Mars and 3rd & 8th houses.
-
-     ENEMIES-Aside from the Lee Harvey Oswald lone assassin theoiy, there has been much controversy and speculation that there were indeed four or five different factions out to put an end to J.F.K. In November 1963. Enemies are seen from the 6th house, whose ruler In this case Is the much afflicted Saturn, as described above. Since the 6th Is benefi­ cially aspected by the waxing Moon, enemies were not necessarily a con­ stant source of trouble, but during any Saturn dasa or bhuktL powerful and effective enemies were likely to appear. Indeed, It was during the Saturn bhukti of Jupiter dasa that J.F.K. was shot to death. The 11th house Is so marred that It appears quite possible that some of the per­ sons J.F.K. considered friends may have had a hand In his assassination. This Is because Saturn, as ruler of the 6th (enemies), occupies the 11th (friends), and because the 11th Is so terribly afflicted.
-     
-EARLY & VIOLENT DEATH-Because of the extreme and contra-	26'l dictoiy indications present, one would have been hard put to predict this occurrence beforehand with any certainty. Although the possibility of an
-early or violent end Is blatant due to the ascendant lord conjunct with Mars In the 8th and aspected cruelly by Saturn, the life houses (the 8th & 3rd) are extraordinartly powerful. Therefore, this Issue Is not at all simple In terms of natal delineation. However, the death Is more easily seen from the dasa bhukti that was In operation at the time (explained below under "Dasa Bhukti Highlights"). But before reviewing the dasas, It will be good to mention all the Influences at work regarding the length of life. On the negative side, the karaka for longevity Is Saturn, and It Is veiy weak, as already explained. Also, Saturn aspects the ascendant, which Is unfavor- able. Finally, the 8th house from the Moon Is weak. since Its ruler, Jupiter. Is In the powerless !st degree and Is fallen In the navamsa. On the posi- tive side, the 8th house In the rasi chart Is enormously powerful due to Mars occupying the house In Its own sign conjunct with the statlonaiy direct Mercuiy. Also, Jupiter aspects the ascendant. Therefore, since there Is a mixture of powerful good and evil indications regarding longevity, an absolute conclusion Is rather difficult. But through an analysis of the dasa bhukti that was running In I963. It must be concluded that the death was a logical occurrence.
-
-
-     CHANDRA LAGNA-From the Moon's position, the indications are rather similar to the rast chart. The 10th house (owned by Taurus) Is extremely powerful, as It contains Venus In Its own sign, Jupiter, and the Sun. Though the ascendant holds the Moon, which Is fallen In the navamsa. the ruler of the house, the Sun, Is In an exceptional condition, hemmed In by beneflcs. The 9th house becomes quite well disposed, as It holds the extraordinaiy Mars Mercuiy conjunction. The 8th house, how­ ever, Is weak, since Its ruler, Jupiter, occupies the powerless Ist degree and Is fallen In the navamsa.
-
-DASA BHUKTI HIGHLIGHTS
-
-      RAHU MARS-It was In this period that J.F.K. was elected Presi­ dent. Rahu Is powerful because It Is In a kendra and In a friendly sign. Much more Importantly, It Is exalted In the navamsa. In the !st house. Mars Is most probably the strongest planet In the chart for reasons already explained.
-      JUPITER JUPITER-Once Jupiter dasa began, a veiy bad period had to be expected due to Jupiter occupying the powerless and fateful !st degree, and due also to Its fallen position In the navamsa. Jupiter Is further marred by Its conjunction with the I 2th lord Sun. That Jupiter dasa held the possibility of death Is due to Its status as a maraka. since
-
-268  It rules the 7th house. There Is another Interesting condition which may be contemplated. That Is that In the other, more modern, house system (see "House Systems," page 7), Jupiter occupies the 8th house rather than the 9th. In such a case, Jupiter gains even more death-inflicting power. Regarding the fact that Jupiter Is 3 to 5 degrees away from the malefic Mars Mercury conjunction, Hindu astrologers would not consider Jupiter to be affected, since It Is In a different sign. In any case, dasas do not usually give their full effects In the first bhuktl and this one did not. Therefore J.F.K. was not killed In this period, but there Is to be no doubt that great problems presented themselves. It was during this period that
-J.F.K. faced the Cuban missile crisis, which placed the U.S. on the brink of war with the Russians.
-
-     JUPITER SATURN-It was In this period that the violent assassina­ tion occurred. As already described above, Jupiter was In a very weak and afflicted condition. During the bhukti of Saturn, things could not possibly get better. This Is because Saturn periods would always bring enemies to the forefront. since Saturn rules the 6th house and Is quite marred. It Is also Important to note that whenever there Is a probability of death, it is most common for It to occur In the period or subperiod of a malefic (such as Saturn).
-
-
-
-
-
-
-
-
-
-
-MARILYN MONROE	269
-
-
-
-
-
-
-
-     SEXUAL ATTRACTIVENESS-The two yogakarakas for Cancer ascendant, Mars and Jupiter, both occupy the 8th house. which governs sexual strength. This is an extremely significant benefit to the house because, although Mars alone causes rajayoga by its rulership of the 5th and 10th houses, there Is another rajayoga present. Jupiter rules the 9th house, and whenever the rulers of the 9th and 10th join together a special union Is created. Also, Mars Is In Aquarius, where It functions very well, since it is exalted in Capricorn, Saturn·s other sign. The ruler of the 8th Saturn, though retrograde and in a very late degree, is In Its exalta­ tion sign (past the highest exaltation point). It is also aspected by 2 bene­ fics, Venus and Jupiter. The house Is therefore extraordinarily powerful and gives great sensuality and sexiness. Further, there is extreme femi­ ninity, passion, and beauty, caused by the Moon in the 7th (described below under "Great Physical Beauty").
-
-     GREAT PHYSICAL BEAUIY-The Moon In the 7th, even when wan­ ing, produces an extremely attractive and magnetic person because of the Moon's aspect on the 1st house. In this case, the aspect is much more fruitful, because the ascendant Is Cancer and Is therefore aspected by its own lord. Also, although the Moon In the 7th gives attractiveness to either a man or a woman, it is a better Influence for a woman because of the femininity and softness it creates.
-
-     SEXUAL ENJOYMENT-An exalted planet. Rahu, occupies the 12th house (bed pleasures). Also, Venus Is In a kendra from the Moon (the square aspect In Western astrology), which indicates a strong sexual appetite. Therefore sexual pleasures were greatly enjoyed.
-
-     SHOW BUSINESS CAREER-The show business career Is indi­ cated by Venus in the 10th, though not merely because this is the career house, but because Venus Itself Is quite powerful by Its angular position and Its placement in its own sign In the navamsa. Also (and this may seem odd to Western astrologers), when Saturn aspects Venus there Is a high chance that the person will perform In the theater. More strangely, the same occurs when Saturn is in the house preceding Venus, i.e., when Saturn Is In the 12th from Venus. In any case, M.M.'s great success and fame Is due to a benefic In the 10th (Venus), which Is In Its own sign in the navamsa, and to the 10th lord conjoining Jupiter. Regarding talent In fine arts, the indications are not exceptional, since the 3rd house Is
-
-
-
-
-
-
-
-268  it rules the 7th house. There ls another Interesting condition which may be contemplated. That Is that In the other, more modern, house system (see "House Systems," page 7), Jupiter occupies the 8th house rather than the 9th. In such a case, Jupiter gains even more death-Inflicting power. Regarding the fact that Jupiter Is 3 to 5 degrees away from the malefic Mars Mercury conjunction, Hindu astrologers would not consider Jupiter to be affected, since It Is In a different sign. In any case, dasas do not usually give their full effects in the first bhuktt and this one did not. Therefore J.F.K. was not k!lled in this period, but there ls to be no doubt that great problems presented themselves. It was during this period that
-J.F.K. faced the Cuban m!ss!le crisis, which placed the U.S. on the brink of war with the Russians.
-
-      JUPITER SATURN-It was !n this period that the violent assassina­ tion occurred. As already described above, Jupiter was in a very weak and afflicted condition. During the bhukti of Saturn, things could not possibly get better. This ls because Saturn periods would always bring enemies to the forefront. since Saturn rules the 6th house and Is quite marred. It Is also Important to note that whenever there ls a probabll!ty of death, It Is most common for it to occur In the period or subperiod of a malefic (such as Saturn).
-
-
-
-
-
-
-
-
-
-MARILYN MONROE	269
-
-
-
-
-
-
-
-     SEXUAL ATTRACTIVENESS-The two yogakarakas for Cancer ascendant, Mars and Jupiter, both occupy the 8th house, which governs sexual strength. This ls an extremely significant benefit to the house because, although Mars alone causes rajayoga by its rulership of the 5th and 10th houses, there Is another rajayoga present. Jupiter rules the 9th house, and whenever the rulers of the 9th and 10th join together a special union Is created. Also, Mars Is In Aquarius, where It functions very well, since it is exalted In Capricorn, Saturn's other sign. The ruler of the 8th Saturn. though retrograde and in a very late degree, is in Its exalta­ tion sign (past the highest exaltation point). It is also aspected by 2 bene­ fics, Venus and Jupiter. The house is therefore extraordinar!ly powerful and gives great sensuality and sexiness. Further, there ls extreme femi­ ninity, passion, and beauty, caused by the Moon in the 7th (described below under "Great Physical Beauty").
-
-     GREAT PHYSICAL BEAUTI-The Moon in the 7th, even when wan­ ing, produces an extremely attractive and magnetic person because of the Moon's aspect on the 1st house. In this case, the aspect is much more fruitful, because the ascendant is Cancer and ls therefore aspected by its own lord. Also, although the Moon in the 7th gives attractiveness to either a man or a woman, !t is a better influence for a woman because of the femininity and softness It creates.
-
-     SEXUAL ENJOYMENT-An exalted planet, Rahu, occupies the 12th house (bed pleasures). Also, Venus ls in a kendra from the Moon (the square aspect in Western astrology), which indicates a strong sexual appetite. Therefore sexual pleasures were greatly enjoyed.
-
-     SHOW BUSINESS CAREER-The show business career ls indi­ cated by Venus !n the 10th, though not merely because this is the career house, but because Venus Itself Is quite powerful by Its angular position and !ts placement In its own sign In the navamsa. Also (and this may seem odd to Western astrologers), when Saturn aspects Venus there is a high chance that the person w!ll perform in the theater. More strangely, the same occurs when Saturn Is in the house preceding Venus, I.e.. when Saturn Is In the 12th from Venus. In any case, M.M.'s great success and fame Is due to a beneflc in the 10th (Venus), which Is In its own sign in the navamsa, and to the 10th lord conjoining Jupiter. Regarding talent
-!n fine arts, the indications are not exceptional, since the 3rd house ls
-
-270
-
-
-
-
-
-
-
-
-/
-
-Marilyn Monroe
-06-01-1926 09:30 a.m. PST
-34°N04' 118°W15'
-
-poorly disposed. Its ruler, Mercury, is combust the Sun and aspected by Mars. Also, the Mars aspect to the 3rd house is destructive. However, there is some strength to the house, since Mercury is vargottama in a friendly sign.
-
-     NO HAPPINESS FROM FATHER-M.M. never knew her father, since he was not present at birth and never married her mother. The 9th lord (and karaka of the 9th), Jupiter, is in the evil 8th house conjunct with malefic Mars. The Sun, the other 9th house karaka, is within 4 degrees of the 12th lord. It is also aspected by Mars. There are no aspects at all to the 9th house. The negative indications regarding the father are blatant.
-
-     SPECIAL OR FAMOUS HUSBANDS-The Moon in the 7th nearly always gives a special spouse. Note that the ruler of the 7th, Saturn, is in its exaltation sign and aspected by Venus and Jupiter. M.M. married the baseball star JoeDimaggio and the great playwright Arthur Miller. That her marriages would fail is due to the Kujadosha indicated by Mars in the 8th. Thefact that the Moon is waning in the 7th is also of detriment. And Saturn's retrograde position in a very late degree may be related to the problems.
-
-     DISTURBED HAPPINESS-Saturn in the 4th house, aside from creating many ups and downs in life, is very detrimental for happiness. The indicator of happiness other than the 4th house is Venus, which, though of a powerful disposition, is also aspected by Saturn.
-
-     DRUGS & ALCOHOL-The 2nd house, which rules food is afflicted due to its ruler, the Sun, being so closely conjunct the 12th lord. The Sun is also aspected by Mars, as is the 2nd house itself(though Jupiter's aspect lends some grace). Therefore M.M. would eat bad foods, which to the Hindus also means alcohol or drugs.
-
-     EARLY DEATH-This is not easily seen, except for the dasa that was in operation at the time. Regarding the natal delineations, the 8th house does not reveal an early death because it is, as already mentioned, extremely powerful. The 1st house is of mixed disposition, since its lord ( the Moon) is waning and occupying the 8th house in the navamsa. Also, Saturn aspects the ascendant in the rasL In any event. the death occurred in Jupiter dasa Mars bhuktL and there is almost always danger when 2 planets conjunct in the 8th house run their period. Had the period been Mars Jupiter rather than the reverse, there would have been less chance of death, because the dasa planet carries more weight. In such a case Mars would have been enhanced by the energy ofbeneficJupiter, but as it was Jupiter was destroyed by the energy of Mars. Because the 8th house is as powerful as it is, it seems doubtful that suicide was the actual cause of death. M.M. was found in her aparlment, apparently having swallowed an overdose of pills, but the death has always been controversial.
-
-271
-
-
-
-272	LYNDON BAINES JOHNSON	273
-
-
-
-
-
-
-
-
-
-
-
-
-
-1
-Lyndon B. Johnson
-08-27-1908 04:18 a.m. CST
-30°Nl7'98°W25'
-
-
-     POLITICS AND PRESIDENCY-This chart has all the essentials to produce a President. Mars, which rules commanders, Is extraordinarily powerful. It Is the yogakaraka for Cancer ascendant and Is In a friendly sign conjunct within 5 degrees of benefic Jupiter. As with nearly all Pres­ idents, the ascendant lord ( the Moon) Is aspected by Mars, In this case by close conjunction. Also, there Is the Mercmy Mars conjunction, which so many highly positioned politicians possess (see J.F.K. & RN.). Finally. the ascendant lord Is conjunct with the 5th (politics) lord, and the 5th lord Is conjunct with benefic Jupiter. As far as career success, It has been assured because of the enormously powerful 10th ruler, Mars, which Is conjunct with Jupiter. Also, Jupiter aspects the 10th house. It Is quite Interesting that In this horoscope there Is little or no luck at all, due to a badly affilcted 9th house. Therefore L.BJ. had to work very hard for his benefits. However, as with most world famous persons, his poorvapunya Is remarkable. This Is revealed by the 5th lord being closely conjunct with Jupiter.
-UNSCRUPULOUS, AMORAL, NO RELIGION OR PHILOSOPHY-In
-the highly acclaimed book The Path To Power, Robert Caro has presented an account of L.BJ. as a man with no scruples or remorse whatever, and who would stop at nothing to achieve his goals and desires. According to Caro, L.BJ. displayed "a seemingly bottomless capacity for deceit. decep­ tion, and betrayal. In every election In which he ran-not only In college but thereafter-he displayed a willingness to do whatever was necessary to win: a willingness so complete that even In the generous terms of polit­ ical morality, It amounted to amorality." So Intent on power and the Pres­ idency was this man that he managed to completely tailor his politics to whatever was expedient to his cause of gaining power. In fact, he was totally unconcerned with philosophy, even of a political nature! Nor was he a religious man. These Indications are due to the 9th lord (and 9th karaka), Jupiter, being ruined by Its close conjunction with malefic Mars. Also, Saturn occupies the 9th, and though It Is less malicious than usual because of Its retrograde status, It Is not at all beneficial to 9th house significations. The Mercury Mars conjunction, said to make one a thief or liar, has also contributed to L.BJ.'s complete disregard for the truth.
-DISTURBED RELATIONSHIP WITH FATHER. FATHER SUFFERS­
-The 9th house rules the father and Is greatly afflicted. as described above. The Sun ( karaka of the father) Is conjunct with Mars and the 12th lord,
-
-
-
-
-
-274  and is thus harmed. L.B.J.'s father was a man of immense integrity (note the Sun in its own sign, Leo) and was very well loved by the people during his 10 years of service in the Texas legislature. But he was financially
-(and in most other ways) broken when Lyndon was only a small child. He never recovered and unfortunately endured a terrible life of hardship and poverty, practically unable to feed and clothe his family. L.B.J. greatly resented his father from early childhood, and the two never got along.
-
-     COLLEGE EDUCATlON-L.B.J. had no desire for higher education and wholeheartedly resisted his parents' wishes for him to attend college. He finally enrolled after realizing that it was an absolute necessity if he was to ever fulfill his intense ambitions. His education is described as having been quite mediocre. Although there is great interest in knowledge due to the strong 2nd house, the 9th, which rules higher education, is terribly weak and afflicted, as described above. L.B.J. majored in history and social science, but because the 2nd house is so strong, he starred in debate.
-
-     EDUCATOR-L.B.J. is one of the few Presidents whose profession outside of politics was that of a schoolteacher. The 2nd house rules edu­ cators and knowledge, and in this horoscope is occupied by 5 planets. Two of these are the intellectual planets, the Moon and Mercury. Also in the 2nd are yogakaraka Mars, ascendant lord Moon, and the atmakar­ aka Sun. Because the 2nd is the house of speech, L.B.J. taught public speaking and debate and excelled in his job.
-
-     IMAGINATION-Much of L.B.J.'s success was due to his remarkable imagination, demonstrated in his effecting complex schemes designed to manipulate himself into power. Imagination is a 2nd house matter, and as already explained, that house in L.B.J.'s horoscope is extremely power­ ful. Further, the two planets of the mind, the Moon and Mercury, closely conjoin each other. Whenever these two planets aspect each other in a horoscope, the person will be extremely mental, analytical, and calculating.
-
-     "BULL JOHNSON"-In Robert Caro's biography of L.B.J., Lyndon was described by a college classmate as "a man who just could not tell the truth." He was therefore named Bull Johnson at school: outside of his presence, of course the name turned into Bullshit Johnson. Truthfulness, as with imagination, is a 2nd house matter. In this horoscope the 2nd house is enormously powerful but also contains serious malefics. Perhaps most notable is the fact that the house holds the illustrious Mercury Mars conjunction described above. Also, the 2nd lord Sun is conjunct within 2 degrees of malefic Mars.
-
-     WEALTH-L.B.J. grew up in abject poverty, possibly worse than any other President. By the time he entered the White House his fortune was estimated by Life magazine at 14 million dollars, which, according to
-
-L.B.J.'s aides (privately) was grossly underestimated! He was at the time   27<
-the richest man ever to hold the office of President. More significantly, after assuming office and announcing that all his business affairs would be placed in a blind trust, which he would totally ignore, he immediately installed private telephone lines in the white house directed to the Texas lawyers in charge of the affairs. It has been since reported that he person- ally managed these financial dealings on a daily basis down to every last detail. With five planets (the most personal and important ones at that) in the 2nd house, the interest in financial matters was intense! Also, Venus in the 12th house is an excellent placement for wealth in Hindu astrology. And with Venus and exalted Rahu in the 12th (expenses), L.B.J. was quite capable of retaining any wealth he earned.
-
-     LUST FOR POWER-L.B.J.'s life from early childhood was devoted to his quest for power, attention, and dominance over others. Although this may in a sense be true of all Presidents, it is in most of the others not nearly so blatant and all-encompassing as with L.B.J. A good deal of the desire to rule others of course comes from the powerful 5th house, which the ancients called the house of kingship. But it cannot be ignored that 5 planets occupy the sign of Leo, which, because it is the 5th sign of the zodiac, relates also to such significations.
-
-PHENOMENAL DETAIL & ORGANIZATIONAL ABILITY-L.B.J.
-worked doggedly all his life. During his Presidency, his aides worried ceaselessly about his health because of his 16-18 hour work days. He was enormously efficient and passed a phenomenal amount of legislature. In his ascending years L.B.J. was known by fellow Senators as the man who got absolutely anything he wanted. Daily work is seen from the 6th house, while efforts and desires are. revealed by the 3rd. In this case, the 6th is of a powerful disposition. Although the 6th lord, Jupiter, is badly afflicted by the conjunction with Mars, other indications are quite benefi­ cial, since Ketu as a malefic in the 6th is an excellent placement, and this Ketu is exalted in the navamsa! The 6th house is also aspected by Venus, Jupiter, and Saturn. And in this instance Saturn's aspect is not so detri­ mental as usual, because the 6th house can utilize such energy to advan­ tage in terms of hard work. In any case, it is not merely the strong 6th house which has given such good results but also the excellent disposi­ tion of the 3rd. The most profound influence about the 3rd house is that its ruler, Mercury, has gained great power by the close conjunction with the benefic Moon (planets do not fight planetary wars with the luminar­ ies, and in any case Mercury is a bit more than 1 degree away from the Moon). Also, Mercury is exalted in the navamsa. Because of this powerful and well-disposed 3rd house, L.B.J. was able to fulfill his everyday desires. He did so, of course, only through diligent hard work and persistence, because he was not all blessed with luck, since the 9th house is so afflicted. The aspect of Saturn on the 3rd house, though bad for the signi­ fications of brothers and sisters, always makes one a disciplined, hard
-
-
-
-276  worker. It Is a combination of his strong 6th and 3rd houses which enabled L.BJ. to personally and with Incredible efficiency attend to liter­ ally hundreds of dally errands. both before and after the Presidency.
-
-     DESTINY & POORVAPUNYA-L.BJ.. even before his teenage years often announced that he was going to become President. When he was 32 and still absurdly poor. he turned down a business offer (in reality a gift) which was clearly going to make him a millionaire within 2 or 3 years, because It would have linked him with oil Interests. This, he felt. would kill his chances to become President! The powerful sense of destiny Is revealed by the well-disposed 5th house. indicated by the 5th lord's close conjunction with beneflc Jupiter.
-
-AMBITION. MOTIVATION, ENTHUSIASM-L.BJ. was of course tre­
-mendously ambitious, but what Is also notable Is that the energy and enthusiasm that hedisplayed often made him the center of attention and the life of the parties he attended. This Is due to the extremely powerful 3rd house, which has been detailed above under "Detail & Organizational Ability." The other life house ( the 8th) Is of mixed disposition, but on the posltlve side Is aspected by five planets.
-
-EARLY DEATH-L.BJ. was only 64 when he died. Although the 8th
-· house Is energized by the aspect of five different planets, the ruler of the 8th house Is weakened because Its ruler. Saturn (also ayush karaka) Is retrograde. It Is also In an enemy's sign In the navarnsa.
-
-     CHANDRA LAGNA-Note that In the rasi chart the 1st house Is not at all well disposed, since there are no aspects to the house, and Its ruler, the Moon, Is so closely conjunct with Mercury. Mercury. though a beneflc, Is the lord of the evil 12th house. Also, the Moon Is terribly harmed by Its combustion with the Sun and Its conjunction with Mars.. Therefore. health was somewhat harmed, and L.BJ. must have lacked self-love and true self-esteem. However. from chandra lagna. the Ist house Is enor­ mously powerful. This Is because five planets occupy the Ist and the ascendant lord, the Sun, Is In Its moolatrikona position.
-
-DASA BHUKTI HIGHLIGHTS
-
-      MARS DASA-L.B.J. worked Intensely during these years and made It to the House of Representalves by 1937. This was no small accom­ plishment for one who had a mediocre education, was not an attorney, and was Incredibly poor. Mars Is yogakaraka, conjunct with Jupiter, and Is ruling the career house (the 10th) and poorvapunya (the 5th).
-
-      RAHU DASA-One year after this dasa began, L.BJ. was elected to the Senate, which was his goal the minute he entered the House 11 years earlier. Rahu, the planet of worldly benflts and desires Is Incredibly power­ ful because It Is exalted and conjunct with beneflc Venus.
-
-..
-      RAHU MARS-Both Mars and Rahu are the most powerful planets	277 In this horoscope. It Is fitting. then. that at this time L.BJ. was elected President by the largest electorate vote up to that time. Mars, ruling the
-5th (the house of kingship and past-life credit) indicates that L.BJ. was finally fulfilling his destiny.
-
-     JUPITER DASA-Juplter Is a good planet for Cancer ascendant; however, In this horoscope the planet Is ruined by Its close conjunction with Mars and the Sun. Jupiter rules the 9th (luck) and 6th (health & daily work). Once this dasa began, difficulties were certain to arise. These years were of course extremely difficult, as L.BJ.'s popularity was devas­ tated by his handling of the Viet Nam War. So bad were the effects that he did not seek re-election. He also died early on In this dasa.
-
-
-
-
-
-
-
-
-
-278
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-11 J)/4
-21
-
-NAVAMSA
-bl,001 '?
-Jackie Onassis
-07-28-1929 02:30 p.m. DST
-40°N54' 72°W23'
-
-
-
-JACKIE ONASSIS	279
-
-
-
-
-
-
-     This horoscope reveals how one may be so fortunate as to marry most powerful, worldly, and wealthy husbands and at the same time have great marital difficulties and be twice widowed. Also, Jackie O's tragedies Involving mlscartiages and stillbirths can be seen from her weak and afflicted 5th house.
-
-WEALTHY, WORLDLY, & POWERFUL HUSBANDS-What has pro­
-duced such Intense results along these lines are essentially three factors. The I st and by far most potent Is that Rahu, which represents worldly desires and benefits, occupies the 7th house and Is just approaching Its stationary direct position. This Influence often indicates an exceptionally worldly spouse. Next, the Moon occupies the 7th and Is vargottama (in Aries, a sign described In the scriptures as an excellent placement for the Moon), which tends to indicate a special spouse. Although waning, the Moon rules the 10th house, thereby giving highly career-ortented partners. Finally, the 7th house ruler, Mars, occupies the house of gains and profits, and Is well placed in that upachaya house. All In all, there Is little mysteiy regarding J.O.'s acquisition of phenomenal partners.
-
-      BENEF1TS FROM PARTNERS' WEALTH-This signification Is ruled by the 8th house, which In this case Is of extremely mixed disposition. Although two benefics occupy the house, one of these-Venus, the house ruler-ls In a weak final degree and Is fallen In the navamsa. Therefore, J.O.'s ability to enjoy her partner's money was tainted and subject to flue, tuatlons (which may have depended on the particular dasa or bhukti In operation at the time). It has been wrttten that J.F.K. was constantly cen­ surtng Jackie for overspending. This was not the case with Art Onassis, who generously lavished wealth upon her. However, when Art died, her inherttance was quite measly (relative to his wealth), since their marriage was supposedly neartng divorce.
-
-DISTURBED MARRIED LIFE & 1WICE WIDOWED-Rahu In the
-7th always makes married life difficult. with constant ups and downs. In this case Rahu occupies an enemy's sign In both the rasi and navamsa. And It Is conjunct with the Moon, which Is a known enemy to either node. That the Moon Is waning, of course does not help marital relations. The weak disposition of Venus (the 7th house karaka), as already descrtbed above, has added further detrtment to the matter. Aside from the power and wealth of her husbands, there are no indications of benefits to J.O.'s
-
-
-280  marriages. There are two other points worth noting. The navamsa Is actuallya  marriage chart, and If the birthtlme Is accurate, then the 7th
-house of this divisional chart Is crucial In revealing married life. Assum­ Ing this blrthtlme Is correct, Rahu occupies the 7th, again indicating bad results It should also be noted that J.F.K.'s death may be seen In this horosc pe, s\nce he was killed during J.O.'s Moon dasa-Rahu bhuktL As has already been said, the two planets are bitter enemies. Since they are conjoined In the marrtage house, such a period must produce bad effects relating to married life or the spouse. Though It would have been difficult to have exactly predicted the partner's death at such a time, It was certain that married life was about to undergo great difficulties and that the life
-of the spouse may have been In danger.
-     1WO OUT OF FOUR PREGNANCIES FAIL-The 5th house In this horoscope Is extremely weak. First of all, the ruler of the house, Saturn, Is retrograde. Secondly, Saturn Is fallen In the navamsa. Finally, the house Itself ts aspected by2 maleflcs, Mars and Saturn. Mars aspects to the 5th often indicate mlscarrtages, stillbirths, or abortions. Saturn's aspect on Its own house, Capricorn, energizes the house but Is not at all conducive to the significations of children or childbirth. Also harmful Is the 5th house In the navamsa holding a fallen planet (Venus). This Influence Is only operational assuming the birthtlme Is accurate within minutes.
-
-     DIFFICULTIES WITH THE MOTHER-J.O. never got along well with her mother, and this may be seen by the 4th house ruler, Saturn, being retrograde and fallen In the navamsa. Further, the Moon( karaka of the mother) Is waning and conjunct with Its enemy, Rahu. However, the mother was certainly of benefit to Jackie, since Jupiter aspects the 4th house. Also, the 4th ts energized by the aspects of the Sun and Mercmy.
-
-
-
-WERNER ERHARD-WESTERNGURU, FOUNDER OF EST	281
-
-
-
-
-
-
-     This horoscope Iseasily recognized as exceptional because of so many planets occupying their own, or exaltation, signs. It Isalso remarkable In the sense that the benefits indicated are both spiritual and worldly.
-
-     SPIRITUALI1Y-Whenever the Sun (atmakaraka) or ascendant Is aspected by Saturn, there Is a tendency towards asceticism or spiritual life. In this case, both the Sun and ascendant lord (Venus) are aspected by Saturn. TheSun Saturn aspect always indicates a strong sense of respon­ sibility and Integrity. In this case these qualities are heightened because of the special condition caused by the Sun occupying Its own sign while Saturn Is In Its moolatrtkona. To add even greater spiritual strength, Saturn rules the 9th house. Therefore the Sun and ascendant lord are also aspected by the 9th lord. Further, when analyzing the 9th house It Is seen that the ruler, Saturn, Is Involved In this yoga with the Sun and Is also In Its moolatrtkona, both In the rasi and In the navamsa (I.e., var­ gottama). Saturn Is receiving an Incredible amount of energy, since It Is aspected by four planets: Jupiter, Venus, the Sun, and Mars. The aspect from Jupiter Is of course especially spiritual. Also note that gnanakaraka Ketu Is exalted In both the rasi and navamsa.
-
-     BRILLIANCE, TEACHING, & KNOWLEDGE-The brilliance indicated In this horoscope cannot be overstated. Mercmy, the planet of Intellect, Is within 4 degrees of Its highest exaltation point. It occupies the auspicious 5th (house of the mind). This reveals a highly original, objective, and ana­ lytical mind, especially because there are no aspects Interfering with the 5th house. Regarding the educating tendencies ofW.E. and his preoccu­ pation with knowledge of eveiy kind, note the enormous power of the 2nd house, which governs such matters. Its well-disposed ruler, Mercuiy, has already been described, and the house Itself holds exalted Ketu. Ketu Is just approaching Its statlonaiy direct position (apprx. 1 hour away) and Is aspected by Jupiter and Mars. This strong 2nd house has also made W.E. a veiy fine speaker and debater. Regarding the afflicted Moon, which Is also a planet of the mind, this Is responsible for W.E.'s disturbed peace of mind, which especially characterized his earlier years, when he was so Intent on realizing enlightenment.
-
-SUCCESS & FAME-Note the 10th house occupied by Saturn In Its
-mooltrtkona sign. Saturn Is vargottama and powerfully aspected by Jupl-
-
-282
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-9
-211/
-11
-NAVAMSAo'
-))6690
-Werner Erhard
-09-05-1935 11:25 p.m. DST
-39°N57' 75°W10'
-
-ter, Venus, the Sun, and Mars. Saturn In the 10th, when well disposed or   283
-when the rest of the horoscope Is strong, Is of Immense benefit to one's career as a leader of the masses. In this case, Saturn Is the raja yogakar- aka for Taurus ascendant, since It rules the 9th and 10th houses. Its close aspect with the Sun Is also of great benefit because both planets are In their own signs. Regarding the maturity of planets, Saturn gives Its full results In the 36th year, 1971 In this case. It was In that year that W.E, founded his EST organization. Also, regarding fame, note that an exalted planet (Ketu) occupies the 1st house In the navamsa.
-
-     FOUL LANGUAGE-Maleflcs In the 2nd produce this effect. Ketu. even when exalted, gives this tendency. Ketu Is aspected by Mars and Jupi­ ter. Many years ago the press widely publicized his use of foul language as a technique In the EST program.
-
-     CHANGE OF CAREERS-Whenever the 12th lord aspects the 10th house, there will be difficulty finding one's proper dharma. and a ten­ dency to adopt many different careers. The 12th lord, Mars, aspects Saturn In the 10th. W.E. was 36 before settling Into his final career as EST trainer. Were It not for the 10th house (which specifically rules dharma) being so powerful. there would have been continuous change of professions throughout the life.
-
-     MARRIED LIFE-By far the most afflicted signification In this char! Is married life. The 7th house Is occupied by the Moon In Its fallen sign (though past Its highest degree of neecha) and Is aspected by both Mars and Saturn. Mars In the 7th, even In Its own sign, Is detrimental for such matters. It Is also an indication of Kujadosha. Further, Venus, the karaka of the 7th, Is retrograde, combust the Sun, and aspected by Saturn. Married life has been rough both times, and the 2nd divorce pro­ ceedings have been under way for more than a year at this writing. Divorce was an obvious eventuality once the Moon dasa began In April of 1981-especially once the dasa proceeded Into Moon Mars, the two con­ junct planets In the 7th house.
-
-DASA BHUKTI HIGHLIGHTS
-
-      KETU DASA-When this period began W.E.'s relationship with his family (his mother In particular) deteriorated and brought on one of the most unhappy periods of his life. The 2nd house rules family, and Ketu (or Rahu) In that house causes family separations and great unhappiness.
-
-      MOON DASA-As already mentioned, this period brought the end of W.E.'s 2nd marriage. The Moon Is terribly afflicted, as It Is In Its fallen sign, conjunct with Mars, and aspected by Saturn. Since the Moon Is the most personal Influence and Is ruling the 3rd house (desires and efforts), the entire Moon period promises to be quite a struggle. In 1985 the EST
-
-284 training was retired to make way for an Improvement on the original training.·However, enrollments into this new program have been so low that half of the organizational staff has been laid off. It Is interesting how the horoscope of the leader of an organization has so much bearing on an entire network. This same sort of effect can also be seen in the horoscopes of the U.S. Presidents J.F.K.. RN.. and L.B.J., who, after they _attained office, had to endure terribly difficult planetary periods, which thus affected an
-entire nation.
-
-     RETROSPECTIVE NOTE-Although the beginning of the Moon dasa brought tre­ mendous difficulties, Erhard's subsequent success has been quite considerable. This is likely due to the fact that even though the Moon is afflicted nearly all of the other planets are extremely powerful. Thus, in their bhuktts they have produced good effects.
-
-
-
-
-
-
-
-
-
-
-FRANCIS FORD COPPOLA-A PRODUCER WITH EXPENSES	285
-
-
-
-
-
-
-     FILM PRODUCER-The 3rd house rules fine arts. and when it Is well-disposed and significantly emphasized In the birthchart. a performer is generally indicated. When the house is exceptionally powerful, the per­ son may desire to become either a director or producer. or he will begin as a performer and later ascend to the leadership position. This happens to an extent because the 3rd house governs detail work and organizational ability. which directing or producing entails. This horocope. because of the powerful 3rd house. is a typical chart for a director or producer. Note the two benefics Venus and Jupiter in the 3rd house. Even better, the 3rd house ruler, Saturn, is In a kendra. vargottama, and conjoining the lords of the 9th and 10th houses.
-
-     SUCCESS & FAME-Both the 1st and 10th houses are powerful. Although the ruler of the 1st, Jupiter, is in a weak final degree, it is con­ junct with Venus. More importantly, the 1st house is occupied by the 5th lord, Mars, which is a good planet for Sagittarius ascendant. Also, Mars is in a friendly sign in both the rasi and navamsa. The 10th house is even more powerful than the 1st. At first glance the 10th lord, Mercuiy, is noted to be neecha. but It Is also retrograde. which weakens this negative effect. More significantly. Mercuiy as 10th lord forms a rajayoga by its conjunction with the 9th lord the Sun. And in this case Mercuiy is far enough away to escape combustion. especially as it is separating from the Sun ( i.e.. retrograding). On top of all this, the 10th house is aspected by 3 planets: its own lord. Mercuiy: the auspicious 9th lord the Sun. and Saturn. It is also noted that hot or cruel planets such as the Sun and Saturn generally energize the 10th house in a beneficial way rather than cause their usual destruction. This is because the upachaya houses. which welcome maleflcs, are more capable of utilizing such energy for certain of their significations. The extremely close aspect (same degree) of Mars as the 12th lord on Mercuiy Indicates the probability of many ups and downs In the career. or career changes.
-
-     WEALTH & EXPENSES-Great wealth Is Indicated by the 2nd lord. Saturn, being In a kendra. cojolnlng the lords of the 9th and 10th houses. This Is an extremely fortunate condition, and wealth must therefore result. On the negative side, Saturn Is aspected by the 12th lord, Mars. which will cause financial ups and downs. However, the most Intense det­ riment In this chart is the tendency to meet with huge expenses and to
-
-286
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Tl
-21bl, 0 <?
-NAVAMSAJ)9
-Francis Ford Coppola
-04-07-1939 01:38 am. EST
-42°N20' 83°W03'True Node
-
-spend whatever money Is gained, This Is most obvious due to the 12th  287
-house (expenses) being occupied by the neecha Moon. Note that the Moon Is In the highest degree of Its fall. This Is a most Intense Influence; therefore even the Moon"s placement In Its own sign In the navamsa has not much neutralized the affliction. F.F.C. has made phenomenal amounts of money from his movies (The Godfather, etc,). but he has also managed to wind up In deep financial trouble after Investing all of his own money In his private film studio, Zoetrope, Also, F.F.C. Is notorious for greatly exceeding the budgets on his films. His movie Apocalyse Now took some four years to make, at obviously great expense. Two other films One From the Heart and Cotton Club ran Into multimillion-dollar budgets and never approached breaking even, It Is also detrimental that Saturn aspects the 12th lord, Mars.
-
-     FAMOUS YOUNGER SISTER-F.F.C.'s famous sister Talia Shire (Rocky, The Godfather) can be seen by the two beneflcs Venus and Jup­ iter In the 3rd house.
-
-288
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-VIMSOTIARI
-DASA	BHUKTI
-MO. DAY YR	MO, DAY YR0))o'bl,21
-02
-12
-4011
-02
-12
-569
-02
-12
-75nu0212922102 27 87Tl06 04 89<?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Paul Newman
-01-26-1925 06:30 a,m. EST
-41°N30' 81 °W42'
-
-
-
-PAULNEWMAN
-
-
-
-
-
-
-
-     GREAT PHYSICAL BEAUIY-3 benefics occupy the !st house, The ascendant lord, Jupiter, is in its own sign.
-
-     CONFIDENCE & STRONG EGO-Although the Sun is afflicted by its conjunction with Ketu. the !st house is in an enormously positive state because of the 3 benefics in the ascendant.
-
-     SEX SYMBOL--Rahu in the 8th, even though in the Moon's sign is exceptionally powerful because it is has just begun its forward motion some 6 hours after being stationary direct. The 8th house is also aspected by the auspicious 9th lord Sun, the yogakaraka for Sagittarius ascendant.
-     WVE MARRIAGE-In India, where marriages are arranged by the parents, there are certain horoscopes which reveal what are called "love marriages." This means that the person is likely to marry early and purely for love instead of by arrangement. This often occurs when the 7th lord conjuncts Venus, and such is the case with this horoscope, Married life indi­ cations for P.N. are mixed, but on the whole are extremely fortunate, At first glance married life seems incredibly blissful, as the 7th lord, Mercury, is hemmed in tightly by 2 benefics (it is not fighting a war with Venus, since it is slightly out of range of the I degree planetary war zone), Also. Venus, the karaka of the 7th house, is extremely fortunate because of its conjunction with 2 benefics (Mercmy & Jupiter). Further, the 7th house is aspected by its own lord (Mercury) and 2 other benefics. The great interfering aspect, however, is that Saturn aspects the 7th lord. Mercury, to the exact degree! This aspect. because of the intensity of orb, has caused one divorce in the life. However, P.N.. according to interviews, is extremely happy in his 2nd marriage. That he would marry an artist or celebrity such as Joanne Woodward can be seen by the 7th lord being closely conjunct with Venus (art) and Jupiter (fortune).
-
-     LITTLE HAPPINESS FROM FATHER-Aside from possible spiritual effects, one of the worst possible influences a planet is subject to is a close conjunction with the "otherworldly" Ketu. In such a case the conjoined planet is quite destroyed or "swallowed up" by Ketu. and the person has no control over the significations governed by that planet. In this horo­ scope, the Sun as karaka of father and ruler of the 9th house (father) is conjunct with Ketu. It is not within 3 or 4 degrees but is still close enough
-
-290   to receive great damage. There is some help due to the Sun being exalted In the navamsa, but this is certainly not enough to neutralize the afflic­ tion. Also, the Sun in the rasi occupies an enemy's sign. P.N.'s father died relatively young. when Paul was only 17 and before a happy relationship could be established. P.N. felt that his father considered him a disap­ pointment. He has called the fact that he never got the chance to prove himself to his father one of the "great agonies" of his life. The destruc­ tiveness of Ketu is thus very well revealed in this birthchart because. con­ sidering the phenomenal disposition of the 1st house, it is almost absurd that P.N. would not be favored by eveiyone, especially his own family!
-
-     ACTING CAREER-The all-important Moon occupies the 3rd house (fine arts). The ruler of the 3rd, Saturn, is in its absolute highest degree of exaltation, thereby giving exceptional performing talent. Saturn is fallen in the navamsa which is of course detrimental. This indicates that dur­ ing Saturn periods there would be certain miseries simultaneous with benefits. But whenever a planet occupies its highest degree of exaltation or fall, the effects are most intense (for better or worse). despite any con­ tradictoiy Influences. Also note that the I0th lord Mercuiy is conjunct with Venus, the planet of art. And Venus is extremely well disposed because of its conjunction with two benefics and its placement in its moolatrikona sign in the navamsa.
-     SPORTS CAR RACING-This delineation is of course purely spec­ ulative, but it is felt that such tendencies are due to the exceptionally powerful 3rd house. The reasoning being that the 3rd house governs not only short distance travel but also energy, movement. enthusiasm, ex­ citement. and courage. It may also be that the 4th house and Venus. which are quite powerful, have some bearing on the matter, since convey­ ances are a Venus and 4th house signification. Note that the 4th ruler, Jupiter, is in a kendra in its own sign and closely conjunct with two benefics. Venus Is also conjunct with 2 benefics and is in its moolatri­ kona sign in the navamsa. Around town, however, P.N. unostentatiously drives souped up Volkswagens.
-     SUFFERING ON ACCOUNT OF CHILDREN-Mars in the 5th house Is generally a veiy poor placement regarding children. Mars is In Its own sign, Aries, and Is vargottama; however, It Is also In the weak and fateful 1st degree and Is aspected by Saturn. P.N.'s son died of a drug overdose at the age of 28.
-
-
-
-MAHATMA GANDHI	291
-
-
-
-
-
-
-     ORATORICAL ABILI1Y-Obviously a brilliant speaker capable of affecting huge crowds, M.G. was In his early career years quite petrified of public speaking. During his first case as an attorney he found himself completely incapable of handling the assignment due to shyness in the courtroom. Thus this horoscope is an excellent example of the manner In which a raja-yogakaraka planet which Is at the same time a malefic gives its results: Saturn posited in the 2nd (speech) rules the 4th and 5th houses and thereby takes on great power but retains Its restrictive Sat­ urnian nature. Therefore M.G. was terribly shy of speaking during the early part of his life, but as time passed he was able to develop into a rare and powerful orator. It must also be noted that the 2nd lord, Mars, Is exceptionally well aspected by a 2 degree conjunction with Venus and a 2 degree aspect from Jupiter.
-
-     FAME & LEADERSHIP-Both the Moon and Rahu in the 10th create a successful career, fame, and the tendency to sway the public. The Moon In the 10th in this case occupies Its own sign. In terms ofleader­ ship, Hindu scriptures relate that a Venus Mars conjunction In any ken­ dra makes one a "leader of his family, clan, or village." In this case the Venus Mars conjunction is in the 1st house and is very closely aspected by Jupiter. In any case, the 1st house would have to be considered extremely powerful, with three planets occupying, and all aspected by Jupi­ ter. Further, from chandra lagna the 10th house Is extraordinarily pow­ erful. Note that Jupiter Is In the 10th house and that the ruler of the house, Mars, conjoins Venus and Mercuiy and receives the beneficial aspect of Jupiter.
-
-     CELIBACY-Hindu astrologers consider It basically Impossible for anyone with the passionate Venus Mars conjunction to become a san­ yassin (one who renounces worldly activities I.e. sex). However, because the Venus and Mars conjunction (both sexual planets) is so closely aspected by Jupiter, M.G. was able to transcend the senses. It may also be mentioned that whenever Venus Is aspected by Jupiter, the person will have high morals and ethics regarding married life and love affairs. M.G. was of course a noted celibate for many years after the birth of his children.
-
-     CAREER AS ATTORNEY-Note the Mercuiy Mars conjunction (wide though It be), which gives a practical nature and leads one to technical
-
-
-
-
-
-
-
-
-
-
-
-
-
-ter, but its lord, the Sun, occupies the evil 12th house. However, the other
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Mahatma Gandhi
-10-02-1869, 7:33 AM
-TZ -5.38
-Porbandar, India
-21°N40', 69°E42'
-     
-VIOLENT DEATH-M.G. was assassinated in Jupiter dasa Venus bhukti. Because the planets are so closely aspecting each other, one might expect the absolute best of all possible effects. However, the problem is that both planets are exactly 2 degrees away from malefic and violent Mars! Were it not for the Mars interference, this dasa bhukti would have been enormously beneficial.
-
-     SPIRITUALI1Y-Mercury and Venus, as the lords of 2 moksha houses (the 8th & 12th), occupy the ascendant and both are aspected by Jupiter. Also, Venus as ascendant lord receives the Jupiter aspect. The Sun in the 12th house is delineated as a "sinful" placement because the Sun as karaka of the 9th, is ruined in the evil 12th. But it nevertheless often gives a very strong spiritual bent and an interest in moksha This is because the Sun Is atmakaraka (indicator of the soul) and the 12th is of course the house of moksha
-
-294
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-u
-21 ))/4
-
-NAVAMSA1t o'
-11
-bl,'t
-MuhemrnadAll
-01-17-1942 06:35 p.m. CST
-38°Nl5' 85°W46'
-
-
-
-MUHAMMED ALI	29,
-
-
-
-
-
-     CAREER IN SPORTS-Sports is ruled by the 5th house and Mars, In this horoscope Jupiter aspects the 5th house. The 5th lord, Mars occu­ pies the 10th house, where It receives dik bala. directional strength. It Is also empowered by Its strong placement In Its moolatrtkona sign, Aries. Further, Mars aspects Its own house, the fifth. Mars Is also conjunct with Saturn, but Is not so much harmed because Saturn Is both 18 degrees away and retrograde at that. The only significant negative effect Is Mars being neecha In the navamsa. but this evidently has not been powerful enough to cause much damage.
-
-     SUCCESS-The 10th house is extremely powerful, since it is occu­ pied by Mars, which alone causes rajayoga because of its rulership of the 5th and 10th houses. Further, Mars is in its moolatrikona sign and receiv­ ing dik bala strength. Saturn in the10th is also a very fine placement for career success if the rest of the horoscope is well disposed. And Saturn is in noway worse off (in terms of 10th house affairs) for being retrograde. Re­ garding Ali's worldwide fame and status, the1sthouse has played a very im­ portant part. Note that four planets aspect the 1st thus energizing the house and strengthening confidence, stamina, and the ability to be recognized in life. Adding even more power is the ruler of the 1st (Moon) aspecting its own house. Between this aspect and the fact that three of the four aspecting planets are benefics a very special condition is created. Ali's feelings about his own power and speciality are a certainty of this chart. Hence all the boasting and bragging and "lam thegreatest" declarations. Success and fame is always forthcoming when the 1st and the 10th are both strong.
-
-     POETRY AND SPEECH-Whenever the mental planets Moon and Mer­ cury aspect each other an extremely communicative personality is indi­ cated. In this case the aspectis stronger for being close to exact. More impor­ tantly, the ruler of the 2nd house (speech, poetry etc.) is conjunct with three benefics Moon, Mercury, and Venus. Therefore the indications for writing, public speaking, and poetry are quite intense. Of course the Mercury Venus conjunction also gives.lyrical or musical ability.
-
-     MARRIED LIFE-There areboth positive and negative indications in this chart regarding married life. On the positive side Ali's lovers will be ex­ tremely beautiful due to the three benefics in the 7th. However, the chart is blatant that there will be at least more than one marriage. Numerous mar-
-
-
-296  riages (and/or very serious intimate relationships) are indicated first of all because there are so many planets in the 7th. More importantly, two of the four planets are the Moon and Mercury which are "changeable" or moody in­ fluences. Aside from this there is the negative influence of Saturn, ruler of the 7th, in its neecha or fallen sign Aries. And Saturn aspects the 7th. Thought the aspect is to its own house it does nothing but harm toa sensi­ tive area such as marital happiness. Regarding the number of marriages, it is actually fortunate in this case that the ruler of the 7th is retrograde. This slows down Ali·s desire to formally bind his relationships and affairs. It also usually indicates marriage later than normal (i.e. late twenties or early thir­ ties). The numerous benefics in he 7th also reveal a highly passionate na­ ture, the ability to obtain the females he desires, and "skill in the art of sex­
-ual pleasures."
-
-     HEALTH-The 6th house is slightly weakened though not in an ex-· treme way. Jupiter, ruler of the 6th is retrograde and in an enemy's sign thus sapping the energy of the house. However the mental ailment Ali now suffers is indicated more by the condition of the Moon, the planet ruling the breast and brain. The Moon is situated between Mercury and the Sun. The aspect of the Sun is malefic even though the planets are not so close as to be com­ bust. The conjunction to Mercury is, in fact, more damaging because Mer­ cury rules the evil 12th house. Aspects from the lord of the 8th or 12th, when they are extremely close by degree, are in most cases quite devastating.
-
-
-MARTIN LUTHER KING, JR,	297
-
-
-
-
-
-
-
-     POWERFUL DREAMS & AMBITIONS-The 11th house (ambitions, dreams & desires) is occupied by two powerful benefics, Venus and the Moon. Further, both planets are exalted in the navamsa! The ruler of the 11th is in the auspicious 9th house and aspected by Jupiter (though it is also aspected by Mars and is fallen in the navamsa). Not only does the well-disposed 11th house indicate that M.L.K. would have most expansive and far-reaching of dreams, but also that he could actually realize them. The other two desire houses are also exceptionally powerful. The 7th is aspected by Jupiter, while its ruler, Venus, is in the 11th, conjunct with the benefic Moon and exalted in the navamsa. Also note that the 7th lord in the 11th constitutes a desire lord in a desire house. The 3rd house is malefically aspected by Saturn, but its ruler, Mercury, is in the 10th house (a kendra) and is conjunct with the auspicious 5th lord. M.L.K.'s "I have a dream" speech is one of the highlights of his career. Also, against ridiculous odds his desire to see equality for black Americans went quite a ways towards fulfillment.
-
-     GREAT ORATOR-The ascendant lord is similar to the Moon in that its house placement is an area of great vitality and interest. In this case the ascendant lord, Mars (a good planet for Aries ascendant), occu­ pies the 2nd house (speech). The harshness of Mars is neutralized by its retrograde status, and in any case retrograde malefics energize a house and give beneficial results. As for Rahu in a friendly sign in the 2nd, it ruins family life and happiness but gives an excellent imagination. The ruler of the 2nd is Venus, which, as already described, is extraordinarily well disposed. M.L.K. was of course an enormously moving and effective speaker.
-
-     SPIRITUAL LEADER-The indications for this signification can easily be seen, since the spiritual planet Jupiter occupies the 1st house as ruler.of the 9th. Saturn, ruler of the 10th (career), is posited in the 9th (religion & philosophy). Saturn is of mixed disposition, though, since it occupies a trikona and is aspected by Jupiter but is harmfully aspected by Mars, occupies a weak degree, and is fallen in the navamsa. Saturn in the 9th can either signify no religion at all or very deep religious beliefs. In this case the overall horoscope is quite spiritual, but the somewhat afflicted Saturn in the 9th reveals a detachment from traditional religious rituals and beliefs. Regarding leadership, note the Sun as 5th lord (yoga­ karaka) in the 10th, where it receives dik bala, directional strength. It is
-
-
-298
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-l1
-21 ))bo
-NAVAMSA
-0u/a
-Martin Luther King
-01-15-1929 12:00 p.m. CST
-33°N45' 84°W23'
-
-also empowered by Its conjunction with beneflc Mercuiy, The 5th lord In   299
-the 10th Is an excellent placement. Indicating the performance of good deeds which benefit society, It Is also conducive to practicing spiritual techniques and making holy pilgrimages, etc.
-
-     FAME & SUCCESS-M.L.K.'s auspicious career Is written all over this horoscope. The excellent placement of Jupiter as the9th lord In the 1st promises great benefits, Pooroapunya Is extremely strong and Is con­ nected to career activities because of the 5th lord's position In the 10th. The Sun In the 10th Is well aspected (by Its conjunction with Mercuiy), and Is receiving dik bala, directional strength. The Sun Is also vargot­ tama, while Mercuty In the 10th Is In Its own sign In the navamsa.
-
-     POWERFUL DHARMA-The 10th house specifically rules dharma, while the 1st, 5th, and 9th, which correspond to fire houses, are dharma houses In general. All of these houses are on the whole vety strong.
-
-      EARLY DEATH-The 8th house Is extremely weak because Its ruler, Mars, Is retrograde In the weak and fateful final degree of a sign. It Is also conjunct with malefic Rahu. Further, Ketu occupies the 8th In an ene­ my's sign (Rahu's enemies are generally considered Ketu's also), Next. It Is relevant that the weak and afflicted Mars Is ruling the 1st house. Finally, note that ayush karaka Saturn (ruler of longevity) Is aspected by Mars and Is fallen In the navamsa.
-
-
-300
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-VIMSO'ITARI
-   DASA		BHUKTI MO. DAY YR	MO. DAY YR0))d'bl,211001241107
-13
-39907
-13
-58u
-07
-13
-75'i'07
-13
-82'i'011 11 85'i' ))11 11 86'i' d'07 12 88'i'n09 11 89
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Jimmy Carter
-10-01-1924 7:00 am. CST
-32°N02' 84°W24'
-
-
-
-JIMMY CARTER	301
-
-
-
-
-
-
-     This horoscope is an excellent example of a person with a leader­ ship destiny, The 1st house is most extraordinary, as it is occupied by Saturn, the raja-yogakaraka for Libra ascendant (ruler of the 4th & 5th), In this case Saturn, the planet of leadership, is exalted, and as ruler of the 5th, governs kingship, destiny, and past-life credit. Further, the 10th lord, the Moon, also occupies the 1st house and thereby serves to empower Saturn (by conjunction) to an even greater extent. Rahu is posited in the 10th house, which, unless closely aspected by the 12th lord, always gives a successful career associated with the masses, Next, Mars, the planet of commanders and military persons, is extremely well fortified, as it occu­ pies the auspicious 5th house, and is aspected by the benefics Mercuiy and Venus (the Venus aspect is within 3 degrees). It must also be noted that Mars functions veiy well in Aquartus, the sign of Saturn, because Mars is exalted in Saturn's other sign, Capricorn. The 1st, 5th, and 10th houses, as well as Mars and Saturn, are thus creating the obvious destiny of leadership. It is also seen that. as with nearly all Presidents, the ascendant lord (Venus) is aspected by Mars (commanders), and Mercuiy is aspected by Mars, giving practicality and technical ability,
-
-     HONESTY & HUMILITY-There is little question that J,C. was indeed a common-man President. He was especially candid, humble, and honest, and was concerned with human rights to the extent of being one of the few non-racists amongst his peers in the deep southern state of Georgia. Saturn in the 1st house always tends towards integrity, honesty. humility, and responsibility. It is an ascetic, common-man influence which leads one to live simply and unostentatiously, In this case, of course, Saturn is exalted and veiy well fortified by its conjunction with the waxing Moon. It is also raja-yogakaraka for this ascendant.
-
-     WEALTH-The 2nd lord, Mars, occupies the auspicious 5th house and is powerfully aspected by Venus and Mercuiy. Mars is, as already mentioned, veiy strong in Saturn's sign, Aquarius, Also, the 2nd lord occupying the house of pooroapunya (the 5th) indicates that wealth was a certainty due to past-life credit. The 2nd house is occupied by Jupiter in a friendly sign, which is excellent for finances (though Jupiter's neecha placement in the navamsa weakens the effect), Also, note the well­ disposed 11th house (gains & profits, supplemental monies), holding two benefics within, Therefore J,C could reap windfall profits and earn money from many other investments and sideline ventures, It may also be men-
-
-302   tioned that whenever a planet occupies its own or exaltation sign In the 1st house, It reveals that one has been born to a wealthy or refined family and has had a good start In life. In this case Saturn Is exalted in the 1st house. J.C. was born Into a wealthy family and later Inherited his father's agricultural business (regarding agriculture, note the Moon In the 1st).
-
-     RELIGION-The atmakaraka Sun Is posited In the 12th house, thereby giving very strong moksha tendencies. The ascendant lord, Venus, is conjunct with the 9th and 12th lord, Mercury. Rahu In the 10th indi­ cates holy pilgrimages, and because It automatically places moksha­ karaka Ketu In the 4th (heart), It produces good spiritual results, Also, whenever ascetic-natured Saturn Is In any way associated with the Sun, the ascendant, or the ascendant lord, spiritual tendencies are generally indicated. In this case Saturn occupies the ascendant. J.C. has reported that he underwent a spiritual conversion experience In 1967 and has been a devout born-again Christian ever since.
-
-     FOREIGN AFFAIRS---J.C., with his atmakaraka Sun in the 12th (foreign lands), found himself especially enmeshed In dealings with Iran during his Presidency. It Is interesting to note that Mahatma Gandhi, who shares the same 12th house placement of the Sun, was also deeply involved in dealings with foreigners (the British). In Gandhi's case the 12th house Sun is unaspected, and the 12th lord, Mercury, is conjunct with Venus and Mars and aspected by Jupiter. In Carter's case The 12th house Sun Is aspected by Mars, while the 12th lord is in a weak final degree and aspected by both Mars and Venus.
-
-      MILITARY CAREER & SPORTS---J.C. graduated from the U.S. Naval Acadamy In Annapolis, fulfilling a childhood dream, and then spent some 7 successful years In military service. His desire was to make a career In the Navy as Chief of Naval Operations. However, In 1953 his father died, and he then decided to return home and forego such a profession. Suc­ cess in military work is seen, as a very powerful and well-aspected Mars sits in the 5th house (past-life credit). J.C. has also always been a sports enthusiast, another Mars and 5th house signification.
-
-     SATURN'S FULL EFFECTS-Saturn gives Its full effects in the 36th year, which in this case finished in Oct. 1960. J.C. ran for his first elected public office at the age of 37. Saturn Is the best planet for this ascendant and rules the 5th house (destiny & politics).
-
-DASA BHUKTJ HIGHLIGHTS
-
-      KETU DASA-It was In Ketu dasa (Venus bhukti) that J.C. became President. Ketu Is In an angular house In a friend's sign and Is exalted In the navamsa. Further, many Hindu astrologers consider it crucial to ana­ lyze the dispositors of Rahu and Ketu when attempting to delineate their
-
-effects. In this horoscope, Ketu Is in Capricorn, whose ruler, Saturn, is	303
-exalted In the 1st and conjunct with the 10th lord beneflc Moon.
-
-      VENUS DASA-Venus, as ruler of the 1st house posited In the 11th, would ordinarily promise a powerful and auspicious dasa. But because Venus occupies the weak 1st degree and Is so closely aspected by Mars, such Is definitely not the case. This period Is adverse for fame, honor, respect, health, general well-being and all 1st house matters.
-
-A NOTE FOR THE FUTURE
-
-      VENUS DASA MARS BHUKTI begins in July 1988 and runs until September 1989, and indicates a dangerous period. This is because Venus, as ascendant lord, occupies the weak and fateful 1st degree and is closely aspected (within 3 degrees) by malefic-natured Mars. There is thus thedistinct possibility of his developing a severe health problem or falling victim to an accident or act of violence. As Venus also rules the 8th house, the life force is threatened. It is advised that somewhat prior to this dasa bhukti J.C. should wear a high-quality, good-sized diamond, and chant the Venus mantra the recommended number of repetitions. Also, If desired, fasting (taking juices, fruits, or water) could be done on Fridays, the day ruled by Venus.
-
-
-
-
-
-
-
-304
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2 'I.J<ro
-NAVAMSA
-y0Tl
-bl,
-John Glenn
-07-18-1921 04:00 p.m. EST
-40°N02'81"W35'
-
-
-
-JOHN GLENN	305
-
-
-
-
-
-
-
-
-
-
-
-     This horoscope Is an excellent example of a chart-where all 3 of the travel houses are powerful. Travel is seen from the 3rd (energy & movement), 9th ([ongjoumeys)., and 12th (remote foreign countries).
-
-     TRAVEL-The ruler of the 3rd house, Saturn, is closely conjunct with the great benefic Jupiter. This is extremely fortunate. Further, the 3rd house is aspected by Mars and the Sun.Although these planets are malefics the 3rd house is energized by the aspects for two reasons. First, the 3rd is an upachaya house where malefic energy is welcomed (for all 3rd house signifi­ cations except siblings). Second, both planets carry positive energy because they are "functional benefics" due to the houses they rule. Thus the 3rd house is very strong. The9th house is occupied by the Sun, the atmakaraka or soul indicator, making long distance travel a vital interest. The ruler of the 9th, theMoon, is especially powerful since it is almost full and is very closely aspected by benefic Mercury. The 12th house, though unoccupied, is strong because the ruler of the house, Venus, is angular and posited in Taurus-its own sign.
-
-     DESIRES, DREAMS, AND AMBITIONS-The 11th house is extremely powerful. Rahu, the planet representing insatiable desires and worldly power, is exalted in the 11th. It is also exalted in the navamsa giving more benefit still. The ruler of the 11th, Mercury, though retrograde and posited in the evil 8th house, is occupying its swakshetra or own sign. More impor­ tantly, it is aspected very tightly by the benefic, bright, yogakaraka Moon. Mercury is therefore in an extraordinary condition. John Glenn would easily fulfill major goals and desires.
-
-     FAME AND SUCCESS-Both the 1st and 10th houses are well forti­ fied. The ruler of the 1st, Mars, is aspected by the bright, yogakaraka Moon. And by Mercury (occupying its own sign Gemini). It is also vargottama, oc­ cupying the same sign In the navamsa. The10th house is occupied by the two powerful planets Jupiter and Saturn. This alone indicates exceptional career energy. Jupiter rules the 5th house, Poorvapunya or past life credit,
-
-
-306	DASA BHUKTI HIGHLIGHTS	BABA RAM DAS (RICHARD ALPERT)-WESTERN GURU	307
-thus indicating that Glenn would gain a certain amount of career success due to efforts from previous lifetimes. Also, the ruler of the 10th, the Sun, is posited in the best house of a chart, the auspicious 9th. Success or fame is blatant.
-
-POLITICS-The ruler of the 5th (politics) occupies the career house.
-
-Mars, the planet ofrulers and commanders is extremely strong due to the powerful aspects described above. Further, there is the most typical aspect of politicians, the Mercury Mars conjunction. The Sun, planet of Govern­ ment, rules the career house and occupies the auspicious 9th. Finally, Sat­ urn in the 10th, according to ancient Hindu scriptures indicates onewho may be "leader of his village."
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
-SPIRITUALI1Y-This chart reveals an extraordinarily spiritual being because of several obvious factors. First off, Venus, the yogakaraka for Gemini ascendant, Is In the 9th house in a friendly sign, and It is vargot­ tama. Next, Jupiter occupies the 1st house and is aspected by the other spiritual planet, Saturn, which happens to be ruling the 9th house. Ketu. the planet of discrimination ( moksha-karaka and gnana-karaka), is exalted In the house of the heart (the 4th). The 9th ruler, Saturn, Is of course aspected by Jupiter. The disposition of the 9th house alone indi­ cates that R.D. would easily receive any kind of higher knowledge he desires, also that he could attain a great guru and be favored by such a one. Then there is the extremely beneficial situation where a trinal lord occupies a trinal house. Venus, as ruler of the 5th is in the 9th. This always creates either phenomenal luck or a spiritual leader. Because Venus Is aspected by Mars, the luck Is tainted.This horoscope Is extremely typical of a highly spiritual man and a religious or spiritual teacher.
-
-
-     SUCCESS & FAME-The power of this 10th house is vast. The Sun is very well placed and receives dik bala In the 10th. Rahu In the 10th, unless afflicted, always gives a great career and tends towards dealing with the masses. On the day of this birth, Rahu was just resuming its retrograde motion and was practically stationary, thus becoming empo­ wered with great strength. Jupiter in the 1st house is one of the finest positions possible for overall success, since It aspects such auspicious houses as the 5th, 7th, and 9th. It may be mentioned, however, that the Sun is harmed by its close conjunction with malefic Rahu. Therefore self­ confidence Is somewhat spoiled.
-
-     HOLY PILGRIMAGES-Holy pilgrimages are seen from both the 9th and 10th houses. The ancient sages are emphatic about Rahu in the 10th giving good spiritual effects and causing one to take dips in the sacred river Ganges. Aside from Rahu occupying the 10th, the 9th house, as already described, Is extremely powerful. Further, the 12th house, which figures into long distance travel because of Its rulership of re ote foreign lands (such as India), Is, on the whole, powerful. The 12th lord, Venus, Is In the auspicious 9th house, In a friendly sign, aspected by Jupiter, and Is vargottama. It Is unfortunately aspected by Mars, but the 12th house Itself Is beneficially aspected by the Moon glancing on
-
-308
-
-its exaltation sign. Ram Das made several journeys to India to study at	309
-the feet of his guru.
-
-     TEACHING, FIRED FROM HARVARD-The 9th house (higher edu­ cation) could hardly be stronger. The 2nd, which rules education and teaching, could hardly be more afflicted. The ruler of the 2nd ( the Moon) Is In the evil 6th house In its fallen sign ( though past the highest point) and is fallen also In the navamsa. The 2nd )louse is occupied by neecha Mars. Therefore although this horoscope centers strongly on higher knowledge and spiritual leadership, it is intriguing that RD.ever became a teacher (even with the Gemini ascendant). But It Is not odd that he was Involved with an institution of higher learning. Nor Is it strange that he was fired from Harvard (for his drug activities with Timothy Leary in the 60's), since the 2nd house Is so weak.
-
-     DRUG USE-The severe afflictions to the 2nd house, already de­ scribed above, Indicate that RD. would eat bad foods or take alcohol or drugs.
-
-
-
-
-
-21I/9
-
-NAVAMSA9u
-06'&11
-))cf
-BabaRamDas (Richard Alpert)
-04-06-193110:40 a.m. EST
-42'N22'7l"W04'
-
-A NOTE FOR THE FUTURE
-
-     MOON DASA began 5/13/84, and this will be a very difficult 10 years. There may especially be ill health and powerful enemies arising against RD. These are of course 6th house matters, the house where the afflicted Moon Is posited. There are also likely to be difficulties with finances and possibly the right eye, since the Moon rules the 2nd house.
-
-
-
+H
 
 
 VARGAS-THE 16 DMSIONAL CHARTS	311
