@@ -1,0 +1,58 @@
+Rules for Editing and formatting OCR text
+
+1. Fix spelling of known English words where letters like ! appear instead of i, 1, l and 0 or o,O has got exchanged
+
+2. Introduce proper spaces between known English words where this is lost, "ifyouare" should he replaced with "if you are"
+
+3. Make sure all correct names of planets and rashis are used, Sun, Moon, Mercury, Mars, Jupiter, Saturn, Rahu, Ketu and Aries, Taurus etc
+
+4. If Hindu names are used, then Ravi, Chandra, Budh (not Buddha), Mangal ( avoid Kuja to the extent possible), Guru, Shani ( not Sani) and Mesh, Vrishhav etc (avoid Rashi names unless essential)
+
+5. Replace text like 1st house, 2nd house etc with hyphenated words, 1st_house, 2nd_house .... 12th_house
+
+6. Replace phrases like ruler of 1st house, 1st lord, 1st ruler etc with consistently one hyphenated word 1st_ruler, 2nd_ruler .... 12th_ruler. If you have to say rulers of 1st, 3rd or 7th, say instead 1st_ruler or 3rd_ruler or 7th_ruler
+
+7. Remove extra lines and indent paragraphs as best as possible
+8. Formatting the house analysis is essential ..
+For each house first explain the general characteristics and clearly identify the karakas
+The identify the impact of the presence of each ruler in each house ... Currently it says
+-----------------------
+The ruler of the 12th house placed in the:
+
+1st HOUSE
+     Poor health, thin or emaciated body, poor appearance. unhappy. little confidence or self-esteem. This position decreases longevity. Gains no respect or fame. unhappy ch!ldhood-poor start in l!fe-ascetic or spiritual nature. There may be travel for spiritual purposes. Enjoyable sex l!fe. Bad for married l!fe, as the 12th lord aspects the 7th house.
+
+2nd HOUSE
+     Poor. financial losses. unhappy family l!fe. enjoys using foul language. poor vision in right eye, poor hearing in right ear, eats bad foods, poor speaker. l!ttle imagination, may speak Iles.
+-------------------------------
+replace this with 
+
+IF 12th_ruler is in 1st_house THEN "Poor health, thin or emaciated body, poor appearance. unhappy. little confidence or self-esteem. This position decreases longevity. Gains no respect or fame. unhappy ch!ldhood-poor start in l!fe-ascetic or spiritual nature. There may be travel for spiritual purposes. Enjoyable sex l!fe. Bad for married l!fe, as the 12th lord aspects the 7th house."
+
+IF 12th_ruler is in 2nd_house THEN "Poor. financial losses. unhappy family l!fe. enjoys using foul language. poor vision in right eye, poor hearing in right ear, eats bad foods, poor speaker. l!ttle imagination, may speak Iles."
+
+Similarly organise the PLANETS in the HOUSE section as follows
+
+First, put in the paragraph about the house then replace, text like 
+--------------------------
+
+RAVI - THE SUN IN THE 12th HOUSE
+
+     The significations .... or terribly afflicted.
+	 
+      UCHCHA & SWAKSHETRA (exalted and own house)-Ifthe Sun Is in Aries or Leo in the 12th house, .....  also be spiritual,
+
+      NEECHA (fallen)-If The Sun is in Libra In the 12th house, ... isits such lands.
+--------------------------
+with 
+
+IF Ravi is in 12th_house then "The significations .... or terribly afflicted."
+IF RAVI is in 12th_house AND (UCCHA & SWAKSH#TRA -- exalted and own house ) THEN "Ifthe Sun Is in Aries or Leo in the 12th house, .....  also be spiritual,"
+IF RAVI is in 12th_house AND (NEECHA - fallen) THEN "If The Sun is in Libra In the 12th house, ... isits such lands."
+---------------------------
+
+All such IF THEN rules should be numbered sequentially HR#1, HR#2, HR#3 ..... as many as such rules exist
+
+9. Similarly all Dasha Rules should be numbered as D#1, D#2 .... D# as many such rules.
+
+10. Beyond these, format the text as best as possible.

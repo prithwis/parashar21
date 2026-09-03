@@ -1,0 +1,432 @@
+RULES FOR CLEANING AND FORMATTING OCR JYOTISHA TEXTS
+
+OBJECTIVE
+
+Convert OCR-derived Jyotisha text into a clean, consistent and
+retrieval-friendly corpus for NotebookLM.
+
+The objective is textual restoration and structural formatting,
+NOT reinterpretation or correction of the author's astrology.
+
+The author's meaning, rules, qualifications, contradictions and
+terminology must be preserved.
+
+
+1. OCR CORRECTION
+
+Correct obvious OCR errors in known English words.
+
+Examples include:
+- !, 1 or l incorrectly substituted for i
+- 0, O and o incorrectly interchanged
+- rn incorrectly read as m, or vice versa
+- punctuation inserted inside words
+- obvious OCR spelling corruption
+
+Example:
+    beneflc  -> benefic
+    l!fe     -> life
+    Mercu,:y -> Mercury
+
+Do not alter a word merely because the author's original wording
+appears unusual or old-fashioned.
+
+
+2. WORD SPACING AND HYPHENATION
+
+Restore spaces between words where OCR has joined them.
+
+Example:
+    ifyouare -> if you are
+    Ifthe    -> If the
+
+Join words incorrectly split across lines or pages.
+
+Remove OCR-induced hyphenation where a word was broken only because
+it occurred at the end of a printed line.
+
+Preserve genuine compound-word hyphens.
+
+
+3. CANONICAL PLANET NAMES
+
+Use the following English names as the canonical planet names:
+
+    Sun
+    Moon
+    Mercury
+    Venus
+    Mars
+    Jupiter
+    Saturn
+    Rahu
+    Ketu
+
+Where Hindu/Sanskrit names occur, recognise them as equivalents:
+
+    Ravi    = Sun
+    Chandra = Moon
+    Budh    = Mercury
+    Shukra  = Venus
+    Mangal  = Mars
+    Kuja    = Mars
+    Guru    = Jupiter
+    Shani   = Saturn
+
+Correct obvious OCR errors such as Buddha for Budh or Sani for Shani.
+
+Prefer the canonical English names in structured rules because these
+correspond to the terminology used in Parashar21 Chart.txt.
+
+Do not replace Hindu names unnecessarily when they form part of the
+author's original prose.
+
+
+4. CANONICAL RASHI / SIGN NAMES
+
+Use the following English names as the canonical sign names:
+
+    Aries
+    Taurus
+    Gemini
+    Cancer
+    Leo
+    Virgo
+    Libra
+    Scorpio
+    Sagittarius
+    Capricorn
+    Aquarius
+    Pisces
+
+Correct OCR errors in these names.
+
+Traditional Sanskrit/Hindu sign names may be retained where they are
+part of the author's original discussion, but English sign names
+should be preferred in structured rules so that terminology matches
+Parashar21.
+
+
+5. HOUSE NAMES
+
+Replace references to numbered houses with consistent tokens:
+
+    1st_house
+    2nd_house
+    3rd_house
+    4th_house
+    5th_house
+    6th_house
+    7th_house
+    8th_house
+    9th_house
+    10th_house
+    11th_house
+    12th_house
+
+Use these tokens in all structured rules.
+
+Normal prose discussing a house in general may remain natural English
+where appropriate.
+
+
+6. HOUSE RULER NAMES
+
+Normalize expressions such as:
+
+    ruler of the 1st house
+    lord of the 1st house
+    1st house lord
+    1st lord
+    ruler of house 1
+
+to:
+
+    1st_ruler
+
+Similarly use:
+
+    2nd_ruler
+    3rd_ruler
+    ...
+    12th_ruler
+
+Where several rulers are mentioned, state each explicitly.
+
+Example:
+
+    rulers of the 1st, 3rd and 7th houses
+
+becomes:
+
+    1st_ruler, 3rd_ruler and 7th_ruler
+
+
+7. PARAGRAPH AND DOCUMENT FORMATTING
+
+Remove unnecessary blank lines, OCR artefacts, repeated headers,
+footers and page-number debris.
+
+Restore sensible paragraph boundaries.
+
+Remove accidental duplicated text created during OCR.
+
+Preserve meaningful headings and subheadings.
+
+Do not rewrite the author's prose merely to improve literary style.
+
+
+8. HOUSE ANALYSIS AND HOUSE-RULER RULES
+
+For each house, retain the author's introductory description of the
+house, including its general characteristics and karakas.
+
+Then convert systematic house-ruler placement statements into
+explicit IF-THEN rules.
+
+Example:
+
+Original structure:
+
+    The ruler of the 12th house placed in the:
+
+    1st HOUSE
+    Poor health, thin or emaciated body...
+
+    2nd HOUSE
+    Financial losses...
+
+Convert to:
+
+    HR#1 IF 12th_ruler is in 1st_house THEN
+    "Poor health, thin or emaciated body..."
+
+    HR#2 IF 12th_ruler is in 2nd_house THEN
+    "Financial losses..."
+
+Continue for all available ruler/house combinations.
+
+Number all House Rules sequentially:
+
+    HR#1
+    HR#2
+    HR#3
+    ...
+
+Do not restart numbering for each section.
+
+
+9. PLANETS IN HOUSES
+
+Retain the introductory description of each house.
+
+Convert systematic planet-in-house statements into explicit IF-THEN
+rules.
+
+Example:
+
+Original:
+
+    RAVI - THE SUN IN THE 12th HOUSE
+
+    [general effects]
+
+    UCHCHA & SWAKSHETRA
+    [effects]
+
+    NEECHA
+    [effects]
+
+Convert to:
+
+    HR#501 IF Sun is in 12th_house THEN
+    "[general effects]"
+
+    HR#502 IF Sun is in 12th_house
+    AND (Sun is exalted OR Sun is in own_sign)
+    THEN "[effects]"
+
+    HR#503 IF Sun is in 12th_house
+    AND Sun is debilitated
+    THEN "[effects]"
+
+Use clear canonical condition terminology where possible:
+
+    exalted
+    debilitated
+    own_sign
+    retrograde
+    combust
+
+Preserve the author's original astrological meaning exactly.
+
+
+10. DASHA RULES
+
+Convert systematic Dasha statements into explicit IF-THEN rules
+where the original text supports such a structure.
+
+Number these separately and sequentially:
+
+    D#1
+    D#2
+    D#3
+    ...
+
+Example:
+
+    D#17 IF Jupiter is Mahadasha_lord AND [stated condition]
+    THEN "[author's stated effects]"
+
+Do not infer Dasha rules that the author has not explicitly stated.
+
+
+11. SOURCE STRUCTURE AND PROVENANCE
+
+Retain useful section headings so that the corpus remains readable
+both to humans and to retrieval systems.
+
+Example:
+
+    ## HOUSE RULER PLACEMENTS
+
+    ### 12th_ruler
+
+    HR#397 IF 12th_ruler is in 1st_house THEN "..."
+    HR#398 IF 12th_ruler is in 2nd_house THEN "..."
+
+Where the original printed page number can be reliably identified,
+retain it:
+
+    [Source: JBR, p. 123]
+
+Do not invent page numbers where provenance is uncertain.
+
+
+12. UNCERTAIN OCR
+
+Never reconstruct uncertain text using astrological knowledge.
+
+If the OCR is too damaged to determine what the author actually wrote,
+mark it:
+
+    [UNCLEAR]
+
+If only one word is uncertain:
+
+    "...the planet produces [UNCLEAR] results..."
+
+The objective is to preserve the source, not to guess what the author
+probably intended.
+
+
+13. PRESERVE THE AUTHOR'S ASTROLOGY
+
+Do NOT:
+
+- correct an astrological statement because it appears wrong
+- add rules from general Jyotisha knowledge
+- reconcile contradictory statements
+- soften harsh predictions
+- strengthen weak predictions
+- modernize interpretations
+- insert missing astrological conditions
+- remove a statement merely because it appears implausible
+
+If Braha says it, preserve it.
+
+Correct the transmission, not the doctrine.
+
+
+14. PRESERVE CONTRADICTIONS AND QUALIFICATIONS
+
+Retain positive and negative statements, exceptions, qualifications
+and apparent contradictions.
+
+Do not attempt to harmonize them.
+
+NotebookLM, not the editor, will later be asked to compare and
+synthesize the evidence.
+
+
+15. REMOVE IRRELEVANT OR CONTAMINATING MATERIAL
+
+Material may be removed where it is not required for the Parashar21
+analysis corpus, including:
+
+- OCR-damaged computational tables already calculated by Parashar21
+- redundant calculation instructions
+- duplicated OCR passages
+- irrelevant publishing/front/back matter
+- worked celebrity horoscopes that could contaminate blind testing
+
+Do NOT remove theoretical material merely because it appears unlikely
+to be useful.
+
+
+16. RETAIN RETRIEVAL-USEFUL TERMINOLOGY
+
+Where possible, ensure that terminology used in the reference corpus
+matches terminology generated by Parashar21.
+
+In particular, prefer consistent forms for:
+
+    planet names
+    sign names
+    house numbers
+    house rulers
+    dignity
+    aspects
+    conjunctions
+    retrogression
+    combustion
+    Dasha
+    Mahadasha
+    Antardasha
+    Yoga
+
+Consistency is more important than stylistic variation in structured
+rules.
+
+
+17. DO NOT OVER-FORMAT
+
+Not every sentence should become an IF-THEN rule.
+
+Use structured rules where the source itself expresses a systematic
+conditional relationship.
+
+Retain explanatory, conceptual and interpretive passages as normal
+prose.
+
+The final corpus should therefore contain both:
+
+    CLEAN EXPLANATORY PROSE
+
+and
+
+    EXPLICIT STRUCTURED RULES
+
+
+18. FINAL PRINCIPLE
+
+The cleaned corpus must remain a faithful representation of the
+author's text.
+
+The transformation is:
+
+    OCR text
+        -> repaired text
+        -> normalized terminology
+        -> explicit structure
+
+It must NOT become:
+
+    OCR text
+        -> editor's interpretation
+        -> rewritten Jyotisha text
+
+Braha supplies the astrological knowledge.
+The editor repairs and structures its transmission.
+Parashar21 supplies the computed horoscope facts.
+NotebookLM performs the interpretation.
