@@ -1,0 +1,162 @@
+RULES FOR CLEANING JYOTISHA OCR TEXT
+
+OBJECTIVE
+
+Create a clean, readable and retrieval-friendly text for use as an
+LLM source.
+
+Preserve the author's astrological meaning. Clean and organise the
+text, but do not reinterpret, correct or add to the author's astrology.
+
+
+1. CLEAN THE OCR INTELLIGENTLY
+
+Correct obvious OCR errors, spelling errors, broken words, joined
+words, missing spaces and punctuation.
+
+Examples:
+
+    Mercuiy       -> Mercury
+    l!fe           -> life
+    Ifthe          -> If the
+    theperson      -> the person
+    therfore       -> therefore
+
+Use the meaning of the sentence to identify obvious OCR errors.
+
+If the intended text cannot be determined confidently, use [UNCLEAR].
+Do not guess from astrological knowledge.
+
+
+2. USE CONSISTENT ASTROLOGICAL NAMES
+
+Use these planet names in structured material:
+
+    Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Rahu, Ketu
+
+Recognise Hindu equivalents such as Ravi, Chandra, Budh, Mangal,
+Guru, Shukra and Shani, but do not unnecessarily rewrite the
+author's normal prose.
+
+Use the standard English names of the Rashis:
+
+    Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio,
+    Sagittarius, Capricorn, Aquarius, Pisces
+
+
+3. NORMALISE HOUSE REFERENCES
+
+Whenever a number refers to a HOUSE, write:
+
+    1st_house, 2nd_house ... 12th_house
+
+This applies even when the word "house" is implied.
+
+Examples:
+
+    ninth house
+        -> 9th_house
+
+    Kendras are 1st, 4th, 7th and 10th
+        -> Kendras are 1st_house, 4th_house, 7th_house and 10th_house
+
+    Houses 1, 5 and 9 are dharma houses
+        -> 1st_house, 5th_house and 9th_house are dharma houses
+
+
+4. NORMALISE HOUSE RULERS
+
+Whenever a number refers to the LORD or RULER of a house, write:
+
+    1st_ruler, 2nd_ruler ... 12th_ruler
+
+Examples:
+
+    lord of the 6th house
+        -> 6th_ruler
+
+    rulers of the 2nd, 8th and 12th
+        -> 2nd_ruler, 8th_ruler and 12th_ruler
+
+Use the meaning of the sentence to distinguish a HOUSE from its RULER.
+
+
+5. CREATE HOUSE RULES
+
+Where the author gives systematic rules about house rulers or planets
+occupying houses, convert them into IF-THEN statements.
+
+Examples:
+
+    HR#1 IF 12th_ruler is in 1st_house THEN "..."
+
+    HR#2 IF Mars is in 4th_house THEN "..."
+
+    HR#3 IF Sun is in 12th_house AND Sun is debilitated THEN "..."
+
+Number all such rules sequentially:
+
+    HR#1, HR#2, HR#3 ...
+
+
+6. CREATE DASHA RULES
+
+Where the author gives explicit rules about Dasha or Bhukti effects,
+convert them into IF-THEN statements where appropriate.
+
+Number them sequentially:
+
+    D#1, D#2, D#3 ...
+
+
+7. MAKE THE TEXT EASY TO READ
+
+Do not produce a wall of text.
+
+Keep blank lines between paragraphs and sections.
+
+Use clear headings and subheadings.
+
+Use indented bullets for lists.
+
+Convert broken OCR lists into proper lists.
+
+Join lines that were broken merely because of the printed page layout.
+
+
+8. PRESERVE THE AUTHOR
+
+Do not:
+
+    • change an astrological rule because it appears wrong
+    • add missing astrological knowledge
+    • reconcile contradictions
+    • soften or strengthen predictions
+    • rewrite the author's ideas in your own words
+
+Correct the TEXT, not the ASTROLOGY.
+
+
+9. REMOVE CONTAMINATING EXAMPLES
+
+Remove named celebrity horoscope examples that could reveal the
+identity of blind-test cases.
+
+Preserve the underlying general astrological rule whenever possible.
+
+
+10. FINAL CHECK
+
+Before finishing, read the cleaned text as an editor and proof-reader,  not as a search-and-replace program.
+
+Check especially for:
+
+    • remaining OCR nonsense
+    • joined or broken words
+    • malformed sentences
+    • unnormalised house references
+    • unnormalised ruler references
+    • badly formatted lists
+    • paragraphs broken by OCR line endings
+
+The finished text should be both HUMAN-READABLE and LLM-READABLE.
