@@ -1,0 +1,167 @@
+HOROSCOPE DATA FOR JYOTISHA REASONING
+=====================================
+
+Analysis : Natal
+Chart Type : Rashi
+Gender : Male
+
+HOUSE LORDSHIP
+--------------
+House 1 lord is Moon
+House 2 lord is Sun
+House 3 lord is Mercury
+House 4 lord is Venus
+House 5 lord is Mars
+House 6 lord is Jupiter
+House 7 lord is Saturn
+House 8 lord is Saturn
+House 9 lord is Jupiter
+House 10 lord is Mars
+House 11 lord is Venus
+House 12 lord is Mercury
+
+PLANETARY INFORMATION
+---------------------
+
+Lagna:
+- Occupies Bhava 1
+- Located in Rashi Cancer
+- Absolute celestial longitude 116.282 degrees
+
+Sun:
+- Occupies Bhava 7
+- Located in Rashi Capricorn
+- Lord of Bhavas [2]
+- In enemy house
+- Absolute celestial longitude 274.245 degrees
+
+Moon:
+- Occupies Bhava 7
+- Located in Rashi Capricorn
+- Lord of Bhavas [1]
+- Functional benefic
+- Absolute celestial longitude 289.375 degrees
+
+Mars:
+- Occupies Bhava 10
+- Located in Rashi Aries
+- Lord of Bhavas [5, 10]
+- In own house
+- Functional benefic
+- Absolute celestial longitude 10.01 degrees
+
+Mercury:
+- Occupies Bhava 7
+- Located in Rashi Capricorn
+- Lord of Bhavas [3, 12]
+- Functional malefic
+- Absolute celestial longitude 290.466 degrees
+
+Jupiter:
+- Occupies Bhava 11
+- Located in Rashi Taurus
+- Lord of Bhavas [6, 9]
+- In enemy house
+- Functional malefic
+- Retrograde
+- Absolute celestial longitude 48.909 degrees
+
+Venus:
+- Occupies Bhava 7
+- Located in Rashi Capricorn
+- Lord of Bhavas [4, 11]
+- Retrograde
+- Absolute celestial longitude 297.623 degrees
+
+Saturn:
+- Occupies Bhava 10
+- Located in Rashi Aries
+- Lord of Bhavas [7, 8]
+- Debilitated
+- Functional malefic
+- Retrograde
+- Absolute celestial longitude 28.612 degrees
+
+Rahu:
+- Occupies Bhava 2
+- Located in Rashi Leo
+- Absolute celestial longitude 142.894 degrees
+
+Ketu:
+- Occupies Bhava 8
+- Located in Rashi Aquarius
+- Absolute celestial longitude 322.894 degrees
+
+PLANETARY ASPECTS
+-----------------
+Lagna aspects ['Mercury', 'Moon', 'Venus', 'Sun']
+Sun aspects ['Lagna']
+Moon aspects ['Lagna']
+Mars aspects ['Lagna']
+Mercury aspects ['Lagna']
+Jupiter aspects ['Mercury', 'Moon', 'Venus', 'Sun']
+Venus aspects ['Lagna']
+Saturn aspects ['Mercury', 'Moon', 'Venus', 'Sun']
+
+PLANETS ASPECTED BY
+--------------------
+Sun is aspected by ['Saturn', 'Jupiter', 'Lagna']
+Moon is aspected by ['Saturn', 'Jupiter', 'Lagna']
+Mercury is aspected by ['Saturn', 'Jupiter', 'Lagna']
+Venus is aspected by ['Saturn', 'Jupiter', 'Lagna']
+Lagna is aspected by ['Venus', 'Sun', 'Mars', 'Mercury', 'Moon']
+
+PLANETARY CONJUNCTIONS
+-----------------------
+Sun conjuncts ['Mercury', 'Venus', 'Moon']
+Moon conjuncts ['Mercury', 'Venus', 'Sun']
+Mercury conjuncts ['Moon', 'Venus', 'Sun']
+Venus conjuncts ['Mercury', 'Moon', 'Sun']
+Mars conjuncts ['Saturn']
+Saturn conjuncts ['Mars']
+
+HOUSE LORD RELATIONSHIPS
+-------------------------
+Lord of Bhava 1 conjuncts ['Mercury', 'Venus', 'Sun']
+Lord of Bhava 2 conjuncts ['Mercury', 'Venus', 'Moon']
+Lord of Bhava 3 conjuncts ['Moon', 'Venus', 'Sun']
+Lord of Bhava 4 conjuncts ['Mercury', 'Moon', 'Sun']
+Lord of Bhava 5 conjuncts ['Saturn']
+Lord of Bhava 7 conjuncts ['Mars']
+Lord of Bhava 8 conjuncts ['Mars']
+Lord of Bhava 10 conjuncts ['Saturn']
+Lord of Bhava 11 conjuncts ['Mercury', 'Moon', 'Sun']
+Lord of Bhava 12 conjuncts ['Moon', 'Venus', 'Sun']
+
+LORD LORD RELATIONSHIPS
+-----------------------
+Lord of Bhava 1 connected with Lords [3, 11, 2, 4, 12]
+Lord of Bhava 2 connected with Lords [3, 11, 4, 12, 1]
+Lord of Bhava 3 connected with Lords [4, 11, 2, 1]
+Lord of Bhava 4 connected with Lords [12, 3, 2, 1]
+Lord of Bhava 5 connected with Lords [8, 7]
+Lord of Bhava 7 connected with Lords [5, 10]
+Lord of Bhava 8 connected with Lords [5, 10]
+Lord of Bhava 10 connected with Lords [8, 7]
+Lord of Bhava 11 connected with Lords [12, 3, 2, 1]
+Lord of Bhava 12 connected with Lords [4, 11, 2, 1]
+
+BHAVA ASPECTS
+--------------
+Bhava 1 receives aspect from ['Venus', 'Sun', 'Mars', 'Mercury', 'Moon']
+Bhava 2 receives aspect from ['Ketu']
+Bhava 3 receives aspect from ['Jupiter']
+Bhava 4 receives aspect from ['Saturn', 'Mars']
+Bhava 5 receives aspect from ['Mars', 'Jupiter']
+Bhava 7 receives aspect from ['Saturn', 'Jupiter', 'Lagna']
+Bhava 8 receives aspect from ['Rahu']
+Bhava 12 receives aspect from ['Saturn']
+
+BHAVA ASPECTED BY LORDS
+------------------------
+Bhava 1 receives aspect from Lords ['3', '2', '11', '5', '10', '4', '12', '1']
+Bhava 3 receives aspect from Lords ['6', '9']
+Bhava 4 receives aspect from Lords ['5', '8', '7', '10']
+Bhava 5 receives aspect from Lords ['5', '9', '10', '6']
+Bhava 7 receives aspect from Lords ['6', '8', '7', '9']
+Bhava 12 receives aspect from Lords ['8', '7']
