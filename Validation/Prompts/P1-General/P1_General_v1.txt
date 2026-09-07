@@ -1,0 +1,48 @@
+P1 — GENERAL HOROSCOPE ANALYSIS
+
+Analyse the horoscope in the supplied chart*.txt file using ONLY the Jyotisha reference sources supplied in this notebook.
+
+You may refer to the supplied dasha*.txt file if necessary, but do not perform a detailed dasha or chronological analysis at this stage.
+
+STRICT SOURCE RESTRICTION
+
+Use ONLY:
+1. The supplied chart*.txt file.
+2. The supplied dasha*.txt file.
+3. The Jyotisha reference sources supplied in this notebook.
+
+Do NOT search the web, use external sources, use prior knowledge about any person, or attempt to identify the native from the horoscope, birth information or dasha data.
+
+TASK
+
+Study the horoscope as a whole and identify its most significant features, both favourable and unfavourable.
+
+Consider the important planetary placements, house lordships, strengths and weaknesses, aspects, conjunctions, yogas, cancellations, mitigating factors and contradictions. Do not mechanically describe every planet or house. Concentrate on what is genuinely important or distinctive.
+
+Most importantly, do not stop at astrological description.
+
+For every significant finding explain:
+
+1. What is the astrological indication?
+2. Why is it important, with reference to the supplied Jyotisha sources?
+3. What could this POSSIBLY MEAN in the native's actual life?
+
+For example, saying that "Mars is strongly placed" is not sufficient. Explain what such a placement could possibly imply in terms of abilities, temperament, opportunities, difficulties or life experiences.
+
+Where several factors support the same conclusion, combine them. Where indications contradict or mitigate one another, explain the contradiction rather than choosing one and ignoring the other.
+
+OUTPUT
+
+Begin with a brief overall assessment of the horoscope.
+
+Then present:
+- Major strengths and their possible impact on life.
+- Major weaknesses and their possible impact on life.
+- Important contradictions, cancellations or mitigating factors.
+- The major life themes that emerge when the horoscope is considered as a whole.
+
+Distinguish strong conclusions from more speculative ones and use qualified language such as "could possibly indicate", "may suggest" or "might manifest as".
+
+End with a concise summary of what appears to be most distinctive about this horoscope.
+
+Do NOT perform detailed analysis of career, wealth, family, education/dharma, fame/status, health/longevity or dasha timing. These will be examined separately.

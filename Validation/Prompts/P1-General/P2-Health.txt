@@ -1,0 +1,33 @@
+P2 — HEALTH AND LONGEVITY
+
+Using the horoscope and dasha data, analyse the native's health and longevity.
+
+Use ONLY:
+- the supplied chart*.txt file
+- the supplied dasha*.txt file
+- the Jyotisha sources supplied in this notebook
+- the previous General Horoscope Analysis
+
+Do not search the web, use external information, or attempt to identify the native.
+
+The previous General Analysis may provide context, but conclusions in this analysis must be supported by the horoscope and the supplied Jyotisha sources.
+
+Address the following questions:
+
+1. What does the horoscope suggest about the native's overall health, vitality and physical constitution?
+
+2. Are there significant vulnerabilities involving particular organs, parts of the body, or types of illness? Concentrate only on strong indications. Do not produce a catalogue of every possible disease.
+
+3. Are there significant indications of accidents, injuries, hospitalisation or surgery?
+
+4. Using the dasha data, when are the most important periods of good health, illness, injury or major health crises likely to occur? Explain briefly why each important period is significant.
+
+5. What does the horoscope suggest about longevity?
+
+6. If the supplied sources and horoscope permit it, identify the dasha periods during which the risk of death appears greatest. If the evidence is weak or contradictory, say so.
+
+For every important conclusion, explain the astrological basis and cite the supplied source or sources.
+
+Translate astrological observations into possible real-life consequences. Do not merely say that a planet, house or lord is strong, weak or afflicted; explain what that could POSSIBLY MEAN in the native's life.
+
+Distinguish strong indications from weaker possibilities. Do not present astrological predictions as certainties.
