@@ -403,9 +403,6 @@ def R511_parseChartData(c):
     p21.beneficG = c['beneficG']
     p21.maleficG = c['maleficG']
     
-    p21.GNksN = c['GNksN']
-    p21.GNksA = c['GNksA']
-    
 
 def R01_CreateReportDoc(cqs,pS,repStyle = 'MultiChart'):
       
@@ -606,28 +603,7 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     #
     #if p21.printDasha:
 
-    # ----------------------------------------------------------------------------------------------------End of Paragraph  
-
-    # ------------------------------------------------------------
-    # Graha Longitude and Nakshatra
-
-    tableNks = p21.document.add_table(rows=1, cols=4)
-
-    hdr = tableNks.rows[0].cells
-    hdr[0].text = 'Graha'
-    hdr[1].text = 'Longitude'
-    hdr[2].text = 'Nks No.'
-    hdr[3].text = 'Nakshatra'
-
-    for g, lon in p21.GLon.items():
-        cells = tableNks.add_row().cells
-        cells[0].text = g
-        cells[1].text = f'{lon:.2f}'
-        cells[2].text = str(p21.GNksN[g])
-        cells[3].text = p21.GNksA[g]
-
-    # ------------------------------------------------------------
-    
+    # ----------------------------------------------------------------------------------------------------End of Paragraph        
     if (repStyle != 'SingleChart'):
         p21.document.add_page_break()
         

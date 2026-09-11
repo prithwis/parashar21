@@ -358,6 +358,11 @@ def R12_LocateGrahaInNakshatra():
     p21.GNksA = {}
     for k, v in p21.GNksN.items():
         p21.GNksA[k] = p21.NksN2A(v)
+        
+    p21.NksData = {
+        'GNksN': p21.GNksN,
+        'GNksA': p21.GNksA
+        }
 
 
 # --------------------------------------------------    
