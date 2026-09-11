@@ -341,26 +341,6 @@ def R11_LocateGrahaInRashi():
         
     #print(p21.GRashiA)
     
-    
-# --------------------------------------------------    
-# Nakshatra -- addition - Sep 2026
-
-def Long2Nks(x):
-    NksNumber = math.floor(x[1] / p21.NksGap)
-    return x[0], NksNumber
-    
-def R12_LocateGrahaInNakshatra():
-
-    p21.GNksN = l2d(
-        list(map(lambda x: Long2Nks(x), d2l(p21.GLon)))
-    )
-
-    p21.GNksA = {}
-    for k, v in p21.GNksN.items():
-        p21.GNksA[k] = p21.NksN2A(v)
-
-
-# --------------------------------------------------    
 # --------------------------------------------------
 
 #Aspects

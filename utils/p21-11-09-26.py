@@ -107,8 +107,6 @@ selCols = {
             #'LordRashiN':1,            # [ Rashi number where each Lord resides] - not used in reporting
             #'LordRashiA':1,            # [ Rashi name where each Lord resides] - not used in reporting
             'GRashiN':1,                # [ Rashi number where each Graha resides]
-            'GNksN':1,                  # Nakshatra number where each Graha resides
-            'GNksA':1,                  # Nakshatra name where each Graha resides
             'GrahaLordBhav':1,          # Graha Lord of Bhav  { Graha : [List of Bhavs where Graha is Lord ]}
             'GrahaBhava':1,             # Graha Location in Bhav { Graha : Bhav }                         
             'LordBhav':1,               # Bhav Location of Lord [ List of Bhavs ]
