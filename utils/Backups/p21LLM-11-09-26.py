@@ -190,13 +190,6 @@ def AddPlanetaryInformation(lines):
             add(
                 f"- Located in Rashi {RName(p21.GRashiN[graha])}"
             )
-            
-            
-        if graha in p21.GNksN:
-            add(
-                f"- Located in Nakshatra {p21.GNksN[graha]} "
-                f"({p21.GNksA[graha]})"
-            )
 
         if graha in p21.GrahaLordBhav:
             add(

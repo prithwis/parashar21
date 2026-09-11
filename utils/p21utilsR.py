@@ -612,6 +612,8 @@ def R512_FormatPage(repStyle = 'MultiChart'):
     # Graha Longitude and Nakshatra
 
     tableNks = p21.document.add_table(rows=1, cols=4)
+    tableNks.autofit = False
+    widths = [0.65, 1.05, 0.75, 2.05]
 
     hdr = tableNks.rows[0].cells
     hdr[0].text = 'Graha'
@@ -625,6 +627,9 @@ def R512_FormatPage(repStyle = 'MultiChart'):
         cells[1].text = f'{lon:.2f}'
         cells[2].text = str(p21.GNksN[g])
         cells[3].text = p21.GNksA[g]
+        
+        for i, width in enumerate(widths):
+            cells[i].width = Inches(width)
 
     # ------------------------------------------------------------
     
