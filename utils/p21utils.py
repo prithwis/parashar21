@@ -346,7 +346,7 @@ def R11_LocateGrahaInRashi():
 # Nakshatra -- addition - Sep 2026
 
 def Long2Nks(x):
-    NksNumber = math.floor(x[1] / p21.NksGap)
+    NksNumber = math.floor(x[1] / p21.NksGap) + 1
     return x[0], NksNumber
     
 def R12_LocateGrahaInNakshatra():
