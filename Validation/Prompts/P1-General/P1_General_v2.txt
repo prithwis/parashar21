@@ -46,3 +46,5 @@ Distinguish strong conclusions from more speculative ones and use qualified lang
 End with a concise summary of what appears to be most distinctive about this horoscope.
 
 Do NOT perform detailed analysis of career, wealth, family, education/dharma, fame/status, health/longevity or dasha timing. These will be examined separately.
+
+Do not restrict an assessment of any life domain to the house conventionally associated with that domain. Search the entire Harihar Majumdar source for specific rules, yogas and significations applicable to the supplied horoscope, including rules located in chapters dealing with other houses. Integrate all applicable evidence before reaching a conclusion.
