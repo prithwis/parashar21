@@ -1,0 +1,59 @@
+wrong,right,category
+
+alies,aries,astrology
+angiy,angry,english
+bling,bring,english
+memmy,memory,english
+mariy,marry,english
+saroe,same,english
+modem,modern,english
+
+
+aquartus,aquarius,astrology
+authortty,authority,english
+beneflcs,benefics,astrology
+bhuktl,bhukti,astrology
+bhuktt,bhukti,astrology
+bhuktts,bhuktis,astrology
+caprtcorn,capricorn,astrology
+constanily,constantly,english
+countiy,country,english
+ertjoy,enjoy,english
+expelience,experience,english
+extraordlnaiy,extraordinary,english
+foliegn,foreign,english
+jeweliy,jewelry,english
+juplter,jupiter,astrology
+literaiy,literary,english
+luxurtes,luxuries,english
+maleflcs,malefics,astrology
+marrted,married,english
+mercmy,mercury,astrology
+mlscarrtages,miscarriages,english
+mlseiy,misery,english
+monasteiy,monastery,english
+parllcular,particular,english
+peliod,period,english
+plenly,plenty,english
+pllglimages,pilgrimages,english
+powerlul,powerful,english
+saglttartus,sagittarius,astrology
+scrtptures,scriptures,english
+slgn,sign,astrology
+splrttual,spiritual,english
+stationaiy,stationary,english
+subperlods,subperiods,astrology
+trtkona,trikona,astrology
+unaffllcted,unafflicted,astrology
+vety,very,english
+hewill,he will,joined
+hiseldest,his eldest,joined
+ifhe,if he,joined
+ifsaturn,if saturn,joined
+ifvenus,if venus,joined
+longdistance,long distance,joined
+ofa,of a,joined
+ofgreat,of great,joined
+shortdistance,short distance,joined
+significationsof,significations of,joined
+wellrespected,well respected,joined
