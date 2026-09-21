@@ -23,9 +23,9 @@ The ayanamsa is obviously of utmost Importance, since aside from Its effect on p
 
 Below are 3 of the most respected opinions for the ayanamsa on January 1st. 1950. In order to discern the ayanamsa for a date other than what has been given, simply add 48 seconds ( the approximate rate at which the precession of equinoxes is currently moving in Its 26,000-year cycle) for each year after 1950, or subtract the same figure for years preceding 1950. Or a Lahirl ephemeris can of course be purchased (refer to blbliography). Also, there are computer programs for Hindu astrology which give a choice of several different ayanamsas.
 
-PLANETARY SYMBOLS	5
+PLANETARY SYMBOLS	
 
-THE CHAKRA-THE BIRTHCHART	7
+THE CHAKRA-THE BIRTHCHART	
 
 In India there are 2 different horoscope formats, one more widely used in the south and one more popular in the north. The figures have no effect on the results of delineation and are simply a matter of tradition. In this book It is the south Indian method which is employed.
 
@@ -39,7 +39,7 @@ There are actually 2 different methods used, which will now be explained. The 1s
 
 The 2nd method called equal house system, which is currently In vogue (and was used by this author for the first 2 years with Hindu astrology), is more specific In separating houses and therefore closer to the Western technique. In this system the ascendant degree is considered the middle of the house. Thus, any planet within 15 degrees on either side of this point is also In the 1st_house. Therefore a planet may be In a different sign and yet still be In the 1st_house. For example, If the ascendant is 10 degrees Taurus, then any planet up to 25 degrees Taurus occupies the 1st. Also, any planet behind the 10 degree point as far back as 25 degrees Aries is also In the 1st. With this method, once the beginning of the 1st_house is found, the rest of the houses follow in 30 degree Intervals.
 
-THE NAVAMSA-THE ONE-NINTH DMSION	13
+THE NAVAMSA-THE ONE-NINTH DMSION	
 (MARRIAGE CHART)
 
 In Hindu astrology the horoscope may be broken down Into several vargas, or divisions. Although as many as 16 basic divisional charts exist, most astrologers only concern themselves with the navamsa (pronounced navamsha) or l /9 division. Each varga chart relates to a certain house, and this one corresponds to the 7th, the house of marriage. However, because the 7th is the opposite of the 1st. which is the most personal part of a horoscope, It has to do with a person's relationship to society and all Its functions. Therefore the navamsa is of great Importance, and no professional Hindu astrologer will attempt to analyze a birthchart without It.
@@ -189,7 +189,7 @@ INDICATIONS OF MERCURY
     • Wednesday
     • Green emerald
 
-GURU - JUPITER	2
+GURU - JUPITER	
 
 Jupiter is the planet of luck and fortune. It is an expansive, optimistic energy which brings benefits to whatever planets or houses it associates with. It rules opportunity, prosperity, affluence, and money. It also tells much about a person's deserved benefits earned from activities of previous lives. This is because Hindu life is based on the theo, y of karma and reincarnation. This means that what appears in one's life as luck or chance advantages are considered the results of past efforts. So the condition of Jupiter (as well as the 5th_house) may be analyzed to derive information about one's past life credit.
 
@@ -370,8 +370,7 @@ l. DHARMA-life purpose or righteous action
     • Fame, ability to be recognized, general prosperity
     • Birth, early childhood, start In life
 
-2nd_house IS AN ARTHA HOUSE, CONNECTED TO WEALTH
-MATTERS.
+2nd_house IS AN ARTHA HOUSE, CONNECTED TO WEALTH MATTERS.
     • Money, wealth, finances
     • Knowledge, education, educators
     • Speech, use of foul language, speech defects
@@ -404,8 +403,7 @@ MATTERS.
     • Firmness of personality (mental stability - but not the mind)
     • Travel-short journey
 
-4th_house IS A MOKSHA HOUSE. CONNECTED TO FINAL
-LIBERATION.
+4th_house IS A MOKSHA HOUSE. CONNECTED TO FINAL LIBERATION.
     • Mother
     • Happiness and contentment
     • The heart. emotions and passions
@@ -452,8 +450,7 @@ LIBERATION.
     • Courts
     • Veins and loins
 
-8th_house IS A MOKSHA HOUSE, CONNECTED TO FINAL
-LIBERATION.
+8th_house IS A MOKSHA HOUSE, CONNECTED TO FINAL LIBERATION.
     • Life, longevity
     • Means of death, experience of death
     • Wills & legacies, insurance benefits
@@ -819,8 +816,7 @@ Kujadosha (also known as Mangaldosha, since Mangal is another name for Mars) is 
 
 It should also be mentioned that there are astrologers who consider the condition to occur when Mars is In the 2nd_house rather than the 1st. The author does not agree with this school of thought, especially since Mars In the 1st negatively aspects the 7th, which is the house of marriage.
 
-UPAYES-ANTIDOTES FOR PLANETARY AFFLICTIONS
-(GEMSTONES & MANTRAS)
+UPAYES-ANTIDOTES FOR PLANETARY AFFLICTIONS (GEMSTONES & MANTRAS)
 
 The gem for the Sun is red ruby.
 The gem for the Moon is pearl.
@@ -1056,39 +1052,29 @@ The kamka, or indicator, of the 2nd_house is Jupiter.
 
 2nd_ruler in the:
 
-1st_house
-Earns wealth through own efforts, one's dharma is strongly connected with money, speech, education, knowledge etc.
+1st_house - Earns wealth through own efforts, one's dharma is strongly connected with money, speech, education, knowledge etc.
 
-2nd_house
-Planet In swakshetra (own house). Gains wealth effortlessly, career in banking or education, excellent speaker, learned, knowledgeable, happy family life, powerful Imagination, handsome face, good vision, eats fine foods, poetic.
+2nd_house - Planet In swakshetra (own house). Gains wealth effortlessly, career in banking or education, excellent speaker, learned, knowledgeable, happy family life, powerful Imagination, handsome face, good vision, eats fine foods, poetic.
 
-3rd_house
-May get wealth through the help of brothers & sisters, may earn through the fine arts of music, dance, or drama. Efforts geared to earning wealth.
+3rd_house - May get wealth through the help of brothers & sisters, may earn through the fine arts of music, dance, or drama. Efforts geared to earning wealth.
 
-4th_house
-May get wealth or property from mother, may get ancestral property, obtains good academic degree, good education.
+4th_house - May get wealth or property from mother, may get ancestral property, obtains good academic degree, good education.
 
-5th_house
-Wealthy, money through speculation or gambling, Intelligent, learned, family happiness, gains wealth through children, eats fine foods, born to get money effortlessly due to poorvapunya.
+5th_house - Wealthy, money through speculation or gambling, Intelligent, learned, family happiness, gains wealth through children, eats fine foods, born to get money effortlessly due to poorvapunya.
 
-6th_ruler of artha house In another artha house is good for finances, but wealth comes slowly after much effort, since this is a dusthana. Earns through medical profession or service type jobs, speech Impediment which can Improve with effort, uses foul language, eats bad foods, poor vision in light eye, limited Imagination.
+6th_house - Lord of artha house In another artha house is good for finances, but wealth comes slowly after much effort, since this is a dusthana. Earns through medical profession or service type jobs, speech Impediment which can Improve with effort, uses foul language, eats bad foods, poor vision in light eye, limited Imagination.
 
-7th_house
-Wealthy spouse, spouse helps In gaining wealth, earns money through foreign travel or from foreign countlies.
+7th_house - Wealthy spouse, spouse helps In gaining wealth, earns money through foreign travel or from foreign countlies.
 
-8th_house
-Poor, large expenses, speech Impediment, timid, uses foul language, may speak falsehoods, unhappy family life, bad education, eats bad foods, poor vision in light eye, may earn money through undesirable or illegal means, limited Imagination, lnhelits wealth If planet is well disposed by sign, aspects, etc.
+8th_house - Poor, large expenses, speech Impediment, timid, uses foul language, may speak falsehoods, unhappy family life, bad education, eats bad foods, poor vision in light eye, may earn money through undesirable or illegal means, limited Imagination, lnhelits wealth If planet is well disposed by sign, aspects, etc.
 
-9th_house
-Wealthy. Money from father, elders, or religious organizations. May inherit wealth through sheer luck. Good speech, happy family life, good Imagination, learned, knowledgeable, well educated, eats fine foods.
+9th_house - Wealthy. Money from father, elders, or religious organizations. May inherit wealth through sheer luck. Good speech, happy family life, good Imagination, learned, knowledgeable, well educated, eats fine foods.
 
-10th_ruler of artha house In another artha house is auspicious for earnIng ability, wealth through one's career, high status & reputation. May earn through commerce or benefit from government or eminent persons.
+10th_house - Lord of artha house In another artha house is auspicious for earnIng ability, wealth through one's career, high status & reputation. May earn through commerce or benefit from government or eminent persons.
 
-11th_house
-Possibly the best position for wealth, easy gains, earns through wide variety of means, may earn through the help of eldest brother or sister, may earn through banking or handling finances.
+11th_house - Possibly the best position for wealth, easy gains, earns through wide variety of means, may earn through the help of eldest brother or sister, may earn through banking or handling finances.
 
-12th_house
-Poor, cannot control spending, large debts, speech Impediment, light eye suffers, timid, limited Imagination, uses foul language, may speak falsehoods, unhappy family life, eats bad foods, may earn through. undesirable or illegal means.
+12th_house - Poor, cannot control spending, large debts, speech Impediment, light eye suffers, timid, limited Imagination, uses foul language, may speak falsehoods, unhappy family life, eats bad foods, may earn through. undesirable or illegal means.
 
 PLANETS IN THE 2nd_house
 
@@ -1110,7 +1096,7 @@ NEECHA (fallen)-If the Sun is In Libra In the 2nd, the person is poor, badly edu
 
 The Sun gives Its full effects In the 22nd year. At that time there may be difficulties related to the 2nd_house. This will not occur If the Sun is the ruler of good houses or is well aspected.
 
-CHANDRA-THE MOON IN THE 2nd_house
+CHANDRA - THE MOON IN THE 2nd_house
 
 If the Moon is In the 2nd_house, the person will be wealthy and soft spoken. There will be a strong Interest In money matters, education, and family life. The person will be knowledgeable and well educated. He may choose a career In education or lecturing. Family life is a source of joy, and the person is happy. The person may attain wealth through dealings with females or the public. Wealth may fluctuate In a large way, especially If the Moon is waning or afflicted. The person will have a beautiful face. If the Moon is waning, the effects are not so beneficial, but the affinity or Interest In 2nd_house matters is still very strong.
 
@@ -1150,7 +1136,7 @@ NEECHA (fallen)-If Jupiter is in Capricorn in the 2nd_house, there will be money
 
 Jupiter gives its full effects in the 16th year, and at that time there	97 will be good effects relating to 2nd_house affairs.
 
-SUKRA-VENUS IN THE 2nd_house
+SUKRA - VENUS IN THE 2nd_house
 
 If Venus is in the 2nd_house, the person will be wealthy and pretty. He will speak softly and sweetly. Family life is a source of joy. The person is knowledgeable and has a good education. Money comes easily and may be acquired through business dealings involving jewelry or other beautiful objects. The person is imaginative and enjoys poetry. He will eat sweet foods. He will be a good speaker and will not use vulgar language. He will be charitable and virtuous, and will not lie. He dresses nicely.
 
@@ -1160,7 +1146,7 @@ NEECHA (fallen)-If Venus is in Virgo in the 2nd_house, the person will be poor. 
 
 Venus gives its full effects in the 25th year, and at that time there may be a rise in wealth, educational status, and other 2nd_house affairs.
 
-SANI - SATIJRN IN THE 2nd_house
+SANI - SATURN IN THE 2nd_house
 
 If Saturn is in the 2nd_house, the person will be poor and have to work very hard for his money. Education will suffer, and the person has little imagination. There may be difficulties with the right eye or diseases of the mouth, teeth, or gums. The face may be unattractive and appear old at a young age. Family life is marred, and the person is unhappy on this account. The person may be long-lived, as Saturn's aspect on the 8th_house is good for longevity. He may earn wealth through businesses that deal with coal, wood, metal, mining, and hard labor. Hindu scriptures declare that the person will go far away from his native place In his latter years. The negative effects which have been described will not occur for the ascendants of Libra, Virgo, Taurus, or Capricorn. In such cases, Saturn becomes a yogakaraka, or functional benefic, because it rules good houses or occupies signs where it flourishes. For these ascendants, Saturn will give much wealth, which will accumulate gradually. Other 2nd_house affairs may also flourish In a Saturnian way.
 
@@ -1170,7 +1156,7 @@ NEECHA (fallen)-If Saturn is in Aries in the 2nd_house, the person will be poor 
 
 Saturn gives its full effects in the 36th year. At that time there may be problems with finances, family life, education, or other 2nd_house matters. The reverse will be the case if Saturn has become a yogakaraka, or functional benefic, because of house rulership or sign placement.
 
-RAHU-THE NORTH NODE IN THE 2nd_house
+RAHU - THE NORTH NODE IN THE 2nd_house
 
 Rahu in the 2nd_house is one of the worst positions for this planet, as one's happiness will be greatly disturbed. The person may be of a depressive nature. Family life is also harmed, and there may be domestic quarrels or separation from the spouse. Because the 2nd rules the mouth	and foods, the person may eat poor quality food and take alcohol or drugs.
 He may also consume large quantities of meat. Education and knowledge are not favored unless Rahu is posited In the sign of a friend or otherwise well disposed. The person may lie and use foul language. He will, however, have a most fascinating and peculiar Imagination. There may be scars on the face or mouth, or problems in the right eye. Rahu as the planet of insatiable desire gives a craving for wealth but by Itself is a detrimental influence for such matters. Also, the person may be Inclined to make money through deceitful means. If Rahu is well disposed by sign or aspect. phenomenal wealth is possible. Ancient Hindu sages declare that the person is of a dark complexion.
@@ -1179,7 +1165,7 @@ UCHCHA (exalted)-If Rahu is in Virgo or Gemini in the 2nd_house (or statlonaiy d
 
 Rahu gives its full effects In the 42nd year. At that time there may be financial troubles, domestic problems, or general unhappiness.
 
-KETU - THE SOUTH NODE IN THE 2nd_house	99
+KETU - THE SOUTH NODE IN THE 2nd_house	
 
 If Ketu is in the 2nd_house, the person will be poor and generally unhappy or depressive. He may also use foul language or lie. There may be speech problems, and the person may eat bad foods and take alcohol or drugs. Education and knowledge are not favored, and family life is marred.
 
@@ -1203,39 +1189,29 @@ The karaka or indicator of the 3rd_house is Mars.
 
 3rd_ruler placed in the:
 
-1st_house
-Talent and possible career In music, dance, or drama. Person lives and earns by his own efforts. Generally this position does not favor health and other 1st_house indications: however, courage will be strong.
+1st_house - Talent and possible career In music, dance, or drama. Person lives and earns by his own efforts. Generally this position does not favor health and other 1st_house indications: however, courage will be strong.
 
-2nd_house
-Efforts to make money, person will not gain wealth except through hard work, slight difficulties in family life. This position does not favor relationship with siblings, though they may somehow assist In earning money.
+2nd_house - Efforts to make money, person will not gain wealth except through hard work, slight difficulties in family life. This position does not favor relationship with siblings, though they may somehow assist In earning money.
 
-3rd_house
-Planet in s.wakshetra (own house). Happiness from brothers & sisters, prosperous siblings, good hearing, good adventures, desires are fulfilled with minimal effort. Talent In music. dance, or drama. Good voice, good communicator, literacy ability, possibility of career In communications, brave, valorous, plenty of inner-city travel. stable or firm personality. Person is lively. excited, and motivated.
+3rd_house - Planet in s.wakshetra (own house). Happiness from brothers & sisters, prosperous siblings, good hearing, good adventures, desires are fulfilled with minimal effort. Talent In music. dance, or drama. Good voice, good communicator, literacy ability, possibility of career In communications, brave, valorous, plenty of inner-city travel. stable or firm personality. Person is lively. excited, and motivated.
 
-4th_house
-Efforts and adventures may involve real estate, land, or farms. Brothers or sisters may be close to mother, or they may Inherit ancestral wealth. Sibling may be in real estate or farming, etc.
+4th_house - Efforts and adventures may involve real estate, land, or farms. Brothers or sisters may be close to mother, or they may Inherit ancestral wealth. Sibling may be in real estate or farming, etc.
 
-5th_house
-Happiness from siblings, wealthy siblings, sibling may be Involved in speculation, siblings of good character-high morals etc..-courageous, desires are fulfilled, talented In music, drama. dance, or literacy field.
+5th_house - Happiness from siblings, wealthy siblings, sibling may be Involved in speculation, siblings of good character-high morals etc..-courageous, desires are fulfilled, talented In music, drama. dance, or literacy field.
 
-6th_house
-Efforts connected to health matters (nursing or medical profession). efforts involving service jobs, desires fulfilled slowly and only after effort and perseverence. This position gives wealth If the person works hard. Problems with siblings which can Improve In time, hearing problems In right ear, sibling Involved In medicine.
+6th_house - Efforts connected to health matters (nursing or medical profession). efforts involving service jobs, desires fulfilled slowly and only after effort and perseverence. This position gives wealth If the person works hard. Problems with siblings which can Improve In time, hearing problems In right ear, sibling Involved In medicine.
 
-7th_ruler of a kama house in another kama house fulfills the desires. Strong desire nature, successful efforts, benefits from siblings, sibling may reside In foreign country, adventures Involving opposite sex, strong sexual passions. This position is generally not good for married life.
+7th_house - Lord of a kama house in another kama house fulfills the desires. Strong desire nature, successful efforts, benefits from siblings, sibling may reside In foreign country, adventures Involving opposite sex, strong sexual passions. This position is generally not good for married life.
 
-8th_house
-No happiness from brothers & sisters, bad relations with sibling, sibling dies early or leads life of hardship, no courage, constant fears, no adventures, desires go unfulfilled, expends great effort with little reward, hearing problems In right ear, poor communications, no ability In fine arts, efforts may Involve occult or secret matters, brother may be involved In occult.
+8th_house - No happiness from brothers & sisters, bad relations with sibling, sibling dies early or leads life of hardship, no courage, constant fears, no adventures, desires go unfulfilled, expends great effort with little reward, hearing problems In right ear, poor communications, no ability In fine arts, efforts may Involve occult or secret matters, brother may be involved In occult.
 
-9th_house
-Adventures Involving long distance travel. benefits from siblings. Talent In music, dance, or drama. Vocal ability, brave, efforts succeed through luck, varied and exciting adventures, sibling may be close to father or inherit paternal property, sibling may be religious. The 3rd_ruler does not enhance 9th_house significations (luck, father, etc.), but the 3rd_house is doubly benefited, since the 9th is a good house and the 3rd_ruler will aspect Its own house from the 9th.
+9th_house - Adventures Involving long distance travel. benefits from siblings. Talent In music, dance, or drama. Vocal ability, brave, efforts succeed through luck, varied and exciting adventures, sibling may be close to father or inherit paternal property, sibling may be religious. The 3rd_ruler does not enhance 9th_house significations (luck, father, etc.), but the 3rd_house is doubly benefited, since the 9th is a good house and the 3rd_ruler will aspect Its own house from the 9th.
 
-10th_house
-Works hard In career, siblings enjoy successful career, good earning ability, career In music, dance, drama or literacy field. Travels for professional purposes. courageous and adventurous.
+10th_house - Works hard In career, siblings enjoy successful career, good earning ability, career In music, dance, drama or literacy field. Travels for professional purposes. courageous and adventurous.
 
-11th_ruler of a desire house In another desire house is auspicious. Desires are fulfilled, efforts are successful. siblings may aid In gaining wealth, gains from Investments or Involvement In fine arts or literacy field, brave, good adventures.
+11th_house - Lord of a desire house In another desire house is auspicious. Desires are fulfilled, efforts are successful. siblings may aid In gaining wealth, gains from Investments or Involvement In fine arts or literacy field, brave, good adventures.
 
-12th_house
-No happiness from siblings, sibling suffers or may die early, bad relationship with sibling, hearing problems In right ear, desires go unfulfilled, expends great effort with little reward, few adventures, no courage, constantly fearful, bad voice, no ability In music, dance, or drama. Will travel to "unknown places" (i.e., far-off lands such as India or Africa). Sibling may be Involved In meditation, asceticism, or spiritual life. Sibling may be confined In jail or monastery, person suffers losses on account of sibling (by accepting bad advice).
+12th_house - No happiness from siblings, sibling suffers or may die early, bad relationship with sibling, hearing problems In right ear, desires go unfulfilled, expends great effort with little reward, few adventures, no courage, constantly fearful, bad voice, no ability In music, dance, or drama. Will travel to "unknown places" (i.e., far-off lands such as India or Africa). Sibling may be Involved In meditation, asceticism, or spiritual life. Sibling may be confined In jail or monastery, person suffers losses on account of sibling (by accepting bad advice).
 
 PLANETS IN THE 3rd_house
 
