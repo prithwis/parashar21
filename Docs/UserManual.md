@@ -1,3 +1,4 @@
+![parashar21 banner](/images/p21-header-003.png)<br>
 # Parashar21-LLM User Manual
 
 The Parashar21-LLM pipeline can be used without detailed knowledge of either Python or LLM technology. However, a basic familiarity with GitHub, Google Colab, and Google NotebookLM is useful.
@@ -131,3 +132,8 @@ There is no need to use elaborate or highly structured prompts. Questions can co
 Where useful, provide NotebookLM with relevant facts about the native's actual life. This allows subsequent questions to be more focused and resembles a normal consultation with an astrologer.
 
 The objective is not to test whether the LLM can guess the native's biography. The objective is to use the calculated horoscope, Dasha information, and supplied astrological corpus to explore questions about the native's life in a source-grounded manner.
+
+
+<p align="center">
+  <img src="/images/Poster-05.png" width="400">
+</p>
