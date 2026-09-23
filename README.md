@@ -19,3 +19,7 @@ The overall architecture of the project is illustrated below.
 For a detailed description of the system architecture, design rationale, and processing pipeline, see **[Architecture.md](https://github.com/prithwis/parashar21/blob/main/Docs/ARCHITECTURE.md)**.
 
 The historical documentation describing the original Parashar21 implementation has been retained as **[Original README.md](https://github.com/prithwis/parashar21/blob/main/Docs/README-00.md)** for reference.
+
+## Getting Started
+
+For step-by-step instructions on generating the Rashi and Navamsha charts and using the output with Google NotebookLM, see the **[Parashar21-LLM User Manual](https://github.com/prithwis/parashar21/blob/main/Docs/UserManual.md)** 
