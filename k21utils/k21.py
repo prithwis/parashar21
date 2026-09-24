@@ -63,14 +63,14 @@ def read_txt(path):
         return f.read()
 
 
-def CreateVectorStore(corpus1, corpus2):
+def CreateVectorStore(_name,corpus1, corpus2):
     from openai import OpenAI
 
-    client = OpenAI()
+    #client = OpenAI()
 
     # Create our permanent Khawna knowledge base
     vector_store = client.vector_stores.create(
-        name="Khana21_0"
+        name=_name
     )
 
     VECTOR_STORE_ID = vector_store.id
@@ -87,7 +87,7 @@ def CreateVectorStore(corpus1, corpus2):
         )
 
     print(result)
-    return(client, VECTOR_STORE_ID)
+    return(VECTOR_STORE_ID)
     
 def TestRetrieval(client, vsID, cquery):
     # Pure retrieval test — NO LLM
