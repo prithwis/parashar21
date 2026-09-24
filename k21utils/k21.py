@@ -63,15 +63,13 @@ def read_txt(path):
         return f.read()
 
 
-def CreateVectorStore(_name,corpus1, corpus2):
+def CreateVectorStore(client,_name,corpus1, corpus2):
     from openai import OpenAI
 
     #client = OpenAI()
 
     # Create our permanent Khawna knowledge base
-    vector_store = client.vector_stores.create(
-        name=_name
-    )
+    vector_store = client.vector_stores.create(name=_name)
 
     VECTOR_STORE_ID = vector_store.id
 
