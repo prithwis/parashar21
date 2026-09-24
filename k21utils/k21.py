@@ -108,6 +108,25 @@ def TestRetrieval(client, vsID, cquery):
             if content.type == "text":
                 print(content.text)
                 
+def buildCaseContext(_chart, _navamsa, _dasha):
+    CASE_CONTEXT = f"""
+    ====================
+    RASHI / NATAL CHART
+    ====================
+    {_chart}
+
+    ====================
+    NAVAMSA
+    ====================
+    {_navamsa}
+
+    ====================
+    VIMSHOTTARI DASHA
+    ====================
+    {_dasha}
+    """
+    return(CASE_CONTEXT)
+                
 def LLM_Response(client,systemPrompt, caseContext, cQuestion, vsID) :
     # Call to LLM
     response = client.responses.create(
