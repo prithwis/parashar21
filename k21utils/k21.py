@@ -187,7 +187,7 @@ def LLM_Response(client,systemPrompt, caseContext, cQuestion, vsID,_model) :
     
 #------------------------------------------------------------------------------------------
 
-def prettierPrint(response):
+def xprettierPrint(response):
 
     display(Markdown(response.output_text))
 
@@ -201,6 +201,41 @@ def prettierPrint(response):
         f"total={usage.total_tokens:,}"
     )
     print("-" * 80)
+    
+def prettierPrint(response, personID=None, title="Horoscope Assessment", createWord=True):
+    """Display response in Colab and optionally create a Word report."""
+
+    from IPython.display import display, Markdown
+
+    # Display formatted response
+    display(Markdown(response.output_text))
+
+    # Usage information
+    usage = response.usage
+    modelName = getattr(response, "model", "Unknown")
+
+    print("\n" + "-" * 80)
+    print(f"Model : {modelName}")
+    print(f"Tokens: input={usage.input_tokens:,} | "
+          f"output={usage.output_tokens:,} | "
+          f"total={usage.total_tokens:,}")
+
+    inputDetails = getattr(usage, "input_tokens_details", None)
+    if inputDetails:
+        cachedTokens = getattr(inputDetails, "cached_tokens", 0)
+        if cachedTokens:
+            print(f"Cached input tokens: {cachedTokens:,}")
+
+    print("-" * 80)
+
+    # Create Word report
+    if createWord and personID:
+        return createDocx(response, personID, title)
+
+    if createWord and not personID:
+        print("DOCX not created: personID not supplied.")
+
+    return None    
     
 #------------------------------------------------------------------------------------------
 
@@ -234,6 +269,345 @@ def deleteCorpusFiles(client):
         
 
 #------------------------------------------------------------------------------------------
+
+
+
+
+def createDocx(
+    response,
+    personID,
+    title="Horoscope Assessment",
+    outputDir="/content"
+):
+    """
+    Create a formatted Khana21 Word report.
+
+    Filename:
+        K21<PersonID>_HHMMSS.docx
+
+    Example:
+        K21TG_134527.docx
+
+    Returns:
+        Full path of generated DOCX file.
+    """
+
+    import os
+    import re
+
+    from datetime import datetime
+    from docx import Document
+    from docx.shared import Inches, Pt
+    from docx.enum.text import WD_ALIGN_PARAGRAPH
+
+    # ---------------------------------------------------------
+    # FILE NAME
+    # ---------------------------------------------------------
+
+    now = datetime.now()
+
+    filename = (
+        f"K21{personID}_{now.strftime('%H%M%S')}.docx"
+    )
+
+    filepath = os.path.join(outputDir, filename)
+
+    # ---------------------------------------------------------
+    # CREATE DOCUMENT
+    # ---------------------------------------------------------
+
+    doc = Document()
+
+    section = doc.sections[0]
+
+    section.top_margin = Inches(0.75)
+    section.bottom_margin = Inches(0.75)
+    section.left_margin = Inches(0.85)
+    section.right_margin = Inches(0.85)
+
+    # ---------------------------------------------------------
+    # NORMAL TEXT STYLE
+    # ---------------------------------------------------------
+
+    normal = doc.styles["Normal"]
+
+    normal.font.name = "Aptos"
+    normal.font.size = Pt(10.5)
+
+    normal.paragraph_format.space_after = Pt(6)
+    normal.paragraph_format.line_spacing = 1.08
+
+    # ---------------------------------------------------------
+    # HEADING STYLES
+    # ---------------------------------------------------------
+
+    headingStyles = [
+        ("Title", 20),
+        ("Heading 1", 16),
+        ("Heading 2", 13),
+        ("Heading 3", 11)
+    ]
+
+    for styleName, fontSize in headingStyles:
+
+        style = doc.styles[styleName]
+
+        style.font.name = "Aptos Display"
+        style.font.size = Pt(fontSize)
+        style.font.bold = True
+
+    # ---------------------------------------------------------
+    # HEADER
+    # ---------------------------------------------------------
+
+    header = section.header
+
+    p = header.paragraphs[0]
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+
+    run = p.add_run(
+        "卐   PARASHAR21 / KHANA21   卐"
+    )
+
+    run.font.name = "Aptos"
+    run.font.size = Pt(9)
+    run.bold = True
+
+    # ---------------------------------------------------------
+    # FOOTER
+    # ---------------------------------------------------------
+
+    footer = section.footer
+
+    p = footer.paragraphs[0]
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+
+    generated = now.strftime(
+        "%d %b %Y  %H:%M:%S"
+    )
+
+    run = p.add_run(
+        f"Person ID: {personID}   |   "
+        f"Generated: {generated}   |   "
+        f"Page "
+    )
+
+    run.font.name = "Aptos"
+    run.font.size = Pt(8)
+
+    _addPageNumber(p)
+
+    # ---------------------------------------------------------
+    # DOCUMENT TITLE
+    # ---------------------------------------------------------
+
+    p = doc.add_paragraph()
+
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+
+    run = p.add_run("KHANA21")
+
+    run.bold = True
+    run.font.name = "Aptos Display"
+    run.font.size = Pt(22)
+
+    # Report title
+
+    p = doc.add_paragraph()
+
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+
+    run = p.add_run(title)
+
+    run.bold = True
+    run.font.size = Pt(15)
+
+    # Person ID
+
+    p = doc.add_paragraph()
+
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+
+    run = p.add_run(f"Person ID: {personID}")
+
+    run.font.size = Pt(10)
+
+    # Small separation before report
+
+    doc.add_paragraph()
+
+    # ---------------------------------------------------------
+    # CONVERT RESPONSE MARKDOWN TO WORD
+    # ---------------------------------------------------------
+
+    markdownText = response.output_text
+
+    for rawLine in markdownText.splitlines():
+
+        line = rawLine.strip()
+
+        # Blank line
+        if not line:
+            continue
+
+        # Heading 1
+        if line.startswith("# "):
+
+            doc.add_heading(
+                line[2:].strip(),
+                level=1
+            )
+
+        # Heading 2
+        elif line.startswith("## "):
+
+            doc.add_heading(
+                line[3:].strip(),
+                level=2
+            )
+
+        # Heading 3
+        elif line.startswith("### "):
+
+            doc.add_heading(
+                line[4:].strip(),
+                level=3
+            )
+
+        # Block quote
+        elif line.startswith(">"):
+
+            p = doc.add_paragraph()
+
+            p.paragraph_format.left_indent = (
+                Inches(0.3)
+            )
+
+            run = p.add_run(
+                line[1:].strip()
+            )
+
+            run.italic = True
+
+        # Bullet
+        elif re.match(
+            r"^[-*]\s+",
+            line
+        ):
+
+            text = re.sub(
+                r"^[-*]\s+",
+                "",
+                line
+            )
+
+            p = doc.add_paragraph(
+                style="List Bullet"
+            )
+
+            _addFormattedText(
+                p,
+                text
+            )
+
+        # Numbered list
+        elif re.match(
+            r"^\d+\.\s+",
+            line
+        ):
+
+            text = re.sub(
+                r"^\d+\.\s+",
+                "",
+                line
+            )
+
+            p = doc.add_paragraph(
+                style="List Number"
+            )
+
+            _addFormattedText(
+                p,
+                text
+            )
+
+        # Ignore Markdown horizontal rules
+        elif re.match(
+            r"^-{3,}$",
+            line
+        ):
+
+            continue
+
+        # Ordinary paragraph
+        else:
+
+            p = doc.add_paragraph()
+
+            _addFormattedText(
+                p,
+                line
+            )
+
+    # ---------------------------------------------------------
+    # END NOTE
+    # ---------------------------------------------------------
+
+    doc.add_paragraph()
+
+    p = doc.add_paragraph()
+
+    p.paragraph_format.space_before = Pt(12)
+
+    run = p.add_run(
+        "This interpretation was generated by Khana21 "
+        "using computational chart data from Parashar21 "
+        "and the authorised Jyotisha reference corpus."
+    )
+
+    run.italic = True
+    run.font.size = Pt(8)
+
+    # ---------------------------------------------------------
+    # DOCUMENT METADATA
+    # ---------------------------------------------------------
+
+    doc.core_properties.title = title
+
+    doc.core_properties.subject = (
+        "Khana21 Jyotisha Analysis"
+    )
+
+    doc.core_properties.author = (
+        "Parashar21 / Khana21"
+    )
+
+    # Keep model information in metadata
+    modelName = getattr(
+        response,
+        "model",
+        "Unknown"
+    )
+
+    doc.core_properties.keywords = (
+        f"Khana21, Parashar21, "
+        f"{personID}, {modelName}"
+    )
+
+    # ---------------------------------------------------------
+    # SAVE
+    # ---------------------------------------------------------
+
+    doc.save(filepath)
+
+    print(
+        f"Word report created: {filepath}"
+    )
+
+    return filepath
+
+#------------------------------------------------------------------------------------------
+
     
 def TestRetrieval(client, vsID, cquery):
     # Pure retrieval test — NO LLM
