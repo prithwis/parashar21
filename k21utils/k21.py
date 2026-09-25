@@ -208,7 +208,7 @@ def prettierPrint(response, personID=None, title="Horoscope Assessment", createW
     from IPython.display import display, Markdown
 
     # Display formatted response
-    display(Markdown(response.output_text))
+    #display(Markdown(response.output_text))
 
     # Usage information
     usage = response.usage
@@ -414,7 +414,7 @@ def createDocx(
     header = section.header
 
     p = header.paragraphs[0]
-    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p.alignment = WD_ALIGN_PARAGRAPH.LEFT
 
     run = p.add_run(
         "卐   PARASHAR21 / KHANA21   卐"
@@ -453,37 +453,12 @@ def createDocx(
     # ---------------------------------------------------------
 
     p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.LEFT
 
-    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-
-    run = p.add_run("KHANA21")
-
+    run = p.add_run(f"Jyotish Analysis   |   Person ID: {personID}")
     run.bold = True
     run.font.name = "Aptos Display"
-    run.font.size = Pt(22)
-
-    # Report title
-
-    p = doc.add_paragraph()
-
-    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-
-    run = p.add_run(title)
-
-    run.bold = True
-    run.font.size = Pt(15)
-
-    # Person ID
-
-    p = doc.add_paragraph()
-
-    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-
-    run = p.add_run(f"Person ID: {personID}")
-
-    run.font.size = Pt(10)
-
-    # Small separation before report
+    run.font.size = Pt(16)
 
     doc.add_paragraph()
 
