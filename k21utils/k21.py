@@ -63,6 +63,28 @@ def read_txt(path):
         return f.read()
 
 
+#STORE_NAME = "Khana21"
+
+def get_k21_store(client, store_name="Khana21"):
+
+    matches = [
+        store for store in client.vector_stores.list().data
+        if store.name == store_name
+    ]
+
+    if not matches:
+        print(f"Vector store '{store_name}' not found")
+        return None
+
+    if len(matches) > 1:
+        print(
+            f"WARNING: {len(matches)} vector stores named "
+            f"'{store_name}' found. Using the first."
+        )
+
+    return matches[0].id
+
+
 def CreateVectorStore(client,_name,corpus1, corpus2):
     from openai import OpenAI
 
