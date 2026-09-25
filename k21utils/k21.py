@@ -269,9 +269,60 @@ def deleteCorpusFiles(client):
         
 
 #------------------------------------------------------------------------------------------
+# ============================================================
+# DOCX HELPER FUNCTIONS
+# ============================================================
+
+def _addFormattedText(paragraph, text):
+    """Convert simple Markdown bold/italic into Word formatting."""
+
+    import re
+
+    pattern = r'(\*\*.*?\*\*|\*.*?\*)'
+    parts = re.split(pattern, text)
+
+    for part in parts:
+        if not part:
+            continue
+
+        if part.startswith("**") and part.endswith("**"):
+            run = paragraph.add_run(part[2:-2])
+            run.bold = True
+
+        elif part.startswith("*") and part.endswith("*"):
+            run = paragraph.add_run(part[1:-1])
+            run.italic = True
+
+        else:
+            paragraph.add_run(part)
 
 
+def _addPageNumber(paragraph):
+    """Insert an automatic Word PAGE field."""
 
+    from docx.oxml import OxmlElement
+    from docx.oxml.ns import qn
+
+    run = paragraph.add_run()
+
+    begin = OxmlElement("w:fldChar")
+    begin.set(qn("w:fldCharType"), "begin")
+
+    instr = OxmlElement("w:instrText")
+    instr.set(qn("xml:space"), "preserve")
+    instr.text = "PAGE"
+
+    end = OxmlElement("w:fldChar")
+    end.set(qn("w:fldCharType"), "end")
+
+    run._r.append(begin)
+    run._r.append(instr)
+    run._r.append(end)
+
+#------------------------------------------------------------------------------------------
+# ============================================================
+# DOCX CREATOR
+# ============================================================
 
 def createDocx(
     response,
