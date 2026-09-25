@@ -187,23 +187,11 @@ def LLM_Response(client,systemPrompt, caseContext, cQuestion, vsID,_model) :
     
 #------------------------------------------------------------------------------------------
 
-def xprettierPrint(response):
-
-    display(Markdown(response.output_text))
-
-    usage = response.usage
-
-    print("-" * 80)
-    print(
-        f"Tokens: "
-        f"input={usage.input_tokens:,} | "
-        f"output={usage.output_tokens:,} | "
-        f"total={usage.total_tokens:,}"
-    )
-    print("-" * 80)
     
-def prettierPrint(response, personID=None, title="Horoscope Assessment", createWord=True):
-    """Display response in Colab and optionally create a Word report."""
+def prettierPrint(response, personID="UKnwn", title="Horoscope Assessment", createWord=True):
+    #
+    # Display response in Colab and optionally create a Word report.
+    #
 
     from IPython.display import display, Markdown
 
@@ -268,6 +256,47 @@ def deleteCorpusFiles(client):
     print("Corpus files deleted")
         
 
+def prettierPrint(response, personID="UKnwn", title="Horoscope Assessment", createWord=True):
+    #
+    # Display response in Colab and optionally create a Word report.
+    #
+
+    from IPython.display import display, Markdown
+
+    # Display formatted response
+    #display(Markdown(response.output_text))
+
+    # Usage information
+    usage = response.usage
+    modelName = getattr(response, "model", "Unknown")
+
+    print("\n" + "-" * 80)
+    print(f"Model : {modelName}")
+    print(f"Tokens: input={usage.input_tokens:,} | "
+          f"output={usage.output_tokens:,} | "
+          f"total={usage.total_tokens:,}")
+
+    inputDetails = getattr(usage, "input_tokens_details", None)
+    if inputDetails:
+        cachedTokens = getattr(inputDetails, "cached_tokens", 0)
+        if cachedTokens:
+            print(f"Cached input tokens: {cachedTokens:,}")
+
+    print("-" * 80)
+
+    # Create Word report
+    if createWord and personID:
+        return createDocx(response, personID, title)
+
+    if createWord and not personID:
+        print("DOCX not created: personID not supplied.")
+
+    return None    
+    
+#------------------------------------------------------------------------------------------
+#
+# The rest of the code is for generating a MS-Word DOCX file
+#
 #------------------------------------------------------------------------------------------
 # ============================================================
 # DOCX HELPER FUNCTIONS
@@ -347,6 +376,9 @@ def createDocx(
     import re
 
     from datetime import datetime
+    from zoneinfo import ZoneInfo
+    
+    
     from docx import Document
     from docx.shared import Inches, Pt
     from docx.enum.text import WD_ALIGN_PARAGRAPH
@@ -355,7 +387,8 @@ def createDocx(
     # FILE NAME
     # ---------------------------------------------------------
 
-    now = datetime.now()
+    #now = datetime.now()
+    now = datetime.now(ZoneInfo("Asia/Kolkata"))
 
     filename = (
         f"K21{personID}_{now.strftime('%H%M%S')}.docx"
