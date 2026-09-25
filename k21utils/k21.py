@@ -170,6 +170,32 @@ def LLM_Response(client,systemPrompt, caseContext, cQuestion, vsID) :
     )
     return(response)
     
+def prettierPrint(response, width=80):
+
+    import textwrap
+
+    for line in response.output_text.splitlines():
+
+        if not line.strip():
+            print()
+
+        elif line.startswith(("#", "-", "*", ">")):
+            print(line)
+
+        else:
+            print(textwrap.fill(line, width=width))
+
+    usage = response.usage
+
+    print("\n" + "-" * width)
+    print(
+        f"Tokens: "
+        f"input={usage.input_tokens:,} | "
+        f"output={usage.output_tokens:,} | "
+        f"total={usage.total_tokens:,}"
+    )
+    print("-" * width)
+    
 # ------------Cleanup -----------------------------------------------
 
 def showVectorStores(client):
