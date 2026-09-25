@@ -29,7 +29,55 @@ RULES:
 - Identify the source used for important conclusions.
 """
 
+def authenticateOpenAI():
 
+    import os
+    import requests
+    from google.colab import userdata
+    from openai import OpenAI
+
+    try:
+        # Get key from Colab Secrets
+        api_key = userdata.get("OPENAI_API_KEY")
+
+        if not api_key:
+            raise ValueError(
+                "OPENAI_API_KEY not found in Colab Secrets"
+            )
+
+        os.environ["OPENAI_API_KEY"] = api_key
+
+        # Check identity
+        headers = {
+            "Authorization": f"Bearer {api_key}"
+        }
+
+        resp = requests.get(
+            "https://api.openai.com/v1/me",
+            headers=headers
+        )
+
+        resp.raise_for_status()
+
+        me = resp.json()
+
+        name = me.get("name", "N/A")
+        email = me.get("email", "N/A")
+
+        print("OpenAI authentication successful ✔")
+        print(f"Logged in as {name} {email}")
+
+        # Create and return authenticated client
+        return OpenAI(api_key=api_key)
+
+    except Exception as e:
+
+        print("❌ OpenAI credential check failed")
+        print("Reason:", str(e))
+
+        return None
+
+"""
 try:
     # Load key from Colab Secrets into environment
     api_key = userdata.get("OPENAI_API_KEY")
@@ -57,7 +105,7 @@ except Exception as e:
     print("❌ OpenAI credential check failed")
     print("Reason:", str(e))
 
-
+"""
 def read_txt(path):
     with open(path, "r", encoding="utf-8") as f:
         return f.read()
