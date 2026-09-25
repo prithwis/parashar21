@@ -160,6 +160,36 @@ def buildCaseContext(_chart, _navamsa, _dasha):
     """
     return(CASE_CONTEXT)
 
+
+def buildCaseContext2(_braha, _harihar, _chart, _navamsa, _dasha):
+    CASE_CONTEXT = f"""
+    ============================================================
+    AUTHORISED JYOTISHA REFERENCE CORPUS
+    ============================================================
+
+    ==================== BRAHA ====================
+    {_braha}
+
+    ==================== HARIHAR MAJUMDAR ====================
+    {_harihar}
+
+
+    ============================================================
+    CASE DATA
+    ============================================================
+
+    ==================== RASHI / NATAL CHART ====================
+    {_chart}
+
+    ==================== NAVAMSA ====================
+    {_navamsa}
+
+    ==================== VIMSHOTTARI DASHA ====================
+    {_dasha}
+    """
+    return CASE_CONTEXT
+
+
 #------------------------------------------------------------------------------------------
                 
 def LLM_Response(client,systemPrompt, caseContext, cQuestion, vsID,_model) :
@@ -184,6 +214,22 @@ def LLM_Response(client,systemPrompt, caseContext, cQuestion, vsID,_model) :
         ]
     )
     return(response)
+    
+def LLM_Response2(client, systemPrompt, caseContext, cQuestion, _model):
+    # Call to LLM
+    response = client.responses.create(
+        model=_model,
+        instructions=systemPrompt,
+        input=f"""
+        {caseContext}
+
+        ====================
+        QUESTION
+        ====================
+        {cQuestion}
+        """
+    )
+    return response
     
 #------------------------------------------------------------------------------------------
 
