@@ -4,6 +4,8 @@ from google.colab import userdata
 
 from IPython.display import display, Markdown
 
+#------------------------------------------------------------------------------------------
+
 SYSTEM_PROMPT = """
 You are Khana21, a source-grounded Jyotisha interpretation system.
 
@@ -30,6 +32,8 @@ RULES:
 - If the supplied corpus provides insufficient evidence, say so clearly.
 - Identify the source used for important conclusions.
 """
+
+#------------------------------------------------------------------------------------------
 
 def authenticateOpenAI():
 
@@ -79,6 +83,7 @@ def authenticateOpenAI():
 
         return None
 
+#------------------------------------------------------------------------------------------
 
 def read_txt(path):
     with open(path, "r", encoding="utf-8") as f:
@@ -106,6 +111,7 @@ def getVectorStore(client, store_name="Khana21"):
 
     return matches[0].id
 
+#------------------------------------------------------------------------------------------
 
 def createVectorStore(client,_name,corpus1, corpus2):
     from openai import OpenAI
@@ -131,6 +137,8 @@ def createVectorStore(client,_name,corpus1, corpus2):
     print(result)
     return(VECTOR_STORE_ID)
     
+#------------------------------------------------------------------------------------------
+    
 def TestRetrieval(client, vsID, cquery):
     # Pure retrieval test — NO LLM
 
@@ -150,6 +158,8 @@ def TestRetrieval(client, vsID, cquery):
             if content.type == "text":
                 print(content.text)
                 
+#------------------------------------------------------------------------------------------
+
 def buildCaseContext(_chart, _navamsa, _dasha):
     CASE_CONTEXT = f"""
     ====================
@@ -168,11 +178,13 @@ def buildCaseContext(_chart, _navamsa, _dasha):
     {_dasha}
     """
     return(CASE_CONTEXT)
+
+#------------------------------------------------------------------------------------------
                 
-def LLM_Response(client,systemPrompt, caseContext, cQuestion, vsID) :
+def LLM_Response(client,systemPrompt, caseContext, cQuestion, vsID,_model) :
     # Call to LLM
     response = client.responses.create(
-    model="gpt-5.6-luna",
+    model=_model,
     instructions=systemPrompt,
     input=f"""
     {caseContext}
@@ -192,7 +204,7 @@ def LLM_Response(client,systemPrompt, caseContext, cQuestion, vsID) :
     )
     return(response)
     
-
+#------------------------------------------------------------------------------------------
 
 def prettierPrint(response):
 
@@ -209,7 +221,7 @@ def prettierPrint(response):
     )
     print("-" * 80)
     
-# ------------Cleanup -----------------------------------------------
+#------------------------------------------------------------------------------------------
 
 def showVectorStores(client):
     stores = client.vector_stores.list()
