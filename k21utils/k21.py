@@ -137,26 +137,7 @@ def createVectorStore(client,_name,corpus1, corpus2):
     print(result)
     return(VECTOR_STORE_ID)
     
-#------------------------------------------------------------------------------------------
-    
-def TestRetrieval(client, vsID, cquery):
-    # Pure retrieval test — NO LLM
 
-    results = client.vector_stores.search(
-        #vector_store_id="vs_6ab4bd1cfbe081919a3876771cfd3271",
-        vector_store_id = vsID,
-        query=cquery
-    )
-
-    for i, item in enumerate(results.data, 1):
-        print(f"\n{'='*70}")
-        print(f"RESULT {i}")
-        print(f"File:  {item.filename}")
-        print(f"Score: {item.score:.4f}")
-
-        for content in item.content:
-            if content.type == "text":
-                print(content.text)
                 
 #------------------------------------------------------------------------------------------
 
@@ -252,5 +233,24 @@ def deleteCorpusFiles(client):
     print("Corpus files deleted")
         
 
+#------------------------------------------------------------------------------------------
+    
+def TestRetrieval(client, vsID, cquery):
+    # Pure retrieval test — NO LLM
 
+    results = client.vector_stores.search(
+        #vector_store_id="vs_6ab4bd1cfbe081919a3876771cfd3271",
+        vector_store_id = vsID,
+        query=cquery
+    )
+
+    for i, item in enumerate(results.data, 1):
+        print(f"\n{'='*70}")
+        print(f"RESULT {i}")
+        print(f"File:  {item.filename}")
+        print(f"Score: {item.score:.4f}")
+
+        for content in item.content:
+            if content.type == "text":
+                print(content.text)
 
