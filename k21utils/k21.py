@@ -65,7 +65,7 @@ def read_txt(path):
 
 #STORE_NAME = "Khana21"
 
-def get_k21_store(client, store_name="Khana21"):
+def getVectorStore(client, store_name="Khana21"):
 
     matches = [
         store for store in client.vector_stores.list().data
@@ -85,7 +85,7 @@ def get_k21_store(client, store_name="Khana21"):
     return matches[0].id
 
 
-def CreateVectorStore(client,_name,corpus1, corpus2):
+def createVectorStore(client,_name,corpus1, corpus2):
     from openai import OpenAI
 
     #client = OpenAI()
