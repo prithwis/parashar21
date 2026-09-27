@@ -133,7 +133,12 @@ Where useful, provide NotebookLM with relevant facts about the native's actual l
 
 The objective is not to test whether the LLM can guess the native's biography. The objective is to use the calculated horoscope, Dasha information, and supplied astrological corpus to explore questions about the native's life in a source-grounded manner.
 
+## 8. Advanced Prompt Engineering with NotebookLM
+
+To understand how to improve the quality of the output , see the **[Two_Pass_Workflow](https://github.com/prithwis/parashar21/blob/main/Docs/Two_Pass_Workflow.md)** method.
+
+---
 
 <p align="center">
-  <img src="/images/Poster-05.png" width="400">
+  <img src="/images/P21Poster-06.png" width="400">
 </p>
