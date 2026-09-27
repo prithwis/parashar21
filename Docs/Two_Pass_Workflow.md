@@ -1,4 +1,4 @@
-# Parashar21 + NotebookLM: Two-Pass Structural Analysis and Audit Workflow
+# Two-Pass Structural Analysis and Audit Workflow
 
 **Documentation note --- 27 September 2026**
 
