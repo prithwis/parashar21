@@ -373,10 +373,10 @@ Generation of structured textual representations that enable Large
 Language Models to reason over horoscope data while keeping horoscope
 generation deterministic and transparent.
 
-## Experimental Diversion -- Khona / Khawna21 (K21)
+## Experimental Diversion -- Khona / Khana21 (K21)
 
 Alongside the main Parashar21 + NotebookLM path, a parallel series of
-experiments explored **Khona / Khawna21 (K21)** as an independent LLM
+experiments explored **Khona / Khana21 (K21)** as an independent LLM
 interpretation layer. The K21 notebooks tested both **non-RAG**
 prompting, in which chart context and curated Jyotisha material are
 supplied directly to the model, and **RAG-based** retrieval using the
