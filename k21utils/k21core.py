@@ -5,6 +5,8 @@ from google.colab import userdata
 
 def authenticateLLM(provider="openai"):
 
+    from google.colab import userdata
+
     provider = provider.lower()
 
     secrets = {
@@ -14,7 +16,7 @@ def authenticateLLM(provider="openai"):
     }
 
     if provider not in secrets:
-        raise ValueError(f"Unsupported LLM provider: {provider}")
+        raise ValueError(f"Unsupported provider: {provider}")
 
     api_key = userdata.get(secrets[provider])
 
@@ -22,18 +24,39 @@ def authenticateLLM(provider="openai"):
         raise ValueError(f"Missing Colab Secret: {secrets[provider]}")
 
     if provider == "openai":
+
+        import requests
         from openai import OpenAI
+
+        response = requests.get(
+            "https://api.openai.com/v1/me",
+            headers={"Authorization": f"Bearer {api_key}"},
+            timeout=15
+        )
+        response.raise_for_status()
+
+        user = response.json()
+
+        print(
+            f"OPENAI | "
+            f"User: {user.get('name', 'N/A')} | "
+            f"Email: {user.get('email', 'N/A')} | "
+            f"ID: {user.get('id', 'N/A')}"
+        )
+
         client = OpenAI(api_key=api_key)
 
     elif provider == "claude":
+
         from anthropic import Anthropic
         client = Anthropic(api_key=api_key)
+        print("CLAUDE | Client initialized | Identity not verified")
 
     elif provider == "gemini":
+
         from google import genai
         client = genai.Client(api_key=api_key)
-
-    print(f"Client initialized: {provider.upper()}")
+        print("GEMINI | Client initialized | Identity not verified")
 
     return client
 	
