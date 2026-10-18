@@ -169,3 +169,26 @@ def callLLM(client, role, query, model=None,
     return answer
 
 # ---------------------------------------------------------------------------------------
+
+def buildQuery(brahaPath, hariharPath, chartPath,
+               navamsaPath, dashaPath, question):
+
+    def readText(path):
+        with open(path, "r", encoding="utf-8") as f:
+            return f.read()
+
+    sections = {
+        "BRAHA": readText(brahaPath),
+        "HARIHAR": readText(hariharPath),
+        "RASHI CHART": readText(chartPath),
+        "NAVAMSA": readText(navamsaPath),
+        "VIMSHOTTARI DASHA": readText(dashaPath),
+        "QUESTION": question
+    }
+
+    query = "\n\n".join(
+        f"{'=' * 20} {name} {'=' * 20}\n{content}"
+        for name, content in sections.items()
+    )
+
+    return query
