@@ -192,3 +192,4 @@ def buildQuery(brahaPath, hariharPath, chartPath,
     )
 
     return query
+    
