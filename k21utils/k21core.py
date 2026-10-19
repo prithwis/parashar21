@@ -169,16 +169,23 @@ def callLLM(client, role, query, model=None,
     return answer
 
 # ---------------------------------------------------------------------------------------
-
-def buildContext(brahaPath, hariharPath, chartPath,
-                 navamsaPath, dashaPath):
-
-    def readText(path):
+def readText(path):
         with open(path, "r", encoding="utf-8") as f:
             content = f.read()
         print(f"{path} | {len(content):,} characters")
         return content
 
+# ---------------------------------------------------------------------------------------
+
+def buildContext(brahaPath, hariharPath, chartPath,
+                 navamsaPath, dashaPath):
+    ''' 
+    def readText(path):
+        with open(path, "r", encoding="utf-8") as f:
+            content = f.read()
+        print(f"{path} | {len(content):,} characters")
+        return content
+     '''
     sections = {
         "BRAHA": readText(brahaPath),
         "HARIHAR": readText(hariharPath),
