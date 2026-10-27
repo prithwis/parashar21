@@ -206,3 +206,23 @@ def buildQuery(context, question):
         f"{'=' * 20} QUESTION {'=' * 20}\n"
         f"{question}"
     )
+# ---------------------------------------------------------------------------------------
+def getContext(**files):
+    sections = []
+
+    for name, path in files.items():
+        if path:
+            with open(path, "r", encoding="utf-8") as f:
+                sections.append(f"<{name}>\n{f.read()}\n</{name}>")
+
+    return "\n\n".join(sections)
+
+# ---------------------------------------------------------------------------------------
+def augContext(context, **texts):
+    sections = [context]
+
+    for name, content in texts.items():
+        if content:
+            sections.append(f"<{name}>\n{content}\n</{name}>")
+
+    return "\n\n".join(sections)
