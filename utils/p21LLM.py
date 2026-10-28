@@ -448,7 +448,7 @@ def R601_GenerateLLMInput05(filename="Chart.txt"):
     AddHeader(
         lines,
         analysisMode,
-        "HOROSCOPE DATA FOR JYOTISHA REASONING"
+        "Parashar21 Output for LLM processing"
     )
 
     AddHouseLordship(lines)
