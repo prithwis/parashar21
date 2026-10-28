@@ -131,10 +131,12 @@ def AddHeader(lines, analysisMode, title):
     add("=" * len(title))
     add("")
 
-    add("Analysis : " + analysisMode)
-    add("Chart Type : " + str(p21.AnalysisType))
+    add("Analysis : " + analysisMode)                       # Natal or Gochar
+    if analysisMode == 'Gochar':
+        add("Ref Date :" + datetime(int(p21swe.LBDY), int(p21swe.LBDM), int(p21swe.LBDD)).strftime("%d-%b-%Y"))
+    add("Chart Type : " + str(p21.AnalysisType))            # Rashi or Navamsha
     add("Gender : " + GetGender())
-    add("Ref Date :" + datetime(int(p21swe.LBDY),int(p21swe.LBDM),int(p21swe.LBDD)).strftime("%d-%b-%Y"))
+    
 
     # ignore all tag information
     #if hasattr(p21, "pTags"):
