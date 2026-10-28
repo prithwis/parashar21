@@ -1,7 +1,7 @@
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-def saveAnswer(tg_id, model, answer):
+def saveAnswer(model, answer):
     timestamp = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%y%m%d_%H%M%S")
     #filepath = f"/content/K21_{tg_id}_{model}_{timestamp}.md"
     filepath = f"/content/K21_{timestamp}_{model}.md"
