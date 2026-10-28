@@ -14,6 +14,7 @@ import os
 from datetime import datetime
 
 import p21
+import p21swe
 
 
 # --------------------------------------------------
@@ -133,11 +134,13 @@ def AddHeader(lines, analysisMode, title):
     add("Analysis : " + analysisMode)
     add("Chart Type : " + str(p21.AnalysisType))
     add("Gender : " + GetGender())
+    add("Ref Date :" + datetime(int(p21swe.LBDY),int(p21swe.LBDM),int(p21swe.LBDD)).strftime("%d-%b-%Y"))
 
     # ignore all tag information
     #if hasattr(p21, "pTags"):
     #    add("Tags : " + str(p21.pTags))
 
+    
     add("")
 
 # --------------------------------------------------
