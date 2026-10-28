@@ -65,6 +65,7 @@ The platform consists of two Google Colab notebooks, both at **Version 5.1**.
 **Step 1 — Parashar21**
 
 Run `P21_51_Kast2LLM` to generate the Rashi, Navamsha, Dasha and Gochar data files. The Rashi and Navamsha calculations require separate runs.
+Four files generated in Parashar21 - chart.txt, dasha.txt, navamsa-chart.txt and gochar-chart.txt -- generated in **Step 1** needs to be downloaded and the uploaded into **Step 2**
 
 **Step 2 — Khona21**
 
@@ -92,6 +93,6 @@ The emphasis now shifts from building the system to using it.
 
 **Parashar21 computes. Khona21 interprets.**
 
-*The Jugalbandi is complete.*
+*Calculation & Cognition | Precision & Interpretation*
 
 ![Parashar21 Banner](/images/khona21-v0.png)
