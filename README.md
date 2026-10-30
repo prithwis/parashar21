@@ -16,16 +16,17 @@ The project has reached its intended functional maturity with **Version 5.1 (Oct
 
 Parashar21 is a deterministic Jyotisha engine built around the **Swiss Ephemeris**. Given the place, date and time of birth, it calculates planetary positions, houses, lordships, aspects, conjunctions, Vimshottari Dasha schedules and other classical astrological parameters, following the principles associated with Maharishi Parashara.
 
-Its final implementation produces four structured, LLM-ready text outputs:
+Its final implementation produces five structured, LLM-ready text outputs:
 
 - **Rashi:** The natal horoscope, including planetary placements, house relationships and other relevant configurations.
 - **Navamsha:** The divisional chart used to supplement natal interpretation.
 - **Dasha:** The Vimshottari Dasha schedule, providing the temporal framework for interpretation.
-- **Gochar:** Planetary transits, calculated with reference to the natal Moon sign, for assessing current and future periods.
+- **Gochar:** Current Planetary transits, calculated with reference to the natal Moon sign, for assessing current and future periods.
+- **Transit:** Planetary transits, over the next 999 days
 
 These outputs provide a structured semantic representation of the horoscope, separating the calculation of astrological facts from their subsequent interpretation.
 
-The final computational notebook is **`P21_51_Kast2LLM`**.
+The final computational notebook is **`P21_52_Kast2LLM`**.
 
 ## Khona21 — The Interpretive Engine
 
