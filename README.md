@@ -1,6 +1,6 @@
 ![Parashar21 Banner](/images/p21-header-003.png)
 
-# Parashar21 & Khona21
+# Kompute & Konsult
 
 ### Two Engines. One Jyotisha Platform.
 
@@ -12,7 +12,7 @@ The two components have distinct but complementary responsibilities:
 
 The project has reached its intended functional maturity with **Version 5.1 (October 2026)**. Active development is complete, and the platform is now available for regular consultation and use.
 
-## Parashar21 — The Computational Engine
+## Parashar21 — The Kompute Engine
 
 Parashar21 is a deterministic Jyotisha engine built around the **Swiss Ephemeris**. Given the place, date and time of birth, it calculates planetary positions, houses, lordships, aspects, conjunctions, Vimshottari Dasha schedules and other classical astrological parameters, following the principles associated with Maharishi Parashara.
 
@@ -26,9 +26,9 @@ Its final implementation produces five structured, LLM-ready text outputs:
 
 These outputs provide a structured semantic representation of the horoscope, separating the calculation of astrological facts from their subsequent interpretation.
 
-The final computational notebook is **`P21_52_Kast2LLM`**.
+The final computational notebook is **`P21_Kompute_51`**.
 
-## Khona21 — The Interpretive Engine
+## Khona21 — The Konsult Engine
 
 Named after the legendary Bengali astrologer Khona, **Khona21** is an AI-assisted Jyotisha interpretation platform developed as the companion to Parashar21.
 
@@ -43,7 +43,7 @@ The process has two principal stages:
 
 The objective is to produce interpretations that are systematic, transparent and traceable to the underlying astrological sources.
 
-The final consultation notebook is **`K21_51_KhonaPlus`**.
+The final consultation notebook is **`K21_Konsult_51`**.
 
 ## Architecture — The Parashar–Khona Jugalbandi
 
