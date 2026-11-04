@@ -1,2 +1,0 @@
-Please note that it dangerous to use scanned PDF texts as input to NotebookLM.
-Since NotebookLM uses OCR to recover text fragments from the scanned PDF files, this leads to enormous errors in grammar, spelling, fragmentation and as a result most of the data is unusable. Only clean, curated text files should be used. If such texts are not available, it is not advisable to use this approach.
