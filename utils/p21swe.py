@@ -37,6 +37,16 @@ def C01_configSWE():
     # Calendar : Julian or Gregorian
     SE_GREG_CAL = 1
     p21.gregflag = SE_GREG_CAL
+    
+    # Select Lahiri Ayanamsha (SIDM_LAHIRI = 1).
+    # This determines the value returned by swe.get_ayanamsa().
+    # It does NOT automatically convert planetary positions to sidereal.
+    # Since SEFLG_SIDEREAL is NOT set in p21.iflag, swe.calc_ut() returns tropical longitudes.
+    # Lahiri Ayanamsha is therefore subtracted manually in C05_buildGLonGRet() to obtain sidereal longitudes.
+    # DO NOT add SEFLG_SIDEREAL without removing that subtraction.
+    #swe.set_sid_mode(1)
+    
+    
     #
     # Ayanamsha type : Lahiri = 1
     swe.set_sid_mode(1)  # Lahiri Aynamsha
