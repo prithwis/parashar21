@@ -111,6 +111,10 @@ def callLLM(client, role, query, model=None,
             ]
         )
 
+        print("Stop reason:", response.stop_reason)
+        print("Content types:", [b.type for b in response.content])
+        print("Content:", repr(response.content)[:1000])
+
         answer = "\n".join(
             block.text for block in response.content
             if block.type == "text"
