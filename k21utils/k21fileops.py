@@ -132,6 +132,16 @@ def markdownToDocx(mdFile, personID, question, provider, model):
     p.runs[0].font.size = Pt(9)
     p.runs[0].font.color.rgb = RGBColor(110, 110, 110)
 
+    # Khona signature icon
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+    p.paragraph_format.space_before = Pt(12)
+
+    run = p.add_run()
+    run.add_picture("/content/khona.png", width=Inches(1.5625))
+
+    doc.save(docxFile)
+
     doc.save(docxFile)
 
     print(f"Saved: {docxFile}")
