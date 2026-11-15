@@ -86,9 +86,9 @@ def markdownToDocx(mdFile, personID, question, provider, model):
     p.add_run("Person ID: ").bold = True
     p.add_run(personID)
 
-    p = first.insert_paragraph_before()
-    p.add_run("Question: ").bold = True
-    p.add_run(question)
+    #p = first.insert_paragraph_before()
+    #p.add_run("Question: ").bold = True
+    #p.add_run(question)
 
     first.insert_paragraph_before("")
 
@@ -146,8 +146,28 @@ def markdownToDocx(mdFile, personID, question, provider, model):
 
     run = p.add_run()
     run.add_picture("/content/khona.png", width=Inches(1.5625))
+    
+    # ------------------------------------------------
+    # Original question — appendix after Khona signature
+    # ------------------------------------------------
 
-    doc.save(docxFile)
+    p = doc.add_paragraph()
+    p.paragraph_format.space_before = Pt(12)
+    p.paragraph_format.keep_with_next = True
+
+    run = p.add_run("Original Question")
+    run.font.name = "Georgia"
+    run.font.size = Pt(9)
+    run.font.bold = True
+    run.font.color.rgb = RGBColor(110, 110, 110)
+
+    p = doc.add_paragraph()
+    p.paragraph_format.space_after = Pt(0)
+
+    run = p.add_run(question)
+    run.font.name = "Georgia"
+    run.font.size = Pt(8)
+    run.font.color.rgb = RGBColor(130, 130, 130)
 
     doc.save(docxFile)
 
