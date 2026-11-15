@@ -158,7 +158,7 @@ def markdownToDocx(mdFile, personID, question, provider, model):
 
 
 
-def saveFirstPass(mdFile, native_id):
+def saveFirstPass(mdFile, native_id, FIRSTPASS):
     """
     Copy FirstPass Markdown to Google Drive, retaining date and model ID.
     Delete older FirstPass files for the same native_id only after
@@ -201,3 +201,11 @@ def saveFirstPass(mdFile, native_id):
 
     print(f"FirstPass saved: {target}")
     return str(target)
+    
+    
+#--------------------------------------------------------------------------------------------------
+
+def loadQuery(queryName, queryDir):
+    return (Path(queryDir) / f"{queryName}.txt").read_text(
+        encoding="utf-8"
+    )
