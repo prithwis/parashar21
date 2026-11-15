@@ -1,6 +1,7 @@
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
+#--------------------------------------------------------------------------------------------------
 def saveAnswer(model, answer):
     timestamp = datetime.now(ZoneInfo("Asia/Kolkata")).strftime("%y%m%d_%H%M%S")
     #filepath = f"/content/K21_{tg_id}_{model}_{timestamp}.md"
@@ -24,6 +25,12 @@ from docx.shared import Inches, Pt, RGBColor
 from docx.enum.text import WD_TAB_ALIGNMENT
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
+
+
+import shutil
+import re
+
+#--------------------------------------------------------------------------------------------------
 
 def markdownToDocx(mdFile, personID, question, provider, model):
 
@@ -146,3 +153,51 @@ def markdownToDocx(mdFile, personID, question, provider, model):
 
     print(f"Saved: {docxFile}")
     return docxFile
+    
+#--------------------------------------------------------------------------------------------------
+
+
+
+def saveFirstPass(mdFile, native_id):
+    """
+    Copy FirstPass Markdown to Google Drive, retaining date and model ID.
+    Delete older FirstPass files for the same native_id only after
+    successfully saving the new file.
+
+    Example:
+        K21_261115_093743_gpt-6-luna.md
+        -> 12345_261115_gpt-6-luna.md
+    """
+    source = Path(mdFile)
+    saveDir = Path(FIRSTPASS)
+    saveDir.mkdir(parents=True, exist_ok=True)
+
+    if not source.is_file():
+        raise FileNotFoundError(f"FirstPass not found: {source}")
+
+    # Extract date and model ID from original filename
+    match = re.fullmatch(r"K21_(\d{6})_\d{6}_(.+)\.md", source.name)
+    if not match:
+        raise ValueError(f"Unexpected FirstPass filename: {source.name}")
+
+    date, modelID = match.groups()
+    native_id = str(native_id)
+
+    if not re.fullmatch(r"[A-Za-z0-9-]+", native_id):
+        raise ValueError("Invalid native_id")
+
+    target = saveDir / f"{native_id}_{date}_{modelID}.md"
+
+    # Copy first, then verify
+    shutil.copy2(source, target)
+
+    if source.read_bytes() != target.read_bytes():
+        raise IOError("FirstPass copy verification failed")
+
+    # Remove older versions for this native_id
+    for oldFile in saveDir.glob(f"{native_id}_*.md"):
+        if oldFile != target:
+            oldFile.unlink()
+
+    print(f"FirstPass saved: {target}")
+    return str(target)
