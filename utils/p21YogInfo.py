@@ -1,8 +1,7 @@
-#Copyright (c) 2022, Prithwis Mukerjee
-#All rights reserved.
-#
-#This source code is licensed under the GNU GPL v3.0 -style license found in the
-#LICENSE file in the root directory of this source tree. 
+## Copyright (c) 2022-present Prithwis Mukerjee
+# SPDX-License-Identifier: GPL-3.0-only
+# See LICENSE in the repository root.
+# -------------------------------------------------- 
 # --------------------------------------------------
 # Yog information taken from '300 Important Combinations', BV Raman, Motilal Banarsidass Publishers, 10th Ed, 7th Reprint
 #

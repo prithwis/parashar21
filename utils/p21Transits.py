@@ -1,8 +1,6 @@
-#Copyright (c) 2022, Prithwis Mukerjee
-#All rights reserved.
-#
-#This source code is licensed under the GNU GPL v3.0 -style license found in the
-#LICENSE file in the root directory of this source tree. 
+# Copyright (c) 2022-present Prithwis Mukerjee
+# SPDX-License-Identifier: GPL-3.0-only
+# See LICENSE in the repository root.
 # --------------------------------------------------
 import p21
 import p21utils
@@ -76,6 +74,18 @@ def Transitz(numberOfDays,allTransits = False,buildMovie = False):
     custom_date_str = "2025-12-01 00:00:01"  # format: YYYY-MM-DD HH:MM:SS
     # Convert string to datetime object and localize to Asia/Kolkata timezone
     #sDate = pytz.timezone('Asia/Kolkata').localize(datetime.strptime(custom_date_str, "%Y-%m-%d %H:%M:%S"))
+    
+    # IMPORTANT: Transit positions are calculated at a fixed 12:01 PM IST,
+    # irrespective of the time in cDT. Only the date is extracted from cDT.
+    #
+    # Gochar must use the SAME reference time (12:01 PM IST).
+    # Otherwise, on days when a planet changes Rashi or retrograde status,
+    # the initial Gochar and the Transit sequence may disagree.
+    #
+    # Transit dates indicate changes detected between successive daily
+    # snapshots, NOT the exact astronomical time of the event.
+    #
+    # This is done in p21utils.getTransitData(cDate)
 
     cDate = sDate
 

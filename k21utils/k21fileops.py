@@ -1,3 +1,7 @@
+# Copyright (c) 2022-present Prithwis Mukerjee
+# SPDX-License-Identifier: GPL-3.0-only
+# See LICENSE in the repository root.
+# --------------------------------------------------
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
@@ -80,17 +84,17 @@ def markdownToDocx(mdFile, personID, question, provider, model):
     pPr.append(borders)
 
     # Report identification, inserted before the answer
-    first = doc.paragraphs[0]
-
-    p = first.insert_paragraph_before()
+    # Report identification — always at the beginning
+    p = doc.add_paragraph()
     p.add_run("Person ID: ").bold = True
     p.add_run(personID)
 
-    #p = first.insert_paragraph_before()
-    #p.add_run("Question: ").bold = True
-    #p.add_run(question)
+    # Move paragraph before the first body element (table or paragraph)
+    body = doc._element.body
+    body.remove(p._element)
+    body.insert(0, p._element)
 
-    first.insert_paragraph_before("")
+    #first.insert_paragraph_before("")
 
     
 

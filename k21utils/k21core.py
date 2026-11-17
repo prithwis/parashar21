@@ -1,3 +1,7 @@
+# Copyright (c) 2022-present Prithwis Mukerjee
+# SPDX-License-Identifier: GPL-3.0-only
+# See LICENSE in the repository root.
+# --------------------------------------------------
 import os
 from google.colab import userdata
 
