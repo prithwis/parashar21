@@ -94,7 +94,8 @@ def Transitz(numberOfDays,allTransits = False,buildMovie = False):
     # -----------------------------------------
     # initial graha positions
     print("Transit Information")
-    print("START DATE:", cDate.strftime("%d %b %Y %H:%M"))
+    #print("START DATE:", cDate.strftime("%d %b %Y %H:%M"))
+    print("START DATE:", cDate.strftime("%d %b %Y"), "12:01")
     print("INITIAL GRAHA POSITIONS:")
 
     grahaList = p21.Graha + ['Ra', 'Ke']
